@@ -1,0 +1,219 @@
+<!doctype html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Ai Ads Daily Briefing",
+  "schemaVersion": 1,
+  "description": "AI 每日资讯。每天精选 5-8 条 AI 与广告交叉的重点资讯，每条包含中文总结、英文一手原文摘录、中文翻译。覆盖 AI 公司官方动态、深度博主观点、AI × 广告 crossover。每天早上 9:00 自动更新。"
+}
+</script>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AI 每日资讯</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    background: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 28px 24px 80px; }
+  header { border-bottom: 1px solid #e6e6e6; padding-bottom: 18px; margin-bottom: 26px; }
+  h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .meta { font-size: 13px; color: #666; }
+  .meta span + span::before { content: " · "; margin: 0 4px; color: #bbb; }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    transition: border-color .15s;
+  }
+  .card:hover { border-color: #d0d0d0; }
+
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .tag.ai   { background: #eef4ff; color: #2154c8; }
+  .tag.blog { background: #f0eaff; color: #6638b8; }
+
+  h2.title {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+  .source { font-size: 12px; color: #888; margin-bottom: 12px; }
+  .source a { color: #555; text-decoration: none; border-bottom: 1px dotted #bbb; }
+  .source a:hover { color: #2154c8; border-bottom-color: #2154c8; }
+
+  .summary { font-size: 15px; color: #2a2a2a; margin: 10px 0 14px; }
+  .summary b { color: #1a1a1a; }
+
+  details {
+    border-top: 1px dashed #e8e8e8;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  details summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+    padding: 4px 0;
+    user-select: none;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before {
+    content: "▸ ";
+    display: inline-block;
+    transition: transform .15s;
+    color: #999;
+    font-size: 11px;
+  }
+  details[open] summary::before { transform: rotate(90deg); }
+  details .body {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2a2a2a;
+    line-height: 1.75;
+  }
+  details .body.en {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .footer-note {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI 每日资讯</h1>
+    <div class="meta">
+      <span id="date">2026 年 5 月 15 日</span>
+      <span id="count">5 条精选</span>
+      <span>来源：AI 公司官方 + 深度博主</span>
+      <span>每天早上 9:00 自动更新</span>
+    </div>
+  </header>
+
+  <div id="items">
+
+    <!-- 1 · Anthropic · Gates Foundation $200M -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 与盖茨基金会建立 2 亿美元合作：把 Claude 推向全球健康、教育与经济流动</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com/news · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布与盖茨基金会建立四年期、总额 2 亿美元的合作，含 grant、Claude 使用额度与工程支持，覆盖全球健康与生命科学、教育、经济流动三块。健康部分最重，目标是给中低收入国家的 46 亿缺乏基本医疗服务的人提供支持，包括建立 connectors / benchmarks / evaluation frameworks、用 Claude 筛选小儿麻痹、HPV、子痫前期等被忽视疾病的疫苗与疗法。这是 Anthropic "Beneficial Deployments" 团队迄今最大单笔承诺。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">We're partnering with the Gates Foundation to commit $200 million in grant funding, Claude usage credits, and technical support for programs in global health, life sciences, education, and economic mobility over the next four years. The largest part of our partnership will focus on improving health outcomes in low- and middle-income countries, where around 4.6 billion people lack access to essential health services. Together, we will explore how AI can make it faster and easier for scientists to screen potential vaccine candidates—including vaccines that protect against diseases like polio—computationally before moving into pre-clinical development.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们与盖茨基金会建立合作，承诺在未来四年内投入 2 亿美元的 grant 资金、Claude 使用额度和技术支持，用于全球健康、生命科学、教育和经济流动领域的项目。合作中最大的部分将聚焦于改善中低收入国家的健康结果——这些地区约有 46 亿人缺乏基本医疗服务。我们将一起探索：AI 能否让科学家在进入临床前开发之前，更快、更便利地用计算方式筛选潜在疫苗候选物——包括针对小儿麻痹等疾病的疫苗。</div>
+      </details>
+    </article>
+
+    <!-- 2 · Anthropic · Claude for Small Business -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 发布 Claude for Small Business：把 Claude 嵌进 QuickBooks、PayPal、HubSpot</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">anthropic.com/news · Introducing Claude for Small Business（5 月 13 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 推出面向小企业的打包方案——Cowork 里一键 toggle 启用，自带 15 个开箱即用的 agentic workflow 与 15 个 skills，连接 QuickBooks / PayPal / HubSpot / Canva / Docusign / Google Workspace / Microsoft 365。典型场景：核对账目排发工资、月末结账、追逾期发票、跑营销 campaign。小企业贡献了美国 44% GDP 但 AI 采用一直落后于大企业；Anthropic 也同步联合 PayPal 推免费的 "AI Fluency for Small Business" 课程，5 月 14 日在芝加哥开启 SMB Tour。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Claude for Small Business is a toggle install that puts Claude to work inside the tools small business owners already use: Intuit Quickbooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365. From these tools, it can plan payroll, close the month, run a sales campaign, chase invoices, and more. It ships with 15 ready-to-run agentic workflows across finance, operations, sales, marketing, HR, and customer service. It also includes 15 skills built on the repeatable tasks owners told us slow them down most. Small businesses account for 44% of U.S. GDP and employ nearly half the private-sector workforce, but their adoption of AI has lagged behind larger enterprises.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Claude for Small Business 是一个一键开启的安装：把 Claude 接入小企业主已经在用的工具——Intuit QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace、Microsoft 365。在这些工具内部，它可以排发工资、月末结账、跑销售 campaign、追逾期发票等等。它出厂自带 15 个跨财务、运营、销售、营销、人力和客服的开箱即用 agentic workflow，并包含 15 个 skills——围绕业主反馈的那些最拖累节奏的可重复任务构建。小企业占美国 GDP 的 44%、雇佣了将近一半的私营部门员工，但它们的 AI 采用率一直落后于大企业。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Google DeepMind · AI Pointer -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind 重新发明鼠标指针：让 AI 理解你指的"是什么"、"为什么"</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">deepmind.google/blog · Reimagining the mouse pointer for the AI era（5 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>DeepMind 提出"AI-enabled pointer"原型，由 Gemini 驱动。四条交互原则：保持心流、show-and-tell、用"这个/那个"代替长 prompt、把像素变成可操作实体。论点很硬——半个世纪没怎么变的鼠标指针该改了：让 AI 在所有应用里随时可达，而不是逼用户"把世界拖进 AI 窗口"。同步并入 Chrome 的 Gemini 体验，以及即将上线的 Googlebook "Magic Pointer"。这是 GUI 与 AI 融合的产品级声明，不只是 chatbot 范式延续。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The mouse pointer has been a constant companion on computer screens, across every website, document and workflow. Despite how technologies have changed, the pointer has barely evolved in more than half a century. Our goal is to address a common frustration: because a typical AI tool lives in its own window, users need to drag their world into it. We want the opposite: intuitive AI that meets users across all the tools they use, without interrupting their flow. In everyday interactions with each other, humans rarely speak in long, detailed paragraphs. We might say, "Fix this", "Move that here", or "What does this mean?" — while relying on physical gestures and our shared context to fill in any gaps in understanding.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">鼠标指针一直是电脑屏幕上的常驻伙伴——出现在每个网站、文档和工作流中。尽管技术日新月异，指针在过去半个世纪里几乎没有进化。我们的目标是解决一个常见的痛点：典型的 AI 工具住在自己的窗口里，用户得把自己的世界拖进去。我们想要反过来：让直觉式的 AI 在用户使用的所有工具里都可触及，不打断他们的心流。人类彼此日常交流时很少说长段落，我们会说"修一下这个"、"把那个移到这"、"这是啥意思？"——靠手势和共享语境填补理解的空隙。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Simon Willison · Programming languages no longer lock-in -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison：编程语言不再是锁定——一家公司用 coding agent 把原生 iOS/Android 重写成 React Native</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/14/not-so-locked-in/" target="_blank" rel="noopener">simonwillison.net · Not so locked in any more（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon 在一周前的会议上聊到，一家中型公司刚用 coding agent 把原生 iPhone 与 Android 应用整体重写成 React Native。理由不是"agent 让维护原生更便宜"，而是反过来：React Native 这几年覆盖度够了；如果将来发现选错了，"再 port 回原生就好"。他配合 Mitchell Hashimoto 关于 Bun 从 Zig 迁移到 Rust 的引语下了结论：编程语言曾经意味着 lock-in，现在不再是。对工程选型与重构 ROI 的判断框架是个根本性变化。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">I was talking to someone who worked for a medium sized technology company with a pair of legacy/legendary iPhone and Android apps. They told me they had just completed a coding-agent driven rewrite of both apps to React Native. I asked why they chose that, given that coding agents presumably drive down the cost of maintaining separate iPhone and Android apps. They said that React Native has improved a lot over the past few years and covered everything their apps needed to do. And… if it turned out to be the wrong decision, they could just port back to native in the future. Like Mitchell said: "Programming languages used to be LOCK IN, and they're increasingly not so."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我在和一家中型科技公司的人聊天，他们有一对 legacy/legendary 级别的 iPhone 和 Android 应用。他告诉我，他们刚完成了一次由编程代理驱动的重写——把两个 App 都搬到了 React Native。我问他为什么这么选——按理说 coding agent 应该让分别维护 iOS 和安卓变得更便宜啊。他说 React Native 这几年进步很大，已经覆盖了他们 App 需要做的所有事情。而且……如果将来发现这是个错的决定，他们随时可以再迁回原生。就像 Mitchell 说的："编程语言曾经是 LOCK IN，现在越来越不是了。"</div>
+      </details>
+    </article>
+
+    <!-- 5 · Simon Willison · Shopify River -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Shopify 的 River：内部 coding agent 强制在公开 Slack 频道工作——这是"在车间里学习"</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/" target="_blank" rel="noopener">simonwillison.net · Learning on the Shop floor（5 月 11 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon 转引 Shopify CEO Tobi Lütke 的说明：内部 coding agent "River" 拒绝私聊，所有协作都必须在公开 Slack 频道进行。CEO 自己的 #tobi_river 频道有上百人围观、补充上下文、参与 review、互相教学。Tobi 用德语词 *Lehrwerkstatt*（教学工坊）形容这套机制——整层车间就是教室，靠近工作就是学习。Simon 类比 Midjourney 早年只在 Discord 公开频道运作，认为这种"渗透式学习"是组织规模化使用 agent 的关键设计——和"先学 prompt 再回去用"的传统培训路径完全不同。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">River does not respond to direct messages. She politely declines and suggests to create a public channel for you and her to start working in. I myself work with river in #tobi_river channel and many followed this pattern. Every conversation is therefore searchable. Anyone at Shopify can jump in. In my own channel, there are over 100 people who, react to threads, add color and add context, pick up the torch, help with the reviews, remind me how rusty I am, and importantly, learn from watching. As so often with German, there is a word for the kind of environment: Lehrwerkstatt. Literally: A teaching workshop. The whole shop floor is the classroom. You learn by being near the work.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">River 不回私信。她会礼貌地拒绝，并建议创建一个公开频道供你和她一起工作。我自己就在 #tobi_river 这个频道里和 river 协作，很多人也照此模式。因此每一次对话都是可搜索的，Shopify 里的任何人都可以介入。在我自己的频道，有 100 多个人会对线程做反应、补充背景与上下文、接棒推进、协助 review、提醒我手生了，还有最重要的——通过围观来学习。德语里恰好有一个词描述这种环境：Lehrwerkstatt——字面意思就是"教学工坊"。整个车间都是教室，你靠近工作就在学习。</div>
+      </details>
+    </article>
+
+  </div>
+
+  <div class="footer-note">
+    只收录 AI 公司一手公告与深度博主原文 · 不引用 TechCrunch / VentureBeat / CNBC / AdExchanger / Digiday 等综合或行业泛泛报道<br/>
+    每天早上 9:00 自动抓取 · 点右上角刷新可手动重新生成
+  </div>
+</div>
+<script>
+  const d = new Date();
+  document.getElementById('date').textContent =
+    `${d.getFullYear()} 年 ${d.getMonth()+1} 月 ${d.getDate()} 日`;
+</script>
+</body>
+</html>
