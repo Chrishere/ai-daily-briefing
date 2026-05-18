@@ -1,0 +1,59 @@
+name: Daily AI Briefing
+
+on:
+  schedule:
+    # 01:00 UTC = 09:00 Beijing time. GitHub cron has 5-15 min jitter.
+    - cron: '0 1 * * *'
+  workflow_dispatch: {}  # also allow manual triggering from Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
+
+jobs:
+  update-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@latest
+
+      - name: Generate today's briefing
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TZ: Asia/Shanghai
+        run: |
+          set -e
+          TODAY=$(date "+%Y-%m-%d %A")
+          echo "Running briefing for: $TODAY"
+          # Inject today's date into the prompt, then invoke Claude Code
+          PROMPT="$(cat .github/briefing-prompt.md)"
+          PROMPT="${PROMPT//\{\{TODAY\}\}/$TODAY}"
+          echo "$PROMPT" | claude --print --permission-mode bypassPermissions
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Daily Briefing Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes - skipping commit"
+            exit 0
+          fi
+          TODAY_TAG=$(TZ=Asia/Shanghai date "+%Y-%m-%d")
+          git commit -m "Daily update: $TODAY_TAG"
+          git push
+          echo "Pushed. Cloudflare Pages will redeploy in ~30s"
