@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 5 月 20 日</span>
-      <span id="count">6 条精选</span>
+      <span id="date">2026 年 5 月 21 日</span>
+      <span id="count">5 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,99 +123,83 @@
 
   <div id="items">
 
-    <!-- 1 · Anthropic · Gates Foundation $200M partnership (May 14) -->
+    <!-- 1 · Simon Willison · Google I/O Gemini Spark security (May 20) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Willison：Gemini Spark 将接管海量敏感数据——Google I/O 的 agent 安全隐患与开源 CLI 悄然关闭</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/20/google-io/" target="_blank" rel="noopener">simonwillison.net · Google I/O, Gemini Spark, Antigravity（5 月 20 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 分析了 Google I/O 2026 的两项核心公告：其一，Gemini Spark（整合 Gmail、Drive、Maps 等应用的智能 agent 平台）即将承载大量用户极敏感数据，他对 prompt 注入防护能否到位表示高度担忧，认为一旦出问题将成为"agent 安全灾难的头号候选者"；其二，Google 将开源的 Gemini CLI（Apache 2.0 协议）替换为闭源的 Antigravity CLI，并宣布 6 月 18 日终止旧版支持，这一去开源化转向引发开发者对透明度和自主权的质疑。他还批评大多数重磅公告仍处于"即将推出"状态，无法实际评测。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Given how many people are going to be piping very sensitive data through Gemini Spark in the near future I hope they&#39;ve made this bullet-proof, or this could be a top candidate for the agent security challenger disaster that we still haven&#39;t seen.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">考虑到将有大量用户在不久的将来把极其敏感的数据接入 Gemini Spark，我真心希望他们已经把安全做到无懈可击——否则，这很可能成为我们迄今尚未目睹的 agent 安全灾难事件的头号候选者。</div>
+      </details>
+    </article>
+
+    <!-- 2 · Anthropic · Acquires Stainless (May 18) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 与比尔·盖茨基金会达成 2 亿美元合作：Claude 将加速全球疫苗研发、K-12 教育与农业生产率</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com/news · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 与盖茨基金会签署四年期合作协议，提供 2 亿美元资金、Claude 使用额度和技术支持，聚焦全球卫生（疫苗筛选加速）、生命科学（药物研发）、教育（非洲与印度 K-12 学习资源）和经济流动性（农业生产率与职业技能认证）四大领域。约 46 亿人无法获得基本卫生服务，是合作的核心出发点。Anthropic 明确表示，这是将 AI 效益延伸至"市场力量独自无法覆盖"领域的战略承诺，与其商业路线形成互补。</div>
+      <h2 class="title">Anthropic 收购 SDK 工具公司 Stainless：MCP 生态深度布局，agent 价值取决于能连接什么</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">anthropic.com/news · Anthropic acquires Stainless（5 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布收购专注 SDK 和 MCP Server 工具的公司 Stainless——后者自 Claude API 初期就为 Anthropic 生成所有官方 SDK（TypeScript、Python、Go、Java 等多语言版本），并为数百家企业生成 SDK、CLI 和 MCP Server。Anthropic 给出的战略逻辑是"agent 只有能连上系统才有价值"，此举将直接强化 Claude Platform 的开发者体验和 agent 连接能力，也是 Anthropic 在 MCP（模型上下文协议）生态上持续重仓的最新信号。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The largest part of our partnership will focus on improving health outcomes in low- and middle-income countries, where around 4.6 billion people lack access to essential health services. Anthropic will work with the Gates Foundation and others on a range of new and existing programs that will accelerate the development of new vaccines and therapies, and help governments use health data to make faster, better-informed decisions.</div>
+        <div class="body en">Stainless has shaped how developers experience the Claude API since the start, and it&#39;s been great to work with them on that. Agents are only as useful as what they can connect to.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们合作的最大组成部分将聚焦于改善中低收入国家的健康成果——那里约有 46 亿人无法获得基本卫生服务。Anthropic 将与盖茨基金会及其他合作伙伴共同推进一系列新旧项目，加速新疫苗和疗法的研发，并帮助各国政府利用卫生数据做出更快、更明智的决策。</div>
+        <div class="body">Stainless 从一开始就塑造了开发者使用 Claude API 的体验，与他们在这方面的合作令人愉快。agent 的价值上限，由它能连接的系统决定。</div>
       </details>
     </article>
 
-    <!-- 2 · Simon Willison · Gemini 3.5 Flash price analysis (May 19) -->
+    <!-- 3 · Google DeepMind · Co-Scientist infectious disease (May 19) -->
     <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：Google I/O 发布的 Gemini 3.5 Flash 悄然涨价——3 倍于前一代，6 倍于精简版，却铺向所有免费产品</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/19/gemini-35-flash/" target="_blank" rel="noopener">simonwillison.net · Gemini 3.5 Flash: more expensive, but Google plan to use it for everything（5 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 分析了 Google I/O 2026 发布的 Gemini 3.5 Flash 定价策略：输入 $1.50/M tokens、输出 $9/M tokens，比上一代 Gemini 3 Flash Preview 贵 3 倍、比精简版 3.1 Flash-Lite 贵 6 倍。文章指出最有意思的矛盾之处：价格大幅上涨，Google 却同步将该模型全面铺向 Search、Gemini 应用等免费消费产品。这一现象折射出大模型 API 厂商集体试探开发者价格敏感度的行业趋势。该模型知识截止日期为 2025 年 1 月，暂不支持 computer use。</div>
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind Co-Scientist 将传染病研究周期从三年压缩至六个月：AI 如何加速分子开关的发现</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/" target="_blank" rel="noopener">deepmind.google/blog · Co-Scientist: Fast-tracking infectious disease research（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>DeepMind 展示了 AI 科研工具 Co-Scientist 的真实案例：剑桥大学 Clare Bryant 教授团队用其研究禽流感和人类流感中的"分子开关"（病原体跨物种跳跃时引发败血症等严重疾病的关键机制）。Co-Scientist 综合已发表文献和在线资源，生成并排序了一批研究假设——其中包含研究者此前未曾想到的新方向，这些意外假设被认为最具价值。关键成果是：原本需 2-3 年的实验优先级确定工作，在 AI 辅助下缩短至约 6 个月。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Gemini 3.5 Flash is accompanied by a notable price bump. The previous models in the &#39;Flash&#39; family were Gemini 3 Flash Preview and Gemini 3.1 Flash-Lite. The new 3.5 Flash is 3x the price of 3 Flash Preview and 6x the price of 3.1 Flash-Lite. Given the price increase it&#39;s interesting to see Google roll it out for so many of their own free-to-consumer products.</div>
+        <div class="body en">Testing Co-Scientist, Bryant fed it a summary of one of her grant proposals studying flu in birds and humans outlining her lab&#39;s research questions. The tool generated and ranked a set of promising hypotheses — some she&#39;d already considered, some she hadn&#39;t. The unfamiliar ones were the most thought-provoking. When the grant was funded, Bryant fed in the full, detailed proposal.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Gemini 3.5 Flash 伴随着明显的涨价。Flash 系列的上一代产品是 Gemini 3 Flash Preview 和 Gemini 3.1 Flash-Lite。新的 3.5 Flash 定价是 3 Flash Preview 的 3 倍、3.1 Flash-Lite 的 6 倍。考虑到如此大幅的涨价，Google 却将其铺向旗下众多面向消费者的免费产品，这一举动格外耐人寻味。</div>
+        <div class="body">Bryant 将一份关于研究禽类与人类流感的基金申请摘要输入 Co-Scientist 进行测试，概述了她实验室的研究问题。该工具随即生成并排序了一批有价值的假设——有些她已考虑过，有些则是全新的。那些陌生的假设最令人深思。当这笔基金获批后，Bryant 将完整的详细申请书输入了 Co-Scientist。</div>
       </details>
     </article>
 
-    <!-- 3 · Nathan Lambert · How open model ecosystems compound (May 12) -->
+    <!-- 4 · Google DeepMind · AlphaEvolve production impact (May 7) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">AlphaEvolve 落地：Gemini 驱动的算法进化 agent 已帮助 Klarna 将 Transformer 训练速度翻倍，在五大行业部署</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/alphaevolve-impact/" target="_blank" rel="noopener">deepmind.google/blog · AlphaEvolve: Gemini-powered coding agent scaling impact across fields（5 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>DeepMind 发布 AlphaEvolve 一年后的产业落地报告，该 Gemini 驱动的算法设计 agent 已从研究走向商业部署。具体成果包括：Klarna 用其将 Transformer 训练速度提升一倍；FM Logistic 实现路由效率提升 10.4%；在 Google 内部，基因组测序错误率降低 30%，量子电路仿真误差降低 10 倍，电网优化可行解比例从 14% 提升至 88%。AlphaEvolve 的核心能力是跨数学、物理和计算机科学领域自主发现和优化算法，目前已被部署于 Google 核心基础设施。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">A year ago, we introduced AlphaEvolve, a Gemini-powered coding agent for designing advanced algorithms. We showed that AlphaEvolve can help make new discoveries on open problems across mathematics and computer science, and optimize algorithms that have since been deployed across critical parts of Google&#39;s infrastructure.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">一年前，我们推出了 AlphaEvolve——一个专为设计高级算法而生的 Gemini 驱动 coding agent。我们展示了 AlphaEvolve 如何在数学和计算机科学的开放难题上取得新发现，以及如何优化已被部署于 Google 核心基础设施关键环节的算法。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Nathan Lambert · Open model bonanza #21 (May 16) -->
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Lambert：开源 AI 的复利效应——80% 算力花在 R&amp;D 而非终训练，中国开放生态正积累系统性成本优势</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/how-open-model-ecosystems-compound" target="_blank" rel="noopener">interconnects.ai · How open model ecosystems compound（5 月 12 日）</a></div>
-      <div class="summary"><b>总结：</b>Lambert 论证了开放模型生态如何形成"复利"效应：构建顶尖前沿模型约 80% 的算力成本来自 R&amp;D（数据准备、消融实验、架构迭代），而非最终训练。开源发布虽不像传统开源软件那样通过用户反馈直接降低成本，但可大幅降低整个生态的未来研发和部署成本。他预测：若闭源模型持续称霸前沿，未来竞争可能需要以"开放模型联盟"（而非单一公司把工具 fork 为私有版本）的形式来维持规模竞争力，以减少重复研究。</div>
+      <h2 class="title">Lambert：DeepSeek V4、Gemma 4、Kimi K2.6 五月集中爆发——开放模型评测基准存在系统性低估</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/latest-open-artifacts-21-open-model" target="_blank" rel="noopener">interconnects.ai · Latest open artifacts (#21): Open model bonanza（5 月 16 日）</a></div>
+      <div class="summary"><b>总结：</b>Lambert 梳理了五月份集中发布的多个前沿开放模型：DeepSeek-V4（Pro 和 Flash 变体）、Gemma 4（Apache 2.0 协议）、Kimi-K2.6、MiMo-V2.5-Pro、GLM-5.1 等。他提出一个关键方法论问题：现有标准评测基准可能系统性低估了开放模型的真实能力——因为基准使用的是简化环境，而非模型实际被训练所用的专用 harness（如 Claude Code）。在开放模型与闭源模型的差距问题上，Epoch AI 的 ECI 指标（约 3-7 个月）与 CAISI 的评估结论存在明显分歧，凸显出当前评测体系的局限性。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Within open-source AI, almost all the cost falls on the model developer. At the same time, there are huge benefits to releasing the model openly that do reduce costs, but they only help reduce future development and deployment costs for the creator themselves, but more importantly the ecosystem widely.</div>
+        <div class="body en">Coding tasks are evaluated using access to bash and a for-loop with a fixed budget of tokens, not with a harness such as Claude Code.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">在开源 AI 领域，几乎所有成本都落在模型开发者身上。与此同时，开放发布模型确实能带来巨大的降本收益——但这些收益主要体现在降低开发者自身以及（更重要的）整个生态的未来研发与部署成本上，而非节省当期成本。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Nathan Lambert · Notes from inside China's AI labs (May 7) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Lambert 深入中国 AI 实验室：谦逊文化、年轻团队与垂直整合，是国内大模型崛起的三大密钥</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs" target="_blank" rel="noopener">interconnects.ai · Notes from inside China&#39;s AI labs（5 月 7 日）</a></div>
-      <div class="summary"><b>总结：</b>Lambert 基于近距离观察分析中国 AI 实验室的成功因素：文化上强调谦逊和协作，研究团队以年轻人为主体，对新技术没有先入之见，ego 驱动的内耗极少；组织上追求技术全栈自研，减少外部依赖；实验室之间形成生态尊重而非部落式竞争。与西方实验室相比，差异在于：商业数据来源受限、对 Nvidia 芯片的迫切依赖，以及开发者对 Claude 等工具的务实使用。Lambert 认为这些结构性差异正在塑造出不同的 AI 发展轨迹。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">So much of building the best LLMs today comes down to meticulous work across the entire stack, from data to architecture details and RL algorithm implementations. All points of the model can give some improvements, and fitting them in together is a complex process where the work of some brilliant individuals needs to get shelved in favor of the overall model maximizing a multi-objective optimization.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">当今构建最强 LLM，很大程度上依赖于跨整个技术栈的精细打磨——从数据到架构细节，再到 RL 算法实现。模型的每个环节都能带来一定提升，而将这些改进整合在一起是一个复杂的过程：有时某些才华横溢的个人的工作成果不得不被搁置，以服从于整体模型在多目标优化上的最优解。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Simon Willison · Vibe coding and agentic engineering (May 6) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：vibe coding 与 agentic engineering 的边界正在消融——不再逐行审查 AI 代码，专业软件如何重新定义？</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/" target="_blank" rel="noopener">simonwillison.net · Vibe coding and agentic engineering are getting closer than I&#39;d like（5 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 深入探讨了 AI coding agent 可靠性提升后带来的伦理困境：他发现自己正在跳过对生产代码的逐行审查，与此前对"vibe coding"（随机生成、不加审查）的批评形成矛盾。他将此类比为大公司中信任其他团队工作的情况——AI 已让代码生产速度不再是瓶颈，上游设计和下游评估的方式需要重新定义。结论是：AI 工具放大的是已有的专业能力而非替代它，专业级软件的价值依然存在，但定义方式在改变。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The problem is that as the coding agents get more reliable, I&#39;m not reviewing every line of code that they write anymore, even for my production level stuff. This is something I&#39;ve been increasingly uncomfortable with, because I&#39;ve been loudly advocating against vibe coding—writing code without understanding what it does.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">问题在于，随着 coding agent 越来越可靠，我已经不再逐行审查它们写的代码了——即便是我的生产环境代码也不例外。这让我越来越感到不安，因为我一直在大声倡导反对"vibe coding"——那种写代码却不理解代码在做什么的做法。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Simon Willison · Notes on the xAI/Anthropic data center deal (May 7) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：Anthropic 借用 xAI 的 Colossus 数据中心——算力约束下的无奈之举，背后有环保与声誉双重风险</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/7/xai-anthropic/" target="_blank" rel="noopener">simonwillison.net · Notes on the xAI/Anthropic data center deal（5 月 7 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 分析了 Anthropic 在 Code with Claude 大会上宣布使用 xAI 的 Colossus 1 数据中心的决定。该设施曾在缺乏《清洁空气法》许可证的情况下运营燃气涡轮机，并与周边医院入院率上升有可信关联。在"AI 数据中心"已成政治敏感议题的背景下，Willison 认为此举带来显著声誉风险。他还指出 xAI 曾以极少预警的方式弃用多个 Grok 模型，Musk 以"对人类有益"为前提条件的框架也使 Anthropic 形成令人担忧的供应链依赖。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">I get that Anthropic are severely compute-constrained, but in a world where the very existence of &#34;AI data centers&#34; is a red-hot political issue (see recent news out of Utah for a fresh example), signing up with this particular data center is a really bad look.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">我理解 Anthropic 面临严重的算力短缺，但在"AI 数据中心"本身已成政治敏感议题的当下（犹他州最新事件就是一例），与这个特定数据中心签约，实在是形象极差。</div>
+        <div class="body">编程任务的评测使用的是 bash 访问权限和固定 token 预算的 for 循环，而非 Claude Code 这样的专用 harness（测试框架）。</div>
       </details>
     </article>
 
