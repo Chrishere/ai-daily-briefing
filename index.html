@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 5 月 21 日</span>
-      <span id="count">5 条精选</span>
+      <span id="date">2026 年 5 月 22 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Google I/O Gemini Spark security (May 20) -->
+    <!-- 1 · Simon Willison · Datasette Agent (May 21) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：Gemini Spark 将接管海量敏感数据——Google I/O 的 agent 安全隐患与开源 CLI 悄然关闭</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/20/google-io/" target="_blank" rel="noopener">simonwillison.net · Google I/O, Gemini Spark, Antigravity（5 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 分析了 Google I/O 2026 的两项核心公告：其一，Gemini Spark（整合 Gmail、Drive、Maps 等应用的智能 agent 平台）即将承载大量用户极敏感数据，他对 prompt 注入防护能否到位表示高度担忧，认为一旦出问题将成为"agent 安全灾难的头号候选者"；其二，Google 将开源的 Gemini CLI（Apache 2.0 协议）替换为闭源的 Antigravity CLI，并宣布 6 月 18 日终止旧版支持，这一去开源化转向引发开发者对透明度和自主权的质疑。他还批评大多数重磅公告仍处于"即将推出"状态，无法实际评测。</div>
+      <h2 class="title">Willison 发布 Datasette Agent：将三年 LLM 库与数据平台整合，支持本地开源模型对话查询</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/21/datasette-agent/" target="_blank" rel="noopener">simonwillison.net · Datasette Agent（5 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 发布首个 Datasette Agent 版本，将历时三年构建的 LLM 库与 Datasette 数据平台整合，提供对话式数据查询界面，可自动生成并执行 SQL。演示版运行于 Gemini 3.1 Flash-Lite，同时支持通过 LM Studio 在本地调用 gemma-4-26b-a4b 等开源模型；插件体系已支持图表生成、图像生成和沙盒执行。他指出过去六个月开源权重模型在工具调用和 SQLite 查询上的能力已显著提升，使本地部署真正可行；下一步计划整合 Datasette Cloud，并探索基于"数字生命数据"构建个人 AI 助手。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Given how many people are going to be piping very sensitive data through Gemini Spark in the near future I hope they&#39;ve made this bullet-proof, or this could be a top candidate for the agent security challenger disaster that we still haven&#39;t seen.</div>
+        <div class="body en">Datasette Agent provides a conversational interface for asking questions of the data you have stored in Datasette. Add the datasette-agent-charts plugin and it can generate charts of your data as well.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">考虑到将有大量用户在不久的将来把极其敏感的数据接入 Gemini Spark，我真心希望他们已经把安全做到无懈可击——否则，这很可能成为我们迄今尚未目睹的 agent 安全灾难事件的头号候选者。</div>
+        <div class="body">Datasette Agent 提供了一个对话界面，让你能够向存储在 Datasette 中的数据提问。添加 datasette-agent-charts 插件后，它还可以为你的数据生成图表。</div>
       </details>
     </article>
 
-    <!-- 2 · Anthropic · Acquires Stainless (May 18) -->
+    <!-- 2 · Simon Willison · Last 6 months in LLMs (May 19) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Willison PyCon 闪电演讲：coding agent 越过"日常可用"门槛，六个月最强模型王座五度易手</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank" rel="noopener">simonwillison.net · The last six months in LLMs in five minutes（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 在 PyCon US 2026 闪电演讲（附标注幻灯片）中梳理了 2025 年 11 月至 2026 年 5 月间 LLM 领域的关键跃迁：最强模型的位置在 Anthropic、OpenAI、Google 三家之间五度易主；coding agent 跨越质量门槛，从"偶尔可靠"升级为"基本靠谱"，真正成为日常生产工具；Qwen、GLM 等开源权重模型已能在消费级硬件上运行；各类个人 AI 助手（"Claws"）快速涌现。他认为这六个月是 LLM 应用史上节奏最密集的阶段之一。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Coding agents went from often-work to mostly-work, crossing a quality barrier where you could use them as a daily-driver to get real work done, without needing to spend most of your time fixing their stupid mistakes.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Coding agent 从"偶尔好使"进化到"基本靠谱"，跨越了一道质量门槛——你现在可以真正把它们当作日常工具来完成实际工作，而不必把大半时间花在修复它们犯下的低级错误上。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Anthropic · Gates Foundation Partnership (May 14) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 收购 SDK 工具公司 Stainless：MCP 生态深度布局，agent 价值取决于能连接什么</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">anthropic.com/news · Anthropic acquires Stainless（5 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 宣布收购专注 SDK 和 MCP Server 工具的公司 Stainless——后者自 Claude API 初期就为 Anthropic 生成所有官方 SDK（TypeScript、Python、Go、Java 等多语言版本），并为数百家企业生成 SDK、CLI 和 MCP Server。Anthropic 给出的战略逻辑是"agent 只有能连上系统才有价值"，此举将直接强化 Claude Platform 的开发者体验和 agent 连接能力，也是 Anthropic 在 MCP（模型上下文协议）生态上持续重仓的最新信号。</div>
+      <h2 class="title">Anthropic 与盖茨基金会签署 2 亿美元合作：Claude 进入全球健康、教育与经济流动性四大领域</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com/news · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 与盖茨基金会宣布达成四年期 2 亿美元合作，涵盖资金、Claude 使用额度和工程支持，重点推进四个方向：低中收入国家医疗结果改善（脊髓灰质炎、HPV、子痫前期等研究）、美国/撒哈拉以南非洲/印度的 K-12 AI 教育工具开发、农业生产力与劳动力发展、以及为医疗和教育 AI 构建公共数据集与评估框架。Anthropic 将这一合作定位为"市场力量无法独立完成的领域"，由其 Beneficial Deployments 团队主导执行。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Stainless has shaped how developers experience the Claude API since the start, and it&#39;s been great to work with them on that. Agents are only as useful as what they can connect to.</div>
+        <div class="body en">This commitment is central to Anthropic&#39;s efforts to extend the benefits of AI in areas where markets alone will not. This work is led by our Beneficial Deployments team, which provides Claude credits and engineering support to our partners in the four priority areas mentioned above.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Stainless 从一开始就塑造了开发者使用 Claude API 的体验，与他们在这方面的合作令人愉快。agent 的价值上限，由它能连接的系统决定。</div>
+        <div class="body">这项承诺是 Anthropic 努力将 AI 红利延伸至市场力量无法独立覆盖领域的核心举措。相关工作由我们的 Beneficial Deployments 团队主导，负责向上述四个优先领域的合作伙伴提供 Claude 使用额度和工程支持。</div>
       </details>
     </article>
 
-    <!-- 3 · Google DeepMind · Co-Scientist infectious disease (May 19) -->
+    <!-- 4 · Anthropic · KPMG Alliance (May 19) -->
     <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind Co-Scientist 将传染病研究周期从三年压缩至六个月：AI 如何加速分子开关的发现</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/" target="_blank" rel="noopener">deepmind.google/blog · Co-Scientist: Fast-tracking infectious disease research（5 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>DeepMind 展示了 AI 科研工具 Co-Scientist 的真实案例：剑桥大学 Clare Bryant 教授团队用其研究禽流感和人类流感中的"分子开关"（病原体跨物种跳跃时引发败血症等严重疾病的关键机制）。Co-Scientist 综合已发表文献和在线资源，生成并排序了一批研究假设——其中包含研究者此前未曾想到的新方向，这些意外假设被认为最具价值。关键成果是：原本需 2-3 年的实验优先级确定工作，在 AI 辅助下缩短至约 6 个月。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">KPMG 与 Anthropic 签全球战略联盟：27.6 万员工全面接入 Claude，税务法律业务率先落地</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">anthropic.com/news · KPMG integrates Claude across its core business（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>KPMG 宣布与 Anthropic 达成全球战略联盟，将 Claude 整合进旗下 Digital Gateway 平台，覆盖税务、法律等核心业务，全球 138 个国家逾 27.6 万名员工可全面使用。KPMG 同时成为 Anthropic 的优选合作顾问，负责在私募股权投资组合企业中部署 Claude。此次合作是继 PwC 之后，另一家"四大"选择 Claude 的重要信号，也是 Anthropic 在大型专业服务机构大规模落地的最新案例。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Testing Co-Scientist, Bryant fed it a summary of one of her grant proposals studying flu in birds and humans outlining her lab&#39;s research questions. The tool generated and ranked a set of promising hypotheses — some she&#39;d already considered, some she hadn&#39;t. The unfamiliar ones were the most thought-provoking. When the grant was funded, Bryant fed in the full, detailed proposal.</div>
+        <div class="body en">At KPMG, we&#39;re innovating and redefining how work gets done. This global alliance with Anthropic reflects our shared commitment to responsible AI, prioritizing security, trust, and governance as KPMG firms scale these capabilities to our clients and people around the world.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Bryant 将一份关于研究禽类与人类流感的基金申请摘要输入 Co-Scientist 进行测试，概述了她实验室的研究问题。该工具随即生成并排序了一批有价值的假设——有些她已考虑过，有些则是全新的。那些陌生的假设最令人深思。当这笔基金获批后，Bryant 将完整的详细申请书输入了 Co-Scientist。</div>
+        <div class="body">在 KPMG，我们正在革新和重新定义工作的完成方式。与 Anthropic 的这项全球联盟体现了我们对负责任 AI 的共同承诺——在 KPMG 将这些能力向全球客户和员工规模化推广的过程中，安全、信任与治理始终是首要考量。</div>
       </details>
     </article>
 
-    <!-- 4 · Google DeepMind · AlphaEvolve production impact (May 7) -->
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">AlphaEvolve 落地：Gemini 驱动的算法进化 agent 已帮助 Klarna 将 Transformer 训练速度翻倍，在五大行业部署</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/alphaevolve-impact/" target="_blank" rel="noopener">deepmind.google/blog · AlphaEvolve: Gemini-powered coding agent scaling impact across fields（5 月 7 日）</a></div>
-      <div class="summary"><b>总结：</b>DeepMind 发布 AlphaEvolve 一年后的产业落地报告，该 Gemini 驱动的算法设计 agent 已从研究走向商业部署。具体成果包括：Klarna 用其将 Transformer 训练速度提升一倍；FM Logistic 实现路由效率提升 10.4%；在 Google 内部，基因组测序错误率降低 30%，量子电路仿真误差降低 10 倍，电网优化可行解比例从 14% 提升至 88%。AlphaEvolve 的核心能力是跨数学、物理和计算机科学领域自主发现和优化算法，目前已被部署于 Google 核心基础设施。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">A year ago, we introduced AlphaEvolve, a Gemini-powered coding agent for designing advanced algorithms. We showed that AlphaEvolve can help make new discoveries on open problems across mathematics and computer science, and optimize algorithms that have since been deployed across critical parts of Google&#39;s infrastructure.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">一年前，我们推出了 AlphaEvolve——一个专为设计高级算法而生的 Gemini 驱动 coding agent。我们展示了 AlphaEvolve 如何在数学和计算机科学的开放难题上取得新发现，以及如何优化已被部署于 Google 核心基础设施关键环节的算法。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Nathan Lambert · Open model bonanza #21 (May 16) -->
+    <!-- 5 · Nathan Lambert · How open model ecosystems compound (May 12) -->
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Lambert：DeepSeek V4、Gemma 4、Kimi K2.6 五月集中爆发——开放模型评测基准存在系统性低估</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/latest-open-artifacts-21-open-model" target="_blank" rel="noopener">interconnects.ai · Latest open artifacts (#21): Open model bonanza（5 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Lambert 梳理了五月份集中发布的多个前沿开放模型：DeepSeek-V4（Pro 和 Flash 变体）、Gemma 4（Apache 2.0 协议）、Kimi-K2.6、MiMo-V2.5-Pro、GLM-5.1 等。他提出一个关键方法论问题：现有标准评测基准可能系统性低估了开放模型的真实能力——因为基准使用的是简化环境，而非模型实际被训练所用的专用 harness（如 Claude Code）。在开放模型与闭源模型的差距问题上，Epoch AI 的 ECI 指标（约 3-7 个月）与 CAISI 的评估结论存在明显分歧，凸显出当前评测体系的局限性。</div>
+      <h2 class="title">Lambert：前沿模型 80% 算力花在 R&amp;D——中国开放生态的结构性成本优势从何而来</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/how-open-model-ecosystems-compound" target="_blank" rel="noopener">interconnects.ai · How open model ecosystems compound（5 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Lambert 提出一个核心论断：前沿模型开发中约 80% 的算力花在 R&amp;D 而非最终训练，因此中国 AI 生态"开放优先"的协作文化（实验室间主动共享技术细节）能有效避免重复投入，形成结构性成本优势。他同时指出：开放 AI 与传统开源软件不同——用户不会反馈修复，收益主要在下一代迭代中体现；随着前沿性能对硬件-数据-基础设施深度整合的要求日益提高，组建共享基础模型联盟或成唯一可行的竞争路径。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Coding tasks are evaluated using access to bash and a for-loop with a fixed budget of tokens, not with a harness such as Claude Code.</div>
+        <div class="body en">In a world where research and development is most of the compute, the Chinese system is designed around quickly learning from your peers and avoiding double-spending research compute — or infra effort.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">编程任务的评测使用的是 bash 访问权限和固定 token 预算的 for 循环，而非 Claude Code 这样的专用 harness（测试框架）。</div>
+        <div class="body">在一个研发占据大多数算力的世界里，中国体系的设计核心是：迅速向同行学习，避免在研究算力——或基础设施投入——上重复花费。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Nathan Lambert · Notes from inside China's AI labs (May 7) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
+      <h2 class="title">Lambert 赴中国走访 AI 实验室：协作文化、学生主力、技术自主——与美国的五大结构性差异</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs" target="_blank" rel="noopener">interconnects.ai · Notes from inside China&#39;s AI labs（5 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>Lambert 实地走访中国多家顶级 AI 实验室后，归纳出五个关键观察：团队将全栈精细执行置于首位，个人职业晋升竞争弱于美国；在校学生是核心贡献者，思维更开放；美图、小米等企业普遍选择自研大模型而非采购，体现对技术主权的强烈执着；开源发布出于务实（获取反馈、扶持开发者）而非意识形态；但所有实验室都面临 Nvidia 芯片严格限制的现实约束。他形容此行"充满人文温度"，提醒外界 AI 生态系统的全球性常被低估。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">So much of building the best LLMs today comes down to meticulous work across the entire stack, from data to architecture details and RL algorithm implementations.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">如今构建顶级大语言模型，很大程度上取决于贯穿整个技术栈的精细化工作——从数据处理到架构细节，再到强化学习算法的具体实现。</div>
       </details>
     </article>
 
