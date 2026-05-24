@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 5 月 23 日</span>
-      <span id="count">5 条精选</span>
+      <span id="date">2026 年 5 月 24 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Vibe coding and agentic engineering (May 6) -->
+    <!-- 1 · Simon Willison · Datasette Agent (May 21) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：coding agent 越来越可靠，但"不审代码就上生产"让他产生了负罪感</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/" target="_blank" rel="noopener">simonwillison.net · Vibe coding and agentic engineering are getting closer than I'd like（5 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 在 Heavybit 播客中探讨了一个令他不安的现实：随着 coding agent 可靠性提升，他发现自己已不再逐行审查 agent 生成的代码，即便是面向生产环境的项目——vibe coding（随意让 AI 生成代码）与"负责任的 agentic 工程"之间的界限正在模糊。他将这种"不审代码就上线"称为责任感的侵蚀，指出速度提升了 10 倍，但设计、规划与测试流程并未同步进化，"正常化的偏差"正在悄悄累积风险。</div>
+      <h2 class="title">Willison 发布 Datasette Agent：用自然语言直接对话查询数据库的首个 AI 助手</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/21/datasette-agent/" target="_blank" rel="noopener">simonwillison.net · Datasette Agent（5 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 发布了 Datasette Agent 的首个版本，将其 LLM Python 库与 Datasette 数据库工具深度整合——用户可用自然语言直接向 SQLite 数据库提问，无需编写 SQL。通过插件机制可进一步扩展：安装 datasette-agent-charts 即能将查询结果实时渲染为图表，还支持 OpenAI 驱动的图像生成。这是 Willison 在"将 AI 能力嫁接到既有工具生态"上的最新实践，也展示了小型可扩展 agent 框架的实用路径。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The problem is that as the coding agents get more reliable, I'm not reviewing every line of code that they write anymore, even for my production level stuff... But I'm not reviewing that code. And now I've got that feeling of guilt: if I haven't reviewed the code, is it really responsible for me to use this in production?</div>
+        <div class="body en">Datasette Agent provides a conversational interface for asking questions of the data you have stored in Datasette. Add the datasette-agent-charts plugin and it can generate charts of your data as well.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">问题在于，随着 coding agent 变得越来越可靠，我已不再审查它们生成的每一行代码，即便是我的生产级项目……但我没有审查那些代码。现在我产生了一种负罪感：如果我没有审查代码，把它用于生产真的负责任吗？</div>
+        <div class="body">Datasette Agent 提供了一个对话式界面，让用户可以直接向存储在 Datasette 中的数据提问。安装 datasette-agent-charts 插件后，它还能将数据生成为图表。</div>
       </details>
     </article>
 
-    <!-- 2 · Google DeepMind · AlphaEvolve impact (May 7) -->
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">AlphaEvolve 深度进展：Gemini 驱动的算法演化 Agent 已嵌入 Google 核心基础设施</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/alphaevolve-impact/" target="_blank" rel="noopener">deepmind.google · AlphaEvolve: Gemini-powered coding agent scaling impact across fields（5 月 7 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 发布 AlphaEvolve 进展报告，这个由 Gemini 驱动的算法发现 Agent 已从试点升级为生产基础设施核心工具：用于优化下一代 TPU 设计、将 Google Spanner 写放大降低 20%，并在两天内完成了过去需要团队耗费数月的缓存置换策略优化；科研方面，AlphaEvolve 与数学家 Terence Tao 合作攻克 Erdős 问题，同时将 DeepConsensus DNA 测序精度提升 30%，并发现了量子电路的更高效优化路径。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">AlphaEvolve has graduated from pilot testing to becoming a core component of our infrastructure. AlphaEvolve has been used as a regular tool to optimize the design of the next generation of TPUs. It also helped discover more efficient cache replacement policies, achieving in two days what previously required a concerted, human-intensive effort spanning months.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">AlphaEvolve 已从试点测试阶段毕业，成为我们基础设施的核心组件。AlphaEvolve 被用作常规工具，优化下一代 TPU 的设计。它还帮助发现了更高效的缓存置换策略——在两天内完成了此前需要一支团队耗费数月才能完成的密集工作。</div>
-      </details>
-    </article>
-
-    <!-- 3 · Latent Space · The End of Finetuning (May 13) -->
-    <article class="card">
-      <span class="tag blog">博主 · Latent Space（swyx）</span>
-      <h2 class="title">Latent Space：OpenAI 收缩微调服务，但 Cursor、Cognition 等顶尖团队反而在加大 RLFT 投入</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">latent.space · [AINews] The End of Finetuning（5 月 13 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 分析了主要实验室（尤其是 OpenAI）因 GPU 资源紧张而收缩微调（finetuning）服务的趋势，指出对"大多数人"而言长提示词和上下文学习正在取代微调；但这一"终结"并不适用于精英层——Cursor 和 Cognition 等顶尖 AI 工程团队反而在持续加大对开源模型 RLFT（强化学习微调）的投入。文章提醒：行业叙事中的"技术终结"往往只是大众用法的终结，核心玩家仍在更底层的方向上深耕。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The &quot;End&quot; of a thing for most people does NOT mean the &quot;End&quot; of a thing period — and in fact the top tier, like Cursor and Cognition have both INCREASED open model RLFT and usage, rather than decreased.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">对大多数人而言某件事的"终结"，并不意味着这件事本身真正终结——事实上，Cursor 和 Cognition 等顶尖团队在开源模型 RLFT 的使用上反而双双提升，而非下降。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Google DeepMind · Co-Scientist infectious disease (May 19) -->
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind Co-Scientist：剑桥教授用 AI 研究伙伴追踪"动物传人"病原体的分子开关</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/" target="_blank" rel="noopener">deepmind.google · Co-Scientist: Fast-tracking infectious disease research（5 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 介绍了剑桥大学 Clare Bryant 教授如何将 Co-Scientist 作为 AI 研究搭档，加速脓毒症、人禽流感等新兴传染病的分子机制研究。Co-Scientist 整合海量文献与在线资源，帮助科学家提出更精准的研究问题、优先筛选实验方向，将传统需要数年的文献梳理工作压缩至数小时，让团队将精力聚焦于真正值得在实验室验证的问题，展示了 AI 作为"科研加速器"而非替代者的实际价值。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Co-Scientist pulls together the entire published literature and online resources to help me ask better questions. It catches what I'd miss in a data-rich field and helps me prioritise, so my team can focus on answering the right questions in the lab.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">Co-Scientist 汇集了全部已发表文献和在线资源，帮助我提出更好的研究问题。在这个数据极为丰富的领域，它能捕捉到我可能遗漏的内容，并帮助我确定优先级，让我的团队得以专注于在实验室中真正值得回答的问题。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Simon Willison · Google I/O, Gemini Spark (May 20) -->
+    <!-- 2 · Simon Willison · 5-minute LLMs at PyCon (May 19) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison 评 Google I/O 2026：大半公告"即将推出"，Gemini Spark 最值得关注</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/20/google-io/" target="_blank" rel="noopener">simonwillison.net · Google I/O, Gemini Spark, Antigravity（5 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 在 Google I/O 2026 结束后撰文，对"公告多、可试用少"表达失望——他坚持只写亲自体验过的产品，而本次 I/O 大量功能标注"即将推出"。他认为 Gemini 3.5 Flash 之后最值得关注的发布是 Gemini Spark（专为手机端设计的小型本地模型），以及 Antigravity（Google 的 AI 编程学习工具）；他对 AI 演示与实际可用产品之间的落差持一贯批评态度，这种坦诚让他的评述比官方公告更具参考价值。</div>
+      <h2 class="title">Willison 在 PyCon 的 5 分钟闪电演讲：coding agent 已跨越"真正可用"的质量门槛</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank" rel="noopener">simonwillison.net · The last six months in LLMs in five minutes（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 在 PyCon US 2026 发表闪电演讲并公开了配注释的幻灯片，梳理了过去半年 LLM 领域的核心变化：模型领导者席位加速轮转；coding agent 在 2025 年底越过"可靠性门槛"，成为真正的日常开发工具；个人 AI 助手（"Claws"）开始进入主流；本地可运行的开源权重模型显著进步。整体基调是：技术变化在加速，但人类仍需要花时间理解"在哪些环节真正应该信任 AI"。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are &quot;coming soon&quot;.</div>
+        <div class="body en">Coding agents went from often-work to mostly-work, crossing a quality barrier where you could use them as a daily-driver to get real work done, without needing to spend most of your time fixing their stupid mistakes.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">今年 Google I/O 很难找到多少可写的内容，因为我有一个原则：只写我自己可以亲手试用的东西，而这次的很多重大公告都标注着"即将推出"。</div>
+        <div class="body">coding agent 从"时好时坏"进化到"基本可靠"，越过了一道质量门槛——现在你可以把它们当日常开发工具来用，而不需要把大量时间花在修复它们犯的蠢错上。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Nathan Lambert / Interconnects · Notes from inside China's AI labs (May 7) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
+      <h2 class="title">Lambert 深访中国 AI 实验室：学生是主力，"AI 即基础设施"哲学造就截然不同的开发范式</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs" target="_blank" rel="noopener">interconnects.ai · Notes from inside China&#39;s AI labs（5 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 深入观察中美 AI 实验室后总结了关键结构差异：中国实验室更愿意将个人贡献让位于整体模型表现，在校学生是核心开发力量；企业将 LLM 视为必须自主掌握的基础设施而非可外包的服务，这解释了为何外卖、消费科技公司纷纷自建大模型。芯片制裁下的算力约束倒逼中国团队在整个技术栈上精雕细刻，从数据到 RL 算法每个环节都要榨取增益，造就了一种"极致执行"文化。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">So much of building the best LLMs today comes down to meticulous work across the entire stack, from data to architecture details and RL algorithm implementations. All points of the model can give some improvements, and fitting them in together is a complex process where the work of some brilliant individuals needs to get shelved in favor of the overall model maximizing a multi-objective optimization.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">今天构建最优秀 LLM 的工作，很大程度上取决于对整个技术栈一丝不苟的打磨——从数据到架构细节，再到 RL 算法实现。模型的每个环节都能带来一些提升，将它们融合在一起是一个复杂的过程：某些杰出个体的独创性工作有时不得不让位于整体模型在多目标优化上的最大化表现。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Nathan Lambert / Interconnects · Latest open artifacts #21 (May 16) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
+      <h2 class="title">开源模型大爆发：Gemma 4、DeepSeek V4、Kimi K2.6 齐发，但基准评测方式本身存在系统性偏差</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/latest-open-artifacts-21-open-model" target="_blank" rel="noopener">interconnects.ai · Latest open artifacts (#21): Open model bonanza!（5 月 16 日）</a></div>
+      <div class="summary"><b>总结：</b>Lambert 汇总了 5 月开源模型密集发布潮：Gemma 4、DeepSeek V4、Kimi K2.6、MiMo V2.5-Pro、GLM-5.1 等相继上线。他引用 CAISI 的评估数据指出开源与闭源模型的差距正在扩大，但随即质疑基准本身的公允性：现有代码评测并不使用 Claude Code 等模型实际训练时的运行环境，可能系统性低估了开源模型的真实水平——"标准评测≠真实场景"的问题值得整个社区正视。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Coding tasks are evaluated using access to bash and a for-loop with a fixed budget of tokens, not with a harness such as Claude Code or OpenCode, which models are trained in!</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">代码任务的评估使用的是 bash 访问权限加上固定 token 预算的 for 循环，而不是 Claude Code 或 OpenCode 这类模型实际训练时所使用的 harness 环境！</div>
+      </details>
+    </article>
+
+    <!-- 5 · Google DeepMind · AI Pointer (May 12) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind 重新发明鼠标指针：AI 感知上下文，让 Gemini 能力跨应用无缝运作</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">deepmind.google · Shaping the future of AI interaction by reimagining the mouse pointer（5 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 正在开发一种由 AI 驱动的鼠标指针，它能理解用户所指的对象及其背后意图，让 Gemini 能力跨越应用边界自然运作——用户无需切换至 AI 工具窗口，只需指着任意应用中的内容发出自然语言指令，即可触发图像编辑、地图导航、文本比较等操作。该能力已集成到 Chrome 与新款 Googlebook 笔记本，并在 Google AI Studio 提供实验体验，代表了"AI 应跟随用户而非让用户适应 AI"的交互设计哲学。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">We&#39;ve been exploring new AI-powered capabilities to help the pointer not only understand what it&#39;s pointing at, but also why it matters to the user. Our goal is to address a common frustration: because a typical AI tool lives in its own window, users need to drag their world into it. We want the opposite: intuitive AI that meets users across all the tools they use, without interrupting their flow.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们一直在探索新的 AI 能力，不仅让指针理解它所指向的内容，还能理解这对用户的意义。我们的目标是解决一个普遍痛点：典型的 AI 工具只活在自己的窗口里，用户不得不把整个世界拖进去。我们想要的恰恰相反：直觉式 AI 跟随用户走遍所有工具，而不打断他们的工作流。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Anthropic · Gates Foundation $200M partnership (May 14) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 与盖茨基金会签署 2 亿美元四年合作，聚焦全球健康、教育与经济流动性</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布与比尔及梅琳达·盖茨基金会达成四年期合作，承诺提供 2 亿美元资助资金、Claude 使用额度及技术支持，聚焦全球健康、生命科学、教育和经济流动性领域。Anthropic 将此定位为将 AI 收益延伸至"市场力量独自无法触及"的领域，是 AI 头部公司首次将公益合作纳入核心战略发布——而非单纯商业合作——值得关注其对行业树立的标杆意义。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">We&#39;re partnering with the Gates Foundation to commit $200 million in grant funding, Claude usage credits, and technical support for programs in global health, life sciences, education, and economic mobility over the next four years.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们正与盖茨基金会合作，承诺在未来四年内向全球健康、生命科学、教育和经济流动性项目提供 2 亿美元的资助资金、Claude 使用额度及技术支持。</div>
       </details>
     </article>
 
