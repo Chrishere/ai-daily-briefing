@@ -114,7 +114,7 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 5 月 25 日</span>
+      <span id="date">2026 年 5 月 26 日</span>
       <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
@@ -123,99 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Google I/O Gemini Spark (May 20) -->
+    <!-- 1 · Simon Willison · Pope Leo XIV AI Encyclical (May 25) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison 解析 Google I/O：Gemini Spark 能跨应用执行任务，但 agent 安全隐患令人警觉</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/20/google-io/" target="_blank" rel="noopener">simonwillison.net · Google I/O, Gemini Spark, Antigravity（5 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 梳理 Google I/O 2026 的核心发布，重点聚焦 Gemini Spark——一个能跨 Google 应用自主执行任务的个人 AI agent。Google 声称每次任务都在独立隔离的临时虚拟机中运行，但 Willison 对此并不放心：Spark 将直接接触用户最敏感的数据，一旦遭遇 prompt injection 攻击，后果不堪设想——他认为这是"目前最有可能引发重大 agent 安全事故"的系统之一。此外他还指出，Google 宣布将开源（Apache 2.0）的 Gemini CLI 替换为闭源 Antigravity CLI，并于 6 月 18 日停止支持旧版本。</div>
+      <h2 class="title">Willison 解读教皇 AI 通谕：称其为"关于 AI 伦理最清晰的写作之一"</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/25/encyclical-on-ai/" target="_blank" rel="noopener">simonwillison.net · Notes on Pope Leo XIV&#39;s encyclical on AI（5 月 25 日）</a></div>
+      <div class="summary"><b>总结：</b>梵蒂冈发布了教皇利奥十四世的通谕《Magnifica Humanitas》，聚焦人工智能时代的人格保护。Willison 将其评价为"关于 AI 融入现代社会伦理的最清晰写作之一"，并指出文风平易，非天主教徒同样易读。通谕提出当代 AI 系统更像是"培育"而非"构建"的产物，开发者无法直接掌控每一个细节，并呼吁建立算法可问责机制、将数据视为公共资产。教皇选择利奥之名，正是为了呼应 1891 年利奥十三世关于劳资关系的著名通谕，以历史的工业革命映照当下 AI 革命。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Spark operates in a fully managed, secure runtime on Google Cloud, meaning you get enterprise-grade security without ever having to manage the underlying infrastructure. Every task executes in a fresh, strictly isolated, ephemeral VM to help ensure data never overlaps between sessions.</div>
+        <div class="body en">Dropped this morning by the Vatican: Magnifica Humanitas of His Holiness Pope Leo XIV on Safeguarding the Human Person in the Time of Artificial Intelligence. This is a very interesting document. It&#39;s some of the clearest writing I&#39;ve seen on the ethics of integrating AI into modern society.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Spark 运行在 Google Cloud 上完全托管的安全运行环境中，这意味着你可以获得企业级安全保障，而无需自行管理底层基础设施。每次任务都在一个全新的、严格隔离的临时虚拟机中执行，以确保数据在会话之间绝不产生交叉。</div>
+        <div class="body">梵蒂冈今早发布：教皇利奥十四世《荣耀的人性》——关于在人工智能时代保障人格尊严。这是一份非常有趣的文件。就将 AI 融入现代社会的伦理议题而言，它是我所读过的最清晰的论述之一。</div>
       </details>
     </article>
 
-    <!-- 2 · Anthropic · KPMG alliance (May 19) -->
+    <!-- 2 · Simon Willison · 5-minute LLMs PyCon (May 19) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Willison PyCon 闪电演讲：编码 agent 跨越质量门槛，六个月 LLM 进展浓缩成五分钟</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank" rel="noopener">simonwillison.net · The last six months in LLMs in five minutes（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Willison 在 PyCon US 2026 的闪电演讲中，将过去半年大语言模型领域的核心进展压缩成五分钟。他判断最关键的转折点是"编码 agent 真正好用了"——从"时灵时不灵"跨越到"多数时候可用"，突破了可以日常使用的质量门槛，这一突变由强化学习改进驱动。此外，消费级硬件上运行的开源模型性能也已大超预期。他用标志性的"骑自行车的鹈鹕"测试来跨模型对比展示这一进步，简练地呈现了当下 AI 编码工具的成熟度里程碑。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The real news from November was that the coding agents got good... Coding agents went from often-work to mostly-work, crossing a quality barrier where you could use them as a daily-driver to get real work done.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">真正的大消息出现在十一月——编码 agent 真正好用了……编码 agent 从"时灵时不灵"变成了"多数时候可用"，跨越了一道质量门槛，让你可以把它当作日常工作的主力工具来使用。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Anthropic · Gates Foundation $200M (May 14) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 与毕马威全球结盟：27.6 万名员工接入 Claude，深度嵌入税务法律核心工作流</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">anthropic.com · KPMG integrates Claude across its core business（5 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>毕马威宣布与 Anthropic 达成全球战略联盟，将 Claude 集成至内部平台 Digital Gateway，为税务和法律客户推出专属工具，27.6 万名全球员工同步获得访问权限。联盟还涵盖为私募股权组合公司共同开发 Claude 驱动产品（KPMG Blaze）、网络安全漏洞检测协作，以及与德克萨斯大学奥斯汀分校开展 AI 决策价值联合研究。这是专业服务业迄今最大规模的全员 AI 部署案例之一，标志着 AI 正从辅助工具升级为核心业务基础设施。</div>
+      <h2 class="title">Anthropic 与盖茨基金会达成 2 亿美元协议：AI 加速全球疫苗研发与教育公平</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布与盖茨基金会建立为期四年、总额 2 亿美元的合作，投入方向覆盖全球健康、生命科学、教育和经济流动性。具体项目包括：加速疫苗和疗法研发、帮助低收入国家政府建立健康数据决策系统（聚焦脊髓灰质炎、HPV、子痫前症等）、在美国/撒哈拉以南非洲/印度开发 AI 辅导工具，以及改善小农户农业生产率。Anthropic 表示此举是"将 AI 惠益延伸至市场无法独立覆盖领域"的核心承诺，这也是 AI 实验室与全球公共卫生机构最大规模的合作之一。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">At KPMG, we&#39;re innovating and redefining how work gets done. This global alliance with Anthropic reflects our shared commitment to responsible AI, prioritizing security, trust, and governance as KPMG firms scale these capabilities to our clients and people around the world.</div>
+        <div class="body en">Anthropic will work with the Gates Foundation and others on a range of new and existing programs that will accelerate the development of new vaccines and therapies, and help governments use health data to make faster, better-informed decisions.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">在毕马威，我们正在创新并重新定义工作的完成方式。与 Anthropic 达成的这项全球联盟，体现了我们对负责任 AI 的共同承诺——将安全、信任与治理置于优先位置，以便毕马威旗下各家公司能够向客户和员工大规模推广这些能力。</div>
+        <div class="body">Anthropic 将与盖茨基金会及其他方合作推进一系列新旧项目，旨在加速新疫苗和新疗法的研发，并帮助各国政府利用健康数据做出更快速、更明智的决策。</div>
       </details>
     </article>
 
-    <!-- 3 · Google DeepMind · Co-Scientist infectious disease (May 19) -->
+    <!-- 4 · Anthropic · PwC expanded partnership (May 14) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">普华永道与 Anthropic 扩大战略联盟：3 万名专业人员接受 Claude 专项培训</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/pwc-expanded-partnership" target="_blank" rel="noopener">anthropic.com · PwC is deploying Claude to build technology, execute deals（5 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>普华永道与 Anthropic 宣布扩大全球战略联盟，在美国团队全面推广 Claude Code 和 Cowork，并对 3 万名专业人员进行 Claude 专项培训，同时推出专注于客户财务转型的"CFO 办公室"新业务线。Dario Amodei 援引具体数字：保险核保从 10 周压缩至 10 天，安全工作从数小时压缩至分钟级——这表明 AI 正在进入专业服务中准确性与可靠性要求最高的核心领域，标志着 AI 从试点走向大规模生产部署。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">PwC has been leading AI&#39;s expansion into the parts of the economy where accuracy and reliability are non-negotiable—financial services, healthcare, life sciences, cybersecurity—and the results are clear. Insurance underwriting that took 10 weeks now takes 10 days. Security work that took hours now takes minutes.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">普华永道一直引领 AI 向经济中那些准确性和可靠性不可妥协的领域扩张——金融服务、医疗健康、生命科学、网络安全——而成果显而易见：保险核保从 10 周缩短至 10 天；安全工作从数小时压缩至数分钟。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Nathan Lambert · open model ecosystems compound (May 12) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert</span>
+      <h2 class="title">Lambert：开源模型生态的复利效应——透明共享如何系统性降低全行业 AI 研发成本</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/how-open-model-ecosystems-compound" target="_blank" rel="noopener">interconnects.ai · How open model ecosystems compound（5 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Interconnects 作者 Nathan Lambert 深入分析开放模型生态系统的经济逻辑：前沿模型约 80% 的成本来自研发而非最终训练计算，因此在高度透明共享的生态中，每家机构都能站在前人成果上迭代，避免大量重复投入。Lambert 指出这一复利效应在中国 AI 生态中已有体现，并警示：若开放工具被逐步私有化，复利将断裂，整体生态成本反而上升。这是对"开放 vs 闭源"辩论少见的系统性成本视角分析。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Within open-source AI, almost all the cost falls on the model developer. At the same time, there are huge benefits to releasing the model openly that do reduce costs, but they only help reduce future development and deployment costs for the creator themselves, but more importantly the ecosystem widely.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">在开源 AI 领域，几乎所有成本都落在模型开发者身上。与此同时，开放发布模型也带来了巨大的成本节约收益——但这些收益主要体现在未来的研发和部署成本上，不仅惠及开发者自身，更重要的是惠及整个生态系统。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Google DeepMind · AI Pointer (May 12) -->
     <article class="card">
       <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind Co-Scientist 加速传染病研究：两三年实验工作压缩至六个月</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/" target="_blank" rel="noopener">deepmind.google · Finding the molecular switches behind new infectious diseases（5 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>DeepMind 展示了 Co-Scientist 在传染病研究中的真实案例：帮助剑桥大学 Clare Bryant 教授追踪病原体跨物种传播时触发严重疾病的分子开关。Co-Scientist 整合全部已发表文献，协助提出并循环迭代研究假设，将候选范围从蛋白质层级精确收窄至具体氨基酸——这一过程通常需要两三年的实验室工作，现在团队有望在六个月内完成。这是 AI 在生命科学领域显著缩短研究周期的有力实证。</div>
+      <h2 class="title">DeepMind 重新构想鼠标指针：让 AI 理解你在指向什么、以及为何而指</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">deepmind.google · Shaping the future of AI interaction by reimagining the mouse pointer（5 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布 AI Pointer 研究，目标是将 AI 能力直接融入操作系统的鼠标指针层，让指针不仅知道你指向的内容，还能理解其背后的意图。DeepMind 认为当前 AI 工具的最大摩擦点在于"AI 住在独立的窗口里"——用户必须把内容复制粘贴进去才能获得帮助；而 AI 驱动的指针则可以就地介入，无需上下文切换。这一研究方向代表了 AI 从应用层向操作系统底层渗透的新趋势，也是自然人机交互界面重构的重要探索。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">With each back-and-forth, the hypotheses sharpened, moving from candidate proteins down to the specific amino acids her lab could focus its experiments on. To get to the point of identifying precise amino acids would normally have taken two to three years of experimental work. But her lab is now on track to complete it in six months.</div>
+        <div class="body en">We&#39;ve been exploring new AI-powered capabilities to help the pointer not only understand what it&#39;s pointing at, but also why it matters to the user. Our goal is to address a common frustration: because a typical AI tool lives in its own window, users need to drag their world into it.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">随着每一轮交互，假设不断精化，从候选蛋白质逐步收窄至实验室可以聚焦实验的具体氨基酸。通常情况下，要确定精确的氨基酸需要两到三年的实验工作。但她的实验室现在有望在六个月内完成这一目标。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Anthropic · Stainless acquisition (May 18) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 收购 SDK 工具商 Stainless：让 Claude Agent 能连接更多 API 与数据源</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">anthropic.com · Anthropic acquires Stainless（5 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 宣布收购 Stainless——自公司创立之日起就为其生成所有官方 SDK 的工具商，数百家企业也依赖它构建 SDK、CLI 和 MCP server。此次收购的战略意图清晰：agent 的能力上限取决于它能连接多少数据与工具。将 Stainless 团队纳入麾下，意味着 Anthropic 正向"Claude 生态连接层"深度布局，让开发者和 agent 更轻松地接入任意 API，打通更广泛的工具世界。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Agents are only as useful as what they can connect to. We&#39;re excited to bring the Stainless team into Anthropic to advance Claude&#39;s ability to connect to data and tools.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">Agent 的上限取决于它能连接的范围。我们很高兴将 Stainless 团队纳入 Anthropic，以全面推进 Claude 与数据和工具的连接能力。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Anthropic · Claude for Small Business (May 13) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude 进入小企业市场：切换即安装，接入 QuickBooks、HubSpot 等七大日常工具</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">anthropic.com · Introducing Claude for Small Business（5 月 13 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 推出 Claude for Small Business，以"切换即安装"的方式将 Claude 直接嵌入小企业主已在使用的工具：Intuit QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace、Microsoft 365 等。用户无需迁移工作流，就能用自然语言完成薪资规划、月度结算、销售活动、催款等任务。Daniela Amodei 指出，小企业占美国经济近半，但从未拥有大公司的资源——"AI 是第一个能真正弥合这道鸿沟的技术"。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Small businesses make up nearly half the American economy, but they&#39;ve never had the resources of bigger companies. AI is the first technology that can finally close that gap.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">小企业占美国经济近半，但它们从未拥有大公司所具备的资源。AI 是第一个能够真正弥合这道差距的技术。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Simon Willison · GitLab Act 2 (May 11) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison 解读 GitLab 大裁员：押注 agent 时代的战略重组，还是掩饰增长危机的叙事？</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/11/gitlab-act-2/" target="_blank" rel="noopener">simonwillison.net · GitLab Act 2（5 月 11 日）</a></div>
-      <div class="summary"><b>总结：</b>GitLab 宣布大规模重组，将 R&amp;D 改造为约 60 个更小、更自主的团队，并裁减总体人力，官方将此定性为拥抱"代理时代"的战略转型。Willison 以"第二幕"来诠释这一局面：他认同 agent 工具确实能让更小的团队实现更大的产出，但也指出 GitLab 股价在过去一年从 52 美元腰斩至 26 美元，"代理时代正在侵蚀 GitLab 核心市场"的担忧同样是市场的真实判断。战略押注还是危机遮羞布，答案有待时间验证。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">As the cost of producing software collapses, demand for it will expand. Last year, the developer platform market used to be measured in tens of dollars per user per month, this year it is hundreds/user/month and headed to thousands.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">随着软件生产成本崩落，对软件的需求将随之扩张。去年，开发者平台市场的计价单位还是每用户每月几十美元，今年已达到数百美元，并正向数千美元迈进。</div>
+        <div class="body">我们一直在探索新的 AI 驱动能力，使指针不仅能理解它所指向的内容，还能理解其对用户的意义所在。我们的目标是解决一个普遍的痛点：由于典型的 AI 工具都"住在"自己的窗口里，用户不得不将他们的内容"拖进"AI 的世界。</div>
       </details>
     </article>
 
