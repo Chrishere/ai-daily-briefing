@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 6 月 1 日</span>
-      <span id="count">5 条精选</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Product-market fit (May 27) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：Anthropic 与 OpenAI 已在编程智能体赛道找到产品市场契合</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/27/product-market-fit/" target="_blank" rel="noopener">simonwillison.net · I think Anthropic and OpenAI have found product-market fit（5 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 以企业定价变化为切入点，论证两家公司商业模式已跑通：今年 4 月 Anthropic 将企业版切换为每座席每月 20 美元加 API 消耗计费、删除折扣，OpenAI 同期跟进；Anthropic Q2 营收被传将达 109 亿美元，有望首次实现季度盈利。核心逻辑是编程智能体让企业用户消耗 Token 量远超普通聊天，高薪工程师产生的 ROI 足以支撑高单价——前沿模型已成刚需基础设施。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">At some point in the last six months Anthropic switched their Enterprise plan to $20/seat/month plus API pricing for usage. Today Anthropic are rumored to hit $10.9 billion in the second quarter, potentially even operating at a profit for the first time. April 2026 is a new inflection point where the revenue implications of this have started to land, to the benefit of the frontier AI labs.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">在过去六个月的某个时刻，Anthropic 将企业版套餐切换为每座席每月 20 美元加 API 用量计费。据传 Anthropic 今年第二季度营收将达 109 亿美元，有望首次实现季度盈利。2026 年 4 月是一个新拐点，这一收入影响已开始在前沿 AI 实验室身上显现。</div>
-      </details>
-    </article>
-
-    <!-- 2 · Latent Space · ESMFold2 (May 27) -->
-    <article class="card">
-      <span class="tag blog">博主 · Latent Space</span>
-      <h2 class="title">ESMFold2 发布：规模化 Transformer 正在颠覆蛋白质结构预测格局</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/esmfold2" target="_blank" rel="noopener">latent.space · ESMFold2: The Bitter Lesson is Coming for Proteins（5 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 专访 BioHub 首席科学家 Alex Rives，随访同期发布了 ESMFold2 与 ESMC-6B 蛋白质基础模型，并开放 68 亿条蛋白质序列和 11 亿条预测结构数据集。Rives 阐述了放弃多序列比对依赖、转向无监督 Transformer 规模化的核心决策，新方法在抗体相互作用预测等治疗关键任务上达到 SOTA，再次印证了 Rich Sutton"苦涩的教训"在蛋白质科学中的应验。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">ESMFold2, an open scientific engine to power prediction, design, and discovery across protein biology, delivering state of the art performance on protein interactions, especially antibodies, a critical modality for therapeutics. The ESM team built a "world model" using unsupervised training on diverse protein sequences, demonstrating that scaled transformer models can outperform specialized architectures on challenging protein problems like antibody design.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">ESMFold2 是一款开放的科学引擎，用于驱动整个蛋白质生物学领域的预测、设计与发现，在蛋白质相互作用——尤其是作为治疗关键模态的抗体——方面达到了最先进水平。ESM 团队通过对多样化蛋白质序列进行无监督训练构建了一个"世界模型"，证明规模化 Transformer 模型可以在抗体设计等复杂蛋白质问题上超越专门化架构。</div>
-      </details>
-    </article>
-
-    <!-- 3 · Simon Willison · Copilot security (May 26) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">智能体安全警示：微软 Copilot Cowork 遭提示注入，可外泄 OneDrive 文件链接</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/" target="_blank" rel="noopener">simonwillison.net · Microsoft Copilot Cowork Exfiltrates Files（5 月 26 日）</a></div>
-      <div class="summary"><b>总结：</b>Willison 点评了针对微软 Copilot Cowork 的提示注入攻击案例：攻击者让代理在邮件中嵌入外部图片，当用户打开该邮件时触发对外部服务器的网络请求，从而将 OneDrive 文件下载链接外泄。这一漏洞再次印证了他长期记录的"致命三元组"——私人数据、不可信内容、外部通信三者同时存在时智能体系统面临的核心安全风险，是理解智能体设计安全边界的典型案例。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Because these messages can contain external images that trigger network requests to external websites, data can be exfiltrated when a user opens a compromised message sent by the agent.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">由于这些消息可以包含触发对外部网站发起网络请求的外部图片，当用户打开代理发送的被篡改消息时，数据便可能被外泄。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Anthropic · Gates Foundation (May 14) -->
+    <!-- 1 · Anthropic · Series H $65B (May 28) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 与盖茨基金会签订 2 亿美元四年合作，聚焦全球公共卫生与教育</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">anthropic.com · Anthropic forms $200 million partnership with the Gates Foundation（5 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 宣布与盖茨基金会签订四年合作，提供 2 亿美元资助、Claude 使用额度及技术支持，覆盖全球卫生、生命科学、教育和经济流动性四大领域。最大板块聚焦中低收入国家的健康结果提升——全球约 46 亿人缺乏基本医疗服务；另联合开发面向美国、撒哈拉以南非洲和印度 K-12 学生的 AI 辅导工具，以及针对小农户的农业生产力与就业指导项目。</div>
+      <h2 class="title">Anthropic 完成 650 亿美元 H 轮融资，估值逼近万亿</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noopener">anthropic.com · Anthropic raises $65B in Series H（5 月 28 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布完成由 Altimeter、Dragoneer、Greenoaks 和 Sequoia 领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元。公司年化营收已超过 470 亿美元，本轮资金将用于支持安全研究、算力扩张和产品规模化。Claude Code 和 Cowork 正面临历史性需求，Anthropic 表示将持续把 Claude 带入更多企业工作场景。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">We're partnering with the Gates Foundation to commit $200 million in grant funding, Claude usage credits, and technical support for programs in global health, life sciences, education, and economic mobility over the next four years. The largest part of our partnership will focus on improving health outcomes in low- and middle-income countries, where around 4.6 billion people lack access to essential health services.</div>
+        <div class="body en">Claude is increasingly indispensable to our growing global community of customers, and we work tirelessly to make tools like Claude Code and Cowork more helpful, more powerful, and more adaptable to their needs. This funding will help us serve the historic demand we are experiencing, stay at the research frontier, and bring Claude to more of the places where work happens.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们正与盖茨基金会合作，承诺在未来四年内为全球卫生、生命科学、教育和经济流动性项目提供 2 亿美元资助资金、Claude 使用额度和技术支持。我们合作的最大组成部分将聚焦于改善中低收入国家的健康结果，全球约 46 亿人缺乏基本卫生服务。</div>
+        <div class="body">Claude 正越来越成为我们不断壮大的全球客户群体不可或缺的工具，我们不懈努力，让 Claude Code、Cowork 等产品更有帮助、更强大、更能适配客户需求。这轮融资将帮助我们满足当前历史性的市场需求，保持研究前沿地位，并将 Claude 带入更多工作场景。</div>
       </details>
     </article>
 
-    <!-- 5 · Nathan Lambert · Open models mid-2026 (Apr 15) -->
+    <!-- 2 · Anthropic · Claude Opus 4.8 (May 28) -->
     <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Lambert 年中押注：开放模型竞争本质是经济持久战而非技术代差</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/my-bets-on-open-models-mid-2026" target="_blank" rel="noopener">interconnects.ai · My bets on open models, mid-2026（4 月 15 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 在这篇战略押注文章中指出，开源与闭源模型的竞争本质是经济持久力而非能力竞赛：基准分数的接近不等于实际应用的替代，闭源模型在真实任务鲁棒性上仍领先。Lambert 押注开放模型将主导重复性自动化与后端场景；中国开源实验室的潜在资金风险、强化学习对真实用户反馈的闭源独占优势，将使市场结构最终进一步向闭源集中。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 发布 Claude Opus 4.8：代码缺陷自报率提升四倍，处理速度翻倍半</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">anthropic.com · Introducing Claude Opus 4.8（5 月 28 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 推出旗舰模型 Claude Opus 4.8，在多项基准测试中超越前代 Opus 4.7，定价不变。新模型在代码可信度上显著跃升：遇到缺陷时主动标注不确定性的概率是前代四倍。同步更新的还有 Claude Code 动态工作流功能，以及 claude.ai 新增的用户可控"努力程度"设置，处理速度提升 2.5 倍、成本降至三分之一。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The open vs. closed model race, as monitored through benchmarks, will largely be a game of economic staying power and fast-following, until the market structure constricts. Closed models remain more robust and useful despite similar benchmark scores, and open models will dominate repetitive automation tasks and backend applications.</div>
+        <div class="body en">Opus 4.8 is more likely to flag uncertainties about its work and less likely to make unsupported claims. This is borne out in evaluations, which show that Opus 4.8 is around four times less likely than its predecessor to allow flaws in code it has written to pass unremarked.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">通过基准测试监测的开放模型与闭源模型竞争，在市场结构收紧之前，在很大程度上将是一场经济持久力和快速跟随的博弈。尽管基准分数相近，闭源模型在实际使用中仍更为鲁棒和有用，而开放模型将在重复性自动化任务和后端应用中占据主导地位。</div>
+        <div class="body">Opus 4.8 在工作中更倾向于标注不确定性，也更不容易做出无依据的断言。这在评估中得到了印证：Opus 4.8 让已写出代码中的缺陷不被察觉的概率，比其前代低约四倍。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Nathan Lambert · What comes next May 2026 (May 26) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert</span>
+      <h2 class="title">Lambert：衡量开源与闭源差距，智能体实用性才是真正标准</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may" target="_blank" rel="noopener">interconnects.ai · Some ideas for what comes next, May 2026（5 月 26 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 在这篇月度展望文章中梳理了六大 AI 趋势：开放模型在智能体场景仍落后闭源、Gemini 工具生态竞争力不足、美国开源阵营加速赶上、现有机构争夺 AI 控制权、Anthropic 与 OpenAI 竞争白热化。核心论点是：不该用基准分数衡量差距，而该看开放权重模型能否在真实智能体框架中被有效采用——这才是不可争辩的时间门控指标。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The time gap between open and closed models is very often discussed, but the reality is that we have a nice time-gating that's independent of debatable benchmarks – if open-weight models do or do not become super useful in agentic harnesses.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">开放与闭源模型之间的时间差距被频繁讨论，但现实是，我们有一个很好的时间门控指标，独立于那些可以争议的基准测试——那就是开放权重模型是否在智能体框架中变得真正有用。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Anthropic · KPMG alliance (May 19) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">KPMG 战略联盟：Claude 嵌入核心平台，覆盖全球 27.6 万员工</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">anthropic.com · KPMG integrates Claude across its core business（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>毕马威与 Anthropic 达成全球战略联盟，将 Claude 深度集成进其核心客户工作平台 Digital Gateway，并向全球 27.6 万员工开放使用权限。通过 Cowork 和 Managed Agents 能力，原需数周的税务法规合规智能体构建工作如今仅需数分钟，大幅重塑咨询行业工作模式，并覆盖税务、法律及私募股权客户的定制解决方案。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Building an AI agent to help clients adjust to changing tax regulations used to take weeks and required teams to switch between multiple tools and chat windows. With Cowork and Managed Agents integrated in Digital Gateway, that same capability takes minutes.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">过去，构建一个帮助客户应对税务法规变化的 AI 智能体需要数周时间，团队还不得不在多个工具和聊天窗口之间频繁切换。如今，借助集成了 Cowork 和 Managed Agents 的 Digital Gateway，同样的能力只需数分钟即可实现。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Google DeepMind · Gemini 3.5 (May 19) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">Google 发布 Gemini 3.5 Flash：旗舰级智能叠加 Flash 速度，智能体编程最强</h2>
+      <div class="source">来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank" rel="noopener">blog.google · Gemini 3.5: frontier intelligence with action（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Google 发布 Gemini 3.5 Flash，主打以 Flash 系列速度实现旗舰级智能，在编程和长周期智能体工作流基准（Terminal-Bench 2.1、GDPval-AA、MCP Atlas）上全面超越 Gemini 3.1 Pro，多模态理解（CharXiv Reasoning 84.2%）同样领先。新模型已在 Gemini 应用、Search 及开发者平台上线，企业合作伙伴正用于自动化复杂业务流程。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Gemini 3.5 Flash delivers intelligence that rivals large flagship models on multiple dimensions, at the speeds you have come to expect from the Flash series. It's our strongest agentic and coding model yet, outperforming Gemini 3.1 Pro on challenging coding and agentic benchmarks like Terminal-Bench 2.1 (76.2%), GDPval-AA (1656 Elo) and MCP Atlas (83.6%), and leading in multimodal understanding (84.2% on CharXiv Reasoning).</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Gemini 3.5 Flash 在多个维度上提供了可与大型旗舰模型媲美的智能，同时保持了 Flash 系列一贯的高速表现。这是我们迄今最强的智能体与编程模型，在具有挑战性的编程和智能体基准（Terminal-Bench 2.1 得分 76.2%、GDPval-AA 达 1656 Elo、MCP Atlas 得分 83.6%）上均超越 Gemini 3.1 Pro，并在多模态理解方面领先（CharXiv Reasoning 得分 84.2%）。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Google DeepMind · Co-Scientist (May 19) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind 发布 Co-Scientist：多智能体 AI 科研伙伴，专攻假说生成与迭代验证</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/" target="_blank" rel="noopener">deepmind.google · Co-Scientist: A multi-agent AI partner to accelerate research（5 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布 Co-Scientist，基于 Gemini 的多智能体科研辅助系统，通过"生成假说—辩论—迭代进化"三阶段流程加速科学发现。监督智能体充当自适应规划器，协调各专门智能体并行探索多条研究路径，已在斯坦福、MIT、剑桥等机构用于攻克抗药性细菌、ALS 和肝纤维化等难题，并通过 Gemini for Science 平台开放使用。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The Co-Scientist AI system is made of a collaborative coalition of specialized agents based on the Gemini model, which we can group into three different phases: Generate ideas, Debate ideas, and Evolve ideas. Orchestrating the agent coalition is a supervisor agent acting as an adaptive planner. Unlike AI models that think linearly, this freeform planner breaks down high-level research goals into executable steps, coordinating agents to run in parallel and explore multiple avenues simultaneously.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Co-Scientist AI 系统由基于 Gemini 模型的多个专门智能体协作构成，分为三个阶段：生成想法、辩论想法和演化想法。负责统筹协调的是一个担任自适应规划器角色的监督智能体。与线性思考的 AI 模型不同，这个自由规划器将高层次研究目标分解为可执行步骤，协调各智能体并行运行，同时探索多条研究路径。</div>
       </details>
     </article>
 
