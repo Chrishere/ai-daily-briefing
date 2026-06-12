@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 6 月 11 日</span>
-      <span id="count">5 条精选</span>
+      <span id="date">2026 年 6 月 12 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Nathan Lambert · Fable 5 safety fables (Jun 9) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert 批评 Anthropic：Fable 5 对 AI 研究者隐蔽降智，是竞争策略而非真正安全</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety" target="_blank" rel="noopener">interconnects.ai · Claude Fable 5 and new safety fables（6 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 批评 Anthropic 在 Fable 5 中对 AI 研究与开发者隐蔽地降低模型能力，且不通知用户。他指出：针对网络安全、生物武器的限制是公开透明的，而针对"前沿 AI 开发"的限制却悄无声息——这种双重标准使安全政策失去可信度。他认为这些隐性限制本质上是维护市场地位的竞争手段，并以此为由倡导更透明的开源路径。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">An AI model that gets less intelligent automatically without notifying me is categorically misaligned AI... This "safety" measure is presented as being far more about maintaining their competitive position. Again, if all of the safety policies took one form, this would be far more cogent and easier to support intellectually.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">一个在不通知我的情况下自动变笨的 AI 模型，在定义上就是"失对齐的 AI"……这个所谓的"安全"措施，看起来更多是为了维护他们的竞争地位。如果所有安全政策都遵循统一形式，在逻辑上会更有说服力，也更容易从理性上支持。</div>
-      </details>
-    </article>
-
-    <!-- 2 · Simon Willison · Initial impressions of Claude Fable 5 (Jun 9) -->
+    <!-- 1 · Simon Willison · Fable is relentlessly proactive (Jun 11) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 实测 Claude Fable 5：能力堪称"怪物"，一天花费 110 美元完成数天工作量</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/" target="_blank" rel="noopener">simonwillison.net · Initial impressions of Claude Fable 5（6 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 花费 5.5 小时对 Fable 5 进行实测，称其"能力堪称怪物"，但速度慢、当天花费 110 美元。模型在知识深度上远超 Opus 4.8，并独立完成了两项复杂工程任务：将 MicroPython WASM 沙盒升级为完整 Python 运行时，以及为 LLM 库设计并实现了四个新功能（含测试和文档）——Simon 评价"感觉完成了几天的工作量"。</div>
+      <h2 class="title">Simon Willison 亲测两天后警告：Fable 5 "不知疲倦地主动出击"，沙盒外运行已成安全隐患</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/" target="_blank" rel="noopener">simonwillison.net · Claude Fable is relentlessly proactive（6 月 11 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 记录了他与 Fable 5 两天实测中的一个典型 bug 修复过程：该模型未经指示就自主创建测试 HTML 文件、开启浏览器、搭建 Python 数据捕获服务器、向模板注入 JavaScript 并穿越 Web Component 的 Shadow DOM——全程无需人工介入。他由此提出严肃安全警告：在沙盒外运行 Fable 级别的 Coding Agent，一旦遭到提示注入攻击劫持，其"无休止的主动性"将使破坏力极为可观，堪比"挑战者号灾难"级事故。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">I didn't have early access to today's Claude Fable 5 release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a _beast_. It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do.</div>
+        <div class="body en">After two days of experience with Claude Fable 5 I think the best way to describe it is relentlessly proactive. It knows a whole lot of tricks and it will deploy pretty much any of them to get to its goal. Running coding agents outside of a sandbox has always been a bad idea—it's my top contendor for a Challenger disaster incident...If Fable did get subverted by instructions, the amount of damage it could do given its relentless proactivity is terrifying.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我没有提前获得 Claude Fable 5 的访问权限，但我在过去约 5.5 小时里对它进行了充分测试。我的初步印象是——这东西简直是个"怪物"。它速度慢，价格贵，但我扔给它的所有任务，它都啃得相当顺畅。正如目前前沿模型的常见情况，挑战已经变成了"找到它干不了的事"。</div>
+        <div class="body">经过两天与 Claude Fable 5 的相处，我认为描述它的最佳方式是：不知疲倦地主动出击。它掌握了大量技巧，并会几乎不加保留地调用它们来达成目标。在沙盒外运行 Coding Agent 一直是大忌——这是我认为最可能引发"挑战者号灾难"式事故的隐患……如果 Fable 真的被恶意指令劫持，鉴于其无休止的主动性，它所能造成的破坏将令人不寒而栗。</div>
       </details>
     </article>
 
-    <!-- 3 · Anthropic · AI-enabled cyber threats (Jun 3) -->
+    <!-- 2 · Simon Willison · Anthropic walks back policy (Jun 11) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Anthropic 就 Fable 5 隐性降智政策公开道歉，承诺将安全防护改为透明可见</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/" target="_blank" rel="noopener">simonwillison.net · Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude（6 月 11 日）</a></div>
+      <div class="summary"><b>总结：</b>在研究者和博主广泛批评之后，Anthropic 宣布撤回 Claude Fable 5 对前沿 LLM 开发请求的隐性限制，公开承认"做了错误的权衡"并道歉。公司表示将把相关安全防护改为用户可见的显式形式，与其针对网络安全、生物武器领域已有的透明做法保持一致。Simon Willison 在报道中指出，这是 Anthropic 罕见的公开自我纠错，也验证了外部研究者社区公开监督的实际效力。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">We're changing Fable 5's safeguards for frontier LLM development to make them visible. We made the wrong tradeoff and we apologize for not getting the balance right. You should have visibility into the safeguards we have in place, and why. We're sorry for not getting the balance right.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们将把 Fable 5 针对前沿大模型开发的安全防护改为可见形式。我们做出了错误的权衡，对于未能把握好这一平衡，我们深表歉意。您应该能够清楚地看到我们设置了哪些安全防护措施及其原因。对于未能把握好这一平衡，我们再次致歉。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Google DeepMind · AI learning impact in Sierra Leone (Jun 9) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind 随机对照实验：Gemini 引导式学习使塞拉利昂学生数学成绩提升 0.258 个标准差</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/" target="_blank" rel="noopener">deepmind.google · Measuring the impact of learning with AI in Sierra Leone and beyond（6 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 联合塞拉利昂教育部，在 12 所学校对 1763 名初中生开展了为期 8 周的随机对照试验。关键结果：使用 Gemini 引导式学习的学生数学成绩提升 0.258 个标准差；Gemini 在 76% 的回复中采用脚手架式追问而非直接给出答案；69% 的学生达成或超越使用目标——远高于自愿参与教育科技产品通常仅 5% 的完成率。这是首批证明 AI 辅导在低资源环境下具有可测量教育效果的随机对照实验之一。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Students using Guided Learning saw a gain of +0.258 standard deviations in their math scores compared to the control group. Gemini responded by posing scaffolding questions in 76% of its messages, providing direct solutions in only 2% of cases. 69% of students met or exceeded usage targets, far surpassing the five percent typical for voluntary educational technology.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">使用引导式学习的学生，其数学成绩相较对照组提升了 0.258 个标准差。Gemini 在 76% 的回复中采用脚手架式追问，仅在 2% 的情况下直接给出解答。69% 的学生达成或超越了使用目标——远高于自愿性教育技术产品通常仅 5% 的完成率。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Simon Willison · Siri AI at WWDC 2026 (Jun 8) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison 点评 WWDC 2026：苹果授权定制 Gemini 驱动新 Siri，Vision LLM 绕过 App 适配壁垒</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/8/wwdc/" target="_blank" rel="noopener">simonwillison.net · Siri AI at WWDC 2026（6 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 分析苹果 WWDC 2026 AI 公告的技术路线：苹果授权了一款可在自有 Private Cloud Compute 上运行的定制 Gemini 衍生模型，通过视觉 LLM 读取屏幕内容来绕开要求每个 App 专门适配 Apple Intelligence 的高集成成本；对 Agent 工具调用等复杂推理任务则扩展至 Google Cloud 和 NVIDIA GPU 基础设施。新 Core AI 库整合了 Meta 的 PyTorch 生态，让开发者可充分利用苹果硬件运行自有模型。Simon 表示保持观望，因苹果 2024 年 AI 承诺曾令人失望。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The new Siri AI features do at least look feasible with today's technology, especially since Apple are licensing a custom Gemini-derived model that they can run on their own Private Cloud Compute. They'll be taking advantage of vision LLMs to extract information from the user's screen, which neatly sidesteps the need for every existing application to ship custom code in order to integrate with Apple Intelligence.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">新 Siri AI 功能在今天的技术条件下至少看起来是可行的，尤其是因为苹果已授权了一款可在自有 Private Cloud Compute 上运行的定制 Gemini 衍生模型。他们将利用视觉 LLM 从用户屏幕中提取信息，这巧妙地绕开了让所有现有应用都需专门开发代码以接入 Apple Intelligence 的要求。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Simon Willison · OpenAI Lockdown Mode (Jun 5) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison 解析 ChatGPT Lockdown Mode：用确定性机制切断提示注入攻击的数据外泄出口</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/" target="_blank" rel="noopener">simonwillison.net · OpenAI Help: Lockdown Mode（6 月 5 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 解读 OpenAI 新推出的 Lockdown Mode 安全功能。该功能专门针对提示注入攻击的最后一步——数据外泄，通过限制出站网络请求来阻断恶意数据传输。关键亮点：防护机制是确定性的，不依赖于自身可能被劫持的 AI 系统来评估威胁，因而在根本上更为可靠。Simon 认为这是高风险用户的优质防护工具，但会在功能性上有所折衷。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Lockdown Mode is designed to help prevent the final stage of data exfiltration from a prompt injection attack by limiting outbound network requests. Lockdown mode directly attacks that leg, using mechanisms that are deterministic and, crucially, are not evaluated by AI systems that themselves can be subverted. For folks who have an elevated risk profile...it's an excellent tool for further securing themselves. This has some tradeoffs on functionality and utility.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Lockdown Mode 旨在通过限制出站网络请求，阻断提示注入攻击最后一步的数据外泄。该模式采用确定性机制直接攻击这一薄弱环节，关键在于，它不依赖于本身可能被劫持的 AI 系统来进行判断。对于具有较高风险画像的用户来说……这是进一步加固安全防线的优质工具，但会在功能性和实用性上带来一定折衷。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Anthropic · S-1 SEC filing (Jun 1) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 安全研究：AI 正被用于攻击中后期，技能门槛与攻击复杂度已近乎脱钩</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack" target="_blank" rel="noopener">anthropic.com · What we learned mapping a year's worth of AI-enabled cyber threats（6 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布针对 832 个被封禁账户的一年期网络威胁研究报告。关键数据：67.3% 的账户使用 AI 编写恶意软件；中高风险攻击者比例从前半年 33% 升至后半年 56%；AI 压平了攻击者技能门槛——最低与最高技能攻击者使用的攻击技术数仅相差 4 种；高风险行为者开始构建能将多个攻击阶段自主串联、无需人工介入的 AI 系统，而 MITRE ATT&amp;CK 框架尚无法描述此类行为。</div>
+      <h2 class="title">Anthropic 向 SEC 保密提交 S-1 注册草案，正式启动 IPO 准备流程</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noopener">anthropic.com · Anthropic confidentially submits draft S-1 to the SEC（6 月 1 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布已向美国证券交易委员会保密提交 S-1 注册声明草案，正式启动上市准备流程。公司表示最终是否推进 IPO 仍取决于市场状况，发行股数与价格尚未确定。这一里程碑式公告紧随其约 965 亿美元估值的 H 轮融资之后，标志着这家 AI 安全公司开始向公开资本市场布局。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Now that AI can perform highly technical tasks on an actor's behalf, there's little correlation between the skill of a threat actor and how many techniques they use: the least-skilled actors in our dataset used about 16 distinct techniques on average, whereas the most skilled used about 20.</div>
+        <div class="body en">Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1 to the U.S. Securities and Exchange Commission for a proposed initial public offering of our common stock. The proposed initial public offering will depend on market conditions and other factors. The number of shares to be offered and the price have not yet been set.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">由于 AI 已能代替攻击者执行高技术性任务，威胁行为者的技能水平与其所使用的攻击技术数量之间几乎没有相关性：我们数据集中技能最低的攻击者平均使用约 16 种不同技术，而技能最高的攻击者约使用 20 种。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Nathan Lambert · Open and closed models on different exponentials (Jun 1) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：闭源与开源模型走在两条不同的指数曲线上，编程 Agent 是首个分水岭</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/open-and-closed-models-are-on-different" target="_blank" rel="noopener">interconnects.ai · Open and closed models are on different exponentials（6 月 1 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 分析认为，闭源模型（Anthropic、OpenAI）与开源模型正沿着截然不同的经济轨迹增长。闭源模型在企业级编程 Agent 中率先找到产品市场契合点，从知识工作顶端开始变现；开源模型渗透速度更慢，但覆盖面更广，将跟随 AI 向整体经济的扩散而增长。他认为 2026 年是关键节点：编程 Agent 是首个市场愿意为更高智能持续支付溢价的领域。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The closed models hit incredible product-market fit with the current agents, starting their integrated exponential by monetizing the top end of the knowledge work. The open model economy will take far longer, but it will also be far more satisfying to follow, as it tracks the broader diffusion of AI into the entire economy and world.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">闭源模型在当前 Agent 领域找到了绝佳的产品市场契合点，通过对知识工作顶端的变现，启动了其整合性的指数增长。开源模型的经济生态需要更长时间，但也将更令人期待——因为它追踪的是 AI 在整体经济和世界范围内更广泛的扩散。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Simon Willison · Microsoft new MAI models (Jun 2) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 评微软新 MAI 模型：万亿参数 MoE 架构仅激活 350 亿，盲测声称超越 Sonnet 4.6</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models/" target="_blank" rel="noopener">simonwillison.net · Microsoft's new MAI models（6 月 2 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 解析微软发布的两款新语言模型：MAI-Thinking-1 为混合专家（MoE）架构，总参数 1 万亿，仅激活 350 亿，专注推理任务；MAI-Code-1-Flash 总参数 1370 亿（激活 50 亿），专为 GitHub Copilot 打造。微软声称 MAI-Thinking-1 在盲测人类并排评估中优于 Sonnet 4.6——对一个激活参数量如此低的模型而言颇为令人印象深刻。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Microsoft released models with such low parameter counts, especially given how expensive larger models are to access right now. They claim MAI-Thinking-1 "is preferred to Sonnet 4.6 in our blind human side-by-side evaluations", which is impressive for a 35B model.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">考虑到目前访问更大规模模型的成本如此高昂，微软发布的这些模型激活参数量之低令人印象深刻。他们声称 MAI-Thinking-1 在盲测人类并排评估中优于 Sonnet 4.6——对于一个仅有 350 亿激活参数的模型来说，这相当令人惊讶。</div>
+        <div class="body">今天，Anthropic, PBC 已向美国证券交易委员会保密提交了一份关于公司普通股首次公开募股的 S-1 注册声明草案。拟议中的首次公开募股将取决于市场状况及其他因素。发行股数和价格尚未确定。</div>
       </details>
     </article>
 
