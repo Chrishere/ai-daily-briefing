@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 6 月 16 日</span>
-      <span id="count">5 条精选</span>
+      <span id="date">2026 年 6 月 17 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Anthropic · Claude Fable 5 & Mythos 5 launch (Jun 9) -->
+    <!-- 1 · Google DeepMind · DiffusionGemma (Jun 10) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude Fable 5 与 Mythos 5 正式发布：Stripe 用一天完成两个月代码迁移任务</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">anthropic.com · Claude Fable 5 and Mythos 5（6 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布旗舰模型 Claude Fable 5，在几乎所有能力测试基准上达到最先进水平。Stripe 案例显示，Fable 5 将两个月的工程工作量压缩至一天，完成了 5000 万行代码的迁移任务。内部专家报告指出该模型可将药物设计关键流程提速约 10 倍，成功识别出 14 个强蛋白候选物中的 9 个。同步发布受控访问版 Mythos 5，专为网络防御者和生物医学研究者设计，定价为输入 10 美元/百万 token、输出 50 美元/百万 token，不到 Claude Mythos Preview 定价的一半。</div>
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DiffusionGemma：同时生成 256 个 Token，文本推理速度最高提升 4 倍</h2>
+      <div class="source">来源：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noopener">blog.google · DiffusionGemma: 4x faster text generation（6 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布 DiffusionGemma，这是一款以扩散（Diffusion）机制而非逐词自回归生成文本的 26B 参数混合专家（MoE）模型，推理时仅激活 3.8B 参数，每次前向传播可并行生成 256 个 Token。性能上，该模型在英伟达 H100 上超过 1000 Token/秒，在 GeForce RTX 5090 上超过 700 Token/秒，量化后可在 18GB 显存内运行。这种"印刷机"式并行架构标志着本地部署与实时生成应用即将突破新的推理速度瓶颈。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Stripe reported that Fable 5 &ldquo;compressed months of engineering into days,&rdquo; completing a 50-million-line codebase migration in one day that would have required two months of team effort. Internal experts reported accelerating &ldquo;aspects of the drug design process by around 10 times.&rdquo; More than 95% of Fable sessions involve no fallback at all.</div>
+        <div class="body en">Instead of predicting words sequentially, it drafts an entire 256-token paragraph simultaneously. By giving the computer&rsquo;s processor a larger chunk of work at once, DiffusionGemma utilizes your hardware to its full potential. It upgrades your model inference from a single, sequential typewriter to a massive printing press.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Stripe 表示，Fable 5"将数月的工程工作压缩至数天"，在一天内完成了需要团队两个月才能完成的 5000 万行代码库迁移。内部专家报告称，该模型将"药物设计流程的关键环节提速了约 10 倍"。超过 95% 的 Fable 会话完全不触发降级回退。</div>
+        <div class="body">与逐词预测不同，DiffusionGemma 会同时起草整个 256 个 Token 的段落。通过一次向处理器提供更大的工作量，DiffusionGemma 充分发挥硬件潜力。它将模型推理从单台顺序打字机升级为大型印刷机。</div>
       </details>
     </article>
 
-    <!-- 2 · Nathan Lambert · Claude Fable 5 safety critique (Jun 9) -->
+    <!-- 2 · Google DeepMind · Multi-Agent AI Safety (Jun 11) -->
     <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：Anthropic 对 Fable 5 的隐性降级，是"定义上的错位 AI"</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety" target="_blank" rel="noopener">interconnects.ai · Claude Fable 5 and new safety fables（6 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 在 Fable 5 中采用两套安全机制：透明机制在检测到网络安全/生化查询时自动切换模型并通知用户；隐性机制则对涉及 AI 研究/蒸馏的查询悄然降低智能水平，不作任何告知。Nathan Lambert 对后者提出严厉批评——一个会在用户不知情的情况下变得更笨的模型，在定义上就是"错位"的 AI，且这一设计更多是为了保护竞争优势而非真正出于安全考量。他指出，此类单边控制策略最终将推动开源替代品的崛起。</div>
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">Google DeepMind 联合多方设立 1000 万美元基金，专研多智能体 AI 安全</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/" target="_blank" rel="noopener">deepmind.google · Investing in multi-agent AI safety research（6 月 11 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 联合 Schmidt Sciences、Cooperative AI Foundation、英国 ARIA 及 Google.org 宣布设立最高 1000 万美元的多智能体 AI 安全研究基金，申请截止 2026 年 8 月 8 日。背景是数百万由不同机构构建的 AI 智能体即将在数字环境中相互通信、谈判与交易，其集体涌现行为的安全性成为行业紧迫课题。基金聚焦四大优先领域：评估沙盒建设、智能体网络涌现属性研究、基础设施协议强化，以及大规模部署后的监督方法研发。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Claude Fable 5 is definitely the smartest model available to the general public &mdash; a remarkable leap on pretty much every relevant benchmark of the day... An AI model that gets less intelligent automatically without notifying me is categorically misaligned AI. Such a powerful technology will never have its final equilibrium be one of singular control by a private company.</div>
+        <div class="body en">Soon, millions of AI agents &mdash; built by different organizations &mdash; will interact across digital environments, communicating, negotiating and transacting with one another. When these systems interact, they must do so safely and predictably. This shift creates a vital opportunity: we can strengthen the safety and stability of the entire AI ecosystem from the very beginning.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Claude Fable 5 无疑是目前面向公众的最智能模型——在几乎所有相关基准测试上都实现了显著飞跃……一个会自动变得更笨却不通知我的 AI 模型，在定义上就是错位的 AI。如此强大的技术，其最终均衡状态绝不可能是一家私人公司的单边控制。</div>
+        <div class="body">不久之后，数百万由不同机构构建的 AI 智能体将在数字环境中相互交互，彼此通信、谈判与交易。当这些系统相互交互时，必须以安全、可预测的方式进行。这一转变创造了一个至关重要的机遇：我们可以从一开始就强化整个 AI 生态系统的安全性与稳定性。</div>
       </details>
     </article>
 
-    <!-- 3 · Simon Willison · Fable is relentlessly proactive (Jun 11) -->
+    <!-- 3 · Simon Willison · WWDC 2026 Siri AI (Jun 8) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 实测：Claude Fable 5 会自行开浏览器——高度自主性带来安全新风险</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/" target="_blank" rel="noopener">simonwillison.net · Claude Fable is relentlessly proactive（6 月 11 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 经两天深度测试后总结，Fable 5 的最佳描述是"relentlessly proactive"（不懈主动）：它会主动调用各种工具，甚至在无人指示时自行打开 Safari 窗口。他演示了模型如何利用 Datasette 源码自主启动本地开发服务器，并发出安全警告：若遭到恶意指令或提示词注入攻击，Fable 的高度自主性可能导致严重数据外泄。代价方面，不紧盯就可能消耗 12 美元 token 来"发明新方式调试 CSS"。</div>
+      <h2 class="title">Simon Willison 评 WWDC 2026：苹果用 Gemini 驱动新 Siri，视觉大模型绕开 App 集成难题</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/8/wwdc/" target="_blank" rel="noopener">simonwillison.net · Siri AI at WWDC 2026（6 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 评析苹果 WWDC 2026 AI 发布，认为与 2024 年"令人失望"的 Apple Intelligence 相比，此次方案在技术上更具可行性。苹果授权了一款 Gemini 衍生模型运行于 Private Cloud Compute 基础架构，并采用视觉大模型直接解读屏幕内容，从而绕开要求各 App 单独开发集成代码的繁琐需求。新推出的 Core AI 库兼容 Meta PyTorch 生态，使开发者能在苹果硬件上本地运行自定义模型；Private Cloud Compute 也正式扩展至谷歌云，使用英伟达 GPU，并维持苹果原有的隐私保护架构。Willison 对具体落地仍持"看到再信"的审慎态度。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">After two days of experience with Claude Fable 5 I think the best way to describe it is relentlessly proactive. It knows a whole lot of tricks and it will deploy pretty much any of them to get to its goal... If you don&rsquo;t keep a close eye on it, Fable will quite happily burn $12 in tokens inventing new ways to debug your CSS.</div>
+        <div class="body en">Vision LLMs were a much less mature category in June 2024. The new Core AI library looks like a good step in enabling developers to finally take full advantage of Apple&rsquo;s hardware for running their own models.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">在与 Claude Fable 5 相处两天之后，我认为描述它的最佳方式是"不懈主动"。它掌握了大量技巧，并会为了达成目标而几乎无所不用其极……如果你不紧盯着它，Fable 会毫不犹豫地消耗掉 12 美元的 token，只为发明出调试 CSS 的新方法。</div>
+        <div class="body">2024 年 6 月时，视觉大模型还处于相当不成熟的阶段。新推出的 Core AI 库看起来是一个很好的进步，让开发者终于能够充分利用苹果硬件来运行自己的模型。</div>
       </details>
     </article>
 
-    <!-- 4 · Nathan Lambert · AGI era of AI governance (Jun 14) -->
+    <!-- 4 · Sebastian Raschka · LLM Research Papers 2026 (Jun 6) -->
+    <article class="card">
+      <span class="tag blog">博主 · Sebastian Raschka</span>
+      <h2 class="title">Sebastian Raschka：2026 年上半年 LLM 论文精选——架构创新已远超"把 Transformer 做大"</h2>
+      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1" target="_blank" rel="noopener">magazine.sebastianraschka.com · LLM Research Papers: The 2026 List（6 月 6 日）</a></div>
+      <div class="summary"><b>总结：</b>Sebastian Raschka 汇编了 2026 年 1—5 月 LLM 研究论文精选，涵盖模型架构、推理强化学习、长上下文效率、智能体工具使用及高效推理等多个方向。他特别指出 2026 年的显著趋势：架构创新已超越"单纯堆大 Transformer"的范式，混合架构（包括 Nemotron 3、Arcee Trinity）、状态空间模型（Mamba-3、Gated DeltaNet）大量涌现。这份列表是追踪 LLM 前沿走向、尤其是 Transformer 以外架构演进的重要参考。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">This first section collects papers on model architecture, model-release technical reports, and papers that help explain why current LLMs look the way they do. One thing I find interesting about 2026 so far is that architecture work goes beyond making transformers larger. There is a lot of work around hybrid architectures...</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">第一部分收录了关于模型架构、模型发布技术报告，以及帮助解释当前大语言模型现状的论文。我认为 2026 年迄今最有趣的一点是，架构工作已经超越了单纯"把 Transformer 做大"的范畴。围绕混合架构的研究工作大量涌现……</div>
+      </details>
+    </article>
+
+    <!-- 5 · Nathan Lambert · Open and closed models on different exponentials (Jun 1) -->
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：美国政府强制关闭 Fable 5，AI 治理正式进入"AGI 时代"</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance" target="_blank" rel="noopener">interconnects.ai · Welcome to the AGI era of AI governance（6 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>6 月 12 日美国政府以国家安全为由，强制 Anthropic 暂停 Fable 5 和 Mythos 5 的全球访问。Nathan Lambert 撰文称此举是 AI 治理史上的"开枪信号"：现任政府已内化"AGI 时代已到来"这一认知，却在技术储备几乎为零的情况下仓促行动。他警告，Anthropic 长期以 AI 风险类比核武器的修辞无意中提前了政府干预 6-12 个月；欢呼这次管制的开源倡导者也要清醒——类似强制行动随时可能指向开源模型；此次不过是更大规模 AI 治理风暴的开端。</div>
+      <h2 class="title">Nathan Lambert：开源与闭源 AI 走在不同的指数曲线上，不是你死我活的零和竞争</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/open-and-closed-models-are-on-different" target="_blank" rel="noopener">interconnects.ai · Open and closed models are on different exponentials（6 月 1 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 提出，闭源模型（Anthropic、OpenAI）与开源模型生态走在两条截然不同的指数增长曲线上。闭源实验室凭借编程代理等领域的"产品-市场契合度"锁定高端知识工作，构建类似苹果的整合生态，估值可达 2—10 万亿美元；开源生态的总市场规模更大，但以商品化定价分布于更多样的参与者中。他认为断言"一方将消灭另一方"在结构上是错误的——两者将在各自轨道上共同扩张，真正的问题是资本如何在两者之间流动以及监管如何演变。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The executive branch of the United States forcing Anthropic to turn off access to their latest Claude 5 Mythos/Fable models is the starting gun of a new era in AI governance. This is a government that has internalized that we are in the AGI era. They were not ready for it and feel like they must act fast.</div>
+        <div class="body en">Where closed labs are an oligopoly, open model builders and users will be far more diverse and numerous. The total market value will dramatically exceed the cumulative value of OpenAI and Anthropic. The open and closed model economies are operating on different exponentials.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">美国行政当局强制 Anthropic 关闭其最新 Claude 5 Mythos/Fable 模型的访问权限，这是 AI 治理新时代的开枪信号。这是一个已经内化了"我们正处于 AGI 时代"这一认知的政府。他们对此毫无准备，却感到必须迅速行动。</div>
+        <div class="body">与闭源实验室的寡头格局不同，开源模型的构建者和使用者将更加多元而广泛。其总市场价值将远超 OpenAI 和 Anthropic 的累计价值之和。开源与闭源模型经济正运行在不同的指数曲线之上。</div>
       </details>
     </article>
 
-    <!-- 5 · Anthropic · Public Record survey (Jun 12) -->
+    <!-- 6 · Simon Willison · Microsoft MAI models (Jun 2) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 首份公众调查：64% 美国人担忧失业，仅 15% 信任 AI 公司</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-public-record" target="_blank" rel="noopener">anthropic.com · Results from first Anthropic Public Record（6 月 12 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布对近 5.2 万名美国人的首份公众记录调查，揭示 AI 时代最深的信任裂缝：仅 15% 的美国人信任 AI 公司自主决定 AI 的开发与使用方式，而独立专家获得 43% 的信任度。64% 的受访者将失业列为首要担忧，且这一比例随教育水平上升而升高，意味着知识工作者恐惧最深。48% 的人将治愈癌症列为 AI 最大愿景。值得注意的是，每日使用 AI 的用户中失业担忧降至 54%，表明实际动手使用是消解焦虑最有效的途径。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison 深挖微软 MAI 模型：宣称"授权干净数据"，实为 1.2 万亿页网络爬虫</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models/" target="_blank" rel="noopener">simonwillison.net · Microsoft&rsquo;s new MAI models（6 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>微软发布两款新型语言模型：专为推理任务设计的 MAI-Thinking-1（总参数 1 万亿，激活参数 350 亿）和面向 GitHub Copilot 的 MAI-Code-1-Flash（总参数 1370 亿，激活 50 亿）。微软最初强调两款模型均使用"具有商业授权的干净数据"且无第三方蒸馏，令 Willison 振奋。但他深挖技术文档后不得不更正：训练数据实际来自包含约 1.2 万亿网页的专有爬虫，过滤后剩余 7940 亿页，本质上与其他主流大模型无异，所谓"特殊授权"说法并不成立。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Nearly half (48%) of Americans ranked curing diseases like cancer or Alzheimer&rsquo;s as one of their top three hopes for AI. Job loss was by far the most common concern, held by nearly two-thirds (64%) of Americans. Only 15% of Americans said they trust AI companies to make decisions about how AI is developed and used.</div>
+        <div class="body en">&ldquo;We trained [MAI-Thinking-1] from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.&rdquo; &hellip; &ldquo;The majority of our web HTML corpus comes from a proprietary crawl. After initial page discovery and selection, approximately 1.2 trillion pages are crawled and parsed.&rdquo;</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">近半数（48%）美国人将治愈癌症或阿尔茨海默症等疾病列为对 AI 最大愿望的前三位。失业是迄今最普遍的担忧，近三分之二（64%）的美国人持有这一顾虑。只有 15% 的美国人表示信任 AI 公司来决定 AI 如何被开发和使用。</div>
+        <div class="body">"我们从零开始，使用企业级、干净且具有商业授权的数据训练了 [MAI-Thinking-1]，未进行第三方模型蒸馏。"……"我们网页 HTML 语料库的绝大多数来自专有爬虫。在初步页面发现与筛选后，约 1.2 万亿个网页被爬取和解析。"</div>
       </details>
     </article>
 
