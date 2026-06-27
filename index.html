@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 6 月 26 日</span>
-      <span id="count">7 条精选</span>
+      <span id="date">2026 年 6 月 27 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,115 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · AllenAI / Hugging Face · Hybrid token prediction (Jun 25) -->
-    <article class="card">
-      <span class="tag ai">AI · Hugging Face</span>
-      <h2 class="title">AllenAI 研究：混合模型擅长预测语义词，纯 Transformer 更善于逐字复现输入</h2>
-      <div class="source">来源：<a href="https://huggingface.co/blog/allenai/hybrid-token-prediction" target="_blank" rel="noopener">huggingface.co · Which tokens does a hybrid model predict better?（6 月 25 日）</a></div>
-      <div class="summary"><b>总结：</b>Allen Institute for AI 研究团队在 Hugging Face 博客发布技术报告，对比混合语言模型（将 Attention 与循环结构结合，代表作 OLMo Hybrid）和纯 Transformer 在 token 级别预测上的差异。核心发现：混合模型在名词、动词、形容词等具有语义含义的 token，以及需依赖上下文推断的代词等 token 上表现更强；但在"复现输入中已出现内容"（即逐字抄写类任务）上，混合模型优势几乎消失，Transformer 反而占优。两种架构各有所长，选型应结合具体应用场景。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Olmo Hybrid is strongest on tokens that carry meaning, such as nouns, verbs, and adjectives, and on tokens that can only be predicted by following what&apos;s going on, like which person a pronoun refers to. But the hybrid&apos;s advantage almost disappears on tokens that simply repeat something already in the input — a word or phrase reproduced verbatim from earlier — where the answer is sitting right there to be looked up.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">OLMo Hybrid 在携带语义的 token 上表现最强，例如名词、动词和形容词，以及那些只能通过追踪上下文才能预测的 token，比如代词所指的人称。但在仅仅复现输入中已出现内容的 token 上——即对文中更早出现的词或短语逐字复现——混合模型的优势几乎消失，因为答案就在输入里"等着被抄"。</div>
-      </details>
-    </article>
-
-    <!-- 2 · Google DeepMind · Computer use in Gemini 3.5 Flash (Jun 24) -->
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">Google 将电脑操控能力内置于 Gemini 3.5 Flash，跨平台 Agent 自动化性能达历史最强</h2>
-      <div class="source">来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/" target="_blank" rel="noopener">blog.google · Introducing computer use in Gemini 3.5 Flash（6 月 24 日）</a></div>
-      <div class="summary"><b>总结：</b>Google 宣布将电脑操控（Computer Use）能力作为原生内置工具集成进 Gemini 3.5 Flash——此前此功能仅作为独立的 Gemini 2.5 模型提供。借助这一更新，开发者无需单独部署额外模型，即可构建能跨浏览器、移动设备和桌面平台"看、推理、采取行动"的 Agent，在长流程自动化任务上达到 Google 迄今最佳性能。官方同步上线了针对企业环境的安全防护机制，包括应对提示注入攻击的对抗训练及可选的合规管控开关。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Computer use is now a built-in tool supported in Gemini 3.5 Flash, delivering our best performance yet for agentic computer use tasks. Previously only available as a standalone Gemini 2.5 computer use model, computer use is now integrated natively in the main Gemini Flash model... developers can now use 3.5 Flash to reliably build custom agents that can see, reason and take action across browser, mobile and desktop environments.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">电脑操控现已成为 Gemini 3.5 Flash 内置支持的工具，在 Agent 电脑操控任务上实现了我们迄今最佳的性能表现。此前该功能仅作为独立 Gemini 2.5 电脑操控模型提供，现已原生集成进主 Gemini Flash 模型……开发者现在可以使用 3.5 Flash 可靠地构建自定义 Agent，跨浏览器、移动和桌面环境进行"看、推理、行动"。</div>
-      </details>
-    </article>
-
-    <!-- 3 · Simon Willison · Prompt Injection as Role Confusion (Jun 22) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：去风格化处理可将提示注入攻击成功率从 61% 压至 10%</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/" target="_blank" rel="noopener">simonwillison.net · Prompt Injection as Role Confusion（6 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 评述 Charles Ye 等研究者的新论文，揭示 LLM 无法仅凭内容区分系统提示与用户输入，而是依赖写作风格和格式线索来判断指令来源。攻击者可通过模仿系统提示的格式风格将恶意指令"伪装"成可信来源，攻击成功率高达 61%；但若对文本进行"去风格化"处理（去除提示特有的格式特征），成功率骤降至 10%。这一发现对构建安全 Agent 系统的架构师具有重要意义：样式隔离本身可成为一道有效防线。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">To a human reader, these two versions say the same thing. But to the LLM, the difference is enormous: destyling causes average attack success in our dataset to plunge from 61% to 10%.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">对人类读者而言，这两个版本表达的意思相同。但对 LLM 来说，差异是巨大的：去风格化使我们数据集中的平均攻击成功率从 61% 骤降至 10%。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Nathan Lambert · GLM-5.2 step change (Jun 22) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：GLM-5.2 是首个在编码 Agent 场景中真正好用的开源权重模型</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" target="_blank" rel="noopener">interconnects.ai · GLM-5.2 is the step change for open agents（6 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 深度分析 Z.ai 开源的 GLM-5.2，认为其是首个在编码 Agent 场景中真正"好用"的开源权重模型，标志着开源模型竞争力的关键跃升。GLM-5.2 在 Arena Agent 排行榜上成为唯一能与 OpenAI、Anthropic 闭源模型比肩的开权重选手。Lambert 同时指出，Moonshot AI（Kimi）和 Z.ai（GLM）已共同占据开源模型声誉高地，成为 AI 研究者最受推崇的两大系列。GLM-5.2 的成功主要来自通用规模扩展，而非专项针对 Agent 任务的优化。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">GLM-5.2, in a common naming convention across the industry, looked potentially like an incremental update following the popular GLM-5.1 model. At this point, Moonshot AI, makers of the Kimi models, and Z.ai, makers of the GLM models, have consolidated the top of the reputational market with the most beloved open-weight models among AI researchers.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">按照业界惯用的命名规则，GLM-5.2 看起来很可能只是广受欢迎的 GLM-5.1 的一次渐进式更新。但就目前而言，Kimi 模型的制造商 Moonshot AI 和 GLM 模型的制造商 Z.ai，已在声誉市场的顶端站稳脚跟，其旗下开源权重模型是 AI 研究者中最受推崇的系列。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Latent Space · Red-Teaming after Mythos (Jun 22) -->
-    <article class="card">
-      <span class="tag blog">博主 · Latent Space</span>
-      <h2 class="title">Latent Space：AI Agent 安全的"致命三角"——提示注入是系统架构问题，而非纯技术漏洞</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/gray-swan" target="_blank" rel="noopener">latent.space · Red-Teaming after Mythos（6 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 主播 swyx 与 Gray Swan 创始人 Zico Kolter（CMU 教授、OpenAI 董事会成员）及 Matt Fredrikson 深度对谈 AI Agent 安全。嘉宾提出"致命三角"框架：Agent 同时具备（1）摄入外部不可信数据、（2）访问内部私密信息、（3）向外传输数据三种能力时，才会形成真正危险的提示注入攻击链。他们还指出，Codex、Claude Code 等主流 Agent 系统的广泛普及，正在催生新一类跨用户、跨组织的漏洞利用路径，并介绍了 Gray Swan 的自动红队工具 Shade 和防护模型 Cygnal。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">So the lethal trifecta refers to the things that make the risk highest or even create a risk... you need to first of all have the ability to ingest external data from untrusted sources... you need somehow the ability to access private internal information... And then send it somewhere else.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">所谓"致命三角"，指的是使风险达到最高等级乃至真正构成威胁的要素……首先，你需要具备从不可信外部来源摄入数据的能力……其次，你需要以某种方式访问内部私密信息……最后，将其发送到其他地方。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Nathan Lambert + Kevin Xu · Banning Open Source AI (Jun 19) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert &amp; Kevin Xu：禁止开源 AI 是战略错误，开源已创造逾 8 万亿美元经济价值</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/banning-open-source-ai-would-be-a" target="_blank" rel="noopener">interconnects.ai · Banning Open Source AI Would Be A Mistake（6 月 19 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 与 Kevin Xu 联合撰文，针对美国国内出现的"限制乃至禁止开源 AI 模型"提案予以驳斥。文章指出，全球 90% 以上的软件已建立在开源基础上，并在 AI 时代之前就创造了超过 8 万亿美元的经济价值；透明公开的开源流程反而有利于安全审计，而非增加风险。禁止开源不会消除安全隐患，只会将 AI 开发能力拱手相让，阻碍竞争与创新，并给本土初创公司带来不公平的竞争劣势。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Open source – simply a process that allows technology to be shared, built, and distributed publicly and transparently – is safe, secure, and drives economic growth. More than 90% of the world&apos;s software was already built on open source and produced more than 8 trillion dollars worth of economic benefits, long before AI entered the picture.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">开源——只是一种允许技术被公开、透明地共享、构建和分发的流程——是安全的，并且推动经济增长。早在 AI 出现之前，全球超过 90% 的软件就已建立在开源基础上，并产生了超过 8 万亿美元的经济价值。</div>
-      </details>
-    </article>
-
-    <!-- 7 · Anthropic · Anthropic Public Record (Jun 12) -->
+    <!-- 1 · Anthropic · Economic Index: Cadences (Jun 26) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic《第一份公众记录》：近 5.2 万人调查显示，美国人对 AI 的期待与担忧呈罕见跨党派共识</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/anthropic-public-record" target="_blank" rel="noopener">anthropic.com · Results from first Anthropic Public Record（6 月 12 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布《第一份公众记录》，公布对近 5.2 万名美国人的 AI 态度调查结果。48% 的受访者最期待 AI 治愈疾病（领先排名第二的"帮助残障人士"12 个百分点），64% 对 AI 导致失业最为担忧。调查最引人注目的结论是跨党派一致性：在绝大多数议题上，AI 并未沿党派、地域或教育程度划线分裂受访者；超过 70% 支持政府对 AI 立法监管，且优先关注隐私和未成年人保护；仅有 15% 的人信任 AI 公司自主决定发展路径。</div>
+      <h2 class="title">Anthropic 经济指数《节律》报告：93% 对话产出可识别产出物，Agent 任务正取代人机对话成为主流</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/research/economic-index-june-2026-report" target="_blank" rel="noopener">anthropic.com · Anthropic Economic Index report: Cadences（6 月 26 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布 2026 年 6 月经济指数报告，结合增强遥测与大样本问卷，记录 Claude 使用的日常节律与经济影响。关键数据：个人 Claude 使用率工作日约 35%，周末升至约 50%；美国税务申报截止日前后，税务类对话骤增 8 倍；93% 的对话产生可识别产出物（解释、文档或代码）；超过 35% 的受访者预计 AI 将在 12 个月内承担其大多数工作任务；主动将更多任务委托给 Claude 的用户，对未来薪酬与工作保障普遍更为乐观。最显著的结构性变化：随 Claude Code 与 Cowork 快速增长，长时 Agent 任务正逐步取代传统对话模式。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Strikingly, on most questions, AI did not heavily divide Americans along typical partisan, geographic, or educational lines. In general, there was broad consensus across topics: Americans are eager to realize AI&apos;s promised benefits but fear the disruption it may bring.</div>
+        <div class="body en">One year ago, most Claude usage took the form of a conversation between a user and an assistant. With the rapid growth of Claude Code and Cowork, Claude sessions now increasingly consist of long-running agentic tasks.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">令人瞩目的是，在大多数问题上，AI 并没有沿着典型的党派、地域或教育程度划线分裂美国人。总体而言，各议题上均存在广泛共识：美国人渴望实现 AI 承诺的收益，但又担忧它所带来的冲击。</div>
+        <div class="body">一年前，大多数 Claude 使用呈现为用户与助手之间的对话形式。随着 Claude Code 和 Cowork 的快速增长，Claude 会话现在越来越多地由长时间运行的 Agent 任务构成。</div>
+      </details>
+    </article>
+
+    <!-- 2 · Simon Willison · AI and Liability (Jun 25) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison：AI 犯错不能成为企业免责借口——德国法院已判 Google 为 AI 概述失误担责</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/25/ai-and-liability/" target="_blank" rel="noopener">simonwillison.net · AI and Liability（6 月 25 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 评述一项德国法院裁定——判决 Google 须对其 AI 概述中的错误信息承担责任。他提出核心论点：如果企业雇用人类写手撰写摘要，就必须对其中的错误负责；允许企业以"AI 犯错"为由规避同等情境下的责任，将形成以自动化系统取代专业人员的扭曲激励，企业从此可将责任外包给算法。这一裁定为"AI 系统产出应等同于公司自身产出"确立了法律先例，对构建 AI 产品的公司具有重要政策信号意义。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">If a company hired human writers to write its summaries, that company would be liable for inaccuracies in those summaries. To allow businesses to hide behind the excuse of faulty AI in those same circumstances would be a massive handout to companies.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">如果一家公司雇用人类写手撰写摘要，该公司就须为摘要中的不实信息承担法律责任。在相同情境下，允许企业以"AI 出错"为借口推卸责任，无异于向这些公司大发补贴。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Lilian Weng · Scaling Laws, Carefully (Jun 24) -->
+    <article class="card">
+      <span class="tag blog">博主 · Lilian Weng</span>
+      <h2 class="title">Lilian Weng 深度解析 Scaling Laws：Kaplan 与 Chinchilla 的分歧源于实验规模差异，两者并非根本对立</h2>
+      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/" target="_blank" rel="noopener">lilianweng.github.io · Scaling Laws, Carefully（6 月 24 日）</a></div>
+      <div class="summary"><b>总结：</b>Lilian Weng（前 OpenAI 安全研究负责人）发表技术长文，系统梳理深度学习 Scaling Laws 的核心脉络——从 Kaplan 等人（2020）到 Chinchilla（2022）。她指出，两者的"矛盾"（前者主张优先扩展模型规模，后者主张模型与数据等比扩展）实际上源于实验规模差异与嵌入参数计算口径不同，而非理论根本对立。两篇论文在基本原则上仍然一致：固定算力下，训练一个大模型并在收敛前停止优于将小模型训练至收敛。此外，数据复用场景中重复 token 的价值呈指数级衰减；Scaling Laws 的拟合结果对参数计算方式和损失精度高度敏感，实践者须谨慎对待。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Given a fixed compute budget, it is more efficient to train a very large model and stop before convergence than to train a smaller model all the way to convergence. This finding is where the Chinchilla scaling laws disagree: Kaplan et al. overestimated the optimal model size as their fitted exponent was larger... Both papers still agree on the same underlying principle, but they disagree on where the optimal size-vs-token tradeoff lies.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">在固定算力预算下，训练一个大型模型并在收敛前停止，比将一个小模型训练至完全收敛更为高效。而这恰恰是 Chinchilla Scaling Laws 产生分歧的地方：Kaplan 等人因拟合指数偏大，高估了最优模型规模……两篇论文在基本原则上仍然一致，只是在最优规模与 token 数量的权衡点上存在分歧。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Anthropic · Introducing Claude Tag (Jun 23) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 推出 Claude Tag：Claude 以团队成员身份入驻 Slack，可异步分解并完成多步骤工作任务</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">anthropic.com · Introducing Claude Tag（6 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 正式发布 Claude Tag，向 Claude Enterprise 和 Team 企业客户提供测试版。用户在 Slack 频道中 @Claude 并以简单语言提出需求，Claude 会将任务分解为多个阶段依次推进，借助被授权的工具与数据自主完成，无需用户全程实时跟进。Anthropic 内部数据显示，产品团队 65% 的代码已由其内部版本辅助生成；系统基于 Claude Opus 4.8 运行，管理员可控制数据访问范围与支出上限，具备上下文记忆与主动提醒能力。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Tag @Claude with a request in simple terms and it&apos;ll break its task down into stages and then work through them in turn, using the tools it has access to.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">用简单语言给 @Claude 发出请求，它会将任务分解为若干阶段，然后利用其被授权的工具逐一推进完成。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Google DeepMind · Securing internal systems against AI (Jun 18) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">Google DeepMind：以"内部威胁"框架防护 AI Agent，百万任务分析显示大多数异常源于误解而非恶意</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">deepmind.google · Securing internal systems against increasingly capable AI（6 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布"AI 控制路线图"，将内部 AI Agent 纳入企业安全框架，提出"纵深防御"体系——视其为潜在的"内部威胁"加以监控，而非仅依赖模型对齐。团队对 100 万个编码 Agent 任务进行分析，发现绝大多数被标记的异常事件源于误解而非对抗性意图，这为人机协同的审计机制提供了实证基础。报告同时指出，到 2030 年仅美国 AI Agent 即可创造 2.9 万亿美元经济价值，安全机制须随模型能力同步演进——从低风险操作的异步监控到高风险行为的实时拦截。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">By autonomously executing complex tasks — from cyber defence to scientific discovery and product development — these systems are unlocking a new era of productivity. In the U.S alone, AI agents could create $2.9 trillion in economic value by 2030.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">通过自主执行从网络防御到科学发现、再到产品开发的复杂任务，这些系统正在开启一个全新的生产力时代。仅在美国，AI Agent 到 2030 年就可能创造 2.9 万亿美元的经济价值。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Nathan Lambert · AGI era of AI governance (Jun 14) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert</span>
+      <h2 class="title">Nathan Lambert：美国政府强制暂停 Fable/Mythos 访问权限，标志 AI 治理正式进入 AGI 时代</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance" target="_blank" rel="noopener">interconnects.ai · Welcome to the AGI era of AI governance（6 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 深度分析美国政府以出口管制为由强制要求 Anthropic 暂停 Fable 5 和 Mythos 5 向外国用户开放一事，认为这标志着"AGI 治理时代"正式开启。他指出，这一决策由技术储备严重不足的行政机构在政治逻辑主导下作出，将产生深远负面后果：出口禁令损害美国 AI 产业全球竞争力，过度反应于越狱漏洞反而适得其反，且将引发多国政府效仿跟进的连锁反应。Lambert 认为，Anthropic 此前的安全叙事可能无意间加速了政府干预。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">This picture is very complex. It points to a near-term world where model releases are judged on vibes by an executive branch with minimal technical talent, gating releases behind a blur of politically judged technical assessments.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">这幅图景极为复杂。它预示着一个近在眼前的世界：模型发布将由技术储备极为匮乏的行政机构凭"感觉"来评判，模型获批须穿越重重充满政治色彩的技术评估迷雾。</div>
       </details>
     </article>
 
