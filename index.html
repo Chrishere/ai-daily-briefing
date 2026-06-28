@@ -123,99 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Anthropic · Economic Index: Cadences (Jun 26) -->
+    <!-- 1 · Sebastian Raschka · Using Local Coding Agents (Jun 27) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 经济指数《节律》报告：93% 对话产出可识别产出物，Agent 任务正取代人机对话成为主流</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/research/economic-index-june-2026-report" target="_blank" rel="noopener">anthropic.com · Anthropic Economic Index report: Cadences（6 月 26 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布 2026 年 6 月经济指数报告，结合增强遥测与大样本问卷，记录 Claude 使用的日常节律与经济影响。关键数据：个人 Claude 使用率工作日约 35%，周末升至约 50%；美国税务申报截止日前后，税务类对话骤增 8 倍；93% 的对话产生可识别产出物（解释、文档或代码）；超过 35% 的受访者预计 AI 将在 12 个月内承担其大多数工作任务；主动将更多任务委托给 Claude 的用户，对未来薪酬与工作保障普遍更为乐观。最显著的结构性变化：随 Claude Code 与 Cowork 快速增长，长时 Agent 任务正逐步取代传统对话模式。</div>
+      <span class="tag blog">博主 · Sebastian Raschka</span>
+      <h2 class="title">Sebastian Raschka：本地编码 Agent 已可媲美云端服务——Qwen3-35B 实测成本近零，隐私保护是核心优势</h2>
+      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noopener">magazine.sebastianraschka.com · Using Local Coding Agents（6 月 27 日）</a></div>
+      <div class="summary"><b>总结：</b>Sebastian Raschka（《Ahead of AI》作者）发布完整教程，展示如何用 Qwen3-35B-A3B 等开源模型在本地搭建 Coding Agent 工作流。他指出，本地方案的核心优势在于：若已有硬件则运行成本近乎为零，同时可规避将敏感数据（如财务凭证）发送至 OpenAI/Anthropic 的隐私风险。实测显示，本地模型在 Mac 上可达约 40 tokens/秒，任务成功率与 Claude Code 相近；随着 Qwen3、GLM-5.2 等开源模型能力持续提升，本地 Agent 工作流正逐渐从"极客实验"走向"生产可用"。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">One year ago, most Claude usage took the form of a conversation between a user and an assistant. With the rapid growth of Claude Code and Cowork, Claude sessions now increasingly consist of long-running agentic tasks.</div>
+        <div class="body en">Local solutions become more and more attractive each day. One aspect is the costs. If you have the hardware, they are practically free to run. And then there&apos;s, of course, the privacy angle. For example, for organizing and processing my receipts, I&apos;d be more comfortable with a local model ingesting them rather than sending the data over to OpenAI or Anthropic.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">一年前，大多数 Claude 使用呈现为用户与助手之间的对话形式。随着 Claude Code 和 Cowork 的快速增长，Claude 会话现在越来越多地由长时间运行的 Agent 任务构成。</div>
+        <div class="body">本地方案每天都在变得更加吸引人。一个方面是成本——如果你已经有了硬件，运行几乎是免费的。当然，还有隐私的角度。例如，对于整理和处理我的收据，我更愿意让本地模型来处理，而不是将数据发送给 OpenAI 或 Anthropic。</div>
       </details>
     </article>
 
-    <!-- 2 · Simon Willison · AI and Liability (Jun 25) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：AI 犯错不能成为企业免责借口——德国法院已判 Google 为 AI 概述失误担责</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/25/ai-and-liability/" target="_blank" rel="noopener">simonwillison.net · AI and Liability（6 月 25 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 评述一项德国法院裁定——判决 Google 须对其 AI 概述中的错误信息承担责任。他提出核心论点：如果企业雇用人类写手撰写摘要，就必须对其中的错误负责；允许企业以"AI 犯错"为由规避同等情境下的责任，将形成以自动化系统取代专业人员的扭曲激励，企业从此可将责任外包给算法。这一裁定为"AI 系统产出应等同于公司自身产出"确立了法律先例，对构建 AI 产品的公司具有重要政策信号意义。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">If a company hired human writers to write its summaries, that company would be liable for inaccuracies in those summaries. To allow businesses to hide behind the excuse of faulty AI in those same circumstances would be a massive handout to companies.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">如果一家公司雇用人类写手撰写摘要，该公司就须为摘要中的不实信息承担法律责任。在相同情境下，允许企业以"AI 出错"为借口推卸责任，无异于向这些公司大发补贴。</div>
-      </details>
-    </article>
-
-    <!-- 3 · Lilian Weng · Scaling Laws, Carefully (Jun 24) -->
-    <article class="card">
-      <span class="tag blog">博主 · Lilian Weng</span>
-      <h2 class="title">Lilian Weng 深度解析 Scaling Laws：Kaplan 与 Chinchilla 的分歧源于实验规模差异，两者并非根本对立</h2>
-      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/" target="_blank" rel="noopener">lilianweng.github.io · Scaling Laws, Carefully（6 月 24 日）</a></div>
-      <div class="summary"><b>总结：</b>Lilian Weng（前 OpenAI 安全研究负责人）发表技术长文，系统梳理深度学习 Scaling Laws 的核心脉络——从 Kaplan 等人（2020）到 Chinchilla（2022）。她指出，两者的"矛盾"（前者主张优先扩展模型规模，后者主张模型与数据等比扩展）实际上源于实验规模差异与嵌入参数计算口径不同，而非理论根本对立。两篇论文在基本原则上仍然一致：固定算力下，训练一个大模型并在收敛前停止优于将小模型训练至收敛。此外，数据复用场景中重复 token 的价值呈指数级衰减；Scaling Laws 的拟合结果对参数计算方式和损失精度高度敏感，实践者须谨慎对待。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Given a fixed compute budget, it is more efficient to train a very large model and stop before convergence than to train a smaller model all the way to convergence. This finding is where the Chinchilla scaling laws disagree: Kaplan et al. overestimated the optimal model size as their fitted exponent was larger... Both papers still agree on the same underlying principle, but they disagree on where the optimal size-vs-token tradeoff lies.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">在固定算力预算下，训练一个大型模型并在收敛前停止，比将一个小模型训练至完全收敛更为高效。而这恰恰是 Chinchilla Scaling Laws 产生分歧的地方：Kaplan 等人因拟合指数偏大，高估了最优模型规模……两篇论文在基本原则上仍然一致，只是在最优规模与 token 数量的权衡点上存在分歧。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Anthropic · Introducing Claude Tag (Jun 23) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 推出 Claude Tag：Claude 以团队成员身份入驻 Slack，可异步分解并完成多步骤工作任务</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">anthropic.com · Introducing Claude Tag（6 月 23 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 正式发布 Claude Tag，向 Claude Enterprise 和 Team 企业客户提供测试版。用户在 Slack 频道中 @Claude 并以简单语言提出需求，Claude 会将任务分解为多个阶段依次推进，借助被授权的工具与数据自主完成，无需用户全程实时跟进。Anthropic 内部数据显示，产品团队 65% 的代码已由其内部版本辅助生成；系统基于 Claude Opus 4.8 运行，管理员可控制数据访问范围与支出上限，具备上下文记忆与主动提醒能力。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Tag @Claude with a request in simple terms and it&apos;ll break its task down into stages and then work through them in turn, using the tools it has access to.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">用简单语言给 @Claude 发出请求，它会将任务分解为若干阶段，然后利用其被授权的工具逐一推进完成。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Google DeepMind · Securing internal systems against AI (Jun 18) -->
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">Google DeepMind：以"内部威胁"框架防护 AI Agent，百万任务分析显示大多数异常源于误解而非恶意</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">deepmind.google · Securing internal systems against increasingly capable AI（6 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 发布"AI 控制路线图"，将内部 AI Agent 纳入企业安全框架，提出"纵深防御"体系——视其为潜在的"内部威胁"加以监控，而非仅依赖模型对齐。团队对 100 万个编码 Agent 任务进行分析，发现绝大多数被标记的异常事件源于误解而非对抗性意图，这为人机协同的审计机制提供了实证基础。报告同时指出，到 2030 年仅美国 AI Agent 即可创造 2.9 万亿美元经济价值，安全机制须随模型能力同步演进——从低风险操作的异步监控到高风险行为的实时拦截。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">By autonomously executing complex tasks — from cyber defence to scientific discovery and product development — these systems are unlocking a new era of productivity. In the U.S alone, AI agents could create $2.9 trillion in economic value by 2030.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">通过自主执行从网络防御到科学发现、再到产品开发的复杂任务，这些系统正在开启一个全新的生产力时代。仅在美国，AI Agent 到 2030 年就可能创造 2.9 万亿美元的经济价值。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Nathan Lambert · AGI era of AI governance (Jun 14) -->
+    <!-- 2 · Nathan Lambert · GLM-5.2 step change for open agents (Jun 22) -->
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：美国政府强制暂停 Fable/Mythos 访问权限，标志 AI 治理正式进入 AGI 时代</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance" target="_blank" rel="noopener">interconnects.ai · Welcome to the AGI era of AI governance（6 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 深度分析美国政府以出口管制为由强制要求 Anthropic 暂停 Fable 5 和 Mythos 5 向外国用户开放一事，认为这标志着"AGI 治理时代"正式开启。他指出，这一决策由技术储备严重不足的行政机构在政治逻辑主导下作出，将产生深远负面后果：出口禁令损害美国 AI 产业全球竞争力，过度反应于越狱漏洞反而适得其反，且将引发多国政府效仿跟进的连锁反应。Lambert 认为，Anthropic 此前的安全叙事可能无意间加速了政府干预。</div>
+      <h2 class="title">Nathan Lambert：GLM-5.2 是开源 Agent 里程碑——首个真正与 OpenAI/Anthropic 正面竞争的开权重模型</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" target="_blank" rel="noopener">interconnects.ai · GLM-5.2 is the step change for open agents（6 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 深度分析智谱 GLM-5.2 的发布意义：这是第一个在 Agent 竞技场排行榜上与 OpenAI、Anthropic 等闭源模型同台竞技的开权重大模型，以 MIT 协议全面开放。他指出，GLM-5.2 在编码 Agent 场景"感觉终于对了"，标志着开源模型正式突破能力门槛；这一进展将对闭源厂商形成实质定价压力，同时也引发新的政策讨论——美国政府此前对 Fable/Mythos 的出口管控逻辑，或将随之延伸至开源领域。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">This picture is very complex. It points to a near-term world where model releases are judged on vibes by an executive branch with minimal technical talent, gating releases behind a blur of politically judged technical assessments.</div>
+        <div class="body en">GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent. It&apos;s the first one.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">这幅图景极为复杂。它预示着一个近在眼前的世界：模型发布将由技术储备极为匮乏的行政机构凭"感觉"来评判，模型获批须穿越重重充满政治色彩的技术评估迷雾。</div>
+        <div class="body">GLM-5.2 是那个在编码任务框架中作为通用 Agent 用起来"感觉终于对了"的开权重模型。它是第一个。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Latent Space · Red-Teaming after Mythos — Gray Swan (Jun 22) -->
+    <article class="card">
+      <span class="tag blog">博主 · Latent Space</span>
+      <h2 class="title">Latent Space 对话 Gray Swan：Mythos 出口禁令令 AI 安全风险骤然显现，提示注入是 Agent 时代最危险的新型攻击</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/gray-swan" target="_blank" rel="noopener">latent.space · Red-Teaming after Mythos — Zico Kolter &amp; Matt Fredrikson, Gray Swan（6 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>swyx 主持 Latent Space 播客，与 Gray Swan AI 联合创始人 Zico Kolter（CMU 教授）和 Matt Fredrikson 深入探讨 Mythos/Fable 出口管制事件后 AI 安全的新挑战。两位嘉宾指出：AI 系统具有人类式的可欺骗性，传统网络安全思维无法覆盖，需要全新的安全框架；当 Codex 和 Claude Code 等 Agent 接触到不受信任的数据时，提示注入攻击可实现私密信息窃取与泄露；此外，模型规模扩大并不自动带来更强的安全鲁棒性——安全能力必须通过专项训练才能获得，而非规模的副产品。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">AI systems have inherent vulnerabilities of their own. They can be tricked in ways people can be tricked, so you need a different security mindset.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">AI 系统本身具有固有的脆弱性。它们可以像欺骗人类一样被欺骗，因此你需要一种完全不同的安全思维框架。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Nathan Lambert · Banning Open Source AI Would Be A Mistake (Jun 19) -->
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert</span>
+      <h2 class="title">Nathan Lambert &amp; Kevin Xu：禁止开源 AI 是一个错误——出口管控浪潮下开源对竞争与安全的价值亟需重申</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/banning-open-source-ai-would-be-a" target="_blank" rel="noopener">interconnects.ai · Banning Open Source AI Would Be A Mistake（6 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 与 Kevin Xu（Interconnected 作者）联合撰文，面向非技术读者论证为何禁止开源 AI 有害无益。核心论点：开源是对抗 AI 垄断的关键竞争机制，能帮助中小玩家挑战大厂；公开可审计的代码比黑盒系统更易发现安全漏洞，反而更安全；美国若限制开源将主动放弃对全球 AI 生态的技术影响力。该文写于 Fable/Mythos 出口禁令余波之中，代表 AI 研究社区对政策过度干预的集体回应，也预示着开源 AI 监管之争将成为未来立法焦点。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Open source is pro-competition because it helps the underdogs challenge and compete with the large incumbents.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">开源是促进竞争的力量，因为它帮助弱势者挑战并与强大的既有势力竞争。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Anthropic · Seoul office and Korean AI ecosystem (Jun 17) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 正式开设首尔办公室，与韩国科学技术部签署 AI 安全备忘录并宣布一批本土生态合作</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">anthropic.com · Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem（6 月 17 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布在韩国首尔设立正式办公室，标志其亚太扩张战略进入新阶段。此次同步签署了与韩国科学技术信息通信部的 AI 安全合作备忘录，并与多家本土企业及科研机构达成合作协议。Anthropic 表示，韩国合作伙伴正基于 Claude 为全球数百万用户构建 AI 应用；首尔办公室将提供长期本地化支撑，进一步深耕韩国 AI 生态系统，同时拓展其在亚太地区的安全与监管影响力。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">韩国的组织机构正在基于 Claude 开展建设，将 AI 的价值惠及全球数百万用户。在首尔设立办公室，为我们与推动韩国 AI 领导地位的各方人士携手合作提供了长期的根据地。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Anthropic · Claude Fable 5 and Mythos 5 (Jun 9) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 发布 Claude Fable 5 与 Mythos 5：史上能力最强模型，发布三日后即触发美国政府出口管制</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">anthropic.com · Claude Fable 5 and Claude Mythos 5（6 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 正式推出 Fable 5（面向公众开放）与 Mythos 5（仅限经审核机构访问）。Fable 5 在几乎所有测试基准上均达到 SOTA，在软件工程、百万 token 级长上下文处理和科学研究场景表现尤为突出；Mythos 5 还额外具备药物设计、蛋白质工程和分子生物学假设生成等高级研究能力。然而发布仅三天后，美国政府以国家安全为由强制 Anthropic 暂停向外国实体提供两款模型的访问权限，引发业界对 AI 出口管制时代正式到来的广泛讨论。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Fable 5&apos;s capabilities exceed those of any model we&apos;ve ever made generally available. It is state-of-the-art on nearly all tested benchmarks of AI capability.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Fable 5 的能力超过了我们有史以来向公众开放的任何模型。它在几乎所有经过测试的 AI 能力基准测试上均达到业界最先进水平。</div>
       </details>
     </article>
 
