@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 6 月 30 日</span>
-      <span id="count">6 条精选</span>
+      <span id="count">7 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,99 +123,115 @@
 
   <div id="items">
 
-    <!-- 1 · Sebastian Raschka · Using Local Coding Agents (Jun 27) -->
-    <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">Sebastian Raschka 实测本地开源编码 Agent：Qwen3.6 已能媲美付费订阅，透明可控的本地部署时代到来</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noopener">magazine.sebastianraschka.com · Using Local Coding Agents（6 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Raschka 系统评测 Qwen3.6、North Mini Code 等本地开源编码 Agent，与 Claude Code 等付费服务横向对比，发现本地方案的 token 生成速度已与订阅服务相当。关键观点：成功的关键不在于选哪款模型，而在于理解模型推理基础设施、Agent 框架架构与权限模型之间如何协同配合。本文附带详细配置示例，展示一个兼顾实用性与可玩性的本地 AI 开发环境。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The local setup is transparent, inspectable, and free to run apart from hardware and electricity costs. It also stays fully under your control, and you can modify the coding harness in any way you like. Plus, it&apos;s a lot of fun!</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">本地部署方案透明可检查，除硬件和电费外完全免费。它完全处于你的掌控之下，可以随意修改编码框架。而且，真的很好玩！</div>
-      </details>
-    </article>
-
-    <!-- 2 · Simon Willison · Ornith-1.0 (Jun 29) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 实测 Ornith-1.0：新开源"自搭脚手架"Agent 编码模型，MIT 授权、支持 9B 至 397B 规格</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/29/ornith/" target="_blank" rel="noopener">simonwillison.net · Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding（6 月 29 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 测评 DeepReinforce 发布的首款开源 Agent 编码模型 Ornith-1.0，基于 Gemma 4 与 Qwen 3.5 构建，提供 9B Dense 到 397B MoE 多种规格，MIT 授权。他本地运行 35B GGUF 版本，发现其在多工具 Agent 任务中表现出色，以 103 token/秒的速度完成生成。"自搭脚手架"（Self-Scaffolding）设计使模型无需外部框架即可自主组织多步 Agent 执行流。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks. Initial impressions are very good—it seems to be able to run the agent harness over many tool calls in a proficient way.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">该模型基于预训练的 Gemma 4 和 Qwen 3.5 构建，在同等规模的开源模型中，编码基准测试达到最先进水平。初步印象非常好——它似乎能够在多次工具调用过程中熟练地运行 Agent 框架。</div>
-      </details>
-    </article>
-
-    <!-- 3 · Nathan Lambert · GLM-5.2 step change for open agents (Jun 22) -->
-    <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：GLM-5.2 是开源 Agent 的拐点——首款真正"感觉对了"的开放权重通用编码 Agent</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" target="_blank" rel="noopener">interconnects.ai · GLM-5.2 is the step change for open agents（6 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 深度分析 Z.ai 发布的 GLM-5.2 为何是开源模型里程碑：这是第一个在编码 Agent 框架中真正"感觉对了"的开放权重模型，可媲美 Claude Opus 等闭源产品，AI 评论圈几乎一致称赞。Lambert 将其类比为 DeepSeek R1 对推理模型的冲击——一个真实的能力阈值时刻。恰逢 Fable 5 遭出口管制，GLM-5.2 因此获得额外的市场窗口期，也对"中美 AI 差距 6-8 个月"的说法提供了新的实证校准。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent. It&apos;s the first one. This model existing is a huge boon for the open model economy. GLM-5.2 is the first of many (coming soon) open weight models to offer credible alternatives.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">GLM-5.2 是那个在编码框架中作为通用 Agent 真正"感觉对了"的开放权重模型，也是第一个这样的模型。这款模型的出现对开源模型生态是一大福音。GLM-5.2 是未来众多（即将到来的）提供可信替代方案的开放权重模型中的第一个。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Latent Space · Red-Teaming after Mythos — Gray Swan (Jun 22) -->
-    <article class="card">
-      <span class="tag blog">博主 · Latent Space</span>
-      <h2 class="title">Latent Space × Gray Swan：AI 安全不是"带 AI 的网络安全"——大模型自身即漏洞面，需专属红队与护栏</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/gray-swan" target="_blank" rel="noopener">latent.space · Red-Teaming after Mythos — Zico Kolter &amp; Matt Fredrikson, Gray Swan（6 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 播客采访 Gray Swan 联合创始人 Zico Kolter 与 Matt Fredrikson，深探 LLM 部署的安全新挑战。核心论断：大模型自身就是漏洞面，可像人一样被欺骗；所有人使用同一模型意味着漏洞风险高度相关，让传统网络安全思路失效。间接提示注入和"致命三要素"（不可信数据访问 + 私有数据暴露 + 外泄能力）是最高风险组合。Gray Swan 的 Shade（自动化红队）和 Cygnal（护栏系统）专为 LLM 环境设计。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">AI systems have inherent vulnerabilities of their own. They can be tricked in ways people can be tricked, so you need a different security mindset. Gray Swan is not about using AI to make your cyber infrastructure better; it is about understanding and mitigating the security risks you bring in when you adopt and deploy AI.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">AI 系统有其自身固有的漏洞，它们能以人类被欺骗的方式遭到欺骗，因此你需要一种不同的安全思维。Gray Swan 并非为了用 AI 来强化你的网络基础设施，而是为了帮助你理解并减轻在采用和部署 AI 时所引入的安全风险。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Simon Willison · Incident Report: CVE-2026-LGTM (Jun 26) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 推荐："CVE-2026-LGTM"——七道 AI 安全门全部失守，攻防两个自主 Agent 最终自行谈判的讽刺实录</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jun/26/incident-report/" target="_blank" rel="noopener">simonwillison.net · Incident Report: CVE-2026-LGTM（6 月 26 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 称之为"精彩绝伦的假设性事故报告"：Andrew Nesbitt 创作的讽刺文描述恶意包绕过七道 AI 安全门，每道门失败原因各不相同，但无一是"代码安全"。攻防双方各自的自主 Agent 最终自行谈判划定"势力范围"，代价是 340 条评论、超 4 万美元推理费用。讽刺之下是真实警示：多 Agent 系统的无人监管、成本失控与边界模糊，正是当前 AI 部署的真实隐患。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">A malicious package passed seven independent AI-powered security gates, each of which failed to stop it for a different reason, none of which was &apos;the code is safe.&apos; The incident was resolved when the attacker&apos;s autonomous agent read a file it shouldn&apos;t have, which is also how the incident started.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">一个恶意包通过了七道独立的 AI 安全门，每一道门都以不同的原因未能拦截它，而这些原因无一是"代码是安全的"。事件的解决发生在攻击方的自主 Agent 读取了一个不该读的文件时——而这恰好也是事件的起因。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Anthropic · Seoul Office (Jun 17) -->
+    <!-- 1 · Anthropic · Introducing Claude Tag (Jun 23) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 在首尔开设办公室：与韩国科技部签署 AI 安全 MOU，NAVER、三星、LG、Nexon 已部署 Claude</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">anthropic.com · Anthropic opens Seoul office and announces new partnerships（6 月 17 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 正式宣布开设首尔办公室，并与韩国科学技术信息通信部签署 AI 安全合作备忘录（MOU）。韩国主要企业——NAVER、三星 SDS、LG CNS、Nexon、韩华 Solutions——已相继部署 Claude；Channel Corp 将其集成至客户服务 AI 平台。Anthropic 还将支持韩国国家 AI 研究所（NAIRL）60 名研究人员，标志着公司在亚洲的战略布局进一步深化。</div>
+      <h2 class="title">Anthropic 推出 Claude Tag：在 Slack 里 @Claude 就能交办任务</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">anthropic.com · Introducing Claude Tag（6 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 推出 Claude Tag，让 Claude 作为团队成员加入 Slack 频道，团队可为其开放特定工具、数据甚至代码库的访问权限。任何人都能在频道里 @Claude 分配任务，Claude 会把任务拆解为多个阶段逐步推进，并随对话不断积累上下文，无需每次从零解释背景，还能自主安排任务，持续数小时甚至数天推进项目。目前面向 Claude Enterprise 和 Team 客户开放 Beta，由 Claude Opus 4.8 提供支持。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.</div>
+        <div class="body en">Claude Tag is a new way for teams to work with Claude. We're starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">韩国各组织正在使用 Claude 进行构建，将 AI 的益处带给全球数百万人。在首尔设立办公室，为我们与推动韩国 AI 领导力的人们并肩工作提供了一个长期家园。</div>
+        <div class="body">Claude Tag 是团队与 Claude 协作的一种新方式。我们从 Slack 开始，Claude 可以作为团队成员加入其中。你可以让 Claude 访问指定频道，并将其接入你选择的任意工具、数据——甚至代码库。然后，频道里的任何人都可以 @Claude，把任务交给它，自己则专注于其他工作。</div>
+      </details>
+    </article>
+
+    <!-- 2 · Google DeepMind · Securing the Future of AI Agents (Jun 18) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind：把 AI 智能体当潜在内部威胁的纵深防御路线图</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">deepmind.google · Securing the future of AI agents（6 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 公布内部使用的"AI Control Roadmap"，用于防范能力日益增强、可能未对齐的 AI 智能体。该框架采用"纵深防御"思路：底层是沙箱隔离、终端安全、提示注入防护等传统安全手段，在此基础上叠加模型对齐训练作为主要防线，并借鉴网络安全领域的 MITRE ATT&amp;CK 框架构建针对智能体的威胁模型。DeepMind 强调，目前记录到的多数异常行为并非源于恶意意图，而是智能体对任务的误解。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Our approach to security starts with a strong foundation, incorporating traditional safeguards like sandboxing, endpoint security, and prompt injection resistance. On top of this, the AI Control Roadmap uses model alignment, i.e. training AI to be inherently safe and helpful, as a primary defense.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们的安全方法始于坚实的基础，包括沙箱隔离、终端安全和提示注入防护等传统防护手段。在此基础上，AI Control 路线图将模型对齐——即训练 AI 使其本质上安全且乐于助人——作为主要防线。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Hugging Face / ServiceNow · MosaicLeaks (Jun 18) -->
+    <article class="card">
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">MosaicLeaks 揭示：研究 Agent 联网检索会泄露你的隐私意图</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/ServiceNow/mosaicleaks" target="_blank" rel="noopener">huggingface.co/blog · MosaicLeaks: Can your research agent keep a secret?（6 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>ServiceNow 研究团队发布 MosaicLeaks 基准，揭示深度研究类 Agent 在结合私有文档与联网检索时会通过搜索查询记录泄露敏感信息，涵盖"意图泄露""答案泄露""全信息泄露"三种类型。团队提出 PA-DR 训练方法，将答案/全信息泄露率从 34.0% 降至 9.9%，同时任务表现（严格链路成功率）保持在 58.7%。核心结论：隐私保护无法靠 prompt 提示词实现，必须写进训练过程。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">A research agent at a healthcare firm is working through a routine question, and along the way it fires off a handful of ordinary-looking web searches. A more informative query is often better for the task and worse for privacy, since each richer query gives the observer another fragment. You can't prompt privacy in. You have to train it in.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">一家医疗机构的研究 Agent 正在处理一个常规问题，过程中它发出了几条看起来很普通的网络搜索请求。更具信息量的查询往往对任务更有利，却对隐私更不利，因为每一次更丰富的查询都会给窥探者多一块拼图。隐私保护无法靠提示词实现，必须把它训练进去。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Qwen Code · Weekly Update, Agent Team (Jun 18) -->
+    <article class="card">
+      <span class="tag ai">AI · Qwen</span>
+      <h2 class="title">Qwen Code 新增 Agent Team：多智能体协作不再各自为战</h2>
+      <div class="source">来源：<a href="https://qwenlm.github.io/qwen-code-docs/en/blog/weekly-update-2026-06-18/" target="_blank" rel="noopener">qwenlm.github.io · Qwen Code Weekly: Agent Team Parallel Collaboration（6 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>Qwen Code 发布 v0.18.0～v0.18.3 系列版本，核心新功能 Agent Team 让模型可创建具名团队、派生多个队友并行工作，队友之间能互发消息、共享任务列表，最终由队长汇总成一份统一报告。此前 <code>/fork</code> 生成的后台 Agent 相互隔离，用户需手动合并多个结果；新模式下队友是持久化的，完成一个任务后会等待下一个，而非一次性运行后消失。同期还上线了可在重启后延续的 <code>/loop</code>、<code>/cd</code> 切换目录等功能。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Previously Qwen Code's /fork could run background Agents, but each Agent was isolated — you arranged three Agents to review code in parallel, they had no communication channel between them, and you had to manually combine the three results.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">此前 Qwen Code 的 /fork 可以运行后台 Agent，但每个 Agent 都是孤立的——你安排三个 Agent 并行审查代码，它们之间没有通信渠道，你必须手动合并三份结果。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Ethan Mollick · The twilight of the chatbots (Jun 30) -->
+    <article class="card">
+      <span class="tag blog">博主 · Ethan Mollick</span>
+      <h2 class="title">Ethan Mollick：聊天机器人的黄昏，Agent 时代到来</h2>
+      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">oneusefulthing.org · The twilight of the chatbots（6 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>Mollick 撰文指出，AI 正从"人类逐步核对每一步"的聊天助手模式，转向能自主执行数小时复杂任务的 Agent 模式，他举例称 Fable 能连续自主工作 9 小时，完成原本需要一个团队一周以上才能完成的软件项目。他提醒，指数增长意味着固定时间窗口内的变化幅度会越来越大，而政府对 Fable、GPT-5.6 等顶尖模型的出口管制，正为这场转型增添市场与政策层面的不确定性。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">As AIs can do longer and longer tasks, the way people are using AI is changing. Until recently, the dominant way to use AI was as a co-intelligence. You would ask the AI to do something, check the results, and then ask for it to do the next step of your job.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">随着 AI 能完成的任务越来越长，人们使用 AI 的方式也在改变。直到最近，使用 AI 的主流方式还是"协同智能"——你让 AI 做一件事，检查结果，再让它做你工作中的下一步。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Lilian Weng · Scaling Laws, Carefully (Jun 24) -->
+    <article class="card">
+      <span class="tag blog">博主 · Lilian Weng</span>
+      <h2 class="title">Lilian Weng 重讲 Scaling Law：Kaplan 与 Chinchilla 之争</h2>
+      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/" target="_blank" rel="noopener">lilianweng.github.io · Scaling Laws, Carefully（6 月 24 日）</a></div>
+      <div class="summary"><b>总结：</b>Lilian Weng 时隔三年多重新执笔，系统梳理 Scaling Law 研究脉络：训练损失如何随模型规模、数据量与计算量按幂律下降，以及给定计算预算时的最优分配方式。文章重点解析 Kaplan 等（2020）与 Chinchilla（2022）两篇奠基性论文的分歧根源——前者基于 7.68 亿至 15 亿参数的小模型实验，后者规模达 160 亿参数以上，嵌入层参数在小模型上占比失真是分歧关键；她也提醒，Scaling Law 拟合结果对看似琐碎的实验细节高度敏感。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The observation is simple in form: the training loss L decreases predictably as we scale up model size N, dataset size D, and compute C, following a power-law curve. Given a fixed compute budget, it is more efficient to train a very large model and stop before convergence than to train a smaller model all the way to convergence.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">这个观察的形式很简单：训练损失 L 会随着我们扩大模型规模 N、数据集规模 D 和计算量 C 而按幂律曲线可预测地下降。在给定固定计算预算的情况下，训练一个非常大的模型并在收敛前停止，要比把一个较小的模型一直训练到收敛更高效。</div>
+      </details>
+    </article>
+
+    <!-- 7 · Epoch AI · Toward an O*NET for AI R&D (Jun 17) -->
+    <article class="card">
+      <span class="tag blog">博主 · Epoch AI</span>
+      <h2 class="title">Epoch AI 打造 AI 研发任务清单，对标职业数据库 O*NET</h2>
+      <div class="source">来源：<a href="https://epoch.ai/gradient-updates/toward-an-onet-for-ai-rnd" target="_blank" rel="noopener">epoch.ai · Toward an O*NET for AI R&amp;D（6 月 17 日）</a></div>
+      <div class="summary"><b>总结：</b>Epoch AI 研究员 Joe Kwon、Jean-Stanislas Denain 与 Anson Ho 借鉴美国劳工部 O*NET 职业数据库的思路，把前沿 AI 实验室的研发流程拆解为六大类、60 余项具体任务，并逐项打出 0-5 分的当前自动化程度评级。他们指出，若不建立这样的任务清单，评估"AI 距离实现 AI 研发自动化还有多远"就容易陷入"路灯效应"——只盯着最好衡量的指标，而忽略真正重要但难以量化的部分。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">So it would be nice to know everything that AI R&D actually consists of. Otherwise we'll always be at risk of streetlighting (extrapolating whatever happens to be easiest to measure). We can better avoid this if we have a list of the tasks involved in AI R&D, to track what we're aware of and what we're not investigating.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">所以，如果能弄清楚 AI 研发究竟包含哪些内容，那会很有价值。否则我们将始终面临"路灯效应"的风险（只对最容易衡量的东西做外推）。如果我们有一份 AI 研发相关任务的清单，用来追踪我们已经了解和尚未研究的部分，就能更好地避免这种风险。</div>
       </details>
     </article>
 
