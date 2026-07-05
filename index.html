@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 7 月 4 日</span>
-      <span id="count">6 条精选</span>
+      <span id="date">2026 年 7 月 5 日</span>
+      <span id="count">5 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,99 +123,83 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Fable's judgement (Jul 3) -->
+    <!-- 1 · Simon Willison · Understand to participate (Jul 2) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">让 Claude Fable 自行判断，而非事事下指令</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/3/judgement/" target="_blank" rel="noopener">simonwillison.net · Fable's judgement（7 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 分享了驾驭 Claude Fable 5（以及一定程度上 Opus）的心得：与其对模型的每一步工作方式都做硬性规定，不如放手让它运用自己的判断。他给 Claude Code 下达指令，让其自行决定把编码任务委派给合适的低算力模型、在子代理里运行；Claude 随后生成的记忆文件里写明了理由——实现类工作很少需要顶级模型，判断、审查与整合工作留在主循环里处理。这种任务分级下放，既提速又节省了宝贵的 token 额度。</div>
+      <h2 class="title">Simon Willison：要参与协作，先理解代码</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/2/understand-to-participate/" target="_blank" rel="noopener">simonwillison.net · Understand to participate（7 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 在 AIE 大会上听了 Geoffrey Litt 的演讲后，分享了一个让他很有共鸣的框架："要参与，先理解"。Litt 认为，当编码智能体构建的改动越来越庞大复杂时，开发者必须避免"认知负债"——也就是自己对代码的理解逐渐脱离代码的实际运作方式。他的论点是：只有对代码理解到足够深度，你才有能力和模型继续往前推进；如果缺乏这种流畅的概念储备，参与项目创作的能力就会被实质性地限制住。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">I prompted Claude Code just now with: "For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent." Why: cost/efficiency — implementation work rarely needs the top-tier model; judgment, review, and synthesis stay in the main loop.</div>
+        <div class="body en">His argument is that you need to understand the code to a depth that enables you to participate further with the model: You can learn what the agent is doing to make sure you can be an active participant in the creative process. You need a rich set of concepts in your mind to think creatively and fluently about how to move something forward. If you're lacking that fluency, your ability to participate in the project is meaningfully limited.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我刚才这样提示 Claude Code："对于所有编码任务，运用你的判断来决定合适的低算力模型，并在子代理中运行。"理由：出于成本/效率考虑——实现类工作很少需要顶级模型；判断、审查与整合工作留在主循环中处理。</div>
+        <div class="body">他的论点是：你需要把代码理解到足够深的程度，才能有能力和模型一起继续推进工作。你可以了解智能体正在做什么，从而确保自己能作为创作过程中的积极参与者。你需要在头脑中储备一套丰富的概念，才能有创造性、有流畅度地思考如何推进项目。如果缺乏这种流畅度，你参与项目的能力就会被实质性地限制住。</div>
       </details>
     </article>
 
-    <!-- 2 · Anthropic · Fable 5 cyber safeguards & jailbreak framework (Jul 2) -->
+    <!-- 2 · OpenAI · How agents are transforming work (Jun 26) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 详解 Fable 5 网络安全防护与越狱分级框架</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noopener">anthropic.com/news · More details on Fable 5's cyber safeguards and our jailbreak framework（7 月 2 日）</a></div>
-      <div class="summary"><b>总结：</b>在 Fable 5 恢复部署后，Anthropic 进一步披露了配套安全分类器的设计逻辑：把网络安全相关请求分为"禁止使用"（几乎没有防御价值、可能造成重大危害，直接拦截）、"高风险两用"、"低风险两用"和"良性使用"四档，并坦言会出于审慎拦截部分良性请求。与此同时，Anthropic 联合 Amazon、Microsoft、Google 等 Glasswing 合作伙伴提出了一套越狱严重度评分框架（CJS，0-4 级），强调各档位之间是指数级而非线性递增，每上一级严重程度都要高出好几倍。</div>
+      <span class="tag ai">AI · OpenAI</span>
+      <h2 class="title">OpenAI：智能体正在重塑工作的基本单位</h2>
+      <div class="source">来源：<a href="https://openai.com/index/how-agents-are-transforming-work/" target="_blank" rel="noopener">openai.com/index · How agents are transforming work（6 月 26 日）</a></div>
+      <div class="summary"><b>总结：</b>OpenAI 联合哥伦比亚大学、宾大沃顿商学院与杜克大学的经济学者发布研究，用内部真实使用数据说明智能体正在如何改变工作方式。数据显示，到 2026 年 6 月，Codex 的公司内周活跃使用量已占公司全部周输出 token 的 99.8%；非研发岗位的个人用户数较 2025 年 8 月增长了 137 倍，机构用户增长 189 倍。研究还发现，近四分之一的 Codex 请求属于"一个人要花一个多小时才能完成"的复杂任务，第 99 百分位用户每天能并行调度出超过 60 小时的智能体工作量。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Prohibited use: Activities that could be used to cause significant harm and/or harm in a significant majority of uses, with little-to-no defensive utility. Block. ... In our proposed system, these factors combine into a banded rating on what we're calling our Cyber Jailbreak Severity (CJS) scale: None (or "Informational"; CJS-0), Low (CJS-1), Medium (CJS-2), High (CJS-3), and Critical (CJS-4). The bands are intended to be exponential rather than linear, so each step up is several times more serious than the last.</div>
+        <div class="body en">Agentic AI changes the unit of knowledge work from single interactions to delegated, long-horizon tasks. Chatbot interactions are often short and self-contained. Agents can operate independently for minutes or hours while orchestrating tool calls, interacting with environments, and iterating towards solutions. As a result, agents are quickly becoming the most powerful AI tool for work.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">禁止使用：几乎没有防御价值、且可能在绝大多数使用场景中造成重大危害的活动。直接拦截。……在我们提出的体系中，这些因素综合形成一个分级评分，我们称之为网络越狱严重度（CJS）量表：无（或"仅供参考"；CJS-0）、低（CJS-1）、中（CJS-2）、高（CJS-3）、危急（CJS-4）。各档位之间被设计为指数级而非线性递增，每上一级的严重程度都要比上一级高出好几倍。</div>
+        <div class="body">智能体式 AI 把知识工作的基本单位，从单次交互变成了可委托的长周期任务。聊天机器人式的交互往往简短、自成一体。而智能体可以独立运行数分钟甚至数小时，自主编排工具调用、与环境交互、反复迭代直至得出解决方案。因此，智能体正在迅速成为工作中最强大的 AI 工具。</div>
       </details>
     </article>
 
-    <!-- 3 · Anthropic · Claude Science AI workbench (Jun 30) -->
+    <!-- 3 · Lilian Weng · Scaling Laws, Carefully (Jun 24) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 推出 Claude Science，科学家专属 AI 工作台</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">anthropic.com/news · Claude Science, an AI workbench for scientists（6 月 30 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布 Claude Science 公测版，主打把分散在 PubMed、Jupyter、R、集群终端等各处的科研工具整合进一个统一的研究环境，让科学家能在一处完成从文献检索到数据分析的全流程。系统会自动管理算力，把分析规模从单张 GPU 弹性扩展到数百张；每一份产出都带有可追溯的完整生成记录，方便验证与复现。产品预置了基因组学、单细胞、蛋白质组学与化学信息学等生命科学领域能力，并接入超过 60 个科学数据库，目前面向 Pro、Max、Team 与 Enterprise 用户在 macOS 与 Linux 上开放公测。</div>
+      <span class="tag blog">博主 · Lilian Weng</span>
+      <h2 class="title">Lilian Weng 长文重新审视 Scaling Law 的边界</h2>
+      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/" target="_blank" rel="noopener">lilianweng.github.io · Scaling Laws, Carefully（6 月 24 日）</a></div>
+      <div class="summary"><b>总结：</b>Lilian Weng 发布长文，系统梳理 Scaling Law（扩展定律）这一深度学习中最重要的经验规律：训练损失会随模型规模、数据规模与算力的扩大而按幂律曲线可预测地下降。她重点讨论了在固定算力预算下，训练一个更大的模型但不让其收敛，往往比把小模型训练到收敛更高效；同时也坦承业界正在逼近高质量唯一 token 的"数据墙"，这正是关于 AI 扩展能否持续的核心争议之一。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Claude Science brings these fragmented tools into a single research environment where scientists can conduct all stages of their work. Every output carries an auditable history of how it was made, so you can validate and reproduce the results. Claude Science is pre-configured for genomics, single-cell, proteomics, and cheminformatics, backed by more than 60 scientific databases.</div>
+        <div class="body en">Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss L decreases predictably as we scale up model size N, dataset size D, and compute C, following a power-law curve. Given a fixed compute budget, it is more efficient to train a very large model and stop before convergence than to train a smaller model all the way to convergence.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Claude Science 把这些分散的工具整合进一个统一的研究环境，让科学家能够完成工作的所有阶段。每一份产出都带有可追溯的生成记录，方便你验证和复现结果。Claude Science 预置了基因组学、单细胞、蛋白质组学与化学信息学能力，并由超过 60 个科学数据库提供支持。</div>
+        <div class="body">扩展定律是深度学习中最重要的经验发现之一。这一观察的形式很简单：训练损失 L 会随着我们扩大模型规模 N、数据集规模 D 与算力 C，按照幂律曲线可预测地下降。在固定算力预算下，训练一个非常大的模型但不让它收敛，往往比把一个较小的模型一直训练到收敛更高效。</div>
       </details>
     </article>
 
-    <!-- 4 · Ethan Mollick · The Twilight of the Chatbots (Jun 30) -->
+    <!-- 4 · Eugene Yan · Patterns for Building Cybersecurity Evals (~Jun 23) -->
     <article class="card">
-      <span class="tag blog">博主 · Ethan Mollick</span>
-      <h2 class="title">Ethan Mollick：聊天机器人时代落幕，工作交给智能体</h2>
-      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">oneusefulthing.org · The Twilight of the Chatbots（6 月 30 日）</a></div>
-      <div class="summary"><b>总结：</b>Ethan Mollick 指出，尽管政府曾一度叫停 Claude Fable 与 GPT-5.6 的访问权限，美国头部实验室发布更强模型的速度依然在加快，能力提升呈现"超指数"态势。他认为这背后是工作方式的根本转变：企业与个人正从"和聊天机器人一来一回对话"，转向"把任务直接分派给智能体"去自主完成。他还发现一个反直觉的结论——决定使用 Claude Code 等 Agent 成功与否的，不是用户的职业身份，而是其在该领域的专业经验深浅，经验越丰富的人越擅长指挥智能体。</div>
+      <span class="tag blog">博主 · Eugene Yan</span>
+      <h2 class="title">Eugene Yan：网络安全类评测的四个共性构件</h2>
+      <div class="source">来源：<a href="https://eugeneyan.com/writing/cybersecurity-evals/" target="_blank" rel="noopener">eugeneyan.com · Patterns for Building Cybersecurity Evals（6 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>Eugene Yan 拆解了当下各类网络安全评测基准（benchmark）背后共享的设计模式，归纳出四个核心构件：沙箱化的攻击目标（如带漏洞代码库的 Docker 容器）、决定任务难度的输入信息（零日场景只给漏洞代码，一日场景则额外提供漏洞描述或补丁）、供智能体调用的工具，以及负责打分的裁判系统。他认为理解这套通用模板，能帮助团队更快搭建自己领域内的安全评测体系，而不必从零摸索。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Better AI models from the leading American AI labs have been releasing more quickly than ever (though government interventions stopped access temporarily to two of the most powerful models, Claude Fable and GPT-5.6). So work is increasingly about assigning work to agents, rather than working together with chatbots. What actually mattered was not the profession of the user, but their expertise. The more domain experience someone had, the more successful they were in using Claude Code in that domain.</div>
+        <div class="body en">Before diving into the benchmarks, I think it helps to understand the common pattern they share, largely based on four primitives: a sandboxed target, inputs that influence task difficulty, tools for the agent to use, and a grader to evaluate performance.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">美国顶尖 AI 实验室推出更好模型的速度比以往任何时候都快（尽管政府干预曾一度暂停了两款最强模型 Claude Fable 和 GPT-5.6 的访问权限）。工作正越来越多地变成把任务分派给智能体，而不是与聊天机器人一起协作。真正起决定作用的不是用户的职业身份，而是他们的专业程度。一个人在某个领域的经验越丰富，他在该领域使用 Claude Code 时就越成功。</div>
+        <div class="body">在深入介绍这些基准之前，我认为先理解它们共享的通用模式会很有帮助，这套模式主要基于四个构件：一个沙箱化的攻击目标、决定任务难度的输入信息、供智能体使用的工具，以及负责评估表现的裁判系统。</div>
       </details>
     </article>
 
-    <!-- 5 · Interconnects (Nathan Lambert & Florian Brand) · Latest open artifacts #22 (Jun 28) -->
+    <!-- 5 · Mistral AI · Leanstral 1.5 (Jul 2) -->
     <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Nathan Lambert：开源模型生态的多元动机正在形成合力</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside" target="_blank" rel="noopener">interconnects.ai · Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem（6 月 28 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 与 Florian Brand 梳理了开源模型生态的最新格局，指出玩家已不再局限于一年前那几家中国厂商：既有追求前沿能力的"纯"模型厂商（DeepSeek、Poolside、Zyphra），也有借开源做战略布局的大厂（阿里 Qwen、Google Gemma），还有为特定场景定制模型的产品公司（JetBrains、Zed、Photoroom）。文中特别提到 Cohere 将 Command A+ 转为 Apache 2.0 协议、Poolside 明确表态"开放权重将成为默认选择"，认为这种动机的多样性正是开源生态健康的标志。</div>
+      <span class="tag ai">AI · Mistral</span>
+      <h2 class="title">Mistral 开源 Leanstral 1.5，数学定理证明再进一步</h2>
+      <div class="source">来源：<a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" rel="noopener">mistral.ai/news · Leanstral 1.5: Proof Abundance for All（7 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Mistral 发布 Leanstral 1.5，一个仅 6B 激活参数、以 Apache 2.0 协议完全开源的形式化验证（formal verification）模型。该模型在 miniF2F 基准上跑满分，在 PutnamBench 的 672 道题中解出 587 道，并在 FATE-H、FATE-X 上分别取得 87% 与 34% 的当前最佳成绩；测试过程中还额外发现了 5 个此前未知的真实代码库漏洞。模型已在 Hugging Face 上线，并提供免费 API。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">While not every model release fits neatly into one of these categories, the broader point is that open model development is not driven by a single type of actor or motivation. Open weights are now our default. We'll keep building toward the frontier and releasing increasingly capable models in the open.</div>
+        <div class="body en">Leanstral 1.5, a free Apache-2.0 licensed model with 6B active parameters, delivers a major performance upgrade in formal verification, saturating miniF2F, solving 587/672 PutnamBench problems, and achieving state-of-the-art results on FATE-H (87%) and FATE-X (34%).</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">虽然并非每一次模型发布都能完美归入这些类别，但更重要的一点是：开源模型的发展并非由单一类型的参与者或单一动机驱动。开放权重现在是我们的默认选择。我们将继续向前沿迈进，并不断发布能力更强的开放模型。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Sebastian Raschka · Using Local Coding Agents (Jun 27) -->
-    <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">Raschka 实测：本地开源模型能否替代 Claude Code</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noopener">magazine.sebastianraschka.com · Using Local Coding Agents（6 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Sebastian Raschka 撰文详细讲解如何用完全本地化的开源方案搭建编码智能体，替代 Claude Code、Codex 等订阅服务。他给出的理由包括：达到订阅额度上限后成本可预测、不受 API 涨价影响，以及离线可用（比如坐飞机或去没有 Starlink 的小屋写代码）。实测发现，Qwen3.6 35B-A3B 在 Mac Mini M4 上跑出约 40 token/秒，能力与高推理档位的 GPT-5.5 相当；在 5 项基准任务中，Qwen3.6 与 North Mini Code 1.0 都完成了 4 项，而 Gemma 4 E2B 大多失败；此外 Codex 消耗的 token 最少，Claude Code 消耗的输入 token 约为其两倍。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Predictable, fixed costs if you reach your subscription plan limits, and immunity to API price changes. Reproducibility; sometimes it's nice if a model is upgraded (e.g., GPT 5.4 -> GPT 5.5 -> GPT 5.6) and it solves all your queries more reliably. However, this can also break existing workflows. Offline use in the classic airplane flight scenario with slow or no internet, or when going on a coding/writing retreat in the cabin in the woods w/o a Starlink subscription.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">达到订阅额度上限时，成本是可预测、固定的，并且不受 API 涨价的影响。可复现性也是一个优点——有时候模型升级（比如从 GPT 5.4 到 GPT 5.5 再到 GPT 5.6）能让查询结果更可靠，但这也可能打破现有的工作流程。离线可用则体现在经典的飞机场景中——网络缓慢或没有网络，又或者去没有 Starlink 的林间小屋进行编码/写作静修时。</div>
+        <div class="body">Leanstral 1.5 是一款免费、以 Apache 2.0 协议开源的模型，仅有 6B 激活参数，在形式化验证任务上实现了重大性能提升：在 miniF2F 上跑满分，解出 PutnamBench 672 道题中的 587 道，并在 FATE-H（87%）与 FATE-X（34%）上取得当前最佳成绩。</div>
       </details>
     </article>
 
