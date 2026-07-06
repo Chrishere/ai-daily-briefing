@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 7 月 5 日</span>
-      <span id="count">5 条精选</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,83 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Understand to participate (Jul 2) -->
+    <!-- 1 · Simon Willison · sqlite-utils 4.0rc2 with Claude Fable (Jul 5) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：要参与协作，先理解代码</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/2/understand-to-participate/" target="_blank" rel="noopener">simonwillison.net · Understand to participate（7 月 2 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 在 AIE 大会上听了 Geoffrey Litt 的演讲后，分享了一个让他很有共鸣的框架："要参与，先理解"。Litt 认为，当编码智能体构建的改动越来越庞大复杂时，开发者必须避免"认知负债"——也就是自己对代码的理解逐渐脱离代码的实际运作方式。他的论点是：只有对代码理解到足够深度，你才有能力和模型继续往前推进；如果缺乏这种流畅的概念储备，参与项目创作的能力就会被实质性地限制住。</div>
+      <h2 class="title">Simon Willison：赶在断供前，用 Claude Fable 打磨 sqlite-utils 4.0</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/" target="_blank" rel="noopener">simonwillison.net · sqlite-utils 4.0rc2, mostly written by Claude Fable（7 月 5 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 记录了自己如何在 Claude Fable 从 Max 订阅中下线前的最后几天，用它来打磨 sqlite-utils 即将发布的 4.0 正式版。因为他一直坚持严格遵循语义化版本规范（SemVer），希望尽量减少破坏性大版本的出现，于是在手机上用 Claude Code for web 给模型下达了"发布前最终审查"的提示词，让它专门排查任何日后可能被视为破坏性变更的隐患。整个协作过程花费约 149.25 美元，Willison 认为这笔钱花得值。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">His argument is that you need to understand the code to a depth that enables you to participate further with the model: You can learn what the agent is doing to make sure you can be an active participant in the creative process. You need a rich set of concepts in your mind to think creatively and fluently about how to move something forward. If you're lacking that fluency, your ability to participate in the project is meaningfully limited.</div>
+        <div class="body en">I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">他的论点是：你需要把代码理解到足够深的程度，才能有能力和模型一起继续推进工作。你可以了解智能体正在做什么，从而确保自己能作为创作过程中的积极参与者。你需要在头脑中储备一套丰富的概念，才能有创造性、有流畅度地思考如何推进项目。如果缺乏这种流畅度，你参与项目的能力就会被实质性地限制住。</div>
+        <div class="body">我几周前写过关于 sqlite-utils 4.0rc1 发布的文章。由于我们的 Max 订阅只剩几天就用不了 Claude Fable 了，我决定试试它能否帮我打磨出一个真正让我放心的 4.0 正式版——毕竟我一直努力遵循语义化版本规范（SemVer），并希望不兼容的大版本更新尽可能少出现。</div>
       </details>
     </article>
 
-    <!-- 2 · OpenAI · How agents are transforming work (Jun 26) -->
+    <!-- 2 · Simon Willison · Open Source AI Gap Map (Jul 3) -->
     <article class="card">
-      <span class="tag ai">AI · OpenAI</span>
-      <h2 class="title">OpenAI：智能体正在重塑工作的基本单位</h2>
-      <div class="source">来源：<a href="https://openai.com/index/how-agents-are-transforming-work/" target="_blank" rel="noopener">openai.com/index · How agents are transforming work（6 月 26 日）</a></div>
-      <div class="summary"><b>总结：</b>OpenAI 联合哥伦比亚大学、宾大沃顿商学院与杜克大学的经济学者发布研究，用内部真实使用数据说明智能体正在如何改变工作方式。数据显示，到 2026 年 6 月，Codex 的公司内周活跃使用量已占公司全部周输出 token 的 99.8%；非研发岗位的个人用户数较 2025 年 8 月增长了 137 倍，机构用户增长 189 倍。研究还发现，近四分之一的 Codex 请求属于"一个人要花一个多小时才能完成"的复杂任务，第 99 百分位用户每天能并行调度出超过 60 小时的智能体工作量。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Simon Willison 推荐：首张开源 AI"缺口地图"上线</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/" target="_blank" rel="noopener">simonwillison.net · Open Source AI Gap Map（7 月 3 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 转发介绍了非营利组织 Current AI 发布的"开源 AI 缺口地图" v0.1 版本——该组织于 2025 年巴黎 AI 行动峰会上成立，已获得 4 亿美元资金承诺。这份地图详细收录了 421 个开源 AI 相关产品，涵盖软件工具、模型、数据集与硬件项目，由 228 家机构共同贡献，并按模型组件、产品体验、基础设施三层共 14 个类别系统梳理，试图厘清当前开源 AI 生态里真正存在哪些空白。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Agentic AI changes the unit of knowledge work from single interactions to delegated, long-horizon tasks. Chatbot interactions are often short and self-contained. Agents can operate independently for minutes or hours while orchestrating tool calls, interacting with environments, and iterating towards solutions. As a result, agents are quickly becoming the most powerful AI tool for work.</div>
+        <div class="body en">The Gap Map v0.1 details 421 products in depth: 266 software tools and libraries, 85 models, 50 datasets, and 20 hardware projects, produced by 228 organizations.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">智能体式 AI 把知识工作的基本单位，从单次交互变成了可委托的长周期任务。聊天机器人式的交互往往简短、自成一体。而智能体可以独立运行数分钟甚至数小时，自主编排工具调用、与环境交互、反复迭代直至得出解决方案。因此，智能体正在迅速成为工作中最强大的 AI 工具。</div>
+        <div class="body">缺口地图 v0.1 版本详细收录了 421 个产品：266 个软件工具与库、85 个模型、50 个数据集和 20 个硬件项目，由 228 家机构共同产出。</div>
       </details>
     </article>
 
-    <!-- 3 · Lilian Weng · Scaling Laws, Carefully (Jun 24) -->
+    <!-- 3 · Anthropic · Claude Science (Jun 30) -->
     <article class="card">
-      <span class="tag blog">博主 · Lilian Weng</span>
-      <h2 class="title">Lilian Weng 长文重新审视 Scaling Law 的边界</h2>
-      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/" target="_blank" rel="noopener">lilianweng.github.io · Scaling Laws, Carefully（6 月 24 日）</a></div>
-      <div class="summary"><b>总结：</b>Lilian Weng 发布长文，系统梳理 Scaling Law（扩展定律）这一深度学习中最重要的经验规律：训练损失会随模型规模、数据规模与算力的扩大而按幂律曲线可预测地下降。她重点讨论了在固定算力预算下，训练一个更大的模型但不让其收敛，往往比把小模型训练到收敛更高效；同时也坦承业界正在逼近高质量唯一 token 的"数据墙"，这正是关于 AI 扩展能否持续的核心争议之一。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 推出 Claude Science，科研人员专属 AI 工作台</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">anthropic.com/news · Claude Science, an AI workbench for scientists（6 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布 Claude Science 公开测试版，把科研人员日常分散使用的数据库、文件格式与工具（如 PubMed、Jupyter、R、集群终端等）整合进同一工作环境，用户用自然语言提问后，专门的智能体会跨这些数据源自动查询与整合。Anthropic 特别强调这不是新模型，而是基于现有 Claude 模型（含 Opus 4.8）打造的产品化工作流，目前已在 macOS/Linux 上向 Pro、Max、Team、Enterprise 用户开放测试，并计划资助最多 50 个科研项目，每项最高提供 3 万美元额度。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss L decreases predictably as we scale up model size N, dataset size D, and compute C, following a power-law curve. Given a fixed compute budget, it is more efficient to train a very large model and stop before convergence than to train a smaller model all the way to convergence.</div>
+        <div class="body en">Scientific research is often tedious. Researchers must work across dozens of databases, each with their own schema, contend with file formats that require bespoke data pipelines and viewers, and transition between a roster of tools: PubMed, Jupyter, R, a cluster terminal, and more.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">扩展定律是深度学习中最重要的经验发现之一。这一观察的形式很简单：训练损失 L 会随着我们扩大模型规模 N、数据集规模 D 与算力 C，按照幂律曲线可预测地下降。在固定算力预算下，训练一个非常大的模型但不让它收敛，往往比把一个较小的模型一直训练到收敛更高效。</div>
+        <div class="body">科研工作常常十分繁琐。研究者必须在数十个数据库之间切换，每个数据库都有各自的结构；还要应对需要定制数据管线与查看器的文件格式；并在一系列工具——PubMed、Jupyter、R、集群终端等——之间来回转换。</div>
       </details>
     </article>
 
-    <!-- 4 · Eugene Yan · Patterns for Building Cybersecurity Evals (~Jun 23) -->
+    <!-- 4 · Hugging Face · Gemma 4 + Cerebras voice AI (Jul 1) -->
     <article class="card">
-      <span class="tag blog">博主 · Eugene Yan</span>
-      <h2 class="title">Eugene Yan：网络安全类评测的四个共性构件</h2>
-      <div class="source">来源：<a href="https://eugeneyan.com/writing/cybersecurity-evals/" target="_blank" rel="noopener">eugeneyan.com · Patterns for Building Cybersecurity Evals（6 月 23 日）</a></div>
-      <div class="summary"><b>总结：</b>Eugene Yan 拆解了当下各类网络安全评测基准（benchmark）背后共享的设计模式，归纳出四个核心构件：沙箱化的攻击目标（如带漏洞代码库的 Docker 容器）、决定任务难度的输入信息（零日场景只给漏洞代码，一日场景则额外提供漏洞描述或补丁）、供智能体调用的工具，以及负责打分的裁判系统。他认为理解这套通用模板，能帮助团队更快搭建自己领域内的安全评测体系，而不必从零摸索。</div>
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">Hugging Face 与 Cerebras 联手，把 Gemma 4 做成实时语音 AI</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/cerebras-gemma4-voice-ai" target="_blank" rel="noopener">huggingface.co/blog · Hugging Face and Cerebras bring Gemma 4 to real-time voice AI（7 月 1 日）</a></div>
+      <div class="summary"><b>总结：</b>Hugging Face 与 Cerebras 合作，基于 Gemma 4 打造了一套完全开放、模块化的实时语音到语音（speech-to-speech）演示管线。文章指出，语言模型的响应速度一直是语音交互体验中最大的瓶颈之一，而 Cerebras 超高速且稳定的推理能力正好补上这一环，让整条 Hugging Face 流水线得以发挥出真正流畅自然的对话效果；由于系统各部分都是模块化、开放且可替换的，开发者可以方便地把这套技术栈改造给不同的助手、机器人、产品或研究项目使用。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Before diving into the benchmarks, I think it helps to understand the common pattern they share, largely based on four primitives: a sandboxed target, inputs that influence task difficulty, tools for the agent to use, and a grader to evaluate performance.</div>
+        <div class="body en">Cerebras helps solve one of the most important bottlenecks in the stack: the language-model response time. By making inference dramatically faster and more stable, Cerebras allows the rest of the Hugging Face pipeline to shine.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">在深入介绍这些基准之前，我认为先理解它们共享的通用模式会很有帮助，这套模式主要基于四个构件：一个沙箱化的攻击目标、决定任务难度的输入信息、供智能体使用的工具，以及负责评估表现的裁判系统。</div>
+        <div class="body">Cerebras 帮助解决了这套技术栈中最重要的瓶颈之一：语言模型的响应时间。通过让推理速度大幅提升、并且更加稳定，Cerebras 让 Hugging Face 流水线的其余部分得以充分发挥。</div>
       </details>
     </article>
 
-    <!-- 5 · Mistral AI · Leanstral 1.5 (Jul 2) -->
+    <!-- 5 · Ethan Mollick · The Twilight of the Chatbots (Jun 30) -->
     <article class="card">
-      <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">Mistral 开源 Leanstral 1.5，数学定理证明再进一步</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" rel="noopener">mistral.ai/news · Leanstral 1.5: Proof Abundance for All（7 月 2 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral 发布 Leanstral 1.5，一个仅 6B 激活参数、以 Apache 2.0 协议完全开源的形式化验证（formal verification）模型。该模型在 miniF2F 基准上跑满分，在 PutnamBench 的 672 道题中解出 587 道，并在 FATE-H、FATE-X 上分别取得 87% 与 34% 的当前最佳成绩；测试过程中还额外发现了 5 个此前未知的真实代码库漏洞。模型已在 Hugging Face 上线，并提供免费 API。</div>
+      <span class="tag blog">博主 · Ethan Mollick</span>
+      <h2 class="title">Ethan Mollick：聊天机器人时代正在落幕</h2>
+      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">oneusefulthing.org · The Twilight of the Chatbots（6 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>Ethan Mollick 撰文指出，过去主导 AI 使用方式的"协作智能"模式——人向 AI 提要求、检查结果、再要求下一步——正在被淘汰。随着长时间运行、更聪明、能自我纠错的智能体系统出现，AI 已经不再需要人时刻介入，工作方式也随之从"与聊天机器人协作"转向"把任务交给智能体去做"。他认为这是继"与 AI 共同工作"之后的下一个阶段，组织和个人都需要重新学习如何管理而非操作 AI。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Leanstral 1.5, a free Apache-2.0 licensed model with 6B active parameters, delivers a major performance upgrade in formal verification, saturating miniF2F, solving 587/672 PutnamBench problems, and achieving state-of-the-art results on FATE-H (87%) and FATE-X (34%).</div>
+        <div class="body en">Until recently, the dominant way to use AI was as a co-intelligence. You would ask the AI to do something, check the results, and then ask for it to do the next step of your job. By careful prompting and human attention, you could guide AIs to do complex and long-term tasks.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Leanstral 1.5 是一款免费、以 Apache 2.0 协议开源的模型，仅有 6B 激活参数，在形式化验证任务上实现了重大性能提升：在 miniF2F 上跑满分，解出 PutnamBench 672 道题中的 587 道，并在 FATE-H（87%）与 FATE-X（34%）上取得当前最佳成绩。</div>
+        <div class="body">直到最近，使用 AI 的主流方式还是把它当作一种"协作智能"：你让 AI 做点什么，检查结果，再让它做你工作的下一步。凭借精心设计的提示词和人的持续关注，你可以引导 AI 完成复杂的长周期任务。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Sebastian Raschka · Using Local Coding Agents (Jun 27) -->
+    <article class="card">
+      <span class="tag blog">博主 · Sebastian Raschka</span>
+      <h2 class="title">Sebastian Raschka：手把手教你搭建本地编程智能体</h2>
+      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noopener">magazine.sebastianraschka.com · Using Local Coding Agents（6 月 27 日）</a></div>
+      <div class="summary"><b>总结：</b>Sebastian Raschka 发布教程，详细讲解如何用完全本地化的技术栈搭建一套可用于生产的编程智能体：包括本地部署的开源 LLM，以及一个能读取文件、执行编辑、运行命令并验证改动效果的本地编程执行框架。文章面向希望摆脱云端 API 依赖、掌控数据隐私与成本的开发者，是一篇偏工程实践的动手指南。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">This article is a tutorial on setting up a production-ready coding agent with a fully local stack. We will use a locally served LLM together with a local coding harness that can read files, make edits, run commands, and verify changes.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">这篇文章是一篇教程，讲解如何用完全本地化的技术栈搭建一套可用于生产的编程智能体。我们将使用本地部署的 LLM，配合一个能够读取文件、执行修改、运行命令并验证改动的本地编程执行框架。</div>
       </details>
     </article>
 
