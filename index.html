@@ -114,7 +114,7 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 7 月 5 日</span>
+      <span id="date">2026 年 7 月 8 日</span>
       <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
@@ -123,99 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · sqlite-utils 4.0rc2 with Claude Fable (Jul 5) -->
+    <!-- 1 · Simon Willison · Tencent Hy3 (Jul 6) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：赶在断供前，用 Claude Fable 打磨 sqlite-utils 4.0</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/" target="_blank" rel="noopener">simonwillison.net · sqlite-utils 4.0rc2, mostly written by Claude Fable（7 月 5 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 记录了自己如何在 Claude Fable 从 Max 订阅中下线前的最后几天，用它来打磨 sqlite-utils 即将发布的 4.0 正式版。因为他一直坚持严格遵循语义化版本规范（SemVer），希望尽量减少破坏性大版本的出现，于是在手机上用 Claude Code for web 给模型下达了"发布前最终审查"的提示词，让它专门排查任何日后可能被视为破坏性变更的隐患。整个协作过程花费约 149.25 美元，Willison 认为这笔钱花得值。</div>
+      <h2 class="title">Simon Willison：腾讯开源 Hy3，以小博大的 MoE 模型</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/jul/6/hy3/" target="_blank" rel="noopener">simonwillison.net · tencent/Hy3（7 月 6 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 转发介绍了腾讯新开源的 Hy3 模型——一个总参数 295B、激活参数仅 21B（另有 3.8B MTP 层参数）的混合专家（MoE）模型。继 4 月底发布 Hy3 Preview 版并收集了 50 多个产品的反馈后，腾讯团队用更高质量的数据扩大了后训练规模，使正式版在同等规模模型中表现突出，甚至能对标参数量是自己 2-5 倍的旗舰开源模型。模型提供完整版（598GB）与 FP8 量化版（300GB），支持 256K 上下文，已上传 Hugging Face，OpenRouter 还在 7 月 21 日前提供免费试用。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible.</div>
+        <div class="body en">Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我几周前写过关于 sqlite-utils 4.0rc1 发布的文章。由于我们的 Max 订阅只剩几天就用不了 Claude Fable 了，我决定试试它能否帮我打磨出一个真正让我放心的 4.0 正式版——毕竟我一直努力遵循语义化版本规范（SemVer），并希望不兼容的大版本更新尽可能少出现。</div>
+        <div class="body">Hy3 是腾讯 Hy 团队开发的一个总参数 295B、激活参数 21B（另有 3.8B MTP 层参数）的混合专家（MoE）模型。继 4 月底推出 Hy3 Preview 版之后，我们收集了 50 多个产品的反馈，并用更高质量的数据扩大了后训练规模。今天我们发布正式版 Hy3，它在同等规模的模型中表现优异，甚至能与参数量是自己 2-5 倍的旗舰开源模型相媲美。它在各类产品与生产力任务中的实用性也有显著提升。</div>
       </details>
     </article>
 
-    <!-- 2 · Simon Willison · Open Source AI Gap Map (Jul 3) -->
+    <!-- 2 · Nathan Lambert / interconnects.ai · GLM-5.2 (Jun 22) -->
     <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison 推荐：首张开源 AI"缺口地图"上线</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/" target="_blank" rel="noopener">simonwillison.net · Open Source AI Gap Map（7 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 转发介绍了非营利组织 Current AI 发布的"开源 AI 缺口地图" v0.1 版本——该组织于 2025 年巴黎 AI 行动峰会上成立，已获得 4 亿美元资金承诺。这份地图详细收录了 421 个开源 AI 相关产品，涵盖软件工具、模型、数据集与硬件项目，由 228 家机构共同贡献，并按模型组件、产品体验、基础设施三层共 14 个类别系统梳理，试图厘清当前开源 AI 生态里真正存在哪些空白。</div>
+      <span class="tag blog">博主 · Nathan Lambert</span>
+      <h2 class="title">Nathan Lambert：GLM-5.2 是开源智能体的关键跃迁</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" target="_blank" rel="noopener">interconnects.ai · GLM-5.2 is the step change for open agents（6 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 撰文指出，就在 AI 圈还在消化 Claude Fable 5 遭出口管制、事实上被禁用的冲击时，Z.ai 于 6 月 13 日周六悄然向 GLM Coding Plan 用户放出了 GLM-5.2。他认为这是第一个让人在编程工具里用起来"感觉对了"、能真正胜任通用智能体角色的开源权重模型，其智能体能力已可对标 Opus 4.8，堪比当年 DeepSeek R1 带来的"DeepSeek 时刻"。Lambert 认为这标志着前沿级别的智能体能力正式向开源阵营开放。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The Gap Map v0.1 details 421 products in depth: 266 software tools and libraries, 85 models, 50 datasets, and 20 hardware projects, produced by 228 organizations.</div>
+        <div class="body en">A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning, of Claude Fable 5, Z.ai released their latest model, GLM-5.2. This model was rolled out unusually on a Saturday, June 13th, to GLM Coding Plan members. GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent. It's the first one.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">缺口地图 v0.1 版本详细收录了 421 个产品：266 个软件工具与库、85 个模型、50 个数据集和 20 个硬件项目，由 228 家机构共同产出。</div>
+        <div class="body">就在一周多以前，当 AI 圈还在消化 Claude Fable 5 遭遇出口管制、事实上被禁用所带来的冲击时，Z.ai 发布了他们的最新模型 GLM-5.2。这个模型以一种不同寻常的方式——在 6 月 13 日星期六——率先推送给了 GLM Coding Plan 会员。GLM-5.2 是第一个在编程工具里用起来"感觉对了"、能胜任通用智能体角色的开源权重模型。</div>
       </details>
     </article>
 
-    <!-- 3 · Anthropic · Claude Science (Jun 30) -->
+    <!-- 3 · Meta AI · Brain2Qwerty v2 (Jun 29) -->
+    <article class="card">
+      <span class="tag ai">AI · Meta AI</span>
+      <h2 class="title">Meta AI 发布 Brain2Qwerty v2，脑波直接解码成文字</h2>
+      <div class="source">来源：<a href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" target="_blank" rel="noopener">ai.meta.com/blog · From Brain Waves to Words: Brain2Qwerty Offers a New Path to Communication Without Surgery（6 月 29 日）</a></div>
+      <div class="summary"><b>总结：</b>Meta AI 发布 Brain2Qwerty v2，这是一套无需开颅手术、仅通过脑磁图（MEG）记录就能端到端解码句子的实时系统，精度已逼近此前只有侵入式脑机接口才能达到的水平。在约 22,000 个句子、来自 9 名受试者的数据上训练后，系统整体单词准确率达到 61%，远高于此前非侵入式方法约 8% 的水平。Meta 表示这项研究的长期目标是帮助因疾病或损伤而丧失语言能力的人群恢复交流能力。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Brain2Qwerty v2, the highest-performing end-to-end pipeline capable of real-time sentence decoding from non-invasive brain recordings, approaching levels of accuracy previously exclusive to techniques that require brain surgery. The result: Brain2Qwerty v2 recovers sentences coherently from noisy neural inputs, achieving a word accuracy rate of 61%, significantly improving upon the 8% word accuracy from other non-invasive methods.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Brain2Qwerty v2 是目前表现最好的端到端系统，能够仅凭非侵入式脑记录就实时解码句子，其准确率已逼近此前只有需要脑部手术的技术才能达到的水平。结果显示：Brain2Qwerty v2 能从充满噪声的神经信号中连贯地还原出句子，整体单词准确率达到 61%，相比其他非侵入式方法约 8% 的准确率有显著提升。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Mistral AI · Leanstral 1.5 (Jul 2) -->
+    <article class="card">
+      <span class="tag ai">AI · Mistral AI</span>
+      <h2 class="title">Mistral 开源 Leanstral 1.5，形式化验证能力大幅升级</h2>
+      <div class="source">来源：<a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" rel="noopener">mistral.ai/news · Leanstral 1.5: Proof Abundance for All（7 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Mistral AI 发布 Leanstral 1.5，一个采用 Apache-2.0 协议免费开源、激活参数仅 6B 的形式化验证模型。该模型在 miniF2F 上接近满分，解出了 PutnamBench 672 题中的 587 题，并在 FATE-H（87%）与 FATE-X（34%）两个基准上都刷新了纪录。Mistral 介绍其训练流程涵盖中期训练、监督微调与基于 CISPO 的强化学习，模型尤其擅长智能体式证明工程与真实代码验证，测试中甚至在 57 个代码仓库里发现了 5 个此前未知的 bug。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Leanstral 1.5, a free Apache-2.0 licensed model with 6B active parameters, delivers a major performance upgrade in formal verification, saturating miniF2F, solving 587/672 PutnamBench problems, and achieving state-of-the-art results on FATE-H (87%) and FATE-X (34%).</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Leanstral 1.5 是一个采用 Apache-2.0 协议免费开源、激活参数为 6B 的模型，在形式化验证方面实现了重大性能提升：在 miniF2F 上接近满分，解出了 PutnamBench 672 道题中的 587 道，并在 FATE-H（87%）与 FATE-X（34%）两项基准上都取得了业界最佳成绩。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Anthropic · Claude Tag (Jun 23) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 推出 Claude Science，科研人员专属 AI 工作台</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">anthropic.com/news · Claude Science, an AI workbench for scientists（6 月 30 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布 Claude Science 公开测试版，把科研人员日常分散使用的数据库、文件格式与工具（如 PubMed、Jupyter、R、集群终端等）整合进同一工作环境，用户用自然语言提问后，专门的智能体会跨这些数据源自动查询与整合。Anthropic 特别强调这不是新模型，而是基于现有 Claude 模型（含 Opus 4.8）打造的产品化工作流，目前已在 macOS/Linux 上向 Pro、Max、Team、Enterprise 用户开放测试，并计划资助最多 50 个科研项目，每项最高提供 3 万美元额度。</div>
+      <h2 class="title">Anthropic 推出 Claude Tag，让 Claude 成为 Slack 里的团队成员</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">anthropic.com/news · Introducing Claude Tag（6 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布 Claude Tag，一种让团队直接在 Slack 里与 Claude 协作的新方式：先把 Claude 加入指定频道并连接需要的工具、数据乃至代码库，之后频道里任何人都可以 @Claude 分派任务、自己去忙别的事。Claude 会持续记住频道里的相关信息来构建上下文，还能规划未来要完成的任务；同一频道里只有一个 Claude 与所有人互动，任何人都能看到它在做什么，也能接着上一个人的进度继续对话。Anthropic 透露目前公司内部约 65% 的产品团队代码已经由这套内部版工具生成。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Scientific research is often tedious. Researchers must work across dozens of databases, each with their own schema, contend with file formats that require bespoke data pipelines and viewers, and transition between a roster of tools: PubMed, Jupyter, R, a cluster terminal, and more.</div>
+        <div class="body en">Claude Tag is a new way for teams to work with Claude. We're starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">科研工作常常十分繁琐。研究者必须在数十个数据库之间切换，每个数据库都有各自的结构；还要应对需要定制数据管线与查看器的文件格式；并在一系列工具——PubMed、Jupyter、R、集群终端等——之间来回转换。</div>
+        <div class="body">Claude Tag 是团队与 Claude 协作的一种新方式。我们从 Slack 开始，Claude 可以作为团队成员加入其中。你可以让 Claude 访问指定频道，并连接你选择的任意工具、数据——乃至代码库。然后，频道里的任何人都可以 @Claude，把任务交给它去做，自己则专注于其他工作。</div>
       </details>
     </article>
 
-    <!-- 4 · Hugging Face · Gemma 4 + Cerebras voice AI (Jul 1) -->
+    <!-- 6 · Latent Space (swyx) · AIEWF loops debate (Jul 3) -->
     <article class="card">
-      <span class="tag ai">AI · Hugging Face</span>
-      <h2 class="title">Hugging Face 与 Cerebras 联手，把 Gemma 4 做成实时语音 AI</h2>
-      <div class="source">来源：<a href="https://huggingface.co/blog/cerebras-gemma4-voice-ai" target="_blank" rel="noopener">huggingface.co/blog · Hugging Face and Cerebras bring Gemma 4 to real-time voice AI（7 月 1 日）</a></div>
-      <div class="summary"><b>总结：</b>Hugging Face 与 Cerebras 合作，基于 Gemma 4 打造了一套完全开放、模块化的实时语音到语音（speech-to-speech）演示管线。文章指出，语言模型的响应速度一直是语音交互体验中最大的瓶颈之一，而 Cerebras 超高速且稳定的推理能力正好补上这一环，让整条 Hugging Face 流水线得以发挥出真正流畅自然的对话效果；由于系统各部分都是模块化、开放且可替换的，开发者可以方便地把这套技术栈改造给不同的助手、机器人、产品或研究项目使用。</div>
+      <span class="tag blog">博主 · Latent Space</span>
+      <h2 class="title">Latent Space：AI 工程师大会上那场关于"Loops"的激辩</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/aiewf-daily-dispatch-locomotives" target="_blank" rel="noopener">latent.space · AIEWF Daily Dispatch: The great loops debate and the state of AI engineering（7 月 3 日）</a></div>
+      <div class="summary"><b>总结：</b>Latent Space 记录了 AI Engineer World's Fair 大会最后一天的一场焦点辩论：自主"软件工厂"（loops）究竟是否已经可行，还是行业的热情已经跑到了工程严谨性前面。Keycard 的 Allie Howe 作为主持人抛出关键问题——loop 概念的炒作与实际能落地的效果之间到底有多大差距；Keycard CEO Ian Livingstone 则提出 loop 的本质就是"尝试、学习、应用"这一循环，核心问题只在于这个循环能被压缩到多快。这场辩论也折射出整场大会贯穿始终的分歧：自主智能体到底能不能在生产环境里真正独立跑起来。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Cerebras helps solve one of the most important bottlenecks in the stack: the language-model response time. By making inference dramatically faster and more stable, Cerebras allows the rest of the Hugging Face pipeline to shine.</div>
+        <div class="body en">One of the highlights of the final day of the AI Engineer World's Fair was a debate about loops. It nicely captured an argument running through the whole conference: are autonomous software factories viable now, or is the engineering discipline lagging behind the ambition? Allie Howe from Keycard was the moderator and she opened by asking, "is there or is there not a delta between the hype behind loops and what actually works in practice?"</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Cerebras 帮助解决了这套技术栈中最重要的瓶颈之一：语言模型的响应时间。通过让推理速度大幅提升、并且更加稳定，Cerebras 让 Hugging Face 流水线的其余部分得以充分发挥。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Ethan Mollick · The Twilight of the Chatbots (Jun 30) -->
-    <article class="card">
-      <span class="tag blog">博主 · Ethan Mollick</span>
-      <h2 class="title">Ethan Mollick：聊天机器人时代正在落幕</h2>
-      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">oneusefulthing.org · The Twilight of the Chatbots（6 月 30 日）</a></div>
-      <div class="summary"><b>总结：</b>Ethan Mollick 撰文指出，过去主导 AI 使用方式的"协作智能"模式——人向 AI 提要求、检查结果、再要求下一步——正在被淘汰。随着长时间运行、更聪明、能自我纠错的智能体系统出现，AI 已经不再需要人时刻介入，工作方式也随之从"与聊天机器人协作"转向"把任务交给智能体去做"。他认为这是继"与 AI 共同工作"之后的下一个阶段，组织和个人都需要重新学习如何管理而非操作 AI。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Until recently, the dominant way to use AI was as a co-intelligence. You would ask the AI to do something, check the results, and then ask for it to do the next step of your job. By careful prompting and human attention, you could guide AIs to do complex and long-term tasks.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">直到最近，使用 AI 的主流方式还是把它当作一种"协作智能"：你让 AI 做点什么，检查结果，再让它做你工作的下一步。凭借精心设计的提示词和人的持续关注，你可以引导 AI 完成复杂的长周期任务。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Sebastian Raschka · Using Local Coding Agents (Jun 27) -->
-    <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">Sebastian Raschka：手把手教你搭建本地编程智能体</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noopener">magazine.sebastianraschka.com · Using Local Coding Agents（6 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Sebastian Raschka 发布教程，详细讲解如何用完全本地化的技术栈搭建一套可用于生产的编程智能体：包括本地部署的开源 LLM，以及一个能读取文件、执行编辑、运行命令并验证改动效果的本地编程执行框架。文章面向希望摆脱云端 API 依赖、掌控数据隐私与成本的开发者，是一篇偏工程实践的动手指南。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">This article is a tutorial on setting up a production-ready coding agent with a fully local stack. We will use a locally served LLM together with a local coding harness that can read files, make edits, run commands, and verify changes.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">这篇文章是一篇教程，讲解如何用完全本地化的技术栈搭建一套可用于生产的编程智能体。我们将使用本地部署的 LLM，配合一个能够读取文件、执行修改、运行命令并验证改动的本地编程执行框架。</div>
+        <div class="body">AI Engineer World's Fair 大会最后一天的一大亮点，是一场关于"loops"的辩论。这场辩论恰好呼应了贯穿整场大会的一个争论：自主软件工厂现在是否已经可行，还是工程严谨性正落后于这份野心？主持人是来自 Keycard 的 Allie Howe，她一开场就抛出问题："loop 概念背后的炒作，和它在实践中真正的效果之间，到底存不存在落差？"</div>
       </details>
     </article>
 
