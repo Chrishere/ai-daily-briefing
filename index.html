@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 7 月 10 日</span>
-      <span id="count">6 条精选</span>
+      <span id="count">7 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,99 +123,115 @@
 
   <div id="items">
 
-    <!-- 1 · Anthropic · Redeploying Fable 5 (Jun 30 / Jul 1) -->
+    <!-- 1 · Meta AI · Introducing Muse Image and Muse Video (Jul 7) -->
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 恢复 Fable 5 访问，出口管制风波落幕</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">anthropic.com/news · Redeploying Fable 5（6 月 30 日，7 月 1 日更新）</a></div>
-      <div class="summary"><b>总结：</b>6 月 12 日，美国政府因亚马逊研究人员发现一种绕过 Claude Fable 5 安全防护的越狱方法（诱导模型识别软件漏洞），对 Fable 5 与 Mythos 5 实施出口管制，Anthropic 被迫暂停所有用户访问。6 月 30 日管制解除，7 月 1 日起 Fable 5 恢复面向全球用户开放。Anthropic 同时宣布联合 Amazon、Microsoft、Google 等 Glasswing 合作伙伴，共同制定评估 AI 越狱严重程度的行业统一框架，并深化与美国政府在预发布测试上的合作。</div>
+      <span class="tag ai">AI · Meta</span>
+      <h2 class="title">Meta 推出自研媒体生成模型 Muse Image / Video</h2>
+      <div class="source">来源：<a href="https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/" target="_blank" rel="noopener">ai.meta.com/blog · Introducing Muse Image and Muse Video（7 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>Meta Superintelligence Labs 发布其首款自研媒体生成模型：正式版图像模型 Muse Image 与预览版视频模型 Muse Video。Muse Image 强调精确遵循指令、多参考图合成编辑，并具备调用搜索、代码等工具的智能体能力，可与 Muse Spark 集成；Muse Video 基于同一预训练基座，主打高保真画质与原生音频生成。目前 Muse Image 已上线 Meta AI App、meta.ai、美国 Instagram Stories 及部分地区 WhatsApp，即将登陆 Facebook；Muse Video 即将向创作者与 Meta AI 开放。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users. As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted.</div>
+        <div class="body en">We're excited to launch Muse Image and preview Muse Video, the first media generation models developed by Meta Superintelligence Labs. Muse Image is our most advanced image generation model yet: it follows instructions faithfully, edits with precision, and composes from multiple references. It also brings agentic tool use capabilities and integrates with Muse Spark. Muse Video, built on the same pretraining base, delivers exceptional visual fidelity with native audio support.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">6 月 12 日周五，美国政府对我们最新的模型 Claude Fable 5 与 Claude Mythos 5 实施了出口管制。这要求我们限制境内外外国公民的访问权限。由于该指令立即生效，且我们当时没有可靠方式实时核实用户国籍，我们暂停了所有用户对这两款模型的访问。截至今天 6 月 30 日，Fable 5 与 Mythos 5 的出口管制已经解除。</div>
+        <div class="body">我们很高兴推出 Muse Image，并预览 Muse Video——这是 Meta Superintelligence Labs 开发的首批媒体生成模型。Muse Image 是我们迄今最先进的图像生成模型：它能忠实遵循指令、进行精确编辑，并可基于多张参考图进行合成。它还带有智能体式的工具调用能力，并与 Muse Spark 集成。Muse Video 基于同一预训练基座构建，具备出色的画面保真度与原生音频支持。</div>
       </details>
     </article>
 
-    <!-- 2 · Anthropic · Reflect with Claude (Jul 9) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 推出 Reflect 功能，帮用户复盘如何使用 Claude</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/reflect-with-claude" target="_blank" rel="noopener">anthropic.com/news · Introducing a way to reflect on how you use Claude（7 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 上线 beta 功能 Reflect，源自用户访谈中反复出现的困惑：AI 该多频繁使用、如何用得更有效、哪些任务适合交给 AI、哪些该留给人类。该功能在 Settings 中生成过去 1/3/6/12 个月的使用总结与模式分析，并结合"委托、描述、辨别、审慎"四维 AI 素养框架给出个性化建议，例如提示用户新建 Project 而非反复重新解释背景；功能不读取隐身对话，也不接触已连接工具的底层文件。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Today we're introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that's emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">今天，我们推出 beta 版的全新功能，帮助你反思和优化自己使用 Claude 的方式。在与用户的访谈中，一个反复出现的主题是：人们希望更好地理解 AI 究竟该如何融入日常生活。一个人应该多频繁地使用 AI？如何用得最有效？什么任务适合交给 AI，什么又更适合留给人类？</div>
-      </details>
-    </article>
-
-    <!-- 3 · Simon Willison · Introducing GPT-Live (Jul 8) -->
+    <!-- 2 · Simon Willison · The new GPT-5.6 family (Jul 9) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：OpenAI 终于升级了 ChatGPT 语音模式</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/" target="_blank" rel="noopener">simonwillison.net · Introducing GPT‑Live（7 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 拿到 GPT-Live 预览版几周后撰文点评，称新语音模型表现令人印象深刻，遇到需要网页搜索、深度推理或复杂任务时会在后台无缝调用 GPT-5.5 处理、再把结果带回对话，同时保持语聊连贯不中断。他提到此前的语音模式基于 GPT-4o 时代模型、知识截止到 2024 年，能力局限让他几乎放弃使用；测试期间还遇到一个怪异 bug——模型会突然打断他、对着他说的话发笑，反馈给 OpenAI 后已被修复。</div>
+      <h2 class="title">Simon Willison：实测 GPT-5.6 三档新模型</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/" target="_blank" rel="noopener">simonwillison.net · The new GPT-5.6 family: Luna, Terra, Sol（7 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 拿到 GPT-5.6 Sol 早期访问权限后撰文点评。他指出新的 Luna / Terra / Sol 三档模型按百万 token 定价分别为 $1/$6、$2.50/$15、$5/$30，但认为"每百万 token 价格"已很难直接比较模型成本，因为不同模型完成同一任务所消耗的推理 token 数量差异巨大。实测中他认为 Sol 表现称职，但在他常用的复杂编程任务上并未超越 Claude Fable 5；他还提到 GPT-5.6 在 agent workflow 类评测上占优，却在 SWE-Bench Pro 上落后于 Fable 5。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">I've had preview access for a few weeks in the iPhone app, and the new model is very impressive. The previous voice mode in the ChatGPT app was based on a GPT-4o era model, with a knowledge cut-off some time in 2024. I had mostly stopped using voice mode because the age and relative weakness of the model greatly limited how useful it was as a brainstorming partner.</div>
+        <div class="body en">The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30. I've had some early access to GPT-5.6 Sol—it's definitely very competent, though so far it hasn't struck me as better than Fable at the kind of complex coding tasks I've been using with Anthropic's model.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我在 iPhone 应用里拿到预览访问权限已经用了几周，新模型令人印象深刻。此前 ChatGPT 里的语音模式基于 GPT-4o 时代的模型，知识截止到 2024 年的某个时间点。我此前几乎放弃使用语音模式，因为那个模型又旧又弱，作为头脑风暴伙伴的用处非常有限。</div>
+        <div class="body">新模型按每百万 input/output token 定价：Luna 为 $1/$6，Terra 为 $2.50/$15，Sol 为 $5/$30。我已经拿到 GPT-5.6 Sol 的一些早期访问权限——它确实非常称职，但到目前为止，在我常用来配合 Anthropic 模型完成的那类复杂编程任务上，它并没有让我觉得比 Fable 更好。</div>
       </details>
     </article>
 
-    <!-- 4 · Simon Willison · tencent/Hy3 (Jul 6) -->
+    <!-- 3 · Hugging Face · Distillation in 2026 (Jul 8) -->
     <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Simon Willison：腾讯开源 295B 参数 Hy3 模型，免费试用至月底</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/6/hy3/" target="_blank" rel="noopener">simonwillison.net · tencent/Hy3（7 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 撰文介绍腾讯混元团队新发布的 Apache 2.0 协议开源模型 Hy3——295B 参数的混合专家（MoE）模型，激活参数 21B，另有 3.8B 的 MTP 层参数。继 4 月底 Hy3 Preview 版从 50 多个产品收集反馈并扩大高质量数据后训练规模后，新版本据称超越同量级模型，可媲美参数量 2-5 倍的旗舰开源模型。完整模型在 Hugging Face 上体积达 598GB，FP8 量化版为 300GB，上下文长度 256K，目前可在 OpenRouter 上免费试用至 7 月 21 日。</div>
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">Hugging Face：拆解 2026 前沿模型的蒸馏套路</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/sergiopaniego/distillation-2026" target="_blank" rel="noopener">huggingface.co/blog · Distillation in 2026 (so far)（7 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Hugging Face 工程师 Sergio Paniego 总结了 2026 年前沿模型训练中蒸馏技术的三种主流用法：一是传统的大模型压缩为小模型（如 Gemma 3/4、DeepSeek-R1-Distill）；二是把分别针对数学、代码、智能体等领域训练的多个 RL 专家模型，通过 on-policy 蒸馏（学生模型自行生成 rollout、教师模型给出 token 级反馈）合并为一个统一模型；三是模型借助上下文提示或早期检查点向"更强的自己"学习的自蒸馏。文章强调，好的教师模型不一定更大，专业化程度比参数规模更关键。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. The full-sized model is 598GB on Hugging Face, and the FP8 quantized one is 300GB. The context length is 256K.</div>
+        <div class="body en">Distillation is widely used in the post-training recipes of 2026's frontier models. The three stages we discussed in the live session (off-policy, on-policy and self-distillation) map directly onto how labs use it in real life.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Hy3 是由腾讯混元团队开发的 295B 参数混合专家（MoE）模型，激活参数为 21B，另有 3.8B 的 MTP 层参数。今天我们推出 Hy3，它超越了同量级模型，可媲美参数量达 2-5 倍的旗舰开源模型。完整版模型在 Hugging Face 上体积为 598GB，FP8 量化版为 300GB，上下文长度为 256K。</div>
+        <div class="body">蒸馏技术被广泛用于 2026 年前沿模型的后训练方案中。我们在直播分享中讨论的三个阶段——离策略蒸馏、在策略蒸馏和自蒸馏——直接对应了各实验室在实际中使用蒸馏的方式。</div>
       </details>
     </article>
 
-    <!-- 5 · Lilian Weng · Harness Engineering for Self-Improvement (Jul 4) -->
+    <!-- 4 · Jack Clark · Import AI 464 (Jul 6) -->
     <article class="card">
-      <span class="tag blog">博主 · Lilian Weng</span>
-      <h2 class="title">Lilian Weng：Harness 工程或是通向递归自我改进的关键路径</h2>
-      <div class="source">来源：<a href="https://lilianweng.github.io/posts/2026-07-04-harness/" target="_blank" rel="noopener">lilianweng.github.io · Harness Engineering for Self-Improvement（7 月 4 日）</a></div>
-      <div class="summary"><b>总结：</b>Lilian Weng 发长文探讨"harness 工程"（智能体外围系统设计）与递归自我改进（RSI）之间的关系。她指出，包裹在基础模型之外的部署系统这一层，其重要性不亚于模型本身的原始智能——Claude Code、Codex 等成功的编程智能体产品已经证明了这一点。文章把 harness 定义为"决定模型如何思考规划、调用工具行动、感知与管理上下文、存储产物并评估结果的外围系统"，并计划系统梳理自动化研究、自我改进智能体、进化式程序搜索等相关工作如何被纳入这一框架讨论。</div>
+      <span class="tag blog">博主 · Jack Clark</span>
+      <h2 class="title">Import AI：Fable 自主写出最快 GPU megakernel</h2>
+      <div class="source">来源：<a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noopener">jack-clark.net · Import AI 464: Fables writes GPU kernels（7 月 6 日）</a></div>
+      <div class="summary"><b>总结：</b>Jack Clark 在 Import AI 第 464 期中报道，Anthropic 的 Fable 模型在 KernelBench-Mega 基准上提交了首个真正意义上、也是最快的 megakernel，已获基准维护者及官方排行榜确认。该方案在 RTX PRO 6000 Blackwell 上用 CUDA 编写代码，相比经过优化的 PyTorch 基线实现了 18.71 倍加速，且每个解码 token 只需一次 kernel 调用，而对手方案需要 4-14 次。Clark 认为，这类自动内核优化能力是通向递归自我改进的关键构件之一，说明 AI 系统在关乎自身发展的底层任务上正变得愈发熟练。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">I explicitly mention "deployment system" because the layer between the raw model and the real-world context seems to be as important as the model's raw intelligence. Harnesses are important components of AI deployment, as shown by successful coding agent products such as Claude Code and Codex. A harness is the system surrounding a base model that orchestrates execution and decides how the model thinks and plans, calls tools and acts, perceives and manages context, stores artifacts, and evaluates results.</div>
+        <div class="body en">Fable has written the first genuine (and fastest) megakernel ever submitted to KernelBench-Mega, according to one of the benchmarks maintainers as well as its official leaderboard. The results: Fable achieved an 18.71X speedup by writing Cuda code on an RTX PRO 6000 Blackwell, compared against an optimized PyTorch baseline.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我特意提到"部署系统"，是因为原始模型与真实世界场景之间的这一层，其重要性似乎不亚于模型本身的原始智能（即预训练之后立即测得的评估分数）。Harness 是 AI 部署中的重要组成部分，Claude Code、Codex 等成功的编程智能体产品已经证明了这一点。Harness 是包裹在基础模型之外的系统，它决定模型如何思考与规划、调用工具并行动、感知与管理上下文、存储产物，以及评估结果。</div>
+        <div class="body">据该基准的一位维护者及其官方排行榜确认，Fable 写出了 KernelBench-Mega 上第一个真正意义上的、也是最快的 megakernel。结果显示：Fable 在 RTX PRO 6000 Blackwell 上用 CUDA 编写代码，相比经过优化的 PyTorch 基线实现了 18.71 倍的速度提升。</div>
       </details>
     </article>
 
-    <!-- 6 · Ethan Mollick · The twilight of the chatbots (Jun 30) -->
+    <!-- 5 · Anthropic · Fable 5 safeguards and jailbreak framework (Jul 2) -->
     <article class="card">
-      <span class="tag blog">博主 · Ethan Mollick</span>
-      <h2 class="title">Ethan Mollick：聊天机器人的黄昏，工作正转向"委派智能体"</h2>
-      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">oneusefulthing.org · The twilight of the chatbots（6 月 30 日）</a></div>
-      <div class="summary"><b>总结：</b>Ethan Mollick 撰文指出，随着 AI 能独立完成的任务越来越长，人们使用 AI 的方式正发生根本转变：过去主流模式是把 AI 当作"协作智能"（co-intelligence）——人逐步下达指令、检查结果、再要求下一步；但如今能长时间自主运行、具备自我纠错能力的 AI 系统不再需要持续人类干预，工作正在变成"把任务分派给智能体"而非"与聊天机器人协作"。他还提到 OpenAI 内部四分之一员工每周同时运行至少四个智能体，用户的领域专长（而非职业身份）才是决定 Claude Code 使用效果的关键变量。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 公布 Fable 5 安全分类器与越狱严重度框架</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noopener">anthropic.com/news · More details on Fable 5's cyber safeguards and our jailbreak framework（7 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Fable 5 全球重新开放后，Anthropic 详细说明配套的两项安全机制。其一是"安全分类器"系统，把网络安全相关请求分为四个等级——从被禁止的用途（如勒索软件、恶意软件开发）到高/低风险的双重用途活动，再到良性操作，区分攻击者与防御者语境而非一刀切拒绝。其二是与 Glasswing 合作伙伴共同起草的"AI 越狱严重度框架"（CJS 量表，0-4 级），从能力提升程度、适用范围、实现难度和技术可获得性四个维度衡量越狱技术的危险程度，为行业与政府提供统一的风险沟通标准。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">As AIs can do longer and longer tasks, the way people are using AI is changing. Until recently, the dominant way to use AI was as a co-intelligence. You would ask the AI to do something, check the results, and then ask for it to do the next step of your job. Long-running, smart, and self-correcting AI systems do not need constant human intervention, and they require a different way of working. So work is increasingly about assigning work to agents, rather than working together with chatbots.</div>
+        <div class="body en">Claude Fable 5 has been re-deployed and is now available globally for all users. We're taking this opportunity to share further information in two areas. First, we provide more information on the cybersecurity safeguards—specifically, the safety classifiers—that we launched with the model. These are the AI systems that accompany the model that detect and block dangerous (or potentially dangerous) cybersecurity uses. Second, we lay out an early draft version of our proposed AI jailbreak severity framework, on which we've been working with our Glasswing partners.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">随着 AI 能完成的任务越来越长，人们使用 AI 的方式也在改变。直到最近，使用 AI 的主流方式还是把它当作"协作智能"——你让 AI 做点什么，检查结果，再让它完成你工作的下一步。而能长时间自主运行、聪明且能自我纠错的 AI 系统不需要持续的人类干预，它们需要一种不同的工作方式。所以工作正日益变成把任务分派给智能体，而不是与聊天机器人协作。</div>
+        <div class="body">Claude Fable 5 已重新部署，目前面向全球所有用户开放。借此机会，我们分享两方面的更多信息。首先，我们进一步说明了随该模型一同上线的网络安全防护措施——具体来说，即"安全分类器"。这是伴随模型运行的 AI 系统，用于检测并拦截危险（或潜在危险）的网络安全用途。其次，我们提出了"AI 越狱严重度框架"的早期草案版本，这是我们与 Glasswing 合作伙伴共同研究的成果。</div>
+      </details>
+    </article>
+
+    <!-- 6 · Mistral · Leanstral 1.5 (Jul 2) -->
+    <article class="card">
+      <span class="tag ai">AI · Mistral</span>
+      <h2 class="title">Mistral 开源数学证明模型 Leanstral 1.5</h2>
+      <div class="source">来源：<a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" rel="noopener">mistral.ai/news · Leanstral 1.5: Proof Abundance for All（7 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Mistral 发布 Leanstral 1.5——一款基于 Lean 4 定理证明语言、采用 Apache 2.0 协议完全开源的形式化验证模型，总参数 119B，激活参数仅 6B。新版本在 miniF2F 基准上跑满分，在 672 道 PutnamBench 题目中解出 587 道，并在 FATE-H（高等代数）与 FATE-X（博士级难题）上分别取得 87% 与 34% 的 SOTA 成绩，测试过程中还在既有代码库里发现了 5 个此前未知的 bug。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Leanstral 1.5, a free Apache-2.0 licensed model with 6B active parameters, delivers a major performance upgrade in formal verification, saturating miniF2F, solving 587/672 PutnamBench problems, and achieving state-of-the-art results on FATE-H (87%) and FATE-X (34%).</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Leanstral 1.5 是一款免费的 Apache-2.0 协议模型，激活参数为 6B，在形式化验证方面带来了重大性能升级：跑满 miniF2F 基准，解出 672 道 PutnamBench 题目中的 587 道，并在 FATE-H（87%）与 FATE-X（34%）上取得了最先进的成绩。</div>
+      </details>
+    </article>
+
+    <!-- 7 · Anthropic · Claude Science (Jun 30) -->
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic 推出面向科研人员的 Claude Science 工作台</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">anthropic.com/news · Claude Science, an AI workbench for scientists（6 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 推出 Claude Science，作为其去年秋季启动的生命科学计划迄今最大规模的一次扩展。该工作台把原本分散的科研软件整合到统一环境中，支持从文献分析到论文撰写的全流程工作，同时保证全过程可审计、可复现。核心能力包括：原生渲染 3D 蛋白质结构、基因组轨道等科学可视化并保留可复现代码；自动管理个人设备、实验室集群或按需 GPU 之间的算力调度；预置 60 多个覆盖基因组学、蛋白质组学、结构生物学等领域的技能与连接器；以及一个能检查引用与计算、在流程运行中自我纠错的审核 agent。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we've worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential. Today, we're introducing our most significant expansion of these efforts: Claude Science, an AI workbench for scientists.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">AI 有潜力大幅加速科学发现的步伐以及医疗干预手段的研发。自去年秋季启动生命科学领域的相关工作以来，我们一直在提升模型能力、通过 MCP 与 skills 连接科研生态，并推进合作伙伴关系，力求实现这一潜力。今天，我们推出这些努力中迄今规模最大的一次扩展：Claude Science，一个面向科学家的 AI 工作台。</div>
       </details>
     </article>
 
