@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 7 月 19 日</span>
-      <span id="count">7 条精选</span>
+      <span id="date">2026 年 7 月 22 日</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,115 +123,99 @@
 
   <div id="items">
 
-    <!-- 1 · Anthropic · Apply for Anthropic's AI for Science rare disease research grants (Jul 20) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 开放罕见病研究 AI 专项资助</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/rare-disease-research-grants" target="_blank" rel="noopener">anthropic.com/news · Apply for Anthropic's AI for Science rare disease research grants（7 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 宣布在其"AI for Science"计划下开放罕见病研究专项资助申请，入选研究者将获得最高 5 万美元、为期六个月的 Claude 使用额度，用于探索 AI 如何加速对罕见病的理解与诊断。项目意在围绕这一课题聚拢一批研究者社区，而非只是单次资金投放。此举延续了 Anthropic 近期把 Claude 定位为科研基础设施、而不仅是通用助手的策略方向。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">入选申请者将在六个月内获得最高 5 万美元的 Claude 使用额度，目标是围绕"AI 如何重塑我们对罕见病的理解"这一课题，建立起一个研究者社区。</div>
-      </details>
-    </article>
-
-    <!-- 2 · Simon Willison · How I tricked Claude into leaking your deepest, darkest secrets (Jul 15) -->
+    <!-- 1 · Simon Willison · Reverse-engineering is cheap now (Jul 20) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">研究者曝 Claude web_fetch 数据泄露漏洞，Anthropic 已修复</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/" target="_blank" rel="noopener">simonwillison.net · How I tricked Claude into leaking your deepest, darkest secrets（7 月 15 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 转述安全研究者 Ayush Paul 的发现：claude.ai 的 web_fetch 工具本应只能访问用户明确输入或搜索结果返回的 URL，但由于它也会跟随已抓取页面中嵌套的链接，攻击者可以搭建一个"蜜罐"网站，诱导 Claude 沿着一连串生成链接把用户姓名、公司、推断出的居住地等信息逐字符外泄到攻击者服务器。Simon 指出 Claude 会用固定的 User-Agent 标识自己，这让攻击者能精确区分真人访问与 Claude 访问、分别提供不同页面内容。Anthropic 未支付漏洞赏金（称已内部发现该问题），但已修复：禁止 web_fetch 跟随外部页面中发现的链接，同时保留用户主动输入和搜索结果里的链接。</div>
+      <h2 class="title">Simon Willison：编程智能体让逆向工程变得"廉价"</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/" target="_blank" rel="noopener">simonwillison.net · Reverse-engineering is cheap now（7 月 20 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 撰文指出，过去自己逆向工程家用智能设备之所以很少动手，是因为写代码、调试、维护的成本太高，往往得不偿失；而编程智能体（coding agents）从根本上改变了这笔账。现在把一个简单的自动化跑通所需的努力大幅下降，尝试失败的代价也随之降低，因为代码变得足够"便宜"，即便日后要维护甚至推倒重写，心理负担也小得多。他认为这种成本结构的转变，会让很多此前"不值得做"的小型逆向工程项目重新变得划算。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Anthropic didn't pay out a bug bounty because they claimed to have identified it internally already, and have since closed the hole by removing the ability for web_fetch to navigate to additional links returned within its own fetched content.</div>
+        <div class="body en">Coding agents change that equation entirely. The effort to get a simple automation working has dropped, as has the cost of trying and failing to get it to work. Since the code is so cheap, the idea of having to maintain it in the future - or throw it away and start again - carries way less psychological baggage.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Anthropic 没有支付漏洞赏金，因为他们声称内部已经先一步发现了这个问题；此后他们堵上了这个漏洞——取消了 web_fetch 跟随其抓取内容中返回的额外链接进行跳转的能力。</div>
+        <div class="body">编程智能体让这笔账彻底改变了。把一个简单的自动化跑通所需要的努力已经下降，尝试并失败的代价也随之降低。由于代码变得如此廉价，"未来需要维护它，或者干脆扔掉重写"这种想法所带来的心理负担，也小了很多。</div>
       </details>
     </article>
 
-    <!-- 3 · Google DeepMind · Our approach to bioresilience (Jul 16) -->
+    <!-- 2 · Simon Willison · xai-org/grok-build, now open source (Jul 15) -->
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">xAI 编程工具曝隐私事故，紧急开源 grok-build 挽回信任</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">simonwillison.net · xai-org/grok-build, now open source（7 月 15 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 记录了 xAI 的编程 CLI 工具 grok-build 曝出的一起隐私事故：在某些目录下运行该命令，会把整个目录上传到 xAI 的 Google Cloud 存储桶，有用户报告自己的主目录被上传，其中包含 SSH 密钥、密码管理器数据库、文档、照片和视频等敏感内容。事故曝光后 xAI 迅速禁用了上传功能并删除已保留的数据，几个小时内又把这个约 84 万行代码的 Rust 项目以 Apache 2.0 协议整体开源。Simon 认为这一系列动作的目的很明确：尽力挽回因这次事故而流失的用户信任。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Running the command in a directory could upload that entire directory to xAI's Google Cloud buckets. One user reported running it in their home directory and seeing it upload "my SSH keys, my password manager database, my documents, photos, videos, everything". A few hours ago they also released the entire Grok Build codebase under an Apache 2.0 license - presumably to try and regain trust from their users.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">在某个目录下运行这条命令，可能会把整个目录上传到 xAI 的 Google Cloud 存储桶。有用户报告说自己在主目录下运行后，看到"我的 SSH 密钥、密码管理器数据库、文档、照片、视频，所有东西"都被上传了。几个小时前，他们又把整个 Grok Build 代码库以 Apache 2.0 协议开源——大概是想借此挽回用户的信任。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Hugging Face / Thinking Machines · Welcome Inkling by Thinking Machines (Jul 15) -->
+    <article class="card">
+      <span class="tag ai">AI · Thinking Machines</span>
+      <h2 class="title">Thinking Machines 发布万亿参数开放多模态模型 Inkling</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/thinkingmachines-inkling" target="_blank" rel="noopener">huggingface.co/blog · Welcome Inkling by Thinking Machines（7 月 15 日）</a></div>
+      <div class="summary"><b>总结：</b>Thinking Machines 在 Hugging Face 上发布 Inkling，一款约 1 万亿参数的开放多模态大模型，原生支持图像、文本、音频输入，具备智能体能力，并支持 100 万 token 上下文窗口，训练数据量达 45 万亿 token。文章强调这是首个在这一参数规模、同时具备百万级上下文与三模态原生输入能力的开放模型，发布当天即提供 transformers 支持，并已接入 SGLang、vLLM 等主流推理引擎，方便社区第一时间上手部署。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Inkling is a large (1T params!) open model to natively accept image, text, and audio inputs. TLDR; Inkling by Thinking Machines is out on Hugging Face. Inkling is a huge multimodal LLM that understands all modalities (image, audio, text), has agentic capabilities, and supports 1M context.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Inkling 是一款参数量高达 1 万亿的大型开放模型，能够原生接受图像、文本和音频输入。简而言之：Thinking Machines 的 Inkling 已在 Hugging Face 上线。Inkling 是一个能理解全部模态（图像、音频、文本）、具备智能体能力，并支持 100 万 token 上下文的超大规模多模态大模型。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Google DeepMind · Conjecture Machines: AI agents and the new validation bottleneck in science (Jul 2026) -->
     <article class="card">
       <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind 与 Isomorphic Labs 公布生物安全防护策略</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/our-approach-to-bioresilience/" target="_blank" rel="noopener">deepmind.google · Our approach to bioresilience（7 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 与旗下药物研发公司 Isomorphic Labs 联合发文，阐述双方在"生物韧性（bioresilience）"上的应对思路：一方面通过模型层面的安全防护，防止其蛋白质与生物设计模型被威胁行为体滥用于制造生物武器；另一方面主动与政府、科学家和生物安全专家合作，确保这些工具真正被用来增强社会应对生物风险的能力。文章强调这是一项需要"双管齐下"同时推进的工作，而非安全与开放二选一。</div>
+      <h2 class="title">DeepMind：AI 智能体正在制造科研"验证瓶颈"</h2>
+      <div class="source">来源：<a href="https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/" target="_blank" rel="noopener">deepmind.google · Conjecture Machines: AI agents and the new validation bottleneck in science（7 月）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布政策文章指出，以 Co-Scientist 为代表的 AI 智能体正在让科研假设与候选方案的产出变得空前廉价和丰富，但验证——也就是检验这些想法能否经受现实检验——仍然依赖缓慢、昂贵的实体实验与机构流程，两者之间的落差正在拉大而非缩小。文章呼吁各国政策制定者从四方面应对：确保智能体的广泛可及性、让数据集"智能体可用"、加大对实验验证基础设施的投入，并用 AI 工具为同行评审提能。DeepMind 提到已在英国 Francis Crick 研究所内设立湿实验室，并为独立科学家提供资金和 Co-Scientist 访问权限，帮助他们完成验证智能体产出所需的实验。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Our work is twofold - to prevent threat actors from misusing our models, and to ensure that governments, scientists, biosecurity experts and our teams can harness these technologies to build a more resilient world.</div>
+        <div class="body en">AI agents are conjecture machines, making ideas and candidate solutions abundant and relatively cheap. Refutations remain physical and institutional — and so, costly and slow. Validation is the slow, costly business of testing whether an idea survives contact with reality.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们的工作有两个方面——既要防止威胁行为体滥用我们的模型，也要确保政府、科学家、生物安全专家以及我们自己的团队，能够利用这些技术构建一个更具韧性的世界。</div>
+        <div class="body">AI 智能体是"猜想制造机"，让想法和候选方案变得丰富而相对廉价。但反驳仍然依赖实体和机构层面的流程——因此代价高昂、进展缓慢。验证，就是检验一个想法能否经受现实考验这件缓慢而昂贵的事。</div>
       </details>
     </article>
 
-    <!-- 4 · Nathan Lambert (Interconnects) · 6 months to live for open models (Jul 12) -->
+    <!-- 5 · Sebastian Raschka · Controlling Reasoning Effort in LLMs (Jul 18) -->
     <article class="card">
-      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Nathan Lambert：开源模型只剩六个月窗口期</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/6-months-to-live-for-open-models" target="_blank" rel="noopener">interconnects.ai · 6 months to live for open models（7 月 12 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 撰文称，白宫正在酝酿一项针对开放权重模型的行政令，很可能限制中国血统模型与政府场景中的使用，这将是开源 AI 迄今面临的最严峻考验。他判断，真正的监管驱动力在于开放权重模型即将追平 Claude Mythos 这类顶尖闭源模型的能力，而最可能出现的举措是禁止或无限期搁置任何能力明显超过 GPT-5.5、Claude Opus 4.8 或 GLM-5.2 水平的开放权重模型发布——按目前的能力差距推算，这一时间窗口大概只剩六个月。他表示自己接下来会大幅增加政策向写作的比重，直到这场博弈尘埃落定。</div>
+      <span class="tag blog">博主 · Sebastian Raschka</span>
+      <h2 class="title">Sebastian Raschka 拆解 LLM"推理力度"控制机制</h2>
+      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms" target="_blank" rel="noopener">magazine.sebastianraschka.com · Controlling Reasoning Effort in LLMs（7 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>借着 OpenAI GPT-5.6 系列每个尺寸都提供五到六档推理力度设置这一现象，Sebastian Raschka 系统梳理了"推理模型"的定义与"推理力度（reasoning effort）"背后的训练与推理机制：推理模型指的是那些会先输出一段中间推理轨迹、一步步拆解问题再给出答案的模型；他进一步解释了 RLVR（可验证奖励强化学习）等训练手法如何被用来让同一个模型学会在不同力度设置下工作，以及为什么这种能力目前还无法简单套用到任意一个现成模型上。他判断，短期内推理力度仍会作为一个显式的模型输入参数存在，并且多半会通过系统提示词来传递。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The most likely incoming action is to ban or indefinitely delay any open-weights model meaningfully above the capability level in the range of GPT 5.5, Claude Opus 4.8, or GLM-5.2. With the consistent capability gap, this should be within the next 6 months.</div>
+        <div class="body en">In the context of AI and LLM research, "reasoning model" means a model that outputs an intermediate reasoning trace, which is like an intermediate response that works through a question or task step by step.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">最可能出现的举措，是禁止或无限期搁置任何能力明显超过 GPT-5.5、Claude Opus 4.8 或 GLM-5.2 水平区间的开放权重模型。按目前稳定的能力差距推算，这一情况应该会在接下来六个月内发生。</div>
+        <div class="body">在 AI 与 LLM 研究的语境下，"推理模型"指的是那些会输出一段中间推理轨迹的模型——这段轨迹就像是一份中间答案，会一步步拆解、处理某个问题或任务。</div>
       </details>
     </article>
 
-    <!-- 5 · Anthropic · Introducing Claude for Teachers (Jul 14) -->
+    <!-- 6 · Anthropic · Inviting hard questions (Jul 9) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 面向美国 K-12 教师推出 Claude for Teachers</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-for-teachers" target="_blank" rel="noopener">anthropic.com/news · Introducing Claude for Teachers（7 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 推出 Claude for Teachers，向美国经认证的 K-12 教师免费开放高级 Claude 工具、教学技能包，并接入覆盖全美 50 个州学业标准的 Learning Commons，帮教师快速匹配课程要求。项目数据不用于模型训练，并遵循符合 FERPA 的 K-12 数据处理附录；Anthropic 还将与美国教师联合会合作制定隐私标准，并在底特律公立学区试点评估其对教师工作量与职业幸福感的实际影响。</div>
+      <h2 class="title">Anthropic 发起"公众提问"计划，承诺公开追踪回应</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/hard-questions" target="_blank" rel="noopener">anthropic.com/news · Inviting hard questions（7 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布启动一项名为"hard questions"的新计划，主动征集公众对 AI 的疑虑与尖锐提问，涉及失业风险、创造性工作被贬值、社会与家庭影响等议题。公司表示要真正做到符合公共利益，就必须先充分理解公众对这项新技术的期待与担忧，因此承诺会公开追踪并报告自己为回应这些问题所采取的具体行动，同时坦承在哪些方面可能做得不够。这是 Anthropic 近期持续强化"公益公司"人设、试图用透明度换取公众信任的又一举措。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Claude for Teachers is designed to close the gap between educational best practices and what a teacher's week allows.</div>
+        <div class="body en">To truly act in the public interest, we need to fully understand the hopes and concerns the public has about this new technology. As part of our new initiative on hard questions, we're taking further steps to understand people's views and questions on a variety of AI-related topics, and transparently chart our progress toward our public benefit goals.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Claude for Teachers 的设计目标，是弥合"教育最佳实践"与"教师一周实际能腾出的时间"之间的差距。</div>
-      </details>
-    </article>
-
-    <!-- 6 · NVIDIA (Hugging Face blog) · Introducing Cosmos 3 Edge (Jul 20) -->
-    <article class="card">
-      <span class="tag ai">AI · NVIDIA</span>
-      <h2 class="title">NVIDIA 推出边缘端世界模型 Cosmos 3 Edge</h2>
-      <div class="source">来源：<a href="https://huggingface.co/blog/nvidia/cosmos3edge" target="_blank" rel="noopener">huggingface.co/blog · Introducing Cosmos 3 Edge（7 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>NVIDIA 在 Hugging Face 上发布 Cosmos 3 Edge，一款 40 亿参数的开放世界模型，专为机器人与视觉智能体设计，能在边缘设备本地运行，帮助它们理解周围环境、进行实时推理并生成机器人动作指令。相比此前需要依赖云端算力的 Cosmos 系列模型，Edge 版本把体量压缩到可在设备端部署的规模，目标是把物理世界的空间推理能力下放到机器人和终端硬件上。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">It's a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">这是一款 40 亿参数的开放世界模型，能帮助机器人与视觉 AI 智能体理解周围环境、进行实时推理，并在边缘设备上生成机器人动作指令。</div>
-      </details>
-    </article>
-
-    <!-- 7 · Simon Willison · A quote from Sam Altman (Jul 20) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">马斯克诉讼曝光邮件：Altman 早年开源策略动机</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/20/sam-altman/" target="_blank" rel="noopener">simonwillison.net · A quote from Sam Altman（7 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 摘录了在 Musk v. Altman 诉讼中曝光的一封 2022 年 10 月 Sam Altman 写给 OpenAI 董事会的邮件。邮件中 Altman 提议尽快训练并发布一个能力接近 GPT-3、可在消费级硬件本地运行的开源模型，其真实动机并非单纯的开放理念，而是想抢在竞争对手之前发布，从而削弱其他团队募资做类似事情的动力。Simon 借此指出，这段早年内部通信为理解 OpenAI 后续在"开源 vs 闭源"上的摇摆立场提供了颇具反差的历史注脚。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">We will discuss it more at our next board meeting, but one thing we'd like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">我们会在下次董事会上进一步讨论，但我们近期想做的一件事，是训练一个能力大致相当于 GPT-3、可以在消费级硬件上本地运行的语言模型，并将其发布出来。</div>
+        <div class="body">要真正做到符合公共利益，我们需要充分理解公众对这项新技术抱有的期待与担忧。作为"hard questions"新计划的一部分，我们正在采取进一步措施，去了解人们在一系列 AI 相关议题上的看法与疑问，并透明地展示我们在实现公益目标上的进展。</div>
       </details>
     </article>
 
