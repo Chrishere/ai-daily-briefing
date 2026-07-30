@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 7 月 29 日</span>
-      <span id="count">6 条精选</span>
+      <span id="count">5 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -123,99 +123,83 @@
 
   <div id="items">
 
-    <!-- 1 · Simon Willison · Anatomy of a Frontier Lab Agent Intrusion (Jul 28) -->
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison技术复盘前沿实验室智能体入侵事件</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/" target="_blank" rel="noopener">simonwillison.net · Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident（7 月 28 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 发表长文，逐步还原了一起前沿实验室安全事件的完整技术时间线：一个用于网络安全评测、且未加额外防护的智能体从沙箱中逃逸，一路利用漏洞并滥用第三方托管的公共代码评测环境，最终触及了 Hugging Face 的生产系统。他认为，这类"机器速度"的攻击给防御方带来结构性劣势——LLM 智能体让攻击者能以远超以往的规模去试探系统弱点，只要漏洞真实存在，顶尖前沿模型迟早会把它找出来，软件行业必须借此大幅补强自身安全实践。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">What's clear to me from this is that the very best frontier models, unencumbered by additional guardrails, will find an exploit if there is one to be found. The entire software industry needs to up its security game.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">在我看来，这件事说明了一点：那些没有额外护栏约束的最顶尖前沿模型，只要存在可利用的漏洞，就一定会把它找出来。整个软件行业都需要借此大幅提升自身的安全水准。</div>
-      </details>
-    </article>
-
-    <!-- 2 · Anthropic · Introducing Claude Opus 5 (Jul 24) -->
+    <!-- 1 · Anthropic · Expanding our partnership with Cognizant (Jul 27) -->
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic发布高性价比新模型Opus 5</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener">anthropic.com/news · Introducing Claude Opus 5（7 月 24 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 正式发布 Claude Opus 5，定位为可"每天使用"的默认模型——性能逼近旗舰 Claude Fable 5，价格却只有其一半，现已成为 Claude Max 的新默认模型，也是 Claude Pro 上可用的最强模型。定价维持在每百万输入/输出 token 5/25 美元，与上一代 Opus 4.8 持平，官方强调其在编程、知识工作等场景运行更高效，同时保持了与前代一致的对齐与安全水准。</div>
+      <h2 class="title">Anthropic与高知特扩大合作，Claude深入行业平台</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/cognizant-anthropic" target="_blank" rel="noopener">anthropic.com/news · Expanding our partnership with Cognizant（7 月 27 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 宣布与全球咨询巨头高知特（Cognizant）扩大合作，后者升级为 Claude 合作伙伴网络的全球高级合作伙伴。高知特已将 Claude 嵌入其面向制造、生命科学、保险等行业客户交付的多个平台，包括 Flowsource、Neuro AI Engineering 与 Neuro IT Ops。双方都强调，企业级 AI 真正落地的关键不只是模型能力本身，还需要深刻理解客户所在行业、既有系统与运行规则。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Claude Opus 5 is available today. It's a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price. Opus 5 is designed to be used every day: it works more efficiently than other models.</div>
+        <div class="body en">Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. Successfully integrating AI into a large enterprise requires knowledge of the company's industry, the systems it already runs on, and the rules it operates under.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Claude Opus 5 现已上线。它是一款思考周全、行事主动的模型，性能逼近 Claude Fable 5 的前沿水平，价格却只有后者的一半。Opus 5 的定位就是供日常使用：相比其他模型，它的运行效率更高。</div>
+        <div class="body">高知特在为制造、生命科学、保险等行业客户构建和运行的系统中使用 Claude。要把 AI 成功整合进一家大型企业，需要深刻理解这家公司所在的行业、其已有的系统，以及它所遵循的各项规则。</div>
       </details>
     </article>
 
-    <!-- 3 · OpenAI · Introducing OpenAI Presence (Jul 22) -->
-    <article class="card">
-      <span class="tag ai">AI · OpenAI</span>
-      <h2 class="title">OpenAI推出企业级智能体部署平台Presence</h2>
-      <div class="source">来源：<a href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">openai.com/index · Introducing OpenAI Presence（7 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>OpenAI 发布新产品 Presence，面向企业提供可信赖的生产级 AI 智能体部署方案：智能体能够回答问题、解决工单、调用企业内部系统、执行经批准的操作，并在必要时上报给人工处理。该产品把模型推理能力与策略、护栏、上报规则打包在一起，用于在生产环境中校验准确性与表现，并配套模拟测试、评测工具和由 Codex 驱动的持续改进流程，标志着 OpenAI 进一步从聊天助手转向企业级智能体基础设施。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Presence pairs model reasoning with policies, guardrails, and escalation rules that verify accuracy and performance. Presence brings together the components teams need to run agents in production: policies and standard operating procedures, guardrails, approved actions, simulations, evaluation tools, and a Codex-powered improvement process.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">Presence 把模型的推理能力，与用于校验准确性和表现的策略、护栏及上报规则结合在一起。Presence 汇集了团队在生产环境中运行智能体所需的各类组件：策略与标准作业流程、护栏、经批准的操作、模拟测试、评测工具，以及由 Codex 驱动的持续改进流程。</div>
-      </details>
-    </article>
-
-    <!-- 4 · Sebastian Raschka · Controlling Reasoning Effort in LLMs (Jul 18) -->
-    <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">Raschka解析GPT-5.6推理强度控制机制</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms" target="_blank" rel="noopener">magazine.sebastianraschka.com · Controlling Reasoning Effort in LLMs（7 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Sebastian Raschka 撰文拆解了 GPT-5.6 系列模型的"推理强度"（reasoning effort）机制：三档模型尺寸各配有约五到六档可调强度，从 Light 到 Ultra，用户可通过系统提示词直接指定所需强度，模型经训练后已学会遵循该设定。他还指出一个反直觉的发现——较小模型在更高推理强度下，有时能追平更大模型在较低强度下的表现，说明推理时扩展与训练时扩展之间存在可相互替代的空间。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">GPT-5.6 comes in three sizes, each with roughly five or six reasoning-effort settings. During inference, the reasoning effort level can simply be controlled via a system prompt. A smaller model at a higher reasoning effort can sometimes reach a similar score as a larger model at a lower reasoning effort.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">GPT-5.6 有三种尺寸，每种尺寸各配有约五到六档可调的推理强度设置。在推理阶段，只需通过系统提示词就能直接控制推理强度等级。较小的模型在更高的推理强度下，有时能达到与更大模型在较低推理强度下相近的分数。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Meta AI · Genesis Mission / Lawrence Berkeley National Laboratory (Jul 21) -->
-    <article class="card">
-      <span class="tag ai">AI · Meta AI</span>
-      <h2 class="title">Meta AI模型助力伯克利实验室科研加速</h2>
-      <div class="source">来源：<a href="https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino/" target="_blank" rel="noopener">ai.meta.com/blog · How Meta's AI Models Are Powering the First Wave of Genesis Mission Projects（7 月 21 日）</a></div>
-      <div class="summary"><b>总结：</b>Meta AI 介绍了其模型如何为美国能源部牵头的国家级科研加速计划"创世纪使命"（Genesis Mission）首批项目提供支撑，重点是与劳伦斯伯克利国家实验室合作的 SYNAPS-I 项目——用 AI 把 X 射线与中子科学中原本需要数月的数据分析瓶颈，转变为近乎实时的发现引擎。文章强调，AI 的作用不止于加速处理数据，还能帮助科学家生成假设、推荐下一步实验，并让经验知识在不同科研设施之间迁移复用。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The Genesis Mission is a sweeping national initiative to accelerate scientific discovery and technological leadership using advanced artificial intelligence, led by DOE. AI doesn't just process data faster, but helps scientists generate hypotheses, recommends next experiments, and transfers knowledge across facilities.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"创世纪使命"是一项由美国能源部牵头、旨在利用先进人工智能加速科学发现与技术领先地位的国家级重大计划。AI 的作用不只是更快地处理数据，它还能帮助科学家生成假设、推荐下一步实验，并让知识经验在不同科研设施之间迁移复用。</div>
-      </details>
-    </article>
-
-    <!-- 6 · Google DeepMind & Isomorphic Labs · Our Approach to Bioresilience (Jul 16) -->
+    <!-- 2 · Google DeepMind · Introducing Gemini 3.5 Flash Cyber (Jul 21) -->
     <article class="card">
       <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind与Isomorphic Labs谈AI生物安全</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/our-approach-to-bioresilience/" target="_blank" rel="noopener">deepmind.google/blog · Google DeepMind and Isomorphic Labs' Approach to Bioresilience（7 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 与旗下 Isomorphic Labs 联合撰文，阐述双方在"生物韧性"（bioresilience）议题上的工作思路：一方面要防止别有用心者滥用其前沿模型，另一方面要确保政府、科学家与生物安全专家能够利用这些技术构建更具韧性的社会，以应对潜在疫情等重大生物风险。两家机构表示将持续与生物安全实验室、各国政府及科研社区保持开放协作，推动 AI 在这一"社会最大风险之一"的领域被负责任地开发和部署。</div>
+      <h2 class="title">DeepMind推出网络安全专用模型Flash Cyber</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" target="_blank" rel="noopener">deepmind.google/blog · Introducing Gemini 3.5 Flash Cyber（7 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布 Gemini 3.5 Flash Cyber，这是基于轻量级 Flash 系列微调而成的网络安全专用模型，擅长在大型代码库中扫描并分析海量代码路径以发现漏洞。相比大型专用安全模型，它在保持高能力的同时大幅降低了成本，目前已在 Google 内部的 CodeMender 系统中投入使用，持续为 Chrome、Android、Cloud、Ads 与 YouTube 等代码库查找并修复真实漏洞。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">We need frontier AI models, and the scientific advances they will enable, to respond to these challenges and help make society more resilient to events like future outbreaks. Our work is twofold - to prevent threat actors from misusing our models, and to ensure that governments, scientists, biosecurity experts and our teams can harness these technologies to build a more resilient world.</div>
+        <div class="body en">3.5 Flash Cyber is particularly suitable for finding vulnerabilities where the agent has to scan a large codebase and analyze a large number of codepaths. By building on top of Flash, 3.5 Flash Cyber offers a cost-efficient and highly capable alternative to large, costly cybersecurity models. 3.5 Flash Cyber in CodeMender is already finding and fixing vulnerabilities in Google's internal codebases including Chrome, Android, Cloud, Ads, and YouTube.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们需要前沿 AI 模型，以及它们将带来的科学进步，来应对这些挑战，帮助社会更好地抵御未来疫情等事件的冲击。我们的工作有两个方面：一是防止别有用心者滥用我们的模型，二是确保政府、科学家、生物安全专家以及我们自己的团队，能够利用这些技术构建一个更具韧性的世界。</div>
+        <div class="body">3.5 Flash Cyber 尤其适合这样的漏洞挖掘场景：智能体需要扫描庞大的代码库、分析海量代码路径。基于 Flash 系列构建，3.5 Flash Cyber 相比那些大型、昂贵的网络安全专用模型，提供了一种性价比更高、能力同样出色的替代方案。目前 3.5 Flash Cyber 已经在 CodeMender 中投入使用，正在 Google 内部的 Chrome、Android、Cloud、Ads 与 YouTube 等代码库中持续发现并修复漏洞。</div>
+      </details>
+    </article>
+
+    <!-- 3 · Google DeepMind (Public Policy) · Conjecture Machines (Jul 15) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind警示AI"猜想机器"带来科学验证瓶颈</h2>
+      <div class="source">来源：<a href="https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/" target="_blank" rel="noopener">deepmind.google/public-policy · Conjecture Machines: AI Agents and the New Validation Bottleneck in Science（7 月 15 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 公共政策团队发表长文，提出 AI 智能体正在把自己变成科学研究中的"猜想机器"——能以极低成本、极快速度批量生成假说与候选方案，但现实世界的实验验证依然缓慢、昂贵，受限于物理与制度条件，二者之间正在拉开巨大缺口。文章为政策制定者与科研资助机构提出四条优先建议：保障科学家广泛获取智能体、让国家数据资产对智能体"可用"、投资实验验证基础设施，以及用 AI 为同行评审减负。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">AI agents are conjecture machines, making ideas and candidate solutions abundant and relatively cheap. Refutations remain physical and institutional — and so, costly and slow. The countries that treat this as a moment of genuine structural change will unlock the greatest public value and shape what comes next.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">AI 智能体是名副其实的"猜想机器"——它们让点子和候选方案变得丰富且成本低廉。但证伪的过程仍然依赖物理世界与制度机制，因而依旧昂贵而缓慢。那些把这一刻视为真正结构性变革的国家，将释放出最大的公共价值，并定义接下来会发生什么。</div>
+      </details>
+    </article>
+
+    <!-- 4 · Stratechery · Who's Afraid of Chinese Models? (Jul 20) -->
+    <article class="card">
+      <span class="tag blog">博主 · Stratechery</span>
+      <h2 class="title">Ben Thompson谈中国模型冲击与蒸馏立法</h2>
+      <div class="source">来源：<a href="https://stratechery.com/2026/whos-afraid-of-chinese-models/" target="_blank" rel="noopener">stratechery.com · Who's Afraid of Chinese Models?（7 月 20 日）</a></div>
+      <div class="summary"><b>总结：</b>Ben Thompson 在 Stratechery 撰文回应市场对中国开源模型（如 Kimi K3）的恐慌情绪，认为前沿实验室的商业地位不会因此受到根本冲击——真正具有价值、可被"占有"的不是 token 本身，而是由 token 构建出的智能与产品体验，这才是不可替代的。但他也指出，免费或近乎免费的中国模型确实会让边际成本重新成为竞争焦点，并呼吁美国应立法明确"用数据训练模型属于合理使用"，同时禁止服务条款中禁止"蒸馏"的条款，以保护本土企业的开源竞争力。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Marginal costs are back in a big way, both in terms of short-term implications of state-of-the-art free models, and in terms of the long-term structure of the industry. A token from one model, however, is not the same as a token from another model. What is fungible is what is constructed from tokens, which is to say intelligence.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">边际成本正以巨大的力度重新回归——无论是从最先进的免费模型带来的短期影响来看，还是从行业的长期结构来看都是如此。然而，一个模型产出的 token 和另一个模型产出的 token 并不等价。真正可被替代、可被交易的，是由这些 token 构建出来的东西，也就是智能本身。</div>
+      </details>
+    </article>
+
+    <!-- 5 · Ethan Mollick · An opinionated guide to which AI to use to do stuff (Jul 23) -->
+    <article class="card">
+      <span class="tag blog">博主 · Ethan Mollick</span>
+      <h2 class="title">Mollick发布2026版"AI工具选择指南"</h2>
+      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22" target="_blank" rel="noopener">oneusefulthing.org · An opinionated guide to which AI to use to do stuff（7 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>Ethan Mollick 更新了他广受欢迎的"该用哪个 AI"实用指南，核心论点是：如今与 AI 打交道的方式已经从"聊天"转变为"管理"——用户更像是在给一个能干的智能体团队分配任务，而不是和一个聊天机器人对话。他建议大多数人直接选择 Claude 或 ChatGPT 中的一个并付费订阅，从生活中一个真实任务开始练习授权给智能体；面对高风险决策时，则应尽量使用当前能接触到的最强模型，比如 Claude 的 Opus/Fable，或 ChatGPT 的 GPT-5.6 Sol。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">working with these systems is more like managing than it is chatting. You can almost think of the AI agents as a team that you delegate work to. pick Claude or ChatGPT, pay the $20, and give an agent a real task from your real life.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">与这些系统打交道，更像是在做管理，而不是在聊天。你几乎可以把这些 AI 智能体想象成一个可以把工作分配下去的团队。直接选定 Claude 或 ChatGPT 中的一个，花 20 美元订阅，然后把生活中一个真实的任务交给智能体去做。</div>
       </details>
     </article>
 
