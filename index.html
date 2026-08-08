@@ -123,83 +123,78 @@
 
   <div id="items">
 
-    <!-- 1 · Google DeepMind · WeatherNext: AI model achieves breakthrough in forecasting cyclones (Aug 6) -->
     <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind气旋预测模型WeatherNext取得重大突破</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" target="_blank" rel="noopener">deepmind.google · WeatherNext: AI model achieves breakthrough in forecasting cyclones（8 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 推出新一代气旋预测系统 WeatherNext，用单一模型同时预测台风的路径、强度与风场结构，平均能为预报员多提供一整天的预测提前量——如今三天预报的准确度已达到此前模型两天预报的水平，团队称这一进步"相当于气象学十年的进步"。模型采用函数生成网络（Functional Generative Networks）架构，在 28x28 公里分辨率下运行，可在 TPU 上一分钟内生成 15 天预报，集合成员规模已从 50 个扩展到 1000 个。2025 年飓风季，该模型帮助美国国家飓风中心提前预判了飓风"梅丽莎"在牙买加登陆前的快速增强过程；WeatherNext 2、WeatherNext Cyclones 及轻量版 WeatherNext 2-mini 现已在 GitHub 开源，供学术研究与业务预报使用。</div>
+      <span class="tag ai">AI · OpenAI</span>
+      <h2 class="title">OpenAI首次将模型Astra标记为"关键"级网络能力</h2>
+      <div class="source">来源：<a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" target="_blank" rel="noopener">openai.com/index · Responding to the next frontier of critical cyber capabilities（8 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>OpenAI 宣布，其即将发布的模型 Astra 在初步评估中展现出足够强的网络安全能力，公司目前无法排除其已达到 Preparedness Framework 中定义的"关键"（Critical）风险等级——这是 OpenAI 历史上首次把某个模型标记至这一最高风险层级。为此，公司收紧了对高能力模型的安全管控，包括隔离测试环境、限制网络与工具访问、加强模型权重保护与加密，并计划联合政府机构与独立安全团队进一步验证 Astra 的能力、强化防护措施后再决定是否发布。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"On average, our model gives forecasters an extra day's worth of predictive accuracy: our three-day forecasts are as good as what prior models were able to provide for only the next two days."</div>
+        <div class="body en">"Our preliminary evaluations indicate strong enough performance that we cannot rule out Critical capability level at this time." "We are implementing stricter security controls for higher-capability models and associated activities, including isolated testing environments, restricted network and tool access, enhanced model weight protections and encryption."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"平均而言，我们的模型能为预报员多提供一整天的预测准确度：我们的三天预报，其准确度已经相当于以往模型仅能提供的两天预报水平。"</div>
+        <div class="body">"我们的初步评估显示，其能力已经强到我们目前无法排除其达到'关键'能力等级的可能性。""我们正在针对能力更强的模型及相关活动实施更严格的安全管控，包括隔离测试环境、限制网络与工具访问、增强模型权重保护与加密。"</div>
       </details>
     </article>
 
-    <!-- 2 · Simon Willison · Third-party cyber evaluations involving OpenAI models (Aug 5) -->
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：网络安全评测再度意外波及真实系统</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/" target="_blank" rel="noopener">simonwillison.net · Third-party cyber evaluations involving OpenAI models（8 月 5 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 继此前记录 OpenAI 意外黑入 Hugging Face 事件后，又发现了一起新的类似事故，专门建了一个"accidental-cyberattacks"标签来持续追踪这类案例。这次涉及 OpenAI 与外部测试伙伴 Irregular 合作开展的夺旗赛（CTF）式网络安全评测：测试环境本应与互联网隔离，却因配置错误意外获得了公网访问权限；更巧的是，某次测试中虚构靶标的域名恰好与一个真实域名重合，模型误把这个真实网站当成了模拟环境的一部分并对其发起了攻击。该文同时提到还有一起涉及英国 AI 安全研究院（UK AISI）评测的独立事故，凸显"评测环境配置错误导致模型触碰真实系统"正成为一类反复出现的行业性问题。</div>
+      <h2 class="title">Willison发布LLM 0.32：可见推理轨迹与服务端工具</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Aug/4/new-release-of-llm/" target="_blank" rel="noopener">simonwillison.net · New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging（8 月 4 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 发布其命令行工具 LLM 的 0.32 版本，新增了对推理模型"思考过程"的可见化支持：运行推理模型时，推理轨迹会被输出到标准错误流，而不会混入可被管道传递给其他工具的标准输出，同时新增对 OpenAI Responses API 与服务端工具调用的支持，并重写了基于内容寻址的 SQLite 日志系统。他还提到，"LLM agent 是在循环中调用工具以达成目标"这一说法如今已经足够普及，自己终于可以不再刻意回避使用这个术语。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Irregular, one of our external cybersecurity testing partners, was running Capture-the-Flag-style evaluations intended to be isolated from the internet, but a testing-environment misconfiguration allowed models to access the public internet. [...] In one test, the name of the fictional target for the CTF challenge unintentionally coincided with a real domain. Because the testing environment was mistakenly connected to the internet, the model exploited a real website, mistaking it to be part of the simulated environment."</div>
+        <div class="body en">"Running LLM against reasoning models now displays their reasoning traces to standard error, so you can see what they are "thinking" without that information being included in the standard output that you might pipe to another tool."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"Irregular 是我们的外部网络安全测试合作伙伴之一，正在开展本应与互联网隔离的夺旗赛（CTF）式评测，但测试环境的配置错误使模型获得了公网访问权限……在某次测试中，CTF 挑战里虚构靶标的名称碰巧与一个真实域名重合。由于测试环境被误接入了互联网，模型攻击了这个真实网站，误以为它是模拟环境的一部分。"</div>
+        <div class="body">"现在对推理模型运行 LLM 时，会把它们的推理轨迹显示到标准错误流，这样你就能看到模型在"思考"什么，而不会让这些信息混入你可能要传递给其他工具的标准输出中。"</div>
       </details>
     </article>
 
-    <!-- 3 · Mistral AI · Introducing Shieldstral (Aug 4) -->
     <article class="card">
-      <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">Mistral推出30亿参数开源安全分类器Shieldstral</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/shieldstral/" target="_blank" rel="noopener">mistral.ai/news · Introducing Shieldstral（8 月 4 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral AI 发布 Shieldstral，一个 30 亿参数、以 Apache 2.0 协议开源的多模态安全分类器，专门用于内容审核。它把内容审核重新定义为一个是非问答任务：请求由指令上下文、一个是/否问题和待判断内容（文本、图像或两者）三部分组成，模型直接输出经过校准的安全分数而非离散标签，无需针对不同场景重新训练——只要在推理时用一句话写清策略即可适配新规则。官方数据显示，Shieldstral 在文本安全上可与体量更大的护栏模型持平，在拒答检测上超过体量七倍于己的模型，在多模态安全上取得了新的最优表现，且可在单张 16GB 英伟达 GPU 上高效运行。</div>
+      <span class="tag ai">AI · NVIDIA</span>
+      <h2 class="title">英伟达开源自动驾驶推理模型Alpamayo 2 Super</h2>
+      <div class="source">来源：<a href="https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/" target="_blank" rel="noopener">blogs.nvidia.com · NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use（8 月 4 日）</a></div>
+      <div class="summary"><b>总结：</b>NVIDIA 发布 Alpamayo 2 Super，一款面向机器人出租车与自动驾驶场景的开源 AI 推理模型，现已在 OpenMDW-1.1 协议下开放商用，开发者无需额外授权即可微调与部署。该模型在自动驾驶推理基准测试中取得业内领先表现，可同时输出轨迹规划、推理过程与视觉问答结果，使自动驾驶系统的决策过程更加透明、可核查。NVIDIA 将其定位为"云端前沿级推理"与"车端高效专用模型"结合的可持续扩展路径。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Shieldstral frames content moderation as a binary question-answering task. Each request has three parts: &lt;Instruct&gt; — the evaluation context, strictness, and (optionally) a definition of what counts as unsafe content. &lt;Query&gt; — a single yes/no question, e.g. "Does this content promote physical violence?" &lt;Document&gt; — the content to judge: a prompt, a response, a prompt–response pair, or an image with optional text."</div>
+        <div class="body en">"Open commercial licensing and leading multitask capabilities for autonomous driving" advance the autonomous vehicle ecosystem. "Frontier‑scale reasoning in the cloud and efficient, specialized models in the vehicle — a more sustainable way to scale safe autonomy into commercial fleets."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"Shieldstral 把内容审核构建成一个二元问答任务。每个请求由三部分组成：&lt;Instruct&gt;——评估背景、严格程度，以及（可选的）对"不安全内容"的定义；&lt;Query&gt;——一个单一的是/否问题，例如"这段内容是否宣扬人身暴力？"；&lt;Document&gt;——待判断的内容：可以是一条提示词、一条回复、一组提示词与回复的配对，或是带有可选文字的图像。"</div>
+        <div class="body">"开放的商用许可与业界领先的多任务自动驾驶能力"推动了自动驾驶生态发展。"云端的前沿级推理能力，加上车辆内高效的专用模型——这是将安全自动驾驶规模化推向商业车队的一条更可持续的路径。"</div>
       </details>
     </article>
 
-    <!-- 4 · Interconnects (Nathan Lambert) · Introducing our Artifacts Hub and Adoption Dashboard (Aug 3) -->
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind推出全身智能机器人模型Gemini Robotics 2</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener">deepmind.google · Gemini Robotics 2 brings whole body intelligence to robots（7 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布由三个模型组成的机器人智能体系 Gemini Robotics 2：负责环境理解与长程任务规划的 Gemini Robotics ER 2、把视觉与语言输入直接转化为动作的视觉-语言-动作模型，以及可在数小时内适配新机器人的轻量化端侧模型。团队指出，传统机器人大多依赖预编程或遥操作完成狭窄的重复任务，缺乏真正的自主学习与环境适应能力，而新系统能让机器人对每一个动作进行推理，从而完成更广泛的任务；在测试中，该系统完成拧下灯泡等需要全身精细协调的任务成功率达到 92%。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"Most robots are pre-programmed or teleoperated for narrow, repetitive task sequences. They lack the ability to truly learn for themselves or adapt to unpredictable environments." "Gemini Robotics 2 enables robots to reason through every movement, unlocking a broad range of tasks."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"大多数机器人都是为狭窄、重复性的任务序列进行预编程或遥操作的，它们缺乏真正自主学习或适应不可预测环境的能力。""Gemini Robotics 2 让机器人能够对每一个动作进行推理，从而解锁更广泛的任务范围。"</div>
+      </details>
+    </article>
+
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert</span>
-      <h2 class="title">Lambert上线开源模型Artifacts Hub与追踪看板</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/introducing-our-artifacts-hub-and" target="_blank" rel="noopener">interconnects.ai · Introducing our Artifacts Hub and Adoption Dashboard（8 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>Interconnects 作者 Nathan Lambert 宣布把自己的开源模型报道拓展为两个独立项目：Artifacts Hub（artifactshub.ai）收录了过去两年发布的 792 个文本与多模态模型，整合了 Hugging Face 的趋势数据、Open Router 的推理用量与 Artificial Analysis 的智能评分，方便横向比较不同模型世代；Adoption Dashboard（dashboard.interconnects.ai）则是一个每日更新的看板，按地域与机构统计模型下载量与衍生模型数量，用来持续追踪他长期关注的"中美开源模型采用率差距"。Lambert 表示做这两个工具的初衷是希望提供更多透明度，帮助行业判断哪些开源打法真正奏效。</div>
+      <h2 class="title">Lambert：开源模型正证明自己在帕累托前沿的价值</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21" target="_blank" rel="noopener">interconnects.ai · Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier（8 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 在最新一期"开源模型速览"中盘点了 6-7 月发布的 24 个模型，重点分析三款：Poolside 推出、可塞进一台 DGX Spark 的 1180 亿参数（激活 80 亿）MoE 模型 Laguna S2.1，并以详尽博客与评测轨迹展示出罕见的透明度；Thinking Machines 发布的 9750 亿参数（激活 410 亿）多模态模型 Inkling，虽非同尺寸中最强，却被定位为其商用微调服务 Tinker 的优质底座；月之暗面发布的目前规模最大的开源模型 Kimi K3，采用非商用许可，商用推理与微调需另行签约。Lambert 认为，这些案例说明"实验室必然走向整合"的预测并未成真，多家实验室正通过"token 机器"模式而非合并找到盈利路径。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"The Artifacts Hub right now covers 792 models released in the last two years, across the core text-focused language models and multimodal generative models." ... a curated view of the models trending on Hugging Face, highlighting inference tokens via Open Router, model intelligence via Artificial Analysis, and our tailored adoption metrics building on top of Hugging Face's data.</div>
+        <div class="body en">"Consolidation has been one of the paths that many astute observers predicted for the near-future of labs training models. It was labelled as inevitable, as training costs are increasing by orders of magnitude every year." "The demand for tokens is incredibly high, and likely to increase as models get more efficient and unlock more possible use cases."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"Artifacts Hub 目前收录了过去两年发布的 792 个模型，涵盖以文本为核心的语言模型和多模态生成模型。"……它提供了 Hugging Face 上热门模型的精选视图，通过 Open Router 呈现推理用量，通过 Artificial Analysis 呈现模型智能水平，并在 Hugging Face 数据基础上加入了我们定制的采用率指标。</div>
-      </details>
-    </article>
-
-    <!-- 5 · Anthropic · Our position on open-weights models (Jul 27) -->
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic首次系统阐明对开源权重模型的立场</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/position-open-weights-models" target="_blank" rel="noopener">anthropic.com/news · Our position on open-weights models（7 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>面对外界关于其是否主张封杀开源模型的猜测，Anthropic CEO Dario Amodei 撰文系统阐明立场：Anthropic 从未主张禁止开源权重模型，不具备危险能力的开源模型是一种公共品，除运行所需算力外几乎没有额外成本，还能为企业、开发者与研究者创造价值。相比笼统的禁令，Anthropic 主张三项更精准的措施：限制先进芯片流向威权国家、打击工业化规模的模型蒸馏行为、要求所有足够强大的模型（无论开源或闭源）都必须接受强制性安全测试。文章还反驳了"开源必然更利于防御方"的普遍假设，认为这类问题应通过严格的发布前测试来实证回答，而非事先假定。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"Anthropic has never advocated for a ban on open-weights models. Open-weights models that don't have dangerous capabilities are a public good: they don't cost anything besides the compute needed to run them, and they provide value to businesses, developers, and researchers."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"Anthropic 从未主张禁止开源权重模型。不具备危险能力的开源权重模型是一种公共品：除了运行所需的算力之外不产生额外成本，还能为企业、开发者和研究者创造价值。"</div>
+        <div class="body">"整合，是许多敏锐的观察者曾预测的模型训练实验室近未来走向之一，被认为是不可避免的，因为训练成本正以数量级的速度逐年攀升。""对 token 的需求量极大，并且随着模型变得更高效、解锁更多可能的应用场景，这种需求很可能还会继续增长。"</div>
       </details>
     </article>
 
