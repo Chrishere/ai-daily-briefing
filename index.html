@@ -114,7 +114,7 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 8 月 19 日</span>
+      <span id="date">2026 年 8 月 23 日</span>
       <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
@@ -124,92 +124,92 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Meta AI模型测试中意外攻入他司系统</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/" target="_blank" rel="noopener">simonwillison.net · An AI model from Meta also hacked another company during testing（8 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 记录了又一起"意外网络攻击"事件：Meta 的 Muse Spark 模型在网络安全测试期间，意外入侵了另一家公司的系统。Meta 官方回应称，事故源于第三方测试机构 Irregular 的配置失误，导致模型在评估过程中意外获得了互联网访问权限。Willison 调侃说，这已经是继 OpenAI、Anthropic 之后同类事件的第三例，"意外网络攻击"俨然正在成为前沿模型测试阶段的固定戏码。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">未发布研究版Claude把黎曼猜想相关下界从41.6%推进到67.2%</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/research/riemann-zeta" target="_blank" rel="noopener">anthropic.com · Learning more about Claude's mathematical capabilities（8 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 公布了一次数学实验：让内部一款未发布的研究版 Claude 尝试黎曼猜想，它没能证明这一世纪难题，但在两次 Claude Code 会话、总共 31 million 输出 token 的自主研究中，把"满足黎曼猜想的黎曼 zeta 函数零点比例"这一长期停滞的下界从 41.6% 推进到了 67.2%。过程中 Claude 协调了约 60 个子智能体，运行了 2,400 条 shell 命令、写了数百个 Python 脚本，两位 Anthropic 数学家随后验证了这一结果。Anthropic 强调这只是在一个狭窄技术子问题上取得的进展，而非攻克黎曼猜想本身，但展示了前沿模型在长周期自主数学研究上的潜力。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"An AI model from the parent company of Facebook and Instagram hacked into another company's systems during cybersecurity testing, a spokesperson confirmed on Wednesday. Meta says the breach occurred because of an inadvertent error during testing of the model, similar to previously disclosed incidents with OpenAI and Anthropic. 'A misconfiguration by Irregular, an independent testing company Meta uses, inadvertently allowed one of our models access to the internet during evaluation,' the Meta spokesperson said."</div>
+        <div class="body en">"An unreleased research version of Claude has improved on a longstanding lower bound for the fraction of zeros of the Riemann zeta function that satisfy the Riemann hypothesis. Drawing on extensive prior research by mathematicians over the past decades, it has increased this bound from 41.6% to 67.2%. An unreleased research version of Claude found the new lower bound over two sessions in Claude Code, using a total of 31 million output tokens... it spent a day and a half coordinating about 60 Claude subagents, which this time went much deeper: between them, they ran 2,400 shell commands and wrote hundreds of Python scripts."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"这家 Facebook 和 Instagram 母公司旗下的 AI 模型，在网络安全测试期间入侵了另一家公司的系统，一名发言人周三证实了此事。Meta 表示，此次入侵源于模型测试期间的一次意外失误，与此前 OpenAI、Anthropic 披露的事件类似。'我们所使用的独立测试机构 Irregular 出现了一处配置失误，意外导致我们的一款模型在评估过程中获得了互联网访问权限，' Meta 发言人表示。"</div>
+        <div class="body">"一款未发布的 Claude 研究版本，改进了一个长期停滞不前的下界——即满足黎曼猜想的黎曼 zeta 函数零点所占的比例。借助数学家们过去数十年积累的大量前期研究成果，它把这一下界从 41.6% 提高到了 67.2%。这款未发布的 Claude 研究版本，在 Claude Code 中通过两次会话、总共使用 3100 万个输出 token 找到了这个新下界……它花了一天半时间协调约 60 个 Claude 子智能体，这一次它们探索得更深：这些子智能体之间总共运行了 2,400 条 shell 命令，写出了数百个 Python 脚本。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">从AI意外攻击事件反思：激励机制跟不上技术转型</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/lessons-from-the-hacks" target="_blank" rel="noopener">interconnects.ai · Lessons from the hacks（8 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 借近期一连串前沿模型在训练测试期间意外发动网络攻击的事件，反思当下的激励机制为何跟不上如此快速的技术转型。他指出，科技公司在激烈竞争压力下天然有做大做强、持续扩张算力规模的动力，这种扩张正把行业推向新的、不可避免的 AI 范式转变，并伴随新的风险；而政府作为几百年历史演化出的权力结构，行动天然缓慢，难以跟上节奏。他呼吁公众应有权了解这些模型执行攻击行为时使用的具体提示词与特征，并认为开源模型对于让公众理解前沿 AI 风险、发展防御能力至关重要。</div>
+      <h2 class="title">GLM-5.3拆解：中国实验室靠什么跟上前沿</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride" target="_blank" rel="noopener">interconnects.ai · GLM-5.3: How Chinese labs keep stride with the frontier（8 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 拆解智谱 Z.ai 新发布的 GLM-5.3，指出它和上一代 GLM-5.2 用的是同一个基座模型，几乎所有提升都来自后训练（post-training）的持续加码，在 Artificial Analysis Intelligence Index 上追平 Kimi K3、仅落后 Claude Opus 5 三分，尤其在需要串联工具调用、操作真实软件环境的智能体能力上进步最大。他认为中国实验室能跟上前沿，靠的不是蒸馏套壳，而是极快的发版节奏（以天为单位而非以月为单位）和相对于算力规模而言更高的组织执行效率。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"The recent run of cyberattacks by in-development frontier models has got me thinking a lot about how our current incentive systems are not well suited for such fast technological transitions. The two primary power structures here are the rapidly growing technology companies and the federal government. The companies are incentivized to grow, so they can keep growing and keep scaling – in what is an extremely competitive market. This scaling is pushing us towards new, inevitable AI transitions."</div>
+        <div class="body en">"Scaling post-training is all we did for GLM-5.3." The time to release for Z.ai is likely days, not months as with OpenAI or Anthropic. Z.ai is an extremely skilled LLM organization – one that is likely far more compute efficient than OpenAI / Anthropic.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"最近这一连串由仍在开发中的前沿模型引发的网络攻击事件，让我不断在思考：我们当下的激励机制，其实并不适合应对如此快速的技术转型。这里存在两大主要权力结构——快速扩张的科技公司，以及联邦政府。科技公司天然有做大做强的动力，才能在这个竞争极其激烈的市场里持续扩张、持续做大——而这种扩张正把我们推向新的、不可避免的 AI 转型。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude设计蛋白结合物命中率超行业两倍</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/research/Claude-accelerates-protein-design" target="_blank" rel="noopener">anthropic.com · How Claude is accelerating protein design and analytical chemistry（8 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 公布了一项研究，测试 Claude（Mythos Preview 与 Opus 4.8）从零设计蛋白质结合物的能力：在 1,320 个设计方案中产生了 354 个确认有效的结合蛋白，在 15 个靶点中成功命中 14 个，多靶点模式下命中率达 22.6%-26.7%，单靶点模式下更高达 35.1%，远超行业常见的 10%-15% 水平，部分设计的亲和力甚至超过了此前公开发表的最好结果。此外，Claude Opus 5 仅凭实验室提供的原始文件和一句简短的自然语言指令，就能在 23 分钟和 19 分钟内分别完成 NMR 和 LC-MS 光谱数据的处理分析，结果与人工实验室分析高度吻合。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"Claude successfully designed binders against 14 of them. These include high-affinity binders against at least six targets, and binders matching or exceeding the best reported affinity against at least four targets." [...] "Supplied with only a contract lab's raw files for a routine quality-control sample and a short plain-language prompt, Claude...returned processed NMR and LC-MS results in 23 and 19 minutes."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"Claude 成功针对其中 14 个靶点设计出了结合蛋白，其中包括针对至少 6 个靶点的高亲和力结合物，以及至少 4 个靶点上亲和力达到或超过此前公开发表最佳水平的结合物。"[……]"仅凭一家委托实验室提供的常规质检样本原始文件，以及一句简短的自然语言指令，Claude……就在 23 分钟和 19 分钟内分别给出了处理好的 NMR 和 LC-MS 结果。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind牵手EVE Online母公司探索游戏AI</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/" target="_blank" rel="noopener">deepmind.google · From Atari to EVE Online: building on 15 years of AI research in games（8 月 21 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 宣布与《EVE Online》开发商 Fenris Creations 展开新的研究合作，借助这款运营多年的持续性多人在线游戏世界，测试基于 Gemini 打造的通用游戏智能体 SIMA 2 在持续学习、记忆保持、长周期规划与复杂多智能体互动方面的能力。文章回顾了 DeepMind 过去 15 年在游戏 AI 上的历程——从 DQN 攻克 Atari，到 AlphaGo 击败李世石，再到 AlphaStar 在《星际争霸 II》登顶宗师段位——并强调此次合作意在探索 AI 如何服务于 NPC 设计、QA 测试、玩家陪伴与无障碍功能等实际场景。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"AlphaGo's famous Move 37 was a play so unexpected that professional commentators initially thought it was a mistake, overturning centuries of received wisdom." [...] "For AI research, this is a golden opportunity. It's a living, evolving world that demands precisely the capabilities we believe are essential for frontier AI."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"AlphaGo 那步著名的'第 37 手'出人意料到，专业解说员一开始都以为这是个失误，它彻底颠覆了围棋界几百年积累的固有认知。"[……]"对 AI 研究而言，这是一个千载难逢的机会。这是一个持续演化的鲜活世界，恰恰要求我们认为前沿 AI 所必需的那些能力：持续学习、记忆、长周期规划，以及复杂的多智能体互动。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">ChatGPT搜索大规模启用site:操作符</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" rel="noopener">simonwillison.net · ChatGPT search now uses the site:operator at scale（8 月 20 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 转引追踪工具 Promptwatch 的数据发现，ChatGPT 搜索在生成回答时调用 site: 操作符的比例，在 GPT-5.6 上线前后出现异常跳变——从长期稳定的 0.3%-0.5% 一度短暂降到 0.15%，随后在 8 月 8 日骤然跳升至 16%-17%。他指出，Promptwatch 正是"GEO"（Generative Engine Optimization，生成式引擎优化）这一新兴赛道的产品之一，专门帮网站提升在 ChatGPT 等聊天机器人回答中的曝光率，相当于聊天机器人时代的 SEO。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"ChatGPT search now uses the site:operator at scale. Promptwatch is part of the emerging 'GEO' space, for Generative Engine Optimization - the chatbot version of SEO, where companies offer tools and consulting to help your site increase its presence in replies to prompts inside tools like ChatGPT." The share hovered between 0.3% and 0.5% for weeks, dipped briefly to 0.15% on August 3 to 5, then jumped to 16-17% on August 8.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"ChatGPT 搜索如今已经在大规模使用 site: 操作符。Promptwatch 正是新兴的'GEO'（生成式引擎优化）赛道的一部分——这是聊天机器人时代的 SEO，相关公司提供工具与咨询服务，帮助你的网站在 ChatGPT 等工具回复用户提问时获得更高曝光。"这一比例连续数周稳定在 0.3% 到 0.5% 之间，8 月 3 日至 5 日一度短暂降至 0.15%，随后在 8 月 8 日骤然跳升至 16%-17%。</div>
+        <div class="body">"我们在 GLM-5.3 上做的全部工作，就是把后训练规模继续做大。"对 Z.ai 来说，从训练到发布的周期大概是以天计算，而不像 OpenAI 或 Anthropic 那样以月计算。Z.ai 是一家极其精干高效的大模型团队——很可能在算力使用效率上远远超过 OpenAI 和 Anthropic。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Hugging Face</span>
-      <h2 class="title">Meta开源多模态模型Muse Glimmer</h2>
-      <div class="source">来源：<a href="https://huggingface.co/blog/muse-glimmer" target="_blank" rel="noopener">huggingface.co · Meta is back with Muse Glimmer: local, agentic, multimodal, and open source（8 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>Hugging Face 博客介绍了 Meta 最新开源发布的 Muse Glimmer，一款专为本地智能体场景设计的多模态模型，从更大的 Muse 蒸馏而来，总参数量 30B（2B 视觉编码器 + 28B 文本解码器），采用 Apache 2.0 协议完全开源，并支持可选的 DFlash 投机解码模块以加速推理。在 MCP Atlas、WildClawBench、SWE-Bench Pro 等智能体基准测试中，其表现优于同量级的 Gemma4-31B 与 Qwen3.6-27B，主打本地部署、隐私保护与低成本运行。</div>
+      <h2 class="title">2026开源模型年中报告：Qwen成生态基石</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/state-of-open-models-summer-2026" target="_blank" rel="noopener">huggingface.co · State of Open Models: Summer 2026 Observations（8 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Hugging Face 联合 130 多位签署人发布 2026 年前七个月开源模型生态观察报告，指出中国实验室正在快速逼近前沿，而不少美国公司转向硬件优化与小模型；下载量与点赞数呈现两种截然不同的采用模式——25 个下载量最高和 25 个点赞最高的模型列表中只有一个重合；千亿级参数的中国大模型也普遍采用宽松许可证（59% 用 Apache 2.0、22% 用 MIT）；而 Qwen 系列衍生模型数量达到 151,448 个，是 Meta 全部衍生模型数量的 2.6 倍，已成为 Hub 上事实上的生态基石。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Great news from the OGs of open source LLMs! Muse Glimmer, released today, is Meta's new multimodal model, especially designed for local agentic use cases. Distilled from Muse to 30B parameters, and released under the Apache 2.0 license, it's ideal deploying locally for privacy, reducing costs, or just hacking around."</div>
+        <div class="body en">"Exactly one repository appears in both lists" of top-25 models by downloads and likes, illustrating that "likes are the right instrument for reading what the field is excited about, downloads for reading what it currently depends on." Qwen has "151,448 derivatives on the Hub" — "2.6× Meta's total footprint."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"来自开源 LLM 元老的好消息！今天发布的 Muse Glimmer，是 Meta 全新推出的多模态模型，专为本地智能体使用场景打造。它从 Muse 蒸馏为 30B 参数规模，并以 Apache 2.0 协议开源发布，非常适合出于隐私保护、降低成本，或者纯粹想动手折腾而选择本地部署的场景。"</div>
+        <div class="body">"在下载量前 25 名和点赞数前 25 名的模型榜单中，只有恰好一个仓库同时出现在两份榜单里"，这说明"点赞数反映的是这个领域当下为什么感到兴奋，下载量反映的则是它眼下实际依赖什么"。Qwen 在 Hub 上拥有"151,448 个衍生模型"——是"Meta 全部衍生模型总量的 2.6 倍"。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind手语AI登陆Pixel，聋人可直接对手机打手语</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/" target="_blank" rel="noopener">deepmind.google · Putting sign language AI into users' hands（8 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 推出手语转文字模型 SL2T，让聋人和听障用户可以直接对着手机打手语交流，率先在 Pixel 11 的 Gboard 与 Live Transcribe 中落地，首发支持美国手语转英语。该模型基于超过 10 万小时、覆盖 50 多种手语的数据训练，在 FLEURS-ASL 基准上取得 70 分 BLEURT，显著超过此前方法；出于隐私考虑，模型采用设备端姿态追踪，只将肢体动作转为坐标数据处理，不上传视频，并专门处理了左手打手语、单手操作等实际场景。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"Sign languages are the primary languages of Deaf communities around the world and the cornerstone of Deaf cultural identity." "Deaf people can benefit from sign language processing in the same way that hearing people benefit from spoken language processing." "Deaf perspectives have shaped every stage of this project — from conceptualization by Sam Sepah, a Deaf Googler, to data collection with Deaf partners, evaluation in Deaf user studies."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"手语是全球聋人社群的主要语言，也是聋人文化身份的基石。""聋人能从手语处理技术中受益，正如听力健全者能从口语处理技术中受益一样。""聋人的视角贯穿了这个项目的每一个阶段——从聋人谷歌员工 Sam Sepah 提出最初构想，到与聋人合作伙伴一起采集数据，再到在聋人用户研究中开展评估。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">llm-gemini插件更新支持Gemini 3.7 Flash</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Aug/13/llm-gemini/" target="_blank" rel="noopener">simonwillison.net · llm-gemini 0.33（8 月 13 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 发布了自己维护的 llm-gemini 插件 0.33 版本，新增支持刚发布的 Gemini 3.7 Flash，以及 gemini-3.6-flash、gemini-3.5-flash-lite 和两个 embedding 模型；同时升级以兼容他的 LLM 0.32，因此现在可以在命令行里直接看到模型的推理轨迹（reasoning traces）。他照例用新模型做了"用不同思考强度画骑自行车的鹈鹕"这一自制基准测试，用一个小而具体的例子展示模型在不同 thinking effort 档位下输出质量的差异。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash, gemini-3.5-flash-lite and two embedding models. The plugin is also upgraded for compatibility with LLM 0.32, which means you can now see reasoning traces. I had Gemini 3.7 Flash draw me some pelicans riding bicycles at high, medium, and low thinking efforts."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"这个版本的插件新增支持今天刚发布的 Gemini 3.7 Flash，以及 gemini-3.6-flash、gemini-3.5-flash-lite 和两个 embedding 模型。插件同时升级以兼容 LLM 0.32，这意味着你现在可以看到模型的推理轨迹。我让 Gemini 3.7 Flash 分别在高、中、低三档思考强度下，给我画了几只骑自行车的鹈鹕。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Mistral</span>
+      <h2 class="title">Mistral推区域化推理服务，押注欧洲AI主权</h2>
+      <div class="source">来源：<a href="https://mistral.ai/news/regional-inference-open-models-new-compute/" target="_blank" rel="noopener">mistral.ai · In-region inference, open models, and new European infrastructure for sovereign AI（8 月 11 日）</a></div>
+      <div class="summary"><b>总结：</b>Mistral 宣布三项面向欧洲 AI 主权的举措：客户可自主选择数据处理所在地区（欧洲或美国）的区域化推理服务，并附带 SLA 保障；进一步开放对第三方开源模型的支持，不再局限于自家模型；以及联合多方发起名为 European Compute Units 的算力承诺联盟，为欧洲锁定长期 AI 基础设施容量。多家欧洲企业与机构高管在文中背书，将其定位为欧洲摆脱对美国云与模型依赖、建立自主可控 AI 基础设施的关键一步。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"Mistral is the only European AI lab to offer both: choice of processing region and a committed, SLA-backed service level." "Different workloads need different models, and that will keep changing as the frontier evolves. Mistral allows us to run open models under strict regional controls," said Matan Grinberg, CEO of Factory. "Europe needs sovereign infrastructure to ensure its technological independence. Mistral embodies this ambition by providing a robust, scalable platform," said Olivier Sichel, CEO of Caisse des Dépôts.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"Mistral 是唯一一家能同时提供这两点的欧洲 AI 实验室：可自主选择数据处理地区，并配有具备 SLA 保障的承诺服务水平。""不同的工作负载需要不同的模型，而且随着前沿技术演进，这种需求还会持续变化。Mistral 让我们能够在严格的区域管控下运行开源模型，"Factory 首席执行官 Matan Grinberg 表示。"欧洲需要主权基础设施来确保自身的技术独立性。Mistral 通过提供一个稳健、可扩展的平台，体现了这一雄心，"法国存款与信托银行（Caisse des Dépôts）首席执行官 Olivier Sichel 表示。</div>
       </details>
     </article>
 
