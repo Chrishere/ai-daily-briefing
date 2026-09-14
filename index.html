@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 9 月 12 日</span>
-      <span id="count">5 条精选</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,77 +124,92 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic红队实测：AI操控无人机命中率达80%</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities" target="_blank" rel="noopener">anthropic.com · Measuring AI capabilities in intelligence targeting and conventional weapons（9 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic Frontier Red Team 首次公开了针对"战术情报定位"与"常规武器开发"两类风险的系统化评测框架，模拟任务包括从残缺信息中定位目标、指挥无人机打击移动车辆等。结果显示旗舰模型 Opus 5 打击一辆静止且颜色鲜明的车辆时命中率高达 80%，但面对移动目标、伪装和恶劣天气表现骤降；开源权重模型整体落后但仍具备一定风险能力，说明部分历史上只有少数专家才能完成的任务，AI 已经能够胜任。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Willison测评GPT-6 Astra：安全跑分全面碾压</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/3/gpt6-astra/" target="_blank" rel="noopener">simonwillison.net · GPT-6 Astra（9 月 3 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 在 OpenAI 发布 GPT-6 Astra 当天撰文梳理了这款新旗舰模型的关键数据点。他指出 Astra 在 ARC-AGI 3 上拿到 99.9% 的高分，并且是不折不扣的"安全跑分怪兽"：ExploitBench 满分 100%、ExploitGym 42.4%，均大幅超过上一代 GPT-5.6 Sol；长上下文测试中，256K–512K token 区间的八针检索也做到了 100%。他还提到 API 定价与 Claude Fable 5/5.1 持平，均为每百万 token 输入 10 美元、输出 50 美元。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Each simulated launch starts with the drone in the air, about 100 meters above ground level and 300 to 450 meters away from a vehicle on a road... Against a parked vehicle with colors that visibly contrast its environment, Opus 5 strikes on 80% of its launches, Mythos Preview on 70%, Mythos 5 on 53%, Kimi K3 on 15% and Sonnet 5 on 5%."</div>
+        <div class="body en">"Most impressively, Astra scores 99.9% on the recent (released in March) ARC-AGI 3 benchmark... Astra is a beast at security tasks. It scores 100% on ExploitBench (GPT-5.6 Sol got 78.5%), 42.4% on ExploitGym (Sol got 30.3%), and 99.2% within four attempts on SRE-Bench... It's also better at long context: on OpenAI's eight-needle benchmark it got 100% at 256K–512K tokens and 96.3% at 512K–1M tokens."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"每次模拟发射时，无人机的起始位置在空中约 100 米高度，距离道路上的车辆 300 至 450 米……面对一辆颜色与环境形成鲜明对比的静止车辆，Opus 5 的打击命中率为 80%，Mythos Preview 为 70%，Mythos 5 为 53%，Kimi K3 为 15%，Sonnet 5 为 5%。"</div>
+        <div class="body">"最令人印象深刻的是，Astra 在今年 3 月发布的 ARC-AGI 3 基准测试中拿到了 99.9% 的高分……Astra 在安全任务上堪称猛兽：它在 ExploitBench 上拿到 100%（GPT-5.6 Sol 只有 78.5%），在 ExploitGym 上拿到 42.4%（Sol 为 30.3%），在 SRE-Bench 上四次尝试内成功率达 99.2%……在长上下文方面它也更强：在 OpenAI 的八针检索基准测试中，256K–512K token 区间达到 100%，512K–1M token 区间达到 96.3%。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · NVIDIA</span>
+      <h2 class="title">英伟达129亿美元收购Hugging Face</h2>
+      <div class="source">来源：<a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener">blogs.nvidia.com · NVIDIA to Acquire Hugging Face（9 月 3 日）</a></div>
+      <div class="summary"><b>总结：</b>英伟达宣布以 129.303 亿美元收购开源 AI 平台 Hugging Face，这是其历史上规模最大的收购之一。公告强调收购后 Hugging Face 仍将保持开放中立，不会要求开发者必须使用英伟达算力或框架，继续支持多云、多加速器部署。目前 Hugging Face 拥有超过 1800 万开发者用户、托管逾 300 万个模型，而英伟达此前已是该平台最大的开源模型与数据集贡献者。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"NVIDIA has agreed to acquire Hugging Face for $12,930,300,000... Hugging Face will remain an open platform for the entire AI ecosystem... NVIDIA is the largest contributor of open models and data to Hugging Face, and our contributions continue to grow."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"英伟达已同意以 129.303 亿美元收购 Hugging Face……Hugging Face 将继续作为面向整个 AI 生态系统的开放平台……英伟达是 Hugging Face 上开源模型与数据的最大贡献者，而且我们的贡献还在持续增长。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">HuggingFace联合Earthmover：开源AI天气模型免下载即用</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/hugging-science/earthmover-hf" target="_blank" rel="noopener">huggingface.co · Making open-source AI weather forecasting models easy to run（9 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Hugging Face 与气候数据平台 Earthmover 联合撰文，介绍如何借助 Hugging Face 生态更方便地运行 ECMWF 的 AIFS、微软 Aurora 等开放权重的 AI 天气预报模型。文章指出这类模型如今已经能在速度和资源消耗上大幅优于传统物理模型，同时保持接近的精度；把这些模型和"analysis-ready"的气候数据打通，是让更多研究者和开发者真正用起来的关键一步。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"AI weather forecasting models now complement physics-based models while running far faster and on a fraction of the resources. Many of these state-of-the-art models are also open-weights: ECMWF's AIFS models and Microsoft's Aurora publish their weights directly on Hugging Face. This blog post was written jointly by Earthmover and Hugging Face, and aims to reduce the friction of running open weather forecast models."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"AI 天气预报模型如今已经能够作为物理模型的补充，以远快的速度、远少的资源运行。其中不少最先进的模型都是开放权重的：ECMWF 的 AIFS 系列模型和微软的 Aurora 都直接把权重发布在了 Hugging Face 上。这篇文章由 Earthmover 与 Hugging Face 联合撰写，旨在降低运行这些开放天气预报模型的门槛。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic威胁报告：攻击者不再需要"高手"</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">anthropic.com · Countering misuse of AI: September 2026（9 月）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布 2026 年 9 月版威胁情报报告，披露了去年 12 月至今年 8 月间在网络攻击、影响力操纵、监控、诈骗、生物滥用、常规武器开发和模型蒸馏等七大风险领域中拦截的多起真实滥用案例。报告核心判断是 AI 已经抹平了国家级团队和单人黑客之间的能力差距：一名利用窃取 API 密钥的黑客行动主义者、几名各自为战的诈骗分子，以及一名国家级间谍人员，都借助 Claude 独立完成了过去需要一整个专业团队才能做到的多受害者攻击行动。</div>
+      <h2 class="title">Anthropic上线经济情景模拟器：极端情景失业率或达12%</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">anthropic.com · Scenarios for our Economic Future, Econ Scenario Explorer v1.0（2026 年 9 月）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 经济研究团队发布 Econ Scenario Explorer 1.0 版，一个可交互模型，用来模拟 AI 在不同发展速度和企业采用率假设下，到 2030 年可能给美国 GDP、就业和工资带来的影响，配套发布了由 Anton Korinek、Charles I. Jones 等人合著的技术报告，以及一项覆盖近 1.1 万名美国成年人的调查。模型显示，"温和"到"极端"三档情景下，2030 年 GDP 相对无 AI 基线分别高出 1.6%、8.3% 和 32.4%，知识型工作者面临的自动化和降薪压力也随之从轻微升级为剧烈。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"The cybersecurity skills of AI models means that AI has collapsed the labor and tooling gap that used to separate well-resourced, state-sponsored operations from individual operators. In the case studies we report below, a hacktivist using stolen API keys, disparate financially motivated individuals, and a state espionage operator each sustained multi-victim campaigns that, even just a year ago, would have required many skilled operators and specialist knowledge."</div>
+        <div class="body en">"AI drives GDP growth in all scenarios, although the scale varies enormously depending on the scenario. In our substantial and extreme scenarios, knowledge workers may see a lot of automation and displacement. If the economy grows, but AI automates more tasks, more of each dollar might go to capital."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"AI 模型的网络安全技能意味着，AI 已经抹平了曾经将资源充裕的国家级行动与单个操作者区分开来的人力和工具鸿沟。在我们下文报告的案例研究中，一名利用窃取 API 密钥的黑客行动主义者、几名各自独立行动的诈骗分子，以及一名国家级间谍人员，都各自维持了多受害者攻击行动——这种行动在仅仅一年前还需要许多熟练的操作者和专业知识才能完成。"</div>
+        <div class="body">"在所有情景中，AI 都会推动 GDP 增长，尽管增长幅度因情景不同而差异巨大。在我们设定的'显著'和'极端'情景中，知识型工作者可能会经历大量的自动化和岗位替代。如果经济持续增长，但 AI 让更多任务被自动化，那么每一美元中流向资本的比例可能会更高。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · swyx（Latent Space）</span>
+      <h2 class="title">swyx实测：前沿AI模型推荐产品时也有"品牌偏好"</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/aeo" target="_blank" rel="noopener">latent.space · The Frontier AEO Tracker: What Astra Chooses（9 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>Latent Space 发布"Frontier AEO 追踪器"研究快照，让 7 个前沿大模型在 161 个产品品类下、用 6 种不同措辞的提问方式给出推荐，系统性测量各家模型的推荐偏好与稳定性。结果显示不同厂商模型确实存在"自家偏好"：Claude 系列偏爱 Claude Code，GPT/Astra 系列偏爱自家 Codex，Grok 则偏爱 Cursor；161 个品类里有 28 个品类所有模型都一致推荐同一个"霸主"选项，而 Astra 相比其他模型更"自信"，换一种问法也很少改变推荐结果。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"However, bias does exist - when models are asked for coding agent recommendations, Fable/Opus like Claude Code and Sol/Astra like Codex and Grok loves Cursor. There are 28 categories (out of our total 161) which have a universally dominant primary choice - among all surveyed frontier models... Astra is FAR less likely to change its mind when you lightly paraphrase your question."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"不过品牌偏好确实存在——当被问及编程智能体推荐时，Fable/Opus 系列偏爱 Claude Code，Sol/Astra 系列偏爱 Codex，而 Grok 则偏爱 Cursor。在我们统计的全部 161 个品类中，有 28 个品类所有被测的前沿模型都一致给出同一个'霸主'首选……当你稍微换一种问法时，Astra 改变推荐答案的可能性要低得多。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind发布AlphaGenome Atlas：90亿基因变异全预测</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">deepmind.google · AlphaGenome Atlas（9 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 发布 AlphaGenome Atlas，一个覆盖人类基因组中 90 亿个可能的单核苷酸变异（即每一种可能的单字母改变）的预测数据库，并推出结合 AlphaGenome 与 AlphaMissense 两个模型结果的 AVI（AlphaGenome Variant Impact）评分体系。整个数据集体量达 1 PB，是 AlphaFold Database 的 30 多倍，并通过免费网站门户向学术研究者开放，是迄今为止最全面的基因突变分子影响图谱。</div>
+      <h2 class="title">谷歌上线Fairwind：AI自动修复漏洞进入"分钟级"</h2>
+      <div class="source">来源：<a href="https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/" target="_blank" rel="noopener">blog.google · Proactive cyber defense for governments and enterprises（9 月 2 日）</a></div>
+      <div class="summary"><b>总结：</b>谷歌安全与隐私副总裁 Four Flynn 宣布推出 Fairwind Program，面向政府机构和受信合作伙伴开放公司最先进的网络防御能力。项目把专用网络安全模型 Gemini 3.8 Flash Cyber 与自动修复漏洞的 CodeMender 系统结合起来，让防御方能够以"智能体规模"发现、验证并修复漏洞。谷歌称，过去需要数周人工排查修复的漏洞，现在可以在几分钟内生成经过验证、可直接部署的补丁，且全程在客户自己的安全云环境中完成。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"AlphaGenome Atlas is a platform containing predictions for the effects of 9 billion single-nucleotide variants — every single-letter change possible — in the human genome. It is the most comprehensive catalogue of how genetic mutations affect molecular biology... AlphaGenome Atlas is a massive 1-petabyte dataset, more than 30 times larger than the AlphaFold Database."</div>
+        <div class="body en">"Today, we're launching our Fairwind Program, a limited access program for governments and trusted partners to use our most advanced cyber defense capabilities. The Fairwind Program offerings bring together our most advanced cyber model, Gemini 3.8 Flash Cyber, with our CodeMender harness, to help defenders find, verify, and fix vulnerabilities at agentic scale. Instead of taking weeks to manually fix vulnerabilities, defenders can now generate verified, deployment-ready patches in minutes — within an organization's secure cloud environment."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"AlphaGenome Atlas 是一个包含人类基因组中 90 亿个单核苷酸变异——也就是每一种可能的单字母改变——影响预测的平台。它是迄今为止关于基因突变如何影响分子生物学最全面的目录……AlphaGenome Atlas 是一个庞大的 1 PB 数据集，规模是 AlphaFold Database 的 30 多倍。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：OpenAI内部人均日耗AI费飙至600美元</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" rel="noopener">simonwillison.net · Research acceleration: the view inside OpenAI（9 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 点评了 OpenAI 披露的内部研究团队使用 coding agent 的花费曲线：人均每日 AI 支出从年初接近零，6 月涨到约 150 美元并维持一段时间，随后在 7 月底到 8 月骤然飙升至约 600 美元。他推测这次跳变恰好对应内部员工提前拿到了后来发布的 GPT-6 Astra 的使用权限，侧面印证新模型对研发效率提升的直接拉动。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"Included are details on how OpenAI's own research team are using coding agents. Like pretty much everyone else 2026 has been the year that agentic engineering really took off at OpenAI, best illustrated by this chart... I'm intrigued at what caused that significant acceleration in AI spend per researcher in late July - my best guess is that's when internal employees gained access to the model later released as GPT-6 Astra."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"文中披露了 OpenAI 自己的研究团队是如何使用编程智能体的。和几乎所有人一样，2026 年是 agentic engineering（智能体化工程）在 OpenAI 真正起飞的一年，这一点从这张图上就能清楚看出来……我很好奇是什么导致了 7 月底人均 AI 支出出现这么显著的加速——我最好的猜测是，那正是内部员工获得后来发布的 GPT-6 Astra 使用权限的时间点。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">Raschka拆解：Astra到底用没用"循环Transformer"</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" target="_blank" rel="noopener">magazine.sebastianraschka.com · GPT-6 Astra, Looped Transformers, and Hidden Reasoning（9 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Sebastian Raschka 写了一篇长文，系统梳理"循环／递归深度 Transformer"（同一套 transformer 层被多次复用以变相加深网络）这一技术脉络，并结合外部传言分析 GPT-6 Astra 是否采用了这种架构。他认为 Astra 大概率确实用了循环 Transformer 的思路，但明确反驳了"这是为了隐藏思维链"的猜测：在他看来，Astra 展示出更短的推理轨迹，更可能是模型本身更"聪明"、犯错更少、能在架构内部消耗更多算力的自然结果，而不再需要把推理过程当作外部 scratchpad 写出来。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"However, I think it's highly likely that GPT-6 Astra uses looped transformer aspects. First, there is the reporting mentioned above. Second, it's a technique that has shown promise in past studies... I don't think that looped transformers are significant contributors towards hiding or obscuring chains of thought. In my opinion, shorter reasoning traces are a side effect of more 'intelligent' or capable models that make fewer mistakes and can access more compute internally inside their architecture versus using a reasoning trace as a scratchpad."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"不过，我认为 GPT-6 Astra 很可能确实用到了循环 Transformer 的某些特性。首先是前面提到的那些传闻报道；其次，这项技术在过去的研究中已经展现出了潜力……我不认为循环 Transformer 是导致思维链被隐藏或模糊化的重要原因。在我看来，更短的推理轨迹是模型变得更'智能'、更强大的一个副产品——这类模型犯错更少，能在架构内部调用更多算力，而不再需要把推理过程当作 scratchpad 写出来。"</div>
+        <div class="body">"今天，我们正式推出 Fairwind Program，这是一个面向政府机构和受信合作伙伴、限量开放的项目，让他们能够使用我们最先进的网络防御能力。Fairwind Program 把我们最先进的网络安全模型 Gemini 3.8 Flash Cyber，与用于自动修复漏洞的 CodeMender 系统结合在一起，帮助防御方以'智能体规模'发现、验证并修复漏洞。过去需要数周人工排查修复的漏洞，现在防御者可以在几分钟内生成经过验证、可直接部署的补丁——而且全程都在企业自己的安全云环境中完成。"</div>
       </details>
     </article>
 
