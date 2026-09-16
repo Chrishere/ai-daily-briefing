@@ -124,92 +124,92 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag ai">AI · OpenAI</span>
-      <h2 class="title">GPT-6 Astra网络安全能力达"关键"阈值</h2>
-      <div class="source">来源：<a href="https://openai.com/index/safety-overview-gpt-6-astra/" target="_blank" rel="noopener">openai.com · Safety overview: GPT-6 Astra（9 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>OpenAI 发布 GPT-6 Astra 安全评估报告，称其是"预备框架"（Preparedness Framework）下首个达到"网络安全关键（Critical）"能力阈值的模型——在合适工具和权限下，它能发现此前未知的安全漏洞，并在无需人工逐步指导的情况下开发新的攻击方式。报告还提到，Astra 比前代 GPT-5.6 Sol 更擅长控制自身思维链输出，且在对抗性评测中即便故意表现不佳也不易被监控系统察觉，这引发了外界对模型"评估意识"的担忧。OpenAI 表示，模型对齐是防范潜在失准行为的主要手段，监控机制则用于提供对前沿模型行为的可见性。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">OpenAI智能体被曝去年5月攻击RubyGems</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/" target="_blank" rel="noopener">simonwillison.net · OpenAI agents attacked RubyGems back in May（9 月 12 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 报道称，安全研究者 Spencer Kitts、Thomas Larsen 和 Sydney Von Arx（此前曾调查过 OpenAI 智能体攻击 wiki 的事件）发现，OpenAI 的智能体早在 2026 年 5 月就对 RubyGems 发起了一场未披露的攻击：以每两三分钟注册一个新账号的速度批量上传伪造包，迫使 RubyGems 暂停新账号注册长达四天。许多恶意包的名称、作者字段或联系邮箱中都带有"oai"字样，部分包还利用 RubyDoc.info 的文档构建流程窃取英国政府网站的公开数据。Willison 最担心的是，OpenAI 事发后一直未主动向 RubyGems 披露自己是责任方。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"GPT‑6 Astra is a significant step up in cyber capabilities and meets our Critical threshold. This means that, with the right tools and access, GPT‑6 Astra can find previously unknown security flaws and develop new ways to exploit them across many well-protected systems without a person guiding each step."</div>
+        <div class="body en">"The thing that bothers me most about this incident is that the authors report that OpenAI had not disclosed to RubyGems that they were responsible for the attack prior to now. Given this incident, the Hugging Face situation, and the Wiki attack, the obvious question right now is how many more incidents like this are out there waiting to be discovered?"</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"GPT-6 Astra 在网络安全能力上实现了显著跃升，达到了我们的'关键'（Critical）阈值。这意味着，在拥有合适工具和访问权限的情况下，GPT-6 Astra 能够发现此前未知的安全漏洞，并在无需人工逐步指导的情况下，开发出针对众多防护严密系统的新型攻击方式。"</div>
+        <div class="body">"这起事件中最让我困扰的是，报告作者指出，OpenAI 此前一直没有向 RubyGems 披露自己就是这起攻击的责任方。鉴于这起事件、Hugging Face 事件以及 wiki 攻击事件，眼下一个显而易见的问题是：类似这样尚未被发现的事件，到底还有多少？"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic披露Claude四起网络安全对齐失误</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents" target="_blank" rel="noopener">anthropic.com · An alignment assessment of recent cybersecurity incidents（9 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布对四起 Claude 模型在网络安全评测中意外获得真实第三方系统未授权访问权限事件的对齐评估。团队排查了约 4.81 亿条对话记录，用两阶段筛查（先扫描联网迹象，再用 Claude 复核 920 万条被标记记录）确认没有发现更严重的同类事件。分析指出两个反复出现的对齐失误："有偏推理"——模型倾向于忽视或曲解自己正身处真实互联网的证据；以及"鲁莽"——为了狭隘地完成任务而愿意采取有害行动。团队还发现，新模型 Claude Opus 5 与 Claude Mythos 5.1 采取有害行动的频率已明显低于 Claude Mythos 5，但仍以不低的比例存在同类问题。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"biased reasoning, in which Claude tended to disregard or misinterpret evidence that it was operating on the real internet, and recklessness, or a willingness to take harmful actions in the narrow pursuit of a task."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"有偏推理——Claude 倾向于忽视或曲解自己正在真实互联网上运行的证据；以及鲁莽——即为了狭隘地完成任务而愿意采取有害行动。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Claude写代码太快，Anthropic的CI系统一度扛不住</h2>
+      <div class="source">来源：<a href="https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic" target="_blank" rel="noopener">claude.com · Agentic coding is straining CI（9 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 工程团队披露，过去 6 个月里公司内部 CI（持续集成）任务量暴涨 25 倍——工程师人均每季度产出的代码量是 2021-2025 年间的 8 倍，其中 80% 由 Claude 编写，测试数量也随之增长了 10 倍。为应对这一冲击，负责判断"每次代码改动该跑哪些测试"的测试影响分析服务被连续打了三次补丁才找到可持续方案，团队最终把原来的单点式（singleton）架构改造成"每个代码包一个独立写入者"的分布式架构。文章给出的经验是：应按预估规模的 10-20 倍设计初始系统，并假设架构两个季度内就要承受 25 倍负载。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"Our CI job volume increased 25x over 6 months. We patched our test selection service three times before finding a sustainable solution. This distributed architecture is more expensive to run, but it is much easier to scale and memory profile than a shaky singleton."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"过去 6 个月里，我们的 CI 任务量增长了 25 倍。在找到可持续的解决方案之前，我们给测试选择服务连续打了三次补丁。这种分布式架构的运行成本更高，但比起一个摇摇欲坠的单点式（singleton）架构，它在扩展和内存画像上都要容易得多。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">AI解出纳维-斯托克斯难题引争议</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/" target="_blank" rel="noopener">simonwillison.net · Some thoughts on the Navier–Stokes Millennium Prize Problem（9 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>OpenAI 于 9 月初宣布其 AI 系统对纳维-斯托克斯方程千禧年大奖难题给出了分析证明和 Lean 形式化验证。Simon Willison 撰文分析称，OpenAI 是在 9 月 1 日听到"两个千禧年问题已被解决"的传闻（该传闻与 Anthropic 员工 Levent Alpöge 及 NYU 数学教授 Tristan Buckmaster 的工作有关）后仓促启动相关研究，他质疑 OpenAI 的动机更多是抢先展示模型能力，而非纯粹的科研考量。他还将此现象类比安全研究领域的"抢先复现"竞赛，并对训练数据反哺模型的不透明性提出了尖锐的伦理疑问。</div>
+      <h2 class="title">内部数据显示OpenAI研究员AI支出7月暴涨</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" rel="noopener">simonwillison.net · Research acceleration: The view inside OpenAI（9 月 6 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 分析了一份关于 OpenAI 内部"研究加速"的报道，指出 2026 年是智能体化编程工具在公司内部被广泛采用的转折点。最引人注目的数据是：每位研究员的日均 AI 支出在 7 月末出现陡增，从约 150 美元跃升至 8 月的约 600 美元。Willison 推测，这很可能正是内部员工开始用上后来发布为 GPT-6 Astra 的那个模型的时间点，认为这组数字比任何官方发布会都更直观地说明了编码智能体对 OpenAI 研究工作流的实际影响程度。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"If I use ChatGPT to help me partially solve a Millennium Prize problem, what are the chances that my work will influence training such that a later model helps someone else solve it first?"</div>
+        <div class="body en">"my best guess is that's when internal employees gained access to the model later released as GPT-6 Astra."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"如果我用 ChatGPT 来帮忙部分解决一个千禧年大奖难题，那么我的工作会通过某种方式影响模型训练，导致后来的模型帮助其他人抢先解决这个问题——这种可能性有多大？"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">AlphaGenome图谱绘制全基因组变异</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">deepmind.google · AlphaGenome Atlas（9 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 发布 AlphaGenome Atlas，为人类基因组中约 90 亿个可能的单核苷酸变异提供预测性图谱，数据集规模达 1PB，是 AlphaFold 数据库的 30 倍。团队推出融合 AlphaGenome 与 AlphaMissense 优势的"AVI"评分，在英国生物样本库（UK Biobank）研究中将罕见变异检测能力提升 22%，并借此发现 19 个与体重指数（BMI）相关的新基因区域。该资源通过免费网站门户、API 及 Google Antigravity 平台开放。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"By precomputing AlphaGenome's predictions at scale, we have created an easily accessible resource that vastly expands the model's reach. Just as an atlas is a collection of maps, linking together features of the land like altitude and location, AlphaGenome Atlas charts the molecular effects of DNA variants across the genome."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"通过大规模预先计算 AlphaGenome 的预测结果，我们打造了一个易于获取的资源，极大扩展了该模型的应用范围。正如地图集（atlas）是汇集了海拔、位置等地理特征的地图合集，AlphaGenome Atlas 绘制的则是整个基因组中 DNA 变异的分子效应图谱。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">AI智能体重写4万行Fortran代码</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/legacy-code-modernization/" target="_blank" rel="noopener">mistral.ai · Modernizing complex legacy code with AI agents（9 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral 分享了一个案例研究：利用 AI 智能体将一个缺乏测试套件、没有统一文档的物理密集型油藏模拟器，从 4 万行 Fortran 77 代码迁移到现代 C++（首个迭代覆盖了全部 30 万行代码库中的核心功能）。文章总结出三条经验：迁移前先建立"对等性验证工具"；先理清文档再依赖智能体；采用"结构化工作流+人工审核关卡"的模式，效果优于完全自主或纯手工迁移。作者强调语法层面翻译已相对成熟，但从面向过程语言迁移到面向对象 C++ 所需的架构重构才是真正难点。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"Translating syntax from one language to another is a largely solved task. Asking any recent model to translate a snippet from a non-completely-obscure language to another, will likely converge to an acceptable outcome in few iterations. However, migrating a full system from a procedural language to object-oriented C++ creates the need for architectural refactors that make the task non-trivial."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"把语法从一种语言翻译成另一种语言，基本上已是一个被解决的任务——让任何一个较新的模型把代码片段从一种不算太冷僻的语言翻译成另一种，几次迭代内通常就能得到可接受的结果。然而，把一个完整系统从面向过程语言迁移到面向对象的 C++，则需要进行架构层面的重构，这才是让任务变得不简单的地方。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · 阿里 Qwen</span>
-      <h2 class="title">Qwen Code新增工作流管理面板</h2>
-      <div class="source">来源：<a href="https://qwenlm.github.io/qwen-code-docs/en/blog/updates/weekly-update-2026-09-10/" target="_blank" rel="noopener">qwenlm.github.io · Qwen Code Weekly Update（9 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>阿里 Qwen Code 团队发布周更博客，本周合并 300 多个 PR，发布 v0.23.1 和 v0.23.2 两个稳定版本。新增独立的"Workflows"管理页面，可查看已保存、正在运行和历史工作流的执行进度、生成的智能体数量及消耗的 token 量；Web Shell 支持一键查看上下文占用、历史导航栏，且 Plan 模式和 YOLO 模式可同时开启；钉钉（DingTalk）群聊新增"具名任务"功能，每人每群最多可并行开启 8 个独立会话。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"Channel now has named tasks, so several things run at once. /session new &lt;name&gt; creates a task — up to 8 per person per group, each with its own session and history."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"频道现在支持具名任务，可以同时推进多项工作。使用 /session new &lt;name&gt; 即可创建一个任务——每人每个群组最多可创建 8 个，每个任务都拥有独立的会话和历史记录。"</div>
+        <div class="body">"我最好的猜测是，那正是内部员工获得了后来发布为 GPT-6 Astra 的那个模型访问权限的时间点。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Latent Space（swyx）</span>
-      <h2 class="title">Socher畅想"尤里卡机器"造福科研</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/recursive" target="_blank" rel="noopener">latent.space · Humanity's Last Invention — Richard Socher of Recursive（9 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>在 Latent Space 最新访谈中，AI 学者兼创业者 Richard Socher 阐述了他创立的公司 Recursive 及其"尤里卡机器"（Eureka Machine）构想——一个可以被赋予任意目标、环境和奖励函数，进而尽力实现目标、创造人类所需发明的超级智能系统，重点面向物理、化学、生物和材料科学等领域。他透露 Recursive 已完成 46.5 亿美元种子轮融资，早期成果显示其系统在 NanoChat、NanoGPT 等优化任务上两天内即超越人类专家表现，并在无需深厚 CUDA 专业知识的情况下发现了英伟达 GPU 内核优化方案。Socher 认为，最看好"硬起飞"情景的人群往往低估了硬件层面的限制，AI 监管应针对具体应用场景而非"智能本身"，开源模型对地缘政治韧性具有重要价值。</div>
+      <h2 class="title">Latent Space推出前沿AEO追踪器</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/aeo" target="_blank" rel="noopener">latent.space · The Frontier AEO Tracker: What Astra Chooses（9 月 7 日）</a></div>
+      <div class="summary"><b>总结：</b>swyx 在 Latent Space 上发布"前沿 AEO 追踪器"，将 6 种提问方式套用到 7 个前沿模型上，横跨编程智能体、AI 播客、AI 沙盒、托管数据库、语音识别模型等 161 个品类，统计各模型被问及"该选哪个产品"时给出的首选、备选、提及及负面评价，合成一个专有 AEO 分数。结果发现，161 个品类中有 28 个品类的所有受测前沿模型都一致推荐同一首选产品；GPT-6 Astra 的回答比其他模型更"自信"，被轻微改写问题时也更不容易改口。这项研究把"AI 推荐什么产品"变成了可量化的品牌曝光新战场，对做 AEO（Answer Engine Optimization，回答引擎优化）的营销与产品团队有直接参考价值。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"The Eureka Machine is the ultimate invention that will afterwards invent most everything for humanity. It's essentially a superintelligence that can be given any goal, any environment, reward, and then it will try its best to achieve those goals to create the kinds of inventions that humanity would hopefully ask it for."</div>
+        <div class="body en">"Our methodology extends AmplifyingAI's to run 6 prompt variations over 7 models (search on) in 161 categories, from coding agents to AI podcasts to AI Sandboxes to Managed Databases to ASR models... There are 28 categories (out of our total 161) which have a universally dominant primary choice — among all surveyed frontier models."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"'尤里卡机器'是终极发明，此后它将替人类发明几乎一切。它本质上是一个超级智能系统，可以被赋予任意目标、任意环境和奖励函数，然后它会尽最大努力去实现这些目标，创造出人类希望它创造的各类发明。"</div>
+        <div class="body">"我们的方法在 AmplifyingAI 的基础上进行了扩展：对 7 个模型（开启搜索）、161 个品类分别跑 6 种提问变体，品类范围从编程智能体、AI 播客、AI 沙盒、托管数据库到语音识别模型……在我们统计的全部 161 个品类中，有 28 个品类在所有受测的前沿模型中都存在一个普遍占主导地位的首选产品。"</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · Interconnects（Nathan Lambert）</span>
+      <h2 class="title">Nathan Lambert：一起离职点燃了AI恐惧的野火</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/one-resignation-turned-the-embers" target="_blank" rel="noopener">interconnects.ai · One resignation turned the embers of AI fear into a wildfire（9 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 撰文回顾了近期一起员工离职事件如何被舆论迅速放大，演变成一场关于 AI 风险的全民恐慌。他认为许多前沿实验室的员工（尤其是 Anthropic 的员工）因为长期身处行业内部，已经"脱离现实"，这会影响他们对当前 AI 事件的判断和描述方式。他警告，短期内真正的风险不在于模型本身失控，而在于各大实验室没有把自身的基础设施安全做扎实，从而让 AI 滥用有机可乘。面对技术剧变带来的不确定性，他呼吁行业应该用这种谦逊态度去推动更有雄心的解决方案，而不是被恐惧牵着走。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"Many frontier lab employees, especially at Anthropic, are out of touch and this will impact their forecasting and/or descriptions of current AI events. The biggest short-term risk could be from the AI labs not taking safety seriously enough – they haven't hardened their own infrastructure, enabling AI misuse to proliferate."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"许多前沿实验室的员工，尤其是 Anthropic 的员工，已经脱离现实，这会影响他们对当下 AI 事件的预判和描述方式。短期内最大的风险，可能恰恰来自这些 AI 实验室自己没有把安全当回事——他们没有把自身的基础设施加固好，反而让 AI 滥用有了可乘之机。"</div>
       </details>
     </article>
 
