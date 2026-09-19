@@ -124,92 +124,92 @@
   <div id="items">
 
     <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic披露AI网络攻击已趋于自主化</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">anthropic.com · Countering misuse of AI: September 2026（9 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布最新威胁情报报告，披露过去八个月内追踪到的七类 Claude 滥用案例，涵盖网络攻击、影响力操纵、监控、诈骗、生物滥用、常规武器开发和模型蒸馏。报告指出网络攻击正变得越来越自主：攻击者搭建多智能体框架执行侦察、漏洞利用和数据窃取，人类只负责选定目标和变现决策，过去需要资深团队才能完成的工作，如今全部交给以机器速度并行运行的 AI 模型。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">"The kind of labor that previously set the well-resourced operations apart from everyone else—reconnaissance, exploitation, tool development, and data processing—are all now delegated to AI models, which run in harnesses at machine speed and in parallel."</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">"过去只有资源充足的团伙才能承担的工作——侦察、漏洞利用、工具开发和数据处理——如今全都被交给了 AI 模型来完成，这些模型在'执行框架'（harness）中以机器的速度并行运行。"</div>
+      </details>
+    </article>
+
+    <article class="card">
       <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">Mistral为Firefox新AI助手Smart Window提供模型</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/mistral-x-mozilla/" target="_blank" rel="noopener">mistral.ai · Mistral x Mozilla: Private, Multilingual AI Browsing（9 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral 宣布与 Mozilla 达成合作，为 Firefox 浏览器内测中的 AI 助手"Smart Window"提供底层模型支持。该功能可以帮助用户理解复杂搜索结果、找回不小心关掉的重要信息，并根据浏览器标签页内容主动提供相关信息。目前该合作先在法国和北美地区的用户中上线，英国和德国将在今年晚些时候跟进，Mistral 强调此举旨在为 AI 浏览体验提供隐私、控制权和选择权。</div>
+      <h2 class="title">Mistral用百余AI智能体重写4万行遗留代码</h2>
+      <div class="source">来源：<a href="https://mistral.ai/news/legacy-code-modernization/" target="_blank" rel="noopener">mistral.ai · Modernizing complex legacy code with AI agents（9 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Mistral 分享了为一家欧洲能源企业将 4 万行 Fortran 77 编写的油藏模拟器迁移到现代 C++ 的实战案例。团队先导出代码库状态并搭建数值校验框架以确保新旧系统结果一致，再用自定义解析器生成代码树、派生上百个智能体为代码库编写文档，最终采用"人类主导、编码-测试-审查智能体协同、按模块迁移"的中间路线。结果显示，这种人机协作方式比完全自动化运行或纯人工迁移都更有效，产出的是可维护的现代化代码，而非简单的语法翻译。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Firefox Smart Window (beta), Mozilla's AI browsing assistant, is now powered by Mistral models. Smart Window helps you make sense of complex searches, remember something important you clicked away from and source information important to you based on your browser tabs."</div>
+        <div class="body en">"We generated that tree by parsing the codebase with a custom parser, then used Vibe CLI to spawn over a hundred agents to document it... We landed on a middle ground: a human operating a workflow of coder, tester, and reviewer agents, migrating the codebase module by module."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"Firefox 的 Smart Window（测试版）——Mozilla 的 AI 浏览助手——现在由 Mistral 的模型提供支持。Smart Window 可以帮助你理解复杂的搜索结果、找回你不小心点开又关掉的重要信息，并根据你的浏览器标签页内容，主动为你提供相关信息。"</div>
+        <div class="body">"我们用自定义解析器解析代码库生成了那棵（代码）树，然后用 Vibe CLI 派生出上百个智能体为其编写文档……我们最终选择了一种折中方案：由人类主导一套编码、测试、审查智能体协同的工作流，按模块逐一迁移代码库。"</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag blog">博主 · Interconnects（Nathan Lambert）</span>
-      <h2 class="title">Lambert：一次离职为何点燃AI恐慌野火</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/one-resignation-turned-the-embers" target="_blank" rel="noopener">interconnects.ai · One resignation turned the embers of AI fear into a wildfire（9 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 撰文分析 AI 研究员 Jacob Coxon 以"安全风险"为由辞职一事，如何在极短时间内演变成一场舆论野火。他认为，这次辞职本身或许出于善意，但恰好落在一个已经被此前 OpenAI-HuggingFace 事件、纳维-斯托克斯难题突破等一连串"高风险"新闻烘干的舆论场里，才被无限放大。Lambert 主张，应把可管理的现实 AI 危害（如网络安全漏洞、基础设施风险）和缺乏依据的"AI 灭绝论"区分开，行业更应投入基础设施加固和透明的安全研究，而不是被极端叙事牵着走。</div>
+      <span class="tag ai">AI · NVIDIA</span>
+      <h2 class="title">英伟达以129亿美元收购Hugging Face</h2>
+      <div class="source">来源：<a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener">blogs.nvidia.com · NVIDIA to Acquire Hugging Face（9 月 3 日）</a></div>
+      <div class="summary"><b>总结：</b>NVIDIA 宣布已达成协议，将以约 129.3 亿美元收购开源 AI 平台 Hugging Face。公告强调收购后 Hugging Face 仍将保持开放中立：开发者可以继续自由选择模型、框架、云服务商和推理提供商，NVIDIA 的角色是扩展其基础设施、提升可靠性，并把 AI 能力开放给全球更多开发者和机构。NVIDIA 特别指出，开放模型让初创公司、企业、高校和公共机构无需从零训练模型即可用上先进能力。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Many people were striking matches for years about AI risk – they'd smolder in their community and largely burn out, going unnoticed. As the stakes of AI have risen this year, from the OpenAI-HuggingFace incident and breakthroughs like the Navier-Stokes result (also from OpenAI), the ground has dried out and the latent energy around the AI discourse has increased."</div>
+        <div class="body en">"NVIDIA has agreed to acquire Hugging Face for $12,930,300,000. Together, we will scale Hugging Face's platform, strengthen its infrastructure and expand access to AI for developers and institutions worldwide... Hugging Face will remain an open platform for the entire AI ecosystem."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"多年来，很多人一直在为 AI 风险'划火柴'——这些议论大多只在各自的小圈子里闷烧，最终无声无息地熄灭。但今年随着 AI 的利害关系不断升高，从 OpenAI-HuggingFace 事件到纳维-斯托克斯难题的突破（同样来自 OpenAI），舆论场的'地面'已经变得越来越干燥，围绕 AI 的讨论中积蓄的能量也随之增加。"</div>
+        <div class="body">"英伟达已同意以 129.303 亿美元收购 Hugging Face。我们将共同扩展 Hugging Face 的平台、强化其基础设施，并让全球更多开发者和机构获得 AI 能力……Hugging Face 仍将是面向整个 AI 生态系统的开放平台。"</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag ai">AI · Qwen</span>
-      <h2 class="title">Qwen Code上线Workflows管理面板与并行任务</h2>
-      <div class="source">来源：<a href="https://qwenlm.github.io/qwen-code-docs/en/blog/updates/weekly-update-2026-09-10/" target="_blank" rel="noopener">qwenlm.github.io · Qwen Code Weekly: Look Back on Workflow Runs, Pair Plan With YOLO, Multitask in Group Chat（9 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>阿里 Qwen 团队发布 Qwen Code v0.23.1/v0.23.2 每周更新，这一周合并了 300 多个 PR。新版本为 Workflows（工作流）新增了独立管理页面，可查看每次运行的阶段进度、派生的子智能体、待批准事项与 token 消耗；Web Shell 新增了"一键查看上下文占用"和时间轴回溯功能；Channel（群聊）场景下现在支持给任务命名、每人每群最多可并行开 8 个任务，各自拥有独立会话与历史记录。</div>
+      <span class="tag blog">博主 · Ethan Mollick（One Useful Thing）</span>
+      <h2 class="title">Mollick：AI能力过剩是普通人的机会窗口</h2>
+      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-overhang" target="_blank" rel="noopener">oneusefulthing.org · The Overhang（9 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>Ethan Mollick 提出"能力过剩"（capability overhang）概念：当前 AI 模型能做到的事、和几乎所有人实际用它做到的事之间存在巨大鸿沟，而这鸿沟本身就是机会。他认为普通人不该想着在"产出"上和 AI 竞争，那是一场必输的游戏，而应该把自己的深度知识、广度知识、品味和主体性当作与 AI 协作的基础；稀缺资源正在变成人用自己的品味去筛选 AI 产出——知道该留下哪些、该扔掉哪些。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Qwen Code shipped two stable releases this week — v0.23.1 and v0.23.2 — with 300+ PRs merged. Open Workflows in the sidebar, or type /workflows in the conversation. The page has three tabs: Saved, Running, and History. Every run shows its stage progress, the agents it spawned, the approvals it's waiting on, and the tokens it spent."</div>
+        <div class="body en">"The capability overhang, the gap between what these models can do and what almost anyone is doing with them, is an opportunity... You are not trying to compete with AI in producing outputs, that is a losing game. Instead, you want to use your human advantages as basis of working with AI."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"Qwen Code 本周发布了两个稳定版本——v0.23.1 和 v0.23.2，合并了 300 多个 PR。在侧边栏打开 Workflows，或在对话中输入 /workflows。该页面有三个标签页：已保存、运行中和历史记录。每次运行都会显示其阶段进度、派生的智能体、正在等待的审批，以及消耗的 token 数量。"</div>
+        <div class="body">"'能力过剩'——也就是这些模型能做到的事、和几乎所有人实际用它们做到的事之间的鸿沟——本身就是一个机会……你不是要在'产出'上和 AI 竞争，那是一场必输的游戏。相反，你应该把自己的人类优势，作为和 AI 协作的基础。"</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag blog">博主 · Sebastian Raschka</span>
-      <h2 class="title">拉施卡：短推理链不代表AI在隐藏思维</h2>
-      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" target="_blank" rel="noopener">magazine.sebastianraschka.com · GPT-6 Astra, Looped Transformers, and Hidden Reasoning（9 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Sebastian Raschka 撰文回应"循环／递归深度 Transformer 会让模型隐藏真实思维链"的担忧。他以 GPT-6 Astra 为例指出，更强模型给出更短的推理过程，更可能是因为模型更少犯错、更少需要回溯，而非刻意掩盖推理步骤；他类比 GPT 5.6 家族中 Sol 比更小的 Luna 模型用更少 token 却达到同等表现，说明没人因此认为 Sol 的可解释性更差。他认为，能力越强的模型往往推理越"高效"（即 token 更少），这是效率提升的自然结果，而不是架构上刻意设计的欺骗。</div>
+      <span class="tag blog">博主 · Latent Space（swyx）</span>
+      <h2 class="title">Socher谈"尤里卡机器"：让AI自动发明一切</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/recursive" target="_blank" rel="noopener">latent.space · Humanity's Last Invention — Richard Socher of Recursive（9 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>Latent Space 专访 Recursive 创始人、前 Salesforce 首席科学家 Richard Socher，他提出"尤里卡机器"（Eureka Machine）构想——一种可被赋予任意目标和奖励、并自动完成发明过程本身的超级智能系统。Socher 认为，AI 研究流程中人类的构思、实现、验证环节正被逐步替换为可学习系统，替换到哪一步能力就提升到哪一步；他承认奖励黑客、目标错位等安全隐患是合理担忧，但更希望人们对超级智能在科学领域的正面潜力抱有期待。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Using fewer tokens could just mean that the model is more capable and makes fewer mistakes, uses less backtracking, and so on. I don't think that anyone has strong concerns that GPT 5.6 Sol is so much less interpretable than the smaller GPT 5.6 Luna model, which uses many more tokens for the same task performance."</div>
+        <div class="body en">"The Eureka Machine is the ultimate invention that will afterwards invent most everything for humanity. It's essentially a superintelligence that can be given any goal, any environment, reward, and then it will try its best to achieve those goals."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"用更少的 token，可能只是意味着模型能力更强、犯错更少、需要的回溯也更少，仅此而已。我不认为有人会因为 GPT 5.6 Sol 比那个用了多得多的 token 才能达到同等任务表现的、更小的 GPT 5.6 Luna 模型，就认定 Sol 的可解释性差了很多。"</div>
+        <div class="body">"'尤里卡机器'是终极发明，此后它将替人类发明几乎所有东西。它本质上是一种超级智能，可以被赋予任意目标、任意环境和奖励，然后它会尽最大努力去实现这些目标。"</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">OpenAI借未公开模型抢发千禧年难题成果引争议</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/" target="_blank" rel="noopener">simonwillison.net · Some thoughts on the Navier–Stokes Millennium Prize Problem（9 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 撰文评论 OpenAI 宣称用一个尚未公开的模型攻克了纳维-斯托克斯存在性与光滑性问题——七大千禧年大奖难题之一。这一"突破"的光彩被指控掩盖：纽约大学数学教授 Tristan Buckmaster 指责 OpenAI 在其团队已经就相关问题合作研究近一年的情况下抢先宣布成果。Willison 认为，OpenAI 是听说已有千禧年难题被 LLM 解出，便借机展示自家最新模型的实力，却没有充分考虑抢发他人研究成果的观感问题。</div>
+      <h2 class="title">Willison：OpenAI内部编码智能体用量暴涨</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" rel="noopener">simonwillison.net · Research acceleration: The view inside OpenAI（9 月 6 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 点评 OpenAI 发布的"研究加速"内部数据，称当天是 OpenAI 的"RSI 日"（Recursive Self-Improvement，递归自我改进），认为这就是 OpenAI 眼中的"新 AGI"。文章披露的图表显示，内部研究员对编码智能体的使用量从 2 月接近零，缓慢升至 4 月的约 50、6 月的约 150，7 月维持在 150-165 左右，8 月底陡增至约 600；Willison 推测这次剧增恰好与内部员工获得后来发布为 GPT-6 Astra 的模型访问权限的时间吻合。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"My interpretation of what happened here is that OpenAI heard that some Millennium Prize problems had been solved using LLMs and saw this as an opportunity to demonstrate the power of their latest model, without thinking too hard about the optics of scooping a team who had been using OpenAI's own models to work on this problem for the best part of a year."</div>
+        <div class="body en">"Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new essay An Alien Mind (by Chief Scientist Jakub Pachocki) talk about it, and this one doesn't even bother to expand the acronym."</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"我对这里发生的事情的理解是：OpenAI 听说已经有一些千禧年难题被 LLM 解出，于是把这当作一个展示自家最新模型实力的机会，却没有充分考虑这样做的观感问题——毕竟有一个团队已经用 OpenAI 自己的模型在这个问题上研究了将近一年，而这么做等于是抢在了那个团队前面。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind发布AlphaGenome Atlas人类基因组变异图谱</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">deepmind.google · AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome（9 月 8 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 发布 AlphaGenome Atlas，这是一个开放给学术研究者的平台，收录了对人类基因组中约 90 亿种单核苷酸变异（即每一个可能的单字母突变）所产生生物学效应的预测结果。该图谱建立在此前发布的 AlphaGenome 模型基础上——AlphaGenome 擅长分析特定变异，而 Atlas 则希望给研究者提供一个跨越整个基因组的"全景视图"，以应对"逐一在实验室验证每种突变几乎不可能"这一长期难题。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"DNA is the language of life. Mastering it is a grand challenge that could transform our ability to understand biology and treat disease. But progress has been limited by a fundamental problem: interpreting how genetic variations impact biology at a molecular level. With roughly 9 billion possible single-letter mutations in the human genome, testing each one in the lab is practically impossible."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"DNA 是生命的语言。掌握这门语言是一项宏大的挑战，它可能彻底改变我们理解生物学、治疗疾病的能力。但这方面的进展一直受限于一个根本性问题：如何在分子层面解读基因变异所带来的影响。人类基因组中大约存在 90 亿种可能的单字母突变，想要在实验室里逐一测试，几乎是不可能完成的任务。"</div>
+        <div class="body">"看起来今天是 OpenAI 的'RSI 日'，即'递归自我改进'（Recursive Self-Improvement）——我觉得这就是他们心目中的'新 AGI'。这篇文章和首席科学家 Jakub Pachocki 那篇新文章《An Alien Mind》都在谈这件事，而且这篇文章甚至懒得把这个缩写展开解释。"</div>
       </details>
     </article>
 
