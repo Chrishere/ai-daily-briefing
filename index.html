@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 9 月 12 日</span>
-      <span id="count">6 条精选</span>
+      <span id="count">5 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,92 +124,77 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic披露AI网络攻击已趋于自主化</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">anthropic.com · Countering misuse of AI: September 2026（9 月 10 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 发布最新威胁情报报告，披露过去八个月内追踪到的七类 Claude 滥用案例，涵盖网络攻击、影响力操纵、监控、诈骗、生物滥用、常规武器开发和模型蒸馏。报告指出网络攻击正变得越来越自主：攻击者搭建多智能体框架执行侦察、漏洞利用和数据窃取，人类只负责选定目标和变现决策，过去需要资深团队才能完成的工作，如今全部交给以机器速度并行运行的 AI 模型。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"The kind of labor that previously set the well-resourced operations apart from everyone else—reconnaissance, exploitation, tool development, and data processing—are all now delegated to AI models, which run in harnesses at machine speed and in parallel."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"过去只有资源充足的团伙才能承担的工作——侦察、漏洞利用、工具开发和数据处理——如今全都被交给了 AI 模型来完成，这些模型在'执行框架'（harness）中以机器的速度并行运行。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">Mistral用百余AI智能体重写4万行遗留代码</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/legacy-code-modernization/" target="_blank" rel="noopener">mistral.ai · Modernizing complex legacy code with AI agents（9 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral 分享了为一家欧洲能源企业将 4 万行 Fortran 77 编写的油藏模拟器迁移到现代 C++ 的实战案例。团队先导出代码库状态并搭建数值校验框架以确保新旧系统结果一致，再用自定义解析器生成代码树、派生上百个智能体为代码库编写文档，最终采用"人类主导、编码-测试-审查智能体协同、按模块迁移"的中间路线。结果显示，这种人机协作方式比完全自动化运行或纯人工迁移都更有效，产出的是可维护的现代化代码，而非简单的语法翻译。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"We generated that tree by parsing the codebase with a custom parser, then used Vibe CLI to spawn over a hundred agents to document it... We landed on a middle ground: a human operating a workflow of coder, tester, and reviewer agents, migrating the codebase module by module."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"我们用自定义解析器解析代码库生成了那棵（代码）树，然后用 Vibe CLI 派生出上百个智能体为其编写文档……我们最终选择了一种折中方案：由人类主导一套编码、测试、审查智能体协同的工作流，按模块逐一迁移代码库。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · NVIDIA</span>
-      <h2 class="title">英伟达以129亿美元收购Hugging Face</h2>
-      <div class="source">来源：<a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener">blogs.nvidia.com · NVIDIA to Acquire Hugging Face（9 月 3 日）</a></div>
-      <div class="summary"><b>总结：</b>NVIDIA 宣布已达成协议，将以约 129.3 亿美元收购开源 AI 平台 Hugging Face。公告强调收购后 Hugging Face 仍将保持开放中立：开发者可以继续自由选择模型、框架、云服务商和推理提供商，NVIDIA 的角色是扩展其基础设施、提升可靠性，并把 AI 能力开放给全球更多开发者和机构。NVIDIA 特别指出，开放模型让初创公司、企业、高校和公共机构无需从零训练模型即可用上先进能力。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"NVIDIA has agreed to acquire Hugging Face for $12,930,300,000. Together, we will scale Hugging Face's platform, strengthen its infrastructure and expand access to AI for developers and institutions worldwide... Hugging Face will remain an open platform for the entire AI ecosystem."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"英伟达已同意以 129.303 亿美元收购 Hugging Face。我们将共同扩展 Hugging Face 的平台、强化其基础设施，并让全球更多开发者和机构获得 AI 能力……Hugging Face 仍将是面向整个 AI 生态系统的开放平台。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · Ethan Mollick（One Useful Thing）</span>
-      <h2 class="title">Mollick：AI能力过剩是普通人的机会窗口</h2>
-      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-overhang" target="_blank" rel="noopener">oneusefulthing.org · The Overhang（9 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Ethan Mollick 提出"能力过剩"（capability overhang）概念：当前 AI 模型能做到的事、和几乎所有人实际用它做到的事之间存在巨大鸿沟，而这鸿沟本身就是机会。他认为普通人不该想着在"产出"上和 AI 竞争，那是一场必输的游戏，而应该把自己的深度知识、广度知识、品味和主体性当作与 AI 协作的基础；稀缺资源正在变成人用自己的品味去筛选 AI 产出——知道该留下哪些、该扔掉哪些。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"The capability overhang, the gap between what these models can do and what almost anyone is doing with them, is an opportunity... You are not trying to compete with AI in producing outputs, that is a losing game. Instead, you want to use your human advantages as basis of working with AI."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"'能力过剩'——也就是这些模型能做到的事、和几乎所有人实际用它们做到的事之间的鸿沟——本身就是一个机会……你不是要在'产出'上和 AI 竞争，那是一场必输的游戏。相反，你应该把自己的人类优势，作为和 AI 协作的基础。"</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · Latent Space（swyx）</span>
-      <h2 class="title">Socher谈"尤里卡机器"：让AI自动发明一切</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/recursive" target="_blank" rel="noopener">latent.space · Humanity's Last Invention — Richard Socher of Recursive（9 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 专访 Recursive 创始人、前 Salesforce 首席科学家 Richard Socher，他提出"尤里卡机器"（Eureka Machine）构想——一种可被赋予任意目标和奖励、并自动完成发明过程本身的超级智能系统。Socher 认为，AI 研究流程中人类的构思、实现、验证环节正被逐步替换为可学习系统，替换到哪一步能力就提升到哪一步；他承认奖励黑客、目标错位等安全隐患是合理担忧，但更希望人们对超级智能在科学领域的正面潜力抱有期待。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">"The Eureka Machine is the ultimate invention that will afterwards invent most everything for humanity. It's essentially a superintelligence that can be given any goal, any environment, reward, and then it will try its best to achieve those goals."</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">"'尤里卡机器'是终极发明，此后它将替人类发明几乎所有东西。它本质上是一种超级智能，可以被赋予任意目标、任意环境和奖励，然后它会尽最大努力去实现这些目标。"</div>
-      </details>
-    </article>
-
-    <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison：OpenAI内部编码智能体用量暴涨</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" rel="noopener">simonwillison.net · Research acceleration: The view inside OpenAI（9 月 6 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 点评 OpenAI 发布的"研究加速"内部数据，称当天是 OpenAI 的"RSI 日"（Recursive Self-Improvement，递归自我改进），认为这就是 OpenAI 眼中的"新 AGI"。文章披露的图表显示，内部研究员对编码智能体的使用量从 2 月接近零，缓慢升至 4 月的约 50、6 月的约 150，7 月维持在 150-165 左右，8 月底陡增至约 600；Willison 推测这次剧增恰好与内部员工获得后来发布为 GPT-6 Astra 的模型访问权限的时间吻合。</div>
+      <h2 class="title">OpenAI抢先解出纳维-斯托克斯方程引争议</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/" target="_blank" rel="noopener">simonwillison.net · Some thoughts on the Navier–Stokes Millennium Prize Problem（9 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 点评 OpenAI 用未发布模型抢先解出纳维-斯托克斯存在性与光滑性问题引发的争议。NYU 数学教授 Tristan Buckmaster 与 Anthropic 员工 Levent Alpöge 近一年来用 Claude 和 Codex 研究该问题、8 月 15 日取得突破，数学界传闻扩散后 OpenAI 迅速组建团队、用内部模型于 9 月 5 日抢先给出解答（仅这一问题就发送 270 万条消息、用掉约 1300 亿输出 token）。Willison 质疑 OpenAI 是否接触过二人在 Codex 会话中留存的草稿数据，并追问"我的研究数据会不会被用来训练出抢先解题的下一代模型"这一更根本的问题。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">"Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new essay An Alien Mind (by Chief Scientist Jakub Pachocki) talk about it, and this one doesn't even bother to expand the acronym."</div>
+        <div class="body en">My new preferred hypothetical for this is: If I use ChatGPT to help me partially solve a Millennium Prize problem, what are the chances that my work will influence training such that a later model helps someone else solve it first?</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"看起来今天是 OpenAI 的'RSI 日'，即'递归自我改进'（Recursive Self-Improvement）——我觉得这就是他们心目中的'新 AGI'。这篇文章和首席科学家 Jakub Pachocki 那篇新文章《An Alien Mind》都在谈这件事，而且这篇文章甚至懒得把这个缩写展开解释。"</div>
+        <div class="body">我现在最喜欢用的一个假设性问题是：如果我用 ChatGPT 帮我部分解出了一道千禧年大奖难题，那么我的研究成果影响了模型训练、从而让后续模型帮别人抢先解出同一道题的概率有多大？</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
+      <h2 class="title">Nathan Lambert：我为何不信"真正的RSI"</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/where-i-stand-on-rsi" target="_blank" rel="noopener">interconnects.ai · Why I still haven't bought into true RSI（9 月 19 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 回应近期硅谷弥漫的"递归自我改进（RSI）即将失控"焦虑，提出他所谓的"有损自我改进"（lossy self-improvement）才是更现实的基线判断。理由有三：可自动化的研究范围太窄，难以在指数级成本约束下带来净加速；多智能体并行的边际收益正在递减；资源与政治因素仍是制约实验室训练更强模型的关键瓶颈。他认为把"AI 进展令人焦虑"直接跳到"灭绝风险"的推论"非常宗教化"，当下的讨论热度被硅谷特有的竞争文化放大了。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">I cannot get past the fact that all of our scaling laws show that you need exponential compute and resources to make linear improvements in intelligence. RSI is poised to make modern LLMs vastly cheaper. Trends that have shown LLMs get exponentially cheaper at a given intelligence are likely to accelerate.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我始终无法回避一个事实：我们所有的缩放定律都表明，想要让智能获得线性提升，需要投入指数级增长的算力和资源。RSI（递归自我改进）更有可能做到的，是让当今的大模型变得极其便宜——那些显示大模型在同等智能水平下成本呈指数级下降的趋势，很可能还会进一步加速。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Anthropic首次公开"AI自我研发"量化指标</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">anthropic.com · Measurements for understanding the pace of AI development inside frontier labs（9 月 17 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 首次公开三项量化指标，试图让外界了解前沿实验室内部 AI 研发的真实节奏：AI 在多大程度上参与构建下一代 AI 自身、公司如何监督智能体的行动、以及算力如何分配给安全工作。数据显示，截至 2026 年 8 月，Claude 已"主导"了 Anthropic 26% 的 AI 研发工作，处于"AI 协作"及以上自动化水平的工作占比超过 90%，公司内部同时约有 3 万个智能体在研发平台上运行。Anthropic 同时宣布将引入独立第三方评估机构，赋予其与内部风险评估团队相当的系统访问权限。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">As of August 2026, Claude is not operating fully autonomously for any measured subset of AI R&D work. Claude "leads" 26% of Anthropic's AI R&D work. The share of work at or above "AI collaborates" is above 90%.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">截至 2026 年 8 月，在所有被测量的 AI 研发工作范围内，Claude 还没有在任何一个子领域实现完全自主运作。Claude"主导"了 Anthropic 26% 的 AI 研发工作，处于"AI 协作"及以上自动化水平的工作占比超过 90%。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">IBM研究：智能体"做对一次"不等于"每次都对"</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/ibm-research/altk-evolve-consistency" target="_blank" rel="noopener">huggingface.co · Your Agent Aced the Task. Will It Do It Again?（9 月 15 日）</a></div>
+      <div class="summary"><b>总结：</b>IBM Research 团队在 Hugging Face 博客撰文指出，主流智能体基准测试只报告平均成功率，掩盖了严重的"一致性缺口"：在 AppWorld 基准上，基于 GPT-4.1 的 ReAct 智能体平均成功率达 77.4%，但同一任务连续跑 5 次全部成功的比例只有 53.0%，相差 24.4 个百分点，难题上差距会拉大到 30 个百分点。团队开发了"一致性分析器"，通过对智能体已录制轨迹的关键决策点重新采样，定位"容易翻车"的节点并生成针对性引导规则，使一致性缺口降至 12.0 个百分点，且不损失平均准确率。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">A ReAct agent (GPT-4.1 on AppWorld test_normal) that succeeds 77.4% of the time on average succeeds on all 5 repeated runs for only 53.0% of tasks — a 24.4-point consistency gap. On hard tasks it reaches 30 points.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">一个在 AppWorld test_normal 基准上运行的 ReAct 智能体（基于 GPT-4.1）平均成功率为 77.4%，但同一任务连续跑 5 次全部成功的比例只有 53.0%——存在 24.4 个百分点的"一致性缺口"。在困难任务上，这一差距会扩大到 30 个百分点。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind发布90亿DNA变异预测图谱</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">deepmind.google · AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome（9 月 8 日）</a></div>
+      <div class="summary"><b>总结：</b>Google DeepMind 发布 AlphaGenome Atlas，一个收录人类基因组中全部约 90 亿种单核苷酸变异分子效应预测的免费学术平台，是目前关于基因突变如何影响分子生物学最全面的目录。团队同时发布"变异影响评分"（AVI score），把 AlphaGenome 与蛋白质影响预测模型 AlphaMissense 的结果整合为单一分值，方便研究者快速排序和解读变异。合作机构已用该平台在罕见病研究中定位到此前被忽视的致病变异，并在 5.4 万人的英国生物样本库数据中多发现 22% 的非编码区基因关联。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">With roughly 9 billion possible single-letter mutations in the human genome, testing each one in the lab is practically impossible. Google DeepMind has already made progress on this challenge with AlphaGenome, an artificial intelligence (AI) model that can predict how genetic variants impact biological processes.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">人类基因组中大约存在 90 亿种可能的单字母突变，逐一在实验室中测试几乎是不可能的。Google DeepMind 已经借助 AlphaGenome——一个能够预测基因变异如何影响生物过程的人工智能模型——在这一难题上取得了进展。</div>
       </details>
     </article>
 
