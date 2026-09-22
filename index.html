@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 9 月 21 日</span>
-      <span id="count">5 条精选</span>
+      <span id="count">6 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,77 +124,92 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag blog">博主 · Ethan Mollick</span>
-      <h2 class="title">Ethan Mollick：AI的"能力过剩"才是真正机会</h2>
-      <div class="source">来源：<a href="https://www.oneusefulthing.org/p/the-overhang" target="_blank" rel="noopener">oneusefulthing.org · The Overhang（9 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Ethan Mollick 指出，尽管围绕 AI 风险的讨论持续升温，真正被忽视的问题是当前模型的能力远未被充分使用。他用 GPT-6 Astra 把 1977 年的文字冒险游戏 Zork 改造成 3D 动作游戏、用 Fable 5.1 复原翁贝托·艾柯的米兰藏书室为例，说明模型能可靠完成数周量级的人类工作。他提出"能力过剩"（capability overhang）概念——模型能做的与人们实际用它做的之间的巨大鸿沟——并给出应对之道：深耕"深度知识、广度知识、品味、能动性"四种人类独有优势，以此与 AI 协作而非被动竞争。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Jev登场：一类只给判断、不生成文字的新模型</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/21/jev/" target="_blank" rel="noopener">simonwillison.net · Jev introduces a new shape of LLM—System One, aka Decision Models（9 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 介绍了 TypeSafe AI 发布的新模型 Jev，它跳出了"生成文本"的传统 LLM 范式：用户提交一段文本或结构化数据并附带问题，Jev 直接返回概率化判断——是非题给出伯努利分布、分类题给出各选项概率、评分题给出分数，而不生成解释性文字。定价极具竞争力（每百万输入 token 仅 0.042 美元、输出免费），适合垃圾内容检测、内容打标、排序与搜索重排等场景。Willison 也提醒其"黑箱"特性：模型不解释影响判断的具体信号，可能带来偏见与可解释性隐患。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">The capability overhang, the gap between what these models can do and what almost anyone is doing with them, is an opportunity because most people don't bring their own advantages to AI, and those who do get much more out of it.</div>
+        <div class="body en">Jev lets you ask questions about text or semi-structured data. You compose a "state" object containing a string, array of strings, or set of name-value pairs—this might describe an article, or a customer, or any other kind of record. You then send that to their API with one or more questions, and get a reply back for each.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">"能力过剩"——也就是这些模型能做到的事，和几乎所有人实际拿它们做的事之间的鸿沟——恰恰是一个机会，因为大多数人并没有把自己的优势带入与 AI 的协作中，而那些做到的人则从中获得远多于旁人的收益。</div>
+        <div class="body">Jev 让你可以针对文本或半结构化数据提问。你先构造一个"状态"（state）对象，内容可以是一段字符串、字符串数组，或一组名值对——它可以用来描述一篇文章、一位客户，或任何其他类型的记录。然后你把它连同一个或多个问题一起发送给他们的 API，就能为每个问题得到一条回复。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · xAI</span>
+      <h2 class="title">xAI推出Grok语音转录2.0，准确率翻倍</h2>
+      <div class="source">来源：<a href="https://x.ai/news/grok-voice-transcribe-2" target="_blank" rel="noopener">x.ai · Introducing Grok Voice Transcribe 2.0（9 月 18 日）</a></div>
+      <div class="summary"><b>总结：</b>xAI 发布语音转文字新模型 Grok Voice Transcribe 2.0，在价格不变的情况下将准确率提升至上一代的两倍，短语音指令的词错误率从 20.6% 降至 6.8%。该模型在 Artificial Analysis 公开榜单的 32 个流式模型中排名准确率第一，支持多语言自动识别与录音中途切换语种，批量转录每小时音频 0.10 美元、流式 0.20 美元，并免费附带说话人分离、时间戳等功能。xAI 表示 Grok Voice 已支撑每天数万通客服电话的转录，并已集成进特斯拉车载的 Grok 语音助手。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">Grok Voice Transcribe 2.0 is built on the audio foundation model behind Grok Voice. Grok Voice already powers tens of thousands of customer-support calls a day, transcribes millions of hours of video narration, and runs voice agents in physical products, including the Grok assistant in Tesla vehicles.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">Grok Voice Transcribe 2.0 构建在支撑 Grok Voice 的音频基础模型之上。Grok Voice 目前已经支撑着每天数万通客服电话的转录、数百万小时视频旁白的转写，并为包括特斯拉车载 Grok 助手在内的实体产品运行语音代理。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic与埃森哲合作，把评估者"嵌"进公司内部</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/accenture-embedded-evaluation" target="_blank" rel="noopener">anthropic.com · Partnering with Accenture on embedded evaluation（9 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>这是 Anthropic CEO Dario Amodei 九月中旬发表长文《We Must Pace the Frontier》后落地的第一步：公司宣布与埃森哲旗下 AI 专业团队 Faculty 合作，组建"嵌入式评估者"团队，双方五年内各自计划投入至少 10 亿美元。与传统外部评估不同，嵌入式评估者将拥有近乎员工级别的系统访问权限，能够跟踪模型训练全过程、核实安全承诺的落实情况。Anthropic 同时表示正与 METR 等非营利评估机构商谈，用其自有资金试点类似模式，并强调该合作非排他性，后续会公布更多评估方。</div>
+      <h2 class="title">Anthropic：Claude已主导26%的自研研发工作</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">anthropic.com · When AI builds itself（9 月 18 日更新）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发文披露，截至今年 8 月，Claude 已经能够端到端主导公司 26% 的模型研究与开发工作（2 月时这一比例还是零），工程师人均代码产出较 2021-2025 年提升了 8 倍。文章将模型自动化研发拆分为"工程"（写代码、搭基础设施、监督训练）与"研究"（设计实验、解读结果、决定下一步方向）两大类，并给出数据：Claude 在开放式任务上的成功率半年内从 26% 升至 76%，AI agent 已能弥合弱模型与强模型监督差距的 97%（人类研究员仅为 23%）。Anthropic 认为这些迹象表明"递归自我改进"未来几年内具备现实可能性，但也承认这会让人类更难理解和控制这些系统。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Unlike today's external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees.</div>
+        <div class="body en">Building a frontier model takes two broad categories of work. There is engineering: writing the code, standing up the infrastructure, and overseeing the model training. And there is research: deciding what experiments to run, interpreting what comes back, and figuring out which ideas to try next.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">与今天的外部评估者不同，嵌入式评估者将在 AI 公司内部工作，拥有近乎员工级别的访问权限。这种访问权限让他们能够观察模型在训练过程中逐步成形，追踪决定模型构建与部署方式的各项决策，并直接与员工交流。</div>
+        <div class="body">打造一个前沿模型需要两大类工作。一类是"工程"：编写代码、搭建基础设施、监督模型训练。另一类是"研究"：决定要跑哪些实验、解读实验结果，并判断接下来该尝试哪些想法。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Nathan Lambert：普通人何时才能感受到AI的冲击</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/when-will-average-people-feel-ais" target="_blank" rel="noopener">interconnects.ai · When will average people feel AI's impact?（9 月 9 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 认为，把当前 AI 热潮类比工业革命虽然在"技术变革尺度"上成立，却忽略了关键差异：过去的工业革命给普通人带来了看得见摸得着的新商品（廉价衣物、室内水管、缝纫机），而今天 AI 的收益大多抽象且集中在知识工作者身上，普通人日常生活中的家庭、饮食、出行、娱乐几乎未受直接影响。他提醒，这种"感知落差"正是 AI 在关键早期阶段面临的政治脆弱性所在，行业若不能让普通人切实感受到收益，类似核电当年遭遇的舆论反弹可能重演。</div>
+      <h2 class="title">Nathan Lambert：一次离职为何点燃AI恐慌野火</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/one-resignation-turned-the-embers" target="_blank" rel="noopener">interconnects.ai · One resignation turned the embers of AI fear into a wildfire（9 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 分析了研究员 Jacob Coxon 以"AI 安全风险"为由辞职一事为何意外引爆舆论野火：他认为这并非媒体协同策划的阴谋，而是政客和媒体在早已"干燥"的公众情绪土壤上顺势借题发挥。Lambert 区分了他认为被过度渲染、发生概率很低的"灭绝级"风险，与真正值得严肃讨论的网络安全、生物安全等具体危害，并批评 Anthropic 等前沿实验室因视角封闭而扭曲了对技术进展的判断。他认为"递归自我改进"尚未展现出部分研究者预测的指数级回报，眼下最紧迫的风险其实来自 AI 实验室基础设施防护不足，而非科幻式的失控场景。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Core aspects of everyday life — family, food, transportation, and entertainment — have few direct impacts yet. It's a remarkable breath of fresh air to pop out of the bubble and realize how little what is happening really matters today.</div>
+        <div class="body en">Fear is the simplest story, the one people cannot look away from. Jacob Coxon was the one who stumbled into this new powder keg, totally unaware of what was going to come.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">日常生活的核心部分——家庭、饮食、出行与娱乐——目前几乎都还没有受到 AI 的直接影响。跳出这个"信息泡泡"、意识到眼下发生的一切其实对日常生活影响甚微，反而是一种令人耳目一新的体验。</div>
+        <div class="body">恐惧是最简单的故事，是人们无法移开视线的那种。Jacob Coxon 恰好一头撞进了这个新的火药桶，对接下来会发生什么毫无察觉。</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag ai">AI · Mistral</span>
-      <h2 class="title">Mistral为Firefox新版AI助手提供模型支持</h2>
-      <div class="source">来源：<a href="https://mistral.ai/news/mistral-x-mozilla/" target="_blank" rel="noopener">mistral.ai · Mistral x Mozilla: Private, Multilingual AI Browsing（9 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Mistral 宣布与 Mozilla 合作，为 Firefox 新的 AI 浏览助手"Smart Window"（测试版）提供底层模型支持，先面向法国和北美用户开放，英国与德国将于年内跟进。双方将此定位为"两家开源阵营伙伴"的联合：Mistral 将针对区域语言与文化语境专门微调模型，Firefox 则延续其"隐私优先"传统——用户对话默认不会保存在 Mozilla 服务器上，Mistral 也承诺零数据留存。这被视为主权 AI 走出企业市场、直接触达普通消费者的一步。</div>
+      <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
+      <h2 class="title">Lambert国会简报：中国开源模型已反超美国</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/the-current-balance-of-power-in-open" target="_blank" rel="noopener">interconnects.ai · The current balance of power in open models（9 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 公开了他向美国国会议员及幕僚做简报的讲稿，系统梳理开放权重模型的中美实力对比。他指出中国开放权重模型在能力上已领先美国同类产品 2-5 个月，但仍落后于 GPT-4、Claude 等美国闭源前沿模型 6-9 个月；在 OpenRouter 等平台上，中国模型的调用份额已从 2025 年 9 月的 70% 升至超过 80%，在学术论文中的出现比例也达到 40%（美国模型为 30%，其中 Qwen 被 30% 的论文提及，Llama 为 21%）。他强调模型蒸馏只能解释中国 1-2 个月的优势，说明这更多是真实技术实力的体现，Harvey、Cursor、DoorDash 等美国企业出于成本与灵活性考量也已转向使用中国模型。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Firefox has a long history of control and privacy in its DNA, and these are values we share at Mistral. Privacy protections are built into how Firefox Smart Window works: conversations aren't saved on Mozilla's servers by default, and partners like Mistral agree to zero data retention.</div>
+        <div class="body en">Open language models are AI models where their weights are publicly available for inspection or downstream use. These are most often contrasted to so-called "closed" AI models. Closed models offer access only through Application Programming Interfaces (APIs) that developers can use to directly query a model, like GPT-4 or Claude Opus 4.5, or through products, like ChatGPT and Claude Code.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Firefox 的基因里始终带着对控制权和隐私的坚持，这也是 Mistral 所共同秉持的价值观。隐私保护被直接写入了 Firefox Smart Window 的工作方式：对话默认不会保存在 Mozilla 的服务器上，而 Mistral 等合作伙伴也承诺零数据留存。</div>
+        <div class="body">开放权重模型，是指其权重可供公开检查或下游使用的 AI 模型，通常与所谓的"闭源"模型相对照。闭源模型只能通过应用程序接口（API）访问，开发者借此直接查询模型，比如 GPT-4 或 Claude Opus 4.5；或者通过产品访问，比如 ChatGPT 和 Claude Code。</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag blog">博主 · swyx（Latent Space）</span>
-      <h2 class="title">AI的瓶颈不是能力，而是信任：AIUC完成4000万美元A轮</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/aiuc" target="_blank" rel="noopener">latent.space · Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC（9 月 16 日）</a></div>
-      <div class="summary"><b>总结：</b>Latent Space 播客采访了 AI 承保标准公司 AIUC 联合创始人、Anthropic 首位产品员工 Rune Kvist。他刚完成 4000 万美元 A 轮融资，推出面向 AI 智能体的安全可靠性标准"AIUC-1"，并联合劳合社为通过认证的智能体产品（如 Cursor、Harvey、Lovable、ElevenLabs）承保。Kvist 认为，随着模型能力提升，真正制约 AI 落地的将不再是能力本身，而是风险、责任与信任——Waymo 技术上已是"超人类司机"却仍受限于监管与责任问题就是例证。节目还讨论了"一个 20 美元的编程智能体引发 2 亿美元损失"这类情境下的责任认定难题。</div>
+      <span class="tag blog">博主 · Sebastian Raschka</span>
+      <h2 class="title">Raschka拆解循环Transformer：是否藏起了推理过程</h2>
+      <div class="source">来源：<a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" target="_blank" rel="noopener">magazine.sebastianraschka.com · GPT-6 Astra, Looped Transformers, and Hidden Reasoning（9 月 9 日）</a></div>
+      <div class="summary"><b>总结：</b>Sebastian Raschka 针对坊间猜测"GPT-6 Astra 用循环 Transformer 架构来隐藏推理过程"写了一篇技术长文予以澄清。他解释循环 Transformer 的核心思路是让中间表示反复通过同一组 Transformer 块（而非只过一次），用共享权重换取更深的等效计算深度——例如 22 层的 Nanbeige4.2-3B 循环两次，相当于 44 次块计算却只需存储 22 层参数。他梳理了从固定循环、自适应停止（Universal Transformers）到按 token 动态路由（Mixture-of-Recursions）等多种实现方式，并反驳"输出变短=隐藏推理链"的说法，认为这更多反映的是模型能力提升带来的效率，而非架构层面的刻意遮掩。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">AIUC first got our attention with the NFDG backing, and have just announced a $40M series A today, with the most impressive industry advisor list we may have ever seen for an early startup behind AIUC-1, their agent standard backed by real insurance.</div>
+        <div class="body en">A Looped Transformer is essentially an architectural tweak, with the main idea being to pass the intermediate representations through the same transformer blocks multiple times (instead of just once).</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">AIUC 最早因获得 NFDG 投资而进入我们视线，如今又宣布完成 4000 万美元 A 轮融资，其顾问阵容之豪华，可能是我们见过的早期创业公司中最令人印象深刻的——支撑起 AIUC-1 这套由真实保险背书的智能体标准。</div>
+        <div class="body">循环 Transformer（Looped Transformer）本质上是一种架构上的小改动，核心思路是让中间表示反复通过同一组 Transformer 块（而不是只经过一次）。</div>
       </details>
     </article>
 
