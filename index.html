@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 9 月 21 日</span>
-      <span id="count">6 条精选</span>
+      <span id="count">5 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,92 +124,77 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag ai">AI · Google DeepMind</span>
-      <h2 class="title">DeepMind推出云端持久隐私记忆架构</h2>
-      <div class="source">来源：<a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">deepmind.google · Advancing Private AI Compute with secure, server-side memory（9 月 23 日）</a></div>
-      <div class="summary"><b>总结：</b>Google DeepMind 公布了 Private AI Compute 架构的重要升级，首次为云端 AI 助手引入"持久化、跨设备"的加密记忆能力，同时维持此前仅限本地设备才有的隐私标准。此前该系统严格"无状态"，任务一结束就清空所有上下文；新方案把用户信息封存在专属加密存储中，解密密钥只保存在用户自己的设备上，确保包括 Google 在内的任何第三方都无法访问，从而在云端规模上实现长期记忆的连续性。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">AI is becoming more capable and intuitive — remembering what matters, understanding the world around you, and acting at your direction. Privacy and trust are core to making that possible, ensuring your data stays private and protected as AI systems evolve to provide more continuous assistance across your devices. Today, we are sharing how we will bring private, server-side memory to our Private AI Compute platform.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">AI 正变得越来越强大、越来越懂你——记住重要的事情，理解你周围的世界，并按你的指示行动。隐私与信任是实现这一切的核心，要确保随着 AI 系统不断演进、为你在各设备间提供更持续的协助，你的数据始终保持私密与安全。今天，我们要分享的是，我们将如何为 Private AI Compute 平台带来私密的服务端记忆能力。</div>
-      </details>
-    </article>
-
-    <article class="card">
       <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison测评：三大模型价格战与Opus隐患</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/" target="_blank" rel="noopener">simonwillison.net · Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war（9 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 与 OpenAI 同日分别发布 Claude Opus 5.5 与 GPT-6 Sol / Luna，后者定价直接腰斩，Opus 5.5 也降价 20%。Simon Willison 用他标志性的"鹈鹕骑自行车" SVG 测试对比了三款模型，直言这轮定价"竞争激烈到难以形容"。他还发现 Opus 5.5 在"max"思考等级下会出问题——推理还没做完，就已经把 12.8 万 token 的输出上限用光了，导致这一档位在实际任务里并不可靠。</div>
+      <h2 class="title">Willison年度回顾：2026年LLM关键节点</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/" target="_blank" rel="noopener">simonwillison.net · 2026 in LLMs (so far)（9 月 27 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 在 WeAreDevelopers 北美大会闭幕主题演讲上，系统回顾了 2026 年迄今 LLM 领域的重大进展。他指出，配合各自的编程智能体框架，Claude Opus 4.5 与 GPT-5.1 让编程智能体从"经常出错"跃升为"足以日常可靠使用"的水平；他还提到 Anthropic 与 OpenAI 都曾在模型训练评估中遇到"流窜网络的失控智能体"这类新型安全事件，以及"个人 AI 智能体"（Claws）在今年成为主流现象。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">It's hard to overstate how competitive this pricing is. The new price for Opus 5.5 is the same as the price for GPT-5.6 Sol, but that was before OpenAI dropped their Sol prices by half.</div>
+        <div class="body en">November saw the release of two important models: Claude Opus 4.5 and GPT-5.1... when paired with their respective coding agent harnesses, improved from "often make mistakes" to "reliable enough to use on a day-to-day basis".</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">这轮定价的竞争激烈程度，怎么形容都不为过。Opus 5.5 的新价格和 GPT-5.6 Sol 的价格一样，但那还是在 OpenAI 把 Sol 价格砍半之前的水平。</div>
+        <div class="body">11 月发布了两款重要模型：Claude Opus 4.5 和 GPT-5.1……配合各自的编程智能体框架后，它们的表现从"经常出错"跃升为"足以在日常工作中可靠使用"。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude自主发现类CRISPR新酶系统</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener">anthropic.com · Claude discovers a novel enzyme system with CRISPR-like repeats（9 月 23 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 成立了新的生命科学研究小组与实验室，测试通用 AI 模型能否系统化加速生物学发现。团队让约 950 个 Claude 智能体在 21 小时内检索 20 万条反转录酶（RT）序列，从 3500 个候选系统中筛出 20 个最值得关注的对象，其中一个智能体注意到某段不寻常 RT 旁边存在类似 CRISPR 的重复 DNA 阵列。这一被命名为"阵列关联反转录酶"（ART）的新系统功能尚未明确，但 CRISPR 先驱、麻省理工学院教授张锋看过预印本后评价称，这是"AI 智能体助力生物学发现的一个令人兴奋的范例"。</div>
+      <h2 class="title">Claude算出九圈费曼图振幅刷新纪录</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noopener">anthropic.com · Claude computes a nine-loop amplitude in N=4 super-Yang-Mills（9 月 25 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 两位物理学家 Liam Fitzpatrick 与 Siddharth Mishra-Sharma 用 Claude 计算出平面 N=4 超对称杨-米尔斯理论中六粒子散射振幅的九圈结果，比 SLAC 学者 Lance Dixon 2023 年创下的八圈纪录更进一步，回应了今年 8 月向 AI 公司发起的公开挑战。整个计算用 Python 配合 SymPy 库、96 核 CPU 跑一周，成本仅约 1000-2000 美元，意味着前沿理论物理计算正在进入普通研究者可负担的范围；Claude 还用两种独立方法分别求解、交叉验证结果一致。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Today, we're sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don't yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems.</div>
+        <div class="body en">Claude ended up doing the calculation two different ways: the original bootstrap, and the indirect form-factor approach. The bootstrap calculation, done with the Python programming language with package SymPy, took around $100 of the budget, corresponding to running 96 CPUs for a week.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">今天，我们要分享的是首批研究项目之一的早期成果：在这项研究中，Claude 自主发现了一个与一段 DNA 重复阵列相关联的新型酶系统，这种模式让人联想到 CRISPR。虽然我们还不清楚它的功能，但 Claude 发现的这个系统所具备的一组特征，此前只在极少数其他系统中共同出现过。</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · OpenAI</span>
-      <h2 class="title">Altman在联合国安理会呼吁AI全球协作</h2>
-      <div class="source">来源：<a href="https://openai.com/index/sam-altman-un-security-council-remarks/" target="_blank" rel="noopener">openai.com · Sam Altman's remarks at the United Nations Security Council（9 月 23 日）</a></div>
-      <div class="summary"><b>总结：</b>OpenAI CEO Sam Altman 在联合国安理会就 AI 治理发表讲话，称人类正站在关键十字路口——AI 既可能带来一场"创造与发现的新文艺复兴"，也可能演变成"动荡失序的新工业革命"。他强调技术应该服务于人，而不是单纯为机器"转得更快"而存在，并指出"失控"与"权力过度集中"是当下最需要关注的两大风险，呼吁各国就能力评估、风险评估与安全验证建立全球通行的标准。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">We have a choice in front of us. AI can either be more like a new Renaissance of creativity and discovery, or more like a new Industrial Revolution of upheaval and disarray. AI should be built for people, not simply to turn the crank of the machines faster for their own sake.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">摆在我们面前的是一个选择。AI 既可以更像一场创造与发现的新文艺复兴，也可能演变成一场动荡失序的新工业革命。AI 应该是为人而建的，而不是单纯为了让机器转得更快而存在。</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · xAI</span>
-      <h2 class="title">xAI发布Grok 4.7主攻长程编程任务</h2>
-      <div class="source">来源：<a href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">x.ai · Introducing Grok 4.7（9 月 21 日）</a></div>
-      <div class="summary"><b>总结：</b>xAI 推出新一代旗舰模型 Grok 4.7，定位为"目前编程与知识工作能力最强的模型"。相比 Grok 4.6，它采用了更大的基础模型，并针对耗时更久、更难的任务做了更长的强化学习训练。该模型在长程编程基准 CursorBench 4.0 上的得分从 40.4% 提升到 46.3%，在 DeepSWE v1.1 高强度设置下从 65.2% 提升到 71.0%，同时维持与 Grok 4.6 相同的定价与速度，目前已上线 Cursor、Grok Build 及 API。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Grok 4.7 is our most capable model for coding and knowledge work. It works longer on difficult tasks, checks its own work more carefully, and comes with our best-calibrated safeguards to date. On CursorBench 4.0, which stresses longer-running coding tasks, Grok 4.7 is at the frontier in price-performance.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">Grok 4.7 是我们目前编程与知识工作能力最强的模型。它能在困难任务上花更长时间钻研、更仔细地核查自己的工作成果，并配备了迄今为止校准最好的安全防护机制。在专注长程编程任务的 CursorBench 4.0 基准上，Grok 4.7 的性价比处于行业前沿水平。</div>
+        <div class="body">Claude 最终用两种不同的方法完成了计算：一种是原始的 bootstrap 法，另一种是间接的形式因子法。用 Python 编程语言配合 SymPy 包完成的 bootstrap 计算，花费了大约 100 美元的预算，相当于用 96 核 CPU 跑了一周。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Lambert对谈Epoch AI：RSI与中美AI差距</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and" target="_blank" rel="noopener">interconnects.ai · Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI（9 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 与 Epoch AI 洞察团队负责人 JS Denain 在这期播客中，围绕递归自我改进（RSI）的预测、机器人对 AI 加速的作用、中美模型能力差距是否源于蒸馏、开源与闭源模型的安全性对比等八个议题展开辩论。两人都坦言自己对 AI 未来走向抱有很大的不确定性，这期节目更多是记录下他们当下各自的判断，而不是给出一锤定音的结论。</div>
+      <h2 class="title">Lambert：中国开源模型已反超美国</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/the-current-balance-of-power-in-open" target="_blank" rel="noopener">interconnects.ai · The current balance of power in open models（9 月 21 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 在 Interconnects 撰文分析开放权重模型领域的中美格局，认为中国厂商大约在 18 个月前就已在这一细分赛道反超美国。他估算，目前中国的开放权重模型距离美国闭源前沿大约落后 2-5 个月，而美国自己的开放权重模型反而落后闭源前沿 6-9 个月——换言之，美国在"开源"这条赛道上不如中国。他特别提到阿里巴巴 Qwen 系列已成为全球学术界与产业界研发的基础层。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">A big takeaway of this podcast is how JS and I both have so much uncertainty with exactly where we are heading, and this was our best effort at stating our observations today.</div>
+        <div class="body en">Chinese open-weight models surpassed American open-weight models in these two key areas about 18 months ago. Chinese open-weight models are approximately 2-5 months behind the closed American frontier, with the open-weight American models being approximately 6-9 months behind.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">这期播客的一大要点在于，JS 和我都对我们究竟正走向何方抱有很大的不确定性，这期节目是我们尽力给出的、对当下观察的一次表态。</div>
+        <div class="body">中国的开放权重模型大约在 18 个月前，就在这两个关键领域反超了美国的开放权重模型。中国的开放权重模型距离美国闭源前沿大约落后 2 到 5 个月，而美国自己的开放权重模型反而落后闭源前沿 6 到 9 个月。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag ai">AI · Hugging Face</span>
+      <h2 class="title">Transformers原生支持运行GGUF量化模型</h2>
+      <div class="source">来源：<a href="https://huggingface.co/blog/transformers-llama-cpp-quants" target="_blank" rel="noopener">huggingface.co · Transformers now runs llama.cpp quants（9 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Hugging Face 为 Transformers 库新增了对 GGUF 格式模型的原生支持，用户可直接从 Hub 挑选 GGUF 量化模型，用熟悉的 from_pretrained API 加载并在本地运行，不必再单独依赖 llama.cpp 推理栈。该实现复用了 ggml 的优化算子，在保持与 llama.cpp 相当推理性能的同时，还能享受 Python/PyTorch 生态里微调、评测等完整工具链，方便苹果芯片 Mac 用户按自己笔记本的内存预算跑量化模型。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">We're adding support for running GGUF models efficiently in transformers, so you can use checkpoints sized for your laptop's memory through the familiar transformers APIs. GGUF packages model weights and metadata, including tokenizer information and an optional chat template, in one file.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">我们正在为 transformers 添加高效运行 GGUF 模型的支持，这样你就可以通过熟悉的 transformers API，使用适配自己笔记本内存大小的模型权重文件。GGUF 把模型权重和元数据（包括分词器信息和可选的聊天模板）打包在一个文件里。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · swyx（Latent Space）</span>
+      <h2 class="title">Socher谈"尤里卡机器"：让AI自动做研究</h2>
+      <div class="source">来源：<a href="https://www.latent.space/p/recursive" target="_blank" rel="noopener">latent.space · Humanity's Last Invention — Richard Socher of Recursive（9 月 14 日）</a></div>
+      <div class="summary"><b>总结：</b>swyx 在 Latent Space 播客专访了 You.com 创始人、现 Recursive 创始人 Richard Socher。Socher 谈到公司刚完成的巨额种子轮融资，以及他心目中的"尤里卡机器"（Eureka Machine）——一个可针对任意目标、环境和奖励函数自主开展发明与科学发现的超级智能系统。他举例说，团队把系统用在英伟达 GPU 内核优化任务上，不到两天就超过了此前所有投入人力与智能体的团队成果，验证了"用学习系统替代 AI 研发流程中人力环节"的路径正在起效。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">The Eureka Machine is the ultimate invention that will afterwards invent most everything for humanity. It's essentially a superintelligence that can be given any goal, any environment, reward, and then it will try its best to achieve those goals... We took this thing, applied our system to it, and less than 2 days later, we outperformed every human and their agents that have ever worked on this.</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">尤里卡机器是终极发明，它之后将为人类发明几乎所有其他东西。本质上，它是一个可以被赋予任意目标、任意环境和奖励函数的超级智能，然后它会尽最大努力去实现这些目标……我们把这套系统应用到这个任务上，不到两天后，我们的表现就超过了所有曾经投入人力和智能体研究过这个任务的团队。</div>
       </details>
     </article>
 
