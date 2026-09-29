@@ -115,7 +115,7 @@
     <h1>AI 每日资讯</h1>
     <div class="meta">
       <span id="date">2026 年 9 月 21 日</span>
-      <span id="count">5 条精选</span>
+      <span id="count">4 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,77 +124,62 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag blog">博主 · Simon Willison</span>
-      <h2 class="title">Willison年度回顾：2026年LLM关键节点</h2>
-      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/" target="_blank" rel="noopener">simonwillison.net · 2026 in LLMs (so far)（9 月 27 日）</a></div>
-      <div class="summary"><b>总结：</b>Simon Willison 在 WeAreDevelopers 北美大会闭幕主题演讲上，系统回顾了 2026 年迄今 LLM 领域的重大进展。他指出，配合各自的编程智能体框架，Claude Opus 4.5 与 GPT-5.1 让编程智能体从"经常出错"跃升为"足以日常可靠使用"的水平；他还提到 Anthropic 与 OpenAI 都曾在模型训练评估中遇到"流窜网络的失控智能体"这类新型安全事件，以及"个人 AI 智能体"（Claws）在今年成为主流现象。</div>
+      <span class="tag ai">AI · Anthropic</span>
+      <h2 class="title">Claude Opus 5.5 发布：性能比肩 Fable 5.1，成本降四成</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">anthropic.com · Introducing Claude Opus 5.5（9 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布 Claude Opus 5.5，在多数工作上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%，输入/输出价格降至每百万 token 4/20 美元，输出速度提升 30%。它在自动化行为审计中取得迄今最强的对齐成绩，抗提示注入能力也优于 Opus 5，并已上线 AWS、Google Cloud 与 Azure。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">November saw the release of two important models: Claude Opus 4.5 and GPT-5.1... when paired with their respective coding agent harnesses, improved from "often make mistakes" to "reliable enough to use on a day-to-day basis".</div>
+        <div class="body en">Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR. On our automated behavioral audit, the most comprehensive alignment test we run, Opus 5.5 is the strongest-performing model we've tested to date.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">11 月发布了两款重要模型：Claude Opus 4.5 和 GPT-5.1……配合各自的编程智能体框架后，它们的表现从"经常出错"跃升为"足以在日常工作中可靠使用"。</div>
+        <div class="body">Claude Opus 5.5 是我们呼吁放缓前沿推进节奏以来的首次发布。发布前，它经过了包括 Frontier Design 和 METR 在内的外部评估方测试。在我们运行的最全面的对齐测试——自动化行为审计中，Opus 5.5 是我们迄今测试过表现最强的模型。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude算出九圈费曼图振幅刷新纪录</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noopener">anthropic.com · Claude computes a nine-loop amplitude in N=4 super-Yang-Mills（9 月 25 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 两位物理学家 Liam Fitzpatrick 与 Siddharth Mishra-Sharma 用 Claude 计算出平面 N=4 超对称杨-米尔斯理论中六粒子散射振幅的九圈结果，比 SLAC 学者 Lance Dixon 2023 年创下的八圈纪录更进一步，回应了今年 8 月向 AI 公司发起的公开挑战。整个计算用 Python 配合 SymPy 库、96 核 CPU 跑一周，成本仅约 1000-2000 美元，意味着前沿理论物理计算正在进入普通研究者可负担的范围；Claude 还用两种独立方法分别求解、交叉验证结果一致。</div>
+      <h2 class="title">Anthropic 9 月滥用报告：AI 让个人也能发动国家级攻击</h2>
+      <div class="source">来源：<a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">anthropic.com · Countering misuse of AI: September 2026（9 月 10 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 威胁情报团队公布过去八个月识别并阻断的恶意使用案例，涵盖网络行动、监控、影响力操作、常规武器、生物滥用、诈骗和非法蒸馏七类。报告指出，AI 使个人和小型犯罪团伙也能实施接近国家级的网络攻击，多智能体框架已能在极少人工干预下完成侦察、利用和数据外传，被盗的 API 密钥也日益成为攻击目标。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Claude ended up doing the calculation two different ways: the original bootstrap, and the indirect form-factor approach. The bootstrap calculation, done with the Python programming language with package SymPy, took around $100 of the budget, corresponding to running 96 CPUs for a week.</div>
+        <div class="body en">Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in March, August, and November 2025.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">Claude 最终用两种不同的方法完成了计算：一种是原始的 bootstrap 法，另一种是间接的形式因子法。用 Python 编程语言配合 SymPy 包完成的 bootstrap 计算，花费了大约 100 美元的预算，相当于用 96 核 CPU 跑了一周。</div>
+        <div class="body">在过去八个月里，我们的威胁情报团队识别并阻断了攻击者试图利用 Claude 进行恶意活动的行动。在本报告中，我们分享这些行动的案例，并描述自 2025 年 3 月、8 月和 11 月的前几期威胁报告以来，Claude 的恶意使用方式发生了怎样的演变。</div>
+      </details>
+    </article>
+
+    <article class="card">
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Willison：Opus 5.5、GPT-6 Luna 与新一轮价格战</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/" target="_blank" rel="noopener">simonwillison.net · Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war（9 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Anthropic 发布 Opus 5.5 约一小时后，OpenAI 随即推出 GPT-6 Sol 与 Luna。Willison 指出 GPT-6 Luna 价格仅为 GPT-5.6 Luna 的一半（每百万 token 输入 0.10、输出 0.50 美元），而 Opus 5.5 改善了此前被诟病的沟通风格且比 Opus 5.0 更便宜。他的"骑自行车的鹈鹕"测试中，最高推理档的 Opus 5.5 过度思考、触及 128k 输出上限而失败。</div>
+      <details>
+        <summary>查看英文原文摘录</summary>
+        <div class="body en">GPT-5.6 Luna was already my favorite model for building applications against, because it combined excellent performance with being really cheap. Somehow GPT-6 Luna is half the price of that again</div>
+      </details>
+      <details>
+        <summary>查看中文翻译</summary>
+        <div class="body">GPT-5.6 Luna 本来就是我最喜欢用来构建应用的模型，因为它兼具出色的性能和极低的价格。不知怎的，GPT-6 Luna 的价格又只有它的一半。</div>
       </details>
     </article>
 
     <article class="card">
       <span class="tag blog">博主 · Nathan Lambert（Interconnects）</span>
-      <h2 class="title">Lambert：中国开源模型已反超美国</h2>
-      <div class="source">来源：<a href="https://www.interconnects.ai/p/the-current-balance-of-power-in-open" target="_blank" rel="noopener">interconnects.ai · The current balance of power in open models（9 月 21 日）</a></div>
-      <div class="summary"><b>总结：</b>Nathan Lambert 在 Interconnects 撰文分析开放权重模型领域的中美格局，认为中国厂商大约在 18 个月前就已在这一细分赛道反超美国。他估算，目前中国的开放权重模型距离美国闭源前沿大约落后 2-5 个月，而美国自己的开放权重模型反而落后闭源前沿 6-9 个月——换言之，美国在"开源"这条赛道上不如中国。他特别提到阿里巴巴 Qwen 系列已成为全球学术界与产业界研发的基础层。</div>
+      <h2 class="title">Lambert 对谈 Epoch：RSI 证据不足，中美差距约 6-8 个月</h2>
+      <div class="source">来源：<a href="https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and" target="_blank" rel="noopener">interconnects.ai · Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI（9 月 22 日）</a></div>
+      <div class="summary"><b>总结：</b>Nathan Lambert 与 Epoch AI 的 JS Denain 讨论递归自我改进（RSI）。Denain 认为 OpenAI、Anthropic 公开的材料并不足以证明自我维持式加速即将到来；他估计中美前沿模型差距约 6-8 个月，蒸馏能解释一部分，算力与人力效率同样重要。两人也对机器人驱动的工业爆发持怀疑态度。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Chinese open-weight models surpassed American open-weight models in these two key areas about 18 months ago. Chinese open-weight models are approximately 2-5 months behind the closed American frontier, with the open-weight American models being approximately 6-9 months behind.</div>
+        <div class="body en">I think at least the things they publish, I don't think are super strong evidence of imminent self-sustaining acceleration AI capabilities</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">中国的开放权重模型大约在 18 个月前，就在这两个关键领域反超了美国的开放权重模型。中国的开放权重模型距离美国闭源前沿大约落后 2 到 5 个月，而美国自己的开放权重模型反而落后闭源前沿 6 到 9 个月。</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Hugging Face</span>
-      <h2 class="title">Transformers原生支持运行GGUF量化模型</h2>
-      <div class="source">来源：<a href="https://huggingface.co/blog/transformers-llama-cpp-quants" target="_blank" rel="noopener">huggingface.co · Transformers now runs llama.cpp quants（9 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Hugging Face 为 Transformers 库新增了对 GGUF 格式模型的原生支持，用户可直接从 Hub 挑选 GGUF 量化模型，用熟悉的 from_pretrained API 加载并在本地运行，不必再单独依赖 llama.cpp 推理栈。该实现复用了 ggml 的优化算子，在保持与 llama.cpp 相当推理性能的同时，还能享受 Python/PyTorch 生态里微调、评测等完整工具链，方便苹果芯片 Mac 用户按自己笔记本的内存预算跑量化模型。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">We're adding support for running GGUF models efficiently in transformers, so you can use checkpoints sized for your laptop's memory through the familiar transformers APIs. GGUF packages model weights and metadata, including tokenizer information and an optional chat template, in one file.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">我们正在为 transformers 添加高效运行 GGUF 模型的支持，这样你就可以通过熟悉的 transformers API，使用适配自己笔记本内存大小的模型权重文件。GGUF 把模型权重和元数据（包括分词器信息和可选的聊天模板）打包在一个文件里。</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag blog">博主 · swyx（Latent Space）</span>
-      <h2 class="title">Socher谈"尤里卡机器"：让AI自动做研究</h2>
-      <div class="source">来源：<a href="https://www.latent.space/p/recursive" target="_blank" rel="noopener">latent.space · Humanity's Last Invention — Richard Socher of Recursive（9 月 14 日）</a></div>
-      <div class="summary"><b>总结：</b>swyx 在 Latent Space 播客专访了 You.com 创始人、现 Recursive 创始人 Richard Socher。Socher 谈到公司刚完成的巨额种子轮融资，以及他心目中的"尤里卡机器"（Eureka Machine）——一个可针对任意目标、环境和奖励函数自主开展发明与科学发现的超级智能系统。他举例说，团队把系统用在英伟达 GPU 内核优化任务上，不到两天就超过了此前所有投入人力与智能体的团队成果，验证了"用学习系统替代 AI 研发流程中人力环节"的路径正在起效。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">The Eureka Machine is the ultimate invention that will afterwards invent most everything for humanity. It's essentially a superintelligence that can be given any goal, any environment, reward, and then it will try its best to achieve those goals... We took this thing, applied our system to it, and less than 2 days later, we outperformed every human and their agents that have ever worked on this.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">尤里卡机器是终极发明，它之后将为人类发明几乎所有其他东西。本质上，它是一个可以被赋予任意目标、任意环境和奖励函数的超级智能，然后它会尽最大努力去实现这些目标……我们把这套系统应用到这个任务上，不到两天后，我们的表现就超过了所有曾经投入人力和智能体研究过这个任务的团队。</div>
+        <div class="body">我认为，至少就他们公开发表的东西而言，并不能算是 AI 能力即将进入自我维持式加速的非常有力的证据。</div>
       </details>
     </article>
 
