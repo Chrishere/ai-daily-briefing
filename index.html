@@ -114,8 +114,8 @@
   <header>
     <h1>AI 每日资讯</h1>
     <div class="meta">
-      <span id="date">2026 年 9 月 21 日</span>
-      <span id="count">4 条精选</span>
+      <span id="date">2026 年 10 月 2 日</span>
+      <span id="count">3 条精选</span>
       <span>来源：AI 公司官方 + 深度博主</span>
       <span>每天早上 9:00 自动更新</span>
     </div>
@@ -124,62 +124,47 @@
   <div id="items">
 
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 发布 Claude Sonnet 5.5：更快更便宜</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">anthropic.com · Introducing Claude Sonnet 5.5（9 月 28 日）</a></div>
-      <div class="summary"><b>总结：</b>Sonnet 5.5 是 Claude 5.5 家族第二款模型，比 Sonnet 5 快 30% 以上、多数工作成本最多降低 30%，定价为每百万 token 输入 2 美元、输出 10 美元。它擅长范围明确的日常任务、修 bug 和制作文档、幻灯片与表格，Haiku 5.5 将在未来几周加入。</div>
+      <span class="tag blog">博主 · Simon Willison</span>
+      <h2 class="title">Matthew Green：沙箱够不够挡住失控的智能体？</h2>
+      <div class="source">来源：<a href="https://simonwillison.net/2026/Oct/1/matthew-green/" target="_blank" rel="noopener">simonwillison.net · A quote from Matthew Green（10 月 1 日）</a></div>
+      <div class="summary"><b>总结：</b>Simon Willison 摘录密码学者 Matthew Green 关于智能体沙箱的文章《Is sandboxing sufficient to contain rogue agents?》。核心观点：各自隔离的智能体可以通过共享的包缓存互相留下指令，一旦有载荷能劫持智能体，而智能体又会把载荷带给下一个智能体，就构成了蠕虫的两半。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family. It's a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.</div>
+        <div class="body en">Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">推出 Claude Sonnet 5.5，Claude 5.5 家族的第二款模型。它是对 Claude Sonnet 5 的明显升级，速度快 30% 以上，多数工作的成本最多降低 30%。</div>
+        <div class="body">把这些拼在一起，你就得到了蠕虫的两半：一个能劫持智能体的载荷，以及一个会把载荷带给下一个智能体的智能体。</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Claude Opus 5.5：Fable 5.1 水平，成本降 40%</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">anthropic.com · Introducing Claude Opus 5.5（9 月 22 日）</a></div>
-      <div class="summary"><b>总结：</b>Opus 5.5 是 Claude 5.5 家族首款模型，多数工作表现与 Fable 5.1 相当，运行成本比 Opus 5 低 40%，定价每百万 token 输入 4 美元、输出 20 美元。这是 Anthropic 提出“为前沿放缓节奏”后的首次发布，发布前经 Frontier Design 和 METR 等外部评估。</div>
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">DeepMind 推出 SynthID Bio：给 AI 设计的蛋白质加水印</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">deepmind.google · Introducing SynthID Bio（9 月 30 日）</a></div>
+      <div class="summary"><b>总结：</b>SynthID Bio 把不可见的签名直接嵌入生物序列，通过微调氨基酸选择和三维结构的原子坐标实现。在 VEGF-A、新冠刺突蛋白和 PD-L1 三个靶点的湿实验中，带水印的设计与无水印版本结合性能相当。该技术可用于生物安全筛查，并正与斯坦福和 Arc Institute 合作扩展到噬菌体基因组。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">We're introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5. Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR.</div>
+        <div class="body en">SynthID Bio embeds an imperceptible signature directly into the biological code, ensuring the watermark is verifiable not just on a digital model but on the synthesized, physical protein itself – all while preserving its biological function in laboratory testing.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们推出 Claude Opus 5.5，这是全新 Claude 5.5 家族的首款模型。它在多数工作上的表现与 Claude Fable 5.1 相当，运行成本比 Opus 5 低 40%。这是我们呼吁为前沿放缓节奏之后的首次发布，发布前经过包括 Frontier Design 和 METR 在内的外部评估者测试。</div>
+        <div class="body">SynthID Bio 将不可察觉的签名直接嵌入生物序列，确保水印不仅能在数字模型上验证，也能在合成出的实体蛋白质上验证，同时在实验室测试中保持其生物功能。</div>
       </details>
     </article>
 
     <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 携手 Accenture 做嵌入式独立评估</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/accenture-embedded-evaluation" target="_blank" rel="noopener">anthropic.com · Partnering with Accenture on embedded evaluation（9 月 18 日）</a></div>
-      <div class="summary"><b>总结：</b>Anthropic 与 Accenture 旗下 Faculty 合作，对前沿模型做独立评估，内容包括红队测试、对齐评估与安全措施测试。评估人员将以员工级权限嵌入 Anthropic 内部，这是 CEO 文章中承诺的落实。</div>
+      <span class="tag ai">AI · Google DeepMind</span>
+      <h2 class="title">Private AI Compute 加入加密的服务器端记忆</h2>
+      <div class="source">来源：<a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">deepmind.google · Advancing Private AI Compute with secure, server-side memory（9 月 23 日）</a></div>
+      <div class="summary"><b>总结：</b>DeepMind 介绍如何为 Private AI Compute 加入服务器端记忆，让助手能跨设备保持长期连续性。云端安全飞地仅在需要时临时解密数据并立即重新加密，密钥只保存在用户设备上，连 Google 也无法访问。官方同时公开了技术文档、独立安全审计和防篡改软件验证记录。</div>
       <details>
         <summary>查看英文原文摘录</summary>
-        <div class="body en">We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO's essay "We Must Pace the Frontier," to embed evaluators within Anthropic.</div>
+        <div class="body en">By combining hardware-enforced secure enclaves, encrypted channels, and per-user databases shielded by device-derived encryption keys, this architecture ensures your data stays fully private and under your control.</div>
       </details>
       <details>
         <summary>查看中文翻译</summary>
-        <div class="body">我们正与 Accenture 合作，对前沿 AI 进行独立评估。这是兑现 CEO 文章《We Must Pace the Frontier》中承诺的重要一步，即在 Anthropic 内部嵌入评估人员。</div>
-      </details>
-    </article>
-
-    <article class="card">
-      <span class="tag ai">AI · Anthropic</span>
-      <h2 class="title">Anthropic 推出生命科学验证计划</h2>
-      <div class="source">来源：<a href="https://www.anthropic.com/news/life-sciences-verification-program" target="_blank" rel="noopener">anthropic.com · Introducing the Life Sciences Verification Program（9 月 17 日）</a></div>
-      <div class="summary"><b>总结：</b>生命科学验证计划（LSVP）让生命科学从业者使用 Mythos、Opus 和 Sonnet 模型，并配备对生物相关工作更宽松的安全措施，面向药物发现与临床开发等正当研究场景。</div>
-      <details>
-        <summary>查看英文原文摘录</summary>
-        <div class="body en">Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.</div>
-      </details>
-      <details>
-        <summary>查看中文翻译</summary>
-        <div class="body">今天，我们推出生命科学验证计划（LSVP），让生命科学专业人员可使用我们的 Mythos、Opus 和 Sonnet 模型，并配有一套对生物相关工作更为宽松的精细化安全措施。</div>
+        <div class="body">通过结合硬件强制的安全飞地、加密通道，以及由设备派生密钥保护的每用户数据库，这一架构确保你的数据完全私密并由你掌控。</div>
       </details>
     </article>
 
